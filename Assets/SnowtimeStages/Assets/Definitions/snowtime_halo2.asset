@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -794597441, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+  m_Name: snowtime_halo2
+  m_EditorClassIdentifier: 
+  sceneAddress:
+    m_AssetGUID: 
+    m_SubObjectName: 
+    m_SubObjectType: 
+  baseSceneNameOverride: snowtimehalo
+  sceneType: 1
+  isOfflineScene: 0
+  stageOrder: 5
+  requiredExpansion: {fileID: 11400000, guid: 594b15c14bb7cd744b28ac0d191ecd7d, type: 2}
+  nameToken: SNOWTIME_MAP_HALO_0
+  subtitleToken: SNOWTIME_MAP_HALO_1
+  previewTexture: {fileID: 2800000, guid: ea78bfbbcb09bae4c9a99b6786681982, type: 3}
+  portalMaterial: {fileID: 0}
+  portalSelectionMessageString: SNOWTIME_MAP_HALO_2
+  shouldIncludeInLogbook: 0
+  loreToken: SNOWTIME_MAP_HALO_3
+  dioramaPrefab: {fileID: 1376320524918684, guid: 2a00172ef23a10d499e5cbf7a01bd3b7,
+    type: 3}
+  mainTrack: {fileID: 11400000, guid: fb0fa5ed39691a942ac6c37d41527bb1, type: 2}
+  bossTrack: {fileID: 11400000, guid: 66e9af88afd56d941b8cfc81d6fb0b62, type: 2}
+  environmentColor: {r: 0, g: 0, b: 0, a: 0}
+  hasSafeStart: 0
+  suppressPlayerEntry: 0
+  suppressNpcEntry: 0
+  blockOrbitalSkills: 0
+  validForRandomSelection: 1
+  allowItemsToSpawnObjects: 0
+  needSkipDevotionRespawn: 0
+  destinationsGroup: {fileID: 0}
+  loopedDestinationsGroup: {fileID: 0}
+  shouldUpdateSceneCollectionAfterLooping: 0
+  isLockedBeforeLooping: 0
+  loopedSceneDef: {fileID: 0}
+  destinations: []
+  preferredPortalPrefab: {fileID: 0}

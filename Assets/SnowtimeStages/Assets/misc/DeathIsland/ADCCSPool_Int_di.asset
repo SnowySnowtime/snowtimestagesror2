@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 495100722, guid: 45feadaaa90b2d2217207fb8b533753e, type: 3}
+  m_Name: ADCCSPool_Int_di
+  m_EditorClassIdentifier: 
+  targetPool: {fileID: 11400000, guid: f6ff7883392058046b0c052de04ffff4, type: 2}
+  poolCategories:
+  - name: Standard
+    categoryWeight: 1
+    alwaysIncluded: []
+    includedIfConditionsMet:
+    - dccs: {fileID: 11400000, guid: dd7cce8d574491f4fad21b2fb9374905, type: 2}
+      familyDccs:
+        _asset: {fileID: 0}
+        _address: 
+        _useDirectReference: 0
+      weight: 1
+      requiredExpansions:
+      - _asset: {fileID: 0}
+        _address: RoR2/DLC1/Common/DLC1.asset
+        _useDirectReference: 0
+    - dccs: {fileID: 11400000, guid: 3cd0f63e0291f4b41957c89e0958f3e4, type: 2}
+      familyDccs:
+        _asset: {fileID: 0}
+        _address: 
+        _useDirectReference: 0
+      weight: 240
+      requiredExpansions:
+      - _asset: {fileID: 0}
+        _address: RoR2/DLC1/Common/DLC1.asset
+        _useDirectReference: 0
+      - _asset: {fileID: 0}
+        _address: RoR2/DLC2/Common/DLC2.asset
+        _useDirectReference: 0
+    includedIfNoConditionsMet:
+    - dccs: {fileID: 11400000, guid: 49c33f520e383eb4a840669be33aa3a9, type: 2}
+      familyDccs:
+        _asset: {fileID: 0}
+        _address: 
+        _useDirectReference: 0
+      weight: 3

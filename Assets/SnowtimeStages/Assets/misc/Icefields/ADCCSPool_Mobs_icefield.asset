@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 495100722, guid: 45feadaaa90b2d2217207fb8b533753e, type: 3}
+  m_Name: ADCCSPool_Mobs_icefield
+  m_EditorClassIdentifier: 
+  targetPool: {fileID: 11400000, guid: 49d5b582496e9dd49a46a966e7f09916, type: 2}
+  poolCategories:
+  - name: Standard
+    categoryWeight: 0.98
+    alwaysIncluded: []
+    includedIfConditionsMet:
+    - dccs: {fileID: 11400000, guid: 6af44c301408c2c4182a72be9246f82b, type: 2}
+      familyDccs:
+        _asset: {fileID: 0}
+        _address: 
+        _useDirectReference: 0
+      weight: 1
+      requiredExpansions:
+      - _asset: {fileID: 0}
+        _address: RoR2/DLC1/Common/DLC1.asset
+        _useDirectReference: 0
+    includedIfNoConditionsMet:
+    - dccs: {fileID: 11400000, guid: 6ccb702415b009a47bad9a4e4ba0270c, type: 2}
+      familyDccs:
+        _asset: {fileID: 0}
+        _address: 
+        _useDirectReference: 0
+      weight: 3

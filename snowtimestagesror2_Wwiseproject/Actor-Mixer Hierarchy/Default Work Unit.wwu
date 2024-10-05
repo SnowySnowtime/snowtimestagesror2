@@ -1,0 +1,1261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}" SchemaVersion="119">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="Master Mixer" ID="{DB9E06B5-AA67-44C7-9913-F29567236D64}" ShortID="255466836">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<ActorMixer Name="Sfx Mixer" ID="{0396945B-010F-4368-B154-85FEC8419853}" ShortID="892721400">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Halo_AmbST_Sandtrap" ID="{4EA7D266-C58D-4F1F-BBEB-5BDFB01A301D}" ShortID="138075410">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="AmbienceAttenuation" ID="{DA967EC5-0DB6-4466-88D2-9DEDF0B24CAE}" WorkUnitID="{0F6FBB52-9644-42F0-91E4-7E88EFF537B0}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Sandtrap01" ID="{89E85283-8984-40E5-912E-073732859F36}" ShortID="832372752">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx [15859]" ID="{DBDA8166-658C-4933-8954-6B65462CEDCB}">
+													<Language>SFX</Language>
+													<AudioFile>SnowtimeStages\Halo\Ambience\sfx [15859].wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="237531637"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx [15859]" ID="{DBDA8166-658C-4933-8954-6B65462CEDCB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Sandtrap02" ID="{6760E48B-6D9B-4916-B80F-9CA939E4F435}" ShortID="130977619">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx [15860]" ID="{06241A19-BEAF-4948-85B2-3F85362DBA89}">
+													<Language>SFX</Language>
+													<AudioFile>SnowtimeStages\Halo\Ambience\sfx [15860].wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="653701716"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx [15860]" ID="{06241A19-BEAF-4948-85B2-3F85362DBA89}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Sandtrap03" ID="{AE2BF5F2-C92D-4CF6-A281-172BC7B8688F}" ShortID="467277616">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx [15861]" ID="{B35101A1-AB12-4D92-B275-B015427B5D0E}">
+													<Language>SFX</Language>
+													<AudioFile>SnowtimeStages\Halo\Ambience\sfx [15861].wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="615580275"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx [15861]" ID="{B35101A1-AB12-4D92-B275-B015427B5D0E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Sandtrap04" ID="{0640A3F7-7DFC-4A69-8A2F-872C7526E829}" ShortID="1047379900">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx [15862]" ID="{91313053-340C-4A59-899D-87ABE42574AA}">
+													<Language>SFX</Language>
+													<AudioFile>SnowtimeStages\Halo\Ambience\sfx [15862].wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="775254967"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx [15862]" ID="{91313053-340C-4A59-899D-87ABE42574AA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Sandtrap05" ID="{A6E9909C-0958-419B-9ECF-DC1A6D7DEC4E}" ShortID="891236722">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx [15863]" ID="{072F2F5F-CC22-41F4-861E-060813AA4176}">
+													<Language>SFX</Language>
+													<AudioFile>SnowtimeStages\Halo\Ambience\sfx [15863].wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="429395551"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx [15863]" ID="{072F2F5F-CC22-41F4-861E-060813AA4176}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Sandtrap06" ID="{50E43012-FA41-47BD-B503-A38B29B93848}" ShortID="829703579">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx [15864]" ID="{6A7F012C-682D-4834-8D15-82ECCA36E344}">
+													<Language>SFX</Language>
+													<AudioFile>SnowtimeStages\Halo\Ambience\sfx [15864].wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="972774779"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx [15864]" ID="{6A7F012C-682D-4834-8D15-82ECCA36E344}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Sandtrap07" ID="{8DC1F327-9C44-4332-8E36-4AA0AB7FDDC6}" ShortID="1068058463">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx [15865]" ID="{05248D3D-9557-4EC7-8C7D-84A3C80201C4}">
+													<Language>SFX</Language>
+													<AudioFile>SnowtimeStages\Halo\Ambience\sfx [15865].wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="337202894"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx [15865]" ID="{05248D3D-9557-4EC7-8C7D-84A3C80201C4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Sandtrap08" ID="{B452792B-FF11-474A-A846-2FC53A8AD8DD}" ShortID="45813988">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx [15866]" ID="{D89B9400-6F03-4DC7-A672-2C4204A1792E}">
+													<Language>SFX</Language>
+													<AudioFile>SnowtimeStages\Halo\Ambience\sfx [15866].wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="655126681"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx [15866]" ID="{D89B9400-6F03-4DC7-A672-2C4204A1792E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Sandtrap09" ID="{F73A0C3C-EF06-42B5-A7C9-35EEC2E355C8}" ShortID="204903748">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx [15867]" ID="{A97A14EA-BC3B-43F1-B6FD-C6551F28AEAF}">
+													<Language>SFX</Language>
+													<AudioFile>SnowtimeStages\Halo\Ambience\sfx [15867].wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="807763340"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx [15867]" ID="{A97A14EA-BC3B-43F1-B6FD-C6551F28AEAF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Sandtrap10" ID="{0949A248-A51B-4FB8-83E5-96B7A4B24460}" ShortID="401083920">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx [15868]" ID="{161348AE-4FC8-4BA5-84B4-CCF6C258393D}">
+													<Language>SFX</Language>
+													<AudioFile>SnowtimeStages\Halo\Ambience\sfx [15868].wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="352334311"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx [15868]" ID="{161348AE-4FC8-4BA5-84B4-CCF6C258393D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Sandtrap11" ID="{DA6B2579-4D24-4E69-970A-96BAACB5E6D9}" ShortID="284985563">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx [15869]" ID="{F3391A54-8F5D-4D4D-B769-D1BDAD5D3CF7}">
+													<Language>SFX</Language>
+													<AudioFile>SnowtimeStages\Halo\Ambience\sfx [15869].wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="651322841"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx [15869]" ID="{F3391A54-8F5D-4D4D-B769-D1BDAD5D3CF7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Sandtrap12" ID="{96F87854-5939-4267-B098-8C88567D640F}" ShortID="968946792">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx [15870]" ID="{286B014F-2672-4DE1-B856-C254F0146AB3}">
+													<Language>SFX</Language>
+													<AudioFile>SnowtimeStages\Halo\Ambience\sfx [15870].wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="658406052"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx [15870]" ID="{286B014F-2672-4DE1-B856-C254F0146AB3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Sandtrap13" ID="{4FF828A0-436F-4C02-93C9-6109D490626C}" ShortID="237650999">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx [15871]" ID="{95BCD1BA-6CC1-41A4-87E7-64718FEA6D1A}">
+													<Language>SFX</Language>
+													<AudioFile>SnowtimeStages\Halo\Ambience\sfx [15871].wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="344832910"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx [15871]" ID="{95BCD1BA-6CC1-41A4-87E7-64718FEA6D1A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Sandtrap14" ID="{7050A66E-88F5-4A07-8EF5-6361ED99DD10}" ShortID="787670517">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sfx [15872]" ID="{7FFFFB6D-E1DE-4699-8F9E-92E6F5CE45BE}">
+													<Language>SFX</Language>
+													<AudioFile>SnowtimeStages\Halo\Ambience\sfx [15872].wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="81780098"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sfx [15872]" ID="{7FFFFB6D-E1DE-4699-8F9E-92E6F5CE45BE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<Sound Name="Halo_AmbST_Bloodgulch" ID="{E9986CDA-500E-4E3B-83C3-1150C909DB7D}" ShortID="294869996">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="amb_bloodgulch" ID="{18EC46CC-0ADA-4841-B181-EE1243D9C5AC}">
+											<Language>SFX</Language>
+											<AudioFile>SnowtimeStages\Halo\Ambience\amb_bloodgulch.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="126706442"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="amb_bloodgulch" ID="{18EC46CC-0ADA-4841-B181-EE1243D9C5AC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Halo_AmbST_Gph" ID="{0A449545-B5AB-4AFB-81A0-5212EAFDF9B3}" ShortID="994502758">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="amb_gph" ID="{56EB593F-0FD3-498A-AEE8-B0ADDA82A4AC}">
+											<Language>SFX</Language>
+											<AudioFile>SnowtimeStages\Halo\Ambience\amb_gph.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="784947540"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="amb_gph" ID="{56EB593F-0FD3-498A-AEE8-B0ADDA82A4AC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Halo_AmbST_Halo" ID="{9CB4FCB0-E204-444B-A1EC-2D17090DA05F}" ShortID="477527974">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="amb_halo" ID="{6AF74697-B6F6-4091-8F9F-E057893812FA}">
+											<Language>SFX</Language>
+											<AudioFile>SnowtimeStages\Halo\Ambience\amb_halo.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="296014189"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="amb_halo" ID="{6AF74697-B6F6-4091-8F9F-E057893812FA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="Halo_AmbST_HaloStream" ID="{C298644D-95C8-422C-81FA-97A47D0CA9B6}" ShortID="30435714">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="StreamAttenuation" ID="{9078120B-54D5-4570-8EB3-866180CB11EF}" WorkUnitID="{0F6FBB52-9644-42F0-91E4-7E88EFF537B0}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="stream01" ID="{6E8044C4-2F98-4615-A345-232D4A5618F1}" ShortID="493480674">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sounds_adpcm [61]" ID="{D13FB46A-D869-4C22-8BAB-FAD4B315BD83}">
+													<Language>SFX</Language>
+													<AudioFile>SnowtimeStages\Halo\Ambience\sounds_adpcm [61].wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="365385439"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sounds_adpcm [61]" ID="{D13FB46A-D869-4C22-8BAB-FAD4B315BD83}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="stream02" ID="{FF4741DD-8979-4F81-89DF-65E228905C22}" ShortID="62164724">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sounds_adpcm [62]" ID="{5D5B91AD-9AD5-4E37-AE88-6F4DDBC4EAD9}">
+													<Language>SFX</Language>
+													<AudioFile>SnowtimeStages\Halo\Ambience\sounds_adpcm [62].wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="202510585"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sounds_adpcm [62]" ID="{5D5B91AD-9AD5-4E37-AE88-6F4DDBC4EAD9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="stream03" ID="{097EC79E-1ECC-46AC-B2E5-C350941B2BC5}" ShortID="614010668">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sounds_adpcm [63]" ID="{94B9E53B-CE2A-4F2A-998A-237E1E115C28}">
+													<Language>SFX</Language>
+													<AudioFile>SnowtimeStages\Halo\Ambience\sounds_adpcm [63].wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="318755419"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sounds_adpcm [63]" ID="{94B9E53B-CE2A-4F2A-998A-237E1E115C28}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{CC05B2C5-8BFF-4FB9-AC72-EB08AF5DD941}"/>
+									</PositioningInfo>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Halo_AmbST_HaloFall" ID="{D03E64D2-870B-4CE2-903C-6E26FA9B4EEC}" ShortID="393960518">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="WaterfallAttenuation" ID="{E69E3317-B415-45B6-AF93-6DCFB5A696EF}" WorkUnitID="{0F6FBB52-9644-42F0-91E4-7E88EFF537B0}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="waterfall1" ID="{48CB1A81-8500-4236-BD5C-27D79642AF53}" ShortID="291545145">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sounds_adpcm [52]" ID="{5C478473-7E31-40C0-BFF8-2057822A199A}">
+													<Language>SFX</Language>
+													<AudioFile>SnowtimeStages\Halo\Ambience\sounds_adpcm [52].wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1059918848"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sounds_adpcm [52]" ID="{5C478473-7E31-40C0-BFF8-2057822A199A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="waterfall2" ID="{D517C8D6-AC04-4BA2-BD18-D9A8AC148A80}" ShortID="502518044">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sounds_adpcm [53]" ID="{566F813D-93D3-4B10-A2FD-69F95624742E}">
+													<Language>SFX</Language>
+													<AudioFile>SnowtimeStages\Halo\Ambience\sounds_adpcm [53].wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="49904372"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sounds_adpcm [53]" ID="{566F813D-93D3-4B10-A2FD-69F95624742E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="waterfall3" ID="{93DD53F1-2107-417E-BEFA-7F1B1A1898F3}" ShortID="504035030">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sounds_adpcm [54]" ID="{04D81E25-AF8D-49BC-A41E-C1BD833636B8}">
+													<Language>SFX</Language>
+													<AudioFile>SnowtimeStages\Halo\Ambience\sounds_adpcm [54].wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="928065304"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sounds_adpcm [54]" ID="{04D81E25-AF8D-49BC-A41E-C1BD833636B8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Halo_AmbST_HaloBeam" ID="{5C6A6D35-14B6-4125-BF3C-771AB836E3F7}" ShortID="613987262">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="StreamAttenuation" ID="{9078120B-54D5-4570-8EB3-866180CB11EF}" WorkUnitID="{0F6FBB52-9644-42F0-91E4-7E88EFF537B0}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="electric1" ID="{032DDA74-6E2C-4B5B-9541-40B34FDFDA64}" ShortID="198567807">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sounds_adpcm [49]" ID="{FD9DD046-D04B-42AD-8FB4-4EF718D67396}">
+													<Language>SFX</Language>
+													<AudioFile>SnowtimeStages\Halo\Ambience\sounds_adpcm [49].wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="461361302"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sounds_adpcm [49]" ID="{FD9DD046-D04B-42AD-8FB4-4EF718D67396}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="electric2" ID="{61C67C28-5FC6-4435-ABEB-875FCB01C58E}" ShortID="744202439">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sounds_adpcm [50]" ID="{BC866668-CCDD-4E6D-A959-C78C658D2CBB}">
+													<Language>SFX</Language>
+													<AudioFile>SnowtimeStages\Halo\Ambience\sounds_adpcm [50].wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="147628268"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sounds_adpcm [50]" ID="{BC866668-CCDD-4E6D-A959-C78C658D2CBB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="electric3" ID="{9389549F-8366-4ECA-BEDA-2AB49454400A}" ShortID="30278513">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sounds_adpcm [51]" ID="{97319092-3EB8-40F1-B466-42A66C2E5201}">
+													<Language>SFX</Language>
+													<AudioFile>SnowtimeStages\Halo\Ambience\sounds_adpcm [51].wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="882735341"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sounds_adpcm [51]" ID="{97319092-3EB8-40F1-B466-42A66C2E5201}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<Sound Name="Halo_AmbST_HaloBeamFire" ID="{7FCA9611-0AA6-45EA-8B4E-EA71B1B34F16}" ShortID="756776855">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="BeamFireAttenuation" ID="{FC7CDAEB-4F72-44E2-B87A-BDD75598AE0A}" WorkUnitID="{0F6FBB52-9644-42F0-91E4-7E88EFF537B0}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="fire" ID="{40EE584A-1188-4F28-956B-6D3C3A9DFECA}">
+											<Language>SFX</Language>
+											<AudioFile>SnowtimeStages\Halo\Ambience\fire.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="623683944"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="fire" ID="{40EE584A-1188-4F28-956B-6D3C3A9DFECA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="Halo_AmbST_Uplink" ID="{3B797EAE-77D3-45ED-B78C-E34352072C71}" ShortID="316031225">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="UplinkAttenuation" ID="{F06E627B-6A9E-44DF-98BC-8DFB01483CB0}" WorkUnitID="{0F6FBB52-9644-42F0-91E4-7E88EFF537B0}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="uplink1" ID="{07BB5AE2-66E2-48B7-95D1-58A2316B0F2F}" ShortID="489983735">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sounds_adpcm [69]" ID="{4F70AC22-A289-434A-BF6E-3362B3D728D7}">
+													<Language>SFX</Language>
+													<AudioFile>SnowtimeStages\Halo\Ambience\sounds_adpcm [69].wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="922025978"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sounds_adpcm [69]" ID="{4F70AC22-A289-434A-BF6E-3362B3D728D7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="uplink2" ID="{E2A1DA3F-1AA7-4D9A-A480-B931315DEAB6}" ShortID="788743068">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sounds_adpcm [70]" ID="{058E9463-3E6F-4B39-A74D-2D81F0440345}">
+													<Language>SFX</Language>
+													<AudioFile>SnowtimeStages\Halo\Ambience\sounds_adpcm [70].wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="920485722"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sounds_adpcm [70]" ID="{058E9463-3E6F-4B39-A74D-2D81F0440345}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="uplink3" ID="{B1CC3910-0E39-4BEA-B388-95F31A0D74D3}" ShortID="882926598">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sounds_adpcm [71]" ID="{0DBBF0A2-142A-43DB-B3C5-5AFF60A276AF}">
+													<Language>SFX</Language>
+													<AudioFile>SnowtimeStages\Halo\Ambience\sounds_adpcm [71].wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="70426441"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sounds_adpcm [71]" ID="{0DBBF0A2-142A-43DB-B3C5-5AFF60A276AF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="uplink2_1" ID="{F7F44CEF-95BA-48AB-9D09-2CAC18A5B764}" ShortID="760395211">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sounds_adpcm [70]" ID="{FD0BA3F2-A8EA-40C4-B80C-8C463ACB6432}">
+													<Language>SFX</Language>
+													<AudioFile>SnowtimeStages\Halo\Ambience\sounds_adpcm [70].wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="920485722"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sounds_adpcm [70]" ID="{FD0BA3F2-A8EA-40C4-B80C-8C463ACB6432}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Halo_AmbST_DI_Waves" ID="{824ABB0D-127C-4B65-9E21-6D3DA4E349C7}" ShortID="676670414">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="WaterfallAttenuation" ID="{E69E3317-B415-45B6-AF93-6DCFB5A696EF}" WorkUnitID="{0F6FBB52-9644-42F0-91E4-7E88EFF537B0}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="wave1" ID="{7EBDBFC1-7824-4183-976B-93FEF81D8910}" ShortID="345814349">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sounds_adpcm [233]" ID="{52B24D57-17AF-4342-ABBD-EB14EFF4792E}">
+													<Language>SFX</Language>
+													<AudioFile>SnowtimeStages\Halo\Ambience\sounds_adpcm [233].wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1058519025"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sounds_adpcm [233]" ID="{52B24D57-17AF-4342-ABBD-EB14EFF4792E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="wave2" ID="{5C654C08-9793-4F2D-9F98-1AED681970BD}" ShortID="1041225818">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sounds_adpcm [234]" ID="{9902C6C4-CD70-4A3A-B0C8-8E670755C7EF}">
+													<Language>SFX</Language>
+													<AudioFile>SnowtimeStages\Halo\Ambience\sounds_adpcm [234].wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="948779592"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sounds_adpcm [234]" ID="{9902C6C4-CD70-4A3A-B0C8-8E670755C7EF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="wave3" ID="{138CE133-A273-4112-B2BA-A079F8471269}" ShortID="554448289">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sounds_adpcm [235]" ID="{6B493089-4BAF-495C-908B-20BCD0725BF6}">
+													<Language>SFX</Language>
+													<AudioFile>SnowtimeStages\Halo\Ambience\sounds_adpcm [235].wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="806381464"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sounds_adpcm [235]" ID="{6B493089-4BAF-495C-908B-20BCD0725BF6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="wave4" ID="{8E30C467-7639-4709-B1A4-F72CF0F9E885}" ShortID="262150741">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sounds_adpcm [236]" ID="{6490BB6B-9858-4BE3-838F-5201FA29F4FC}">
+													<Language>SFX</Language>
+													<AudioFile>SnowtimeStages\Halo\Ambience\sounds_adpcm [236].wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="926163908"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sounds_adpcm [236]" ID="{6490BB6B-9858-4BE3-838F-5201FA29F4FC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="wave5" ID="{4DFBFE24-ADDD-461F-B140-678C37ED92E6}" ShortID="843682248">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sounds_adpcm [237]" ID="{B65827F5-7572-4498-9537-A8CE7A7024D6}">
+													<Language>SFX</Language>
+													<AudioFile>SnowtimeStages\Halo\Ambience\sounds_adpcm [237].wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="32476423"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sounds_adpcm [237]" ID="{B65827F5-7572-4498-9537-A8CE7A7024D6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="wave6" ID="{F83AA214-C2AE-45C9-AC64-FD85BB60CF83}" ShortID="448379074">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sounds_adpcm [238]" ID="{1CAD3BAB-9C52-4FBA-B228-4D0C850B60AC}">
+													<Language>SFX</Language>
+													<AudioFile>SnowtimeStages\Halo\Ambience\sounds_adpcm [238].wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="740851311"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sounds_adpcm [238]" ID="{1CAD3BAB-9C52-4FBA-B228-4D0C850B60AC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="wave7" ID="{4F548076-47E1-49F4-852B-CD52B89EFE57}" ShortID="896761923">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sounds_adpcm [239]" ID="{7A0D8055-7F30-4A45-B12B-DCA2B04B8480}">
+													<Language>SFX</Language>
+													<AudioFile>SnowtimeStages\Halo\Ambience\sounds_adpcm [239].wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="553762712"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sounds_adpcm [239]" ID="{7A0D8055-7F30-4A45-B12B-DCA2B04B8480}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="wave8" ID="{62EF7ED7-7677-499D-AB9F-078814B34B2C}" ShortID="38922129">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sounds_adpcm [240]" ID="{5F6B583F-57BC-4B7E-BBBE-76EA669C4BE8}">
+													<Language>SFX</Language>
+													<AudioFile>SnowtimeStages\Halo\Ambience\sounds_adpcm [240].wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="292914169"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sounds_adpcm [240]" ID="{5F6B583F-57BC-4B7E-BBBE-76EA669C4BE8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="wave9" ID="{FD69048B-AEC0-426B-8374-232FB7EF70BE}" ShortID="292066654">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sounds_adpcm [241]" ID="{F5050B9B-6D99-411B-A2C7-03FDF49AEF4E}">
+													<Language>SFX</Language>
+													<AudioFile>SnowtimeStages\Halo\Ambience\sounds_adpcm [241].wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="898607792"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sounds_adpcm [241]" ID="{F5050B9B-6D99-411B-A2C7-03FDF49AEF4E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="wave10" ID="{CFB5EDFC-D022-4317-8418-334DCCD4013D}" ShortID="907265797">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sounds_adpcm [242]" ID="{7AEB1D63-CEEF-434B-9504-91B10011E59B}">
+													<Language>SFX</Language>
+													<AudioFile>SnowtimeStages\Halo\Ambience\sounds_adpcm [242].wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="810493595"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sounds_adpcm [242]" ID="{7AEB1D63-CEEF-434B-9504-91B10011E59B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="wave11" ID="{4130F82F-1EF2-4CBE-B6C8-141F11A9BD95}" ShortID="827474428">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sounds_adpcm [243]" ID="{6CCFE74B-6CF8-4719-BE7E-90148B3A349C}">
+													<Language>SFX</Language>
+													<AudioFile>SnowtimeStages\Halo\Ambience\sounds_adpcm [243].wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="541664431"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sounds_adpcm [243]" ID="{6CCFE74B-6CF8-4719-BE7E-90148B3A349C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="wave12" ID="{2E47737C-1BBA-4C30-B153-3F3C9D77C403}" ShortID="993446898">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sounds_adpcm [244]" ID="{B6A9536B-9344-4770-9FFD-61FEB2D206B2}">
+													<Language>SFX</Language>
+													<AudioFile>SnowtimeStages\Halo\Ambience\sounds_adpcm [244].wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1026670153"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sounds_adpcm [244]" ID="{B6A9536B-9344-4770-9FFD-61FEB2D206B2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="wave13" ID="{C86065C4-136F-4110-8E53-4578EBCDECBC}" ShortID="713772267">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sounds_adpcm [245]" ID="{9C8AEBCC-7C27-4EC9-8BC5-06EF01C251D6}">
+													<Language>SFX</Language>
+													<AudioFile>SnowtimeStages\Halo\Ambience\sounds_adpcm [245].wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="292168512"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sounds_adpcm [245]" ID="{9C8AEBCC-7C27-4EC9-8BC5-06EF01C251D6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="wave14" ID="{EF785635-7F08-4593-BF26-A25DDB609FD8}" ShortID="1005039254">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="sounds_adpcm [246]" ID="{675A30E9-6CF6-42CB-A055-E5066F04F3C8}">
+													<Language>SFX</Language>
+													<AudioFile>SnowtimeStages\Halo\Ambience\sounds_adpcm [246].wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="225494125"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="sounds_adpcm [246]" ID="{675A30E9-6CF6-42CB-A055-E5066F04F3C8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{7F403BBE-4DF5-4F74-8793-23E9253AC460}" ShortID="1062481340">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="Volume_SFX" ID="{F68FC7CE-5CA2-4A6E-995C-B87281706DDC}" WorkUnitID="{178972B4-CC63-450F-8C8B-5B75A82A821C}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{461E4849-775F-4D59-80F9-4A185AFC8B7F}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</ActorMixer>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

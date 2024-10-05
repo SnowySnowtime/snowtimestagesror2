@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{5528F720-1AEF-44E5-BACD-BC1468C30FAB}" SchemaVersion="119">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{5528F720-1AEF-44E5-BACD-BC1468C30FAB}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="SnowtimeStagesMusic" ID="{7CC9A883-2D6A-4C74-959B-CCBC456FAACF}">
+					<ObjectInclusionList>
+						<ObjectRef Name="ST_Music_System" ID="{513D8CE4-87BD-4857-AA45-D70DF200730C}" WorkUnitID="{BB8EC895-5216-4C73-A90E-26865F9990A9}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="SnowtimeStagesSounds" ID="{5D8C4D98-634E-43CF-9E26-AC17E014C13E}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Default Work Unit" ID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}" WorkUnitID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{FC40D4D9-464F-49AD-AE90-209482AF5BA3}" SchemaVersion="119">
+	<States>
+		<WorkUnit Name="Default Work Unit" ID="{FC40D4D9-464F-49AD-AE90-209482AF5BA3}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="gameplaySongChoiceST" ID="{F0A1BF04-605F-4A77-BCEF-8F7A731AAF1D}">
+					<ChildrenList>
+						<State Name="None" ID="{736D29FA-4399-4DB5-AAAE-D0AE40900D71}"/>
+						<State Name="HaloTheme" ID="{1F44CC4C-01BD-46CE-B60B-D6F6725ED93F}"/>
+						<State Name="HaloCovenantDance" ID="{3C119C7A-6167-4D44-95A5-1092F48E7BCE}"/>
+						<State Name="HaloDreamAgain" ID="{E2E1E662-D66B-44E2-A31C-F6475496195B}"/>
+						<State Name="HaloStage2" ID="{24364305-27E0-4763-AD48-DCA37C1903A7}"/>
+						<State Name="HaloStage3" ID="{5F2A5A8F-C426-47F9-AC93-93966D5B1D89}"/>
+						<State Name="HaloS3Cello" ID="{D5EB39FF-14F5-47FD-809F-0893584A6280}"/>
+						<State Name="HaloStage5" ID="{B5E09246-7119-4C0F-A5DC-092BAE7007EA}"/>
+						<State Name="HaloStage5Boss" ID="{AD9958EB-55A0-4D75-ABE6-7B4CDCF78C08}"/>
+						<State Name="HaloStage4" ID="{5B2DAB01-4EEC-4EA7-99BF-18D0BCD04151}"/>
+						<State Name="HaloStage4Boss" ID="{37ABEC87-3036-45FE-A02B-09839A720F69}"/>
+						<State Name="HaloStage2Alt" ID="{ABDEEF73-21D1-455D-8F20-D48552000A7C}"/>
+						<State Name="HaloTheme2Alt" ID="{38BB0D7C-43AC-4312-BCCD-63CBEF4A1B19}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Music_system" ID="{823819D3-4140-429B-AB21-858CFEE8595D}">
+					<ChildrenList>
+						<State Name="None" ID="{9BBA760A-C8B4-4681-BDE3-C1DC5580215F}"/>
+						<State Name="Bossfight" ID="{3AF537AC-8771-4B69-9E1D-9E9ACB945EAE}"/>
+						<State Name="Gameplay" ID="{C4209AB5-523A-45D3-8A4A-280FEE5FB758}"/>
+						<State Name="SecretLevel" ID="{32012C8D-CCD9-4171-8EA1-3F8162206E55}"/>
+						<State Name="Menu" ID="{9CE8FF20-1199-452A-9786-45FECF9D02C3}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="bossStatus" ID="{42DC3608-EA75-414F-A998-BF337641A6E0}">
+					<ChildrenList>
+						<State Name="None" ID="{738E302A-786E-431A-9D32-209390089BAE}"/>
+						<State Name="alive" ID="{0B7E6C04-ABDB-4215-A1FB-A8730093935D}"/>
+						<State Name="dead" ID="{59EC7C69-9C0C-4582-9779-AC7AC4C7BB03}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

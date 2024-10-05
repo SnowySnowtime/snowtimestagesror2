@@ -1,0 +1,105 @@
+Event	ID	Name			Wwise Object Path	Notes
+	215921880	Play_Music_SystemST			\Default Work Unit\Music\Play_Music_SystemST	
+	3469389233	Pause_Music_ST			\Default Work Unit\Music\Pause_Music_ST	
+	3495402943	Unpause_MusicST			\Default Work Unit\Music\Unpause_MusicST	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	549431000	bossStatus			\Default Work Unit\bossStatus	
+	792781730	Music_system			\Default Work Unit\Music_system	
+	1359377434	gameplaySongChoiceST			\Default Work Unit\gameplaySongChoiceST	
+
+State	ID	Name	State Group			Notes
+	655265632	alive	bossStatus			
+	748895195	None	bossStatus			
+	2044049779	dead	bossStatus			
+	89505537	Gameplay	Music_system			
+	580146960	Bossfight	Music_system			
+	748895195	None	Music_system			
+	778026301	SecretLevel	Music_system			
+	2607556080	Menu	Music_system			
+	228356784	HaloStage5	gameplaySongChoiceST			
+	228356785	HaloStage4	gameplaySongChoiceST			
+	228356790	HaloStage3	gameplaySongChoiceST			
+	228356791	HaloStage2	gameplaySongChoiceST			
+	748895195	None	gameplaySongChoiceST			
+	809944971	HaloStage5Boss	gameplaySongChoiceST			
+	845250980	HaloStage2Alt	gameplaySongChoiceST			
+	939841948	HaloCovenantDance	gameplaySongChoiceST			
+	2292831825	HaloTheme2Alt	gameplaySongChoiceST			
+	3280575944	HaloDreamAgain	gameplaySongChoiceST			
+	3678796398	HaloTheme	gameplaySongChoiceST			
+	4124607734	HaloStage4Boss	gameplaySongChoiceST			
+	4290557256	HaloS3Cello	gameplaySongChoiceST			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	151362964	playerHealth			\Default Work Unit\playerHealth	
+	3729143042	Volume_MSX			\Default Work Unit\Volume_MSX	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	2467752	HaloS4LoopDesperate	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\sfx [12487]_B45EAA48.wem		\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\BossSongChoice\HaloS4Theme\HaloS4LoopDesperate\HaloS4LoopDesperate		3377
+	6346055	HaloCovDanceStart	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\halo_swarm_start_B45EAA48.wem		\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\BossSongChoice\HaloCovenantDance\HaloCovDanceStart\HaloCovDanceStart		2731
+	104382805	halos2alt_loop	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\halos2alt_loop_B45EAA48.wem		\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\GameplaySongChoice\HaloStage2Alt\HaloStage2Alt_Loop\halos2alt_loop		4555
+	116202059	halos4loop	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\sfx [7485]_B45EAA48.wem		\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\GameplaySongChoice\HaloStage4\HaloStage4Loop\halos4loop		4219
+	135894708	halo_swarm_end	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\halo_swarm_end_B45EAA48.wem		\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\BossSongChoice\HaloCovDanceEnd\HaloCovDanceEnd\halo_swarm_end		2848
+	143634801	halotheme2	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\sounds_music [401]_B45EAA48.wem		\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\BossSongChoice\HaloTheme2\HaloTheme2_Loop\halotheme2		4172
+	158910451	halo_boss_start	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\halo_boss_start_B45EAA48.wem		\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\BossSongChoice\HaloTheme\HaloThemeStart\halo_boss_start		2872
+	165203172	halos5_boss_loop	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\halos5_boss_loop_B45EAA48.wem		\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\BossSongChoice\HaloStage5Boss\HaloS5Boss_Loop\halos5_boss_loop		3432
+	175059998	halos2alt_start	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\halos2alt_start_B45EAA48.wem		\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\GameplaySongChoice\HaloStage2Alt\HaloStage2Alt_Start\halos2alt_start		2595
+	206857989	halo_stage3_loop	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\halo_stage3_loop_B45EAA48.wem		\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\GameplaySongChoice\HaloStage3\HaloStage3Loop\halo_stage3_loop		4010
+	244212947	HWLoop	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\halo_stage2_loop_B45EAA48.wem		\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\GameplaySongChoice\HaloStage2\HWLoop\HWLoop		3957
+	244858945	halos5_boss_start	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\halos5_boss_start_B45EAA48.wem		\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\BossSongChoice\HaloStage5Boss\HaloS5Boss_Start\halos5_boss_start		3132
+	268033202	halos4boss_end	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\halos4boss_end_B45EAA48.wem		\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\BossSongChoice\HaloS4ThemeEnd\HaloS4ThemeEnd\halos4boss_end		3366
+	275492874	HaloDreamAgainLoop	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\halo_stage1_loop_B45EAA48.wem		\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\GameplaySongChoice\HaloDreamAgain\HaloDreamAgainLoop\HaloDreamAgainLoop		3267
+	278472903	halo_s3boss_loop	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\halo_s3boss_loop_B45EAA48.wem		\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\BossSongChoice\HaloS3Cello\HaloS3CelloLoop\halo_s3boss_loop		3943
+	390626836	HaloCovDanceLoop	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\halo_swarm_loop_B45EAA48.wem		\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\BossSongChoice\HaloCovenantDance\HaloCovDanceLoop\HaloCovDanceLoop		2761
+	488245074	HaloDreamAgainStart	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\halo_stage1_start_B45EAA48.wem		\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\GameplaySongChoice\HaloDreamAgain\HaloDreamAgainStart\HaloDreamAgainStart		2714
+	554328354	halos5_boss_end	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\halos5_boss_end_B45EAA48.wem		\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\BossSongChoice\HaloStage5BossEnd\HaloStage5BossEnd\halos5_boss_end		2525
+	591509814	halos5_loop	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\halos5_loop_B45EAA48.wem		\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\GameplaySongChoice\HaloStage5\HaloS5Loop\halos5_loop		4445
+	599907185	halotheme2end	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\sounds_stream [14]_B45EAA48.wem		\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\BossSongChoice\HaloTheme2End\halotheme2end\halotheme2end		2766
+	660184921	HaloS4Start	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\sfx [12490]_B45EAA48.wem		\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\BossSongChoice\HaloS4Theme\HaloS4Start\HaloS4Start		2588
+	664298954	HWStart	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\halo_stage2_start_B45EAA48.wem		\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\GameplaySongChoice\HaloStage2\HWStart\HWStart		2710
+	689852539	halo_boss_end	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\halo_boss_end_B45EAA48.wem		\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\BossSongChoice\HaloThemeEnd\HaloThemeEnd\halo_boss_end		2686
+	774089903	halo_stage3_start	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\halo_stage3_start_B45EAA48.wem		\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\GameplaySongChoice\HaloStage3\HaloStage3Start\halo_stage3_start		2606
+	789012021	HaloGenericEnd	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\halo_music_endidk_B45EAA48.wem		\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\BossSongChoice\HaloGenericEnd\HaloGenericEnd\HaloGenericEnd		2544
+	802583461	halo_s3boss_start	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\halo_s3boss_start_B45EAA48.wem		\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\BossSongChoice\HaloS3Cello\HaloS3CelloStart\halo_s3boss_start		3585
+	863279179	HaloThemeLoop	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\halo_boss_loop_B45EAA48.wem		\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\BossSongChoice\HaloTheme\HaloThemeLoop\HaloThemeLoop		4303
+	872101712	HaloS4StartDesperate	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\sfx [12489]_B45EAA48.wem		\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\BossSongChoice\HaloS4Theme\HaloS4StartDesperate\HaloS4StartDesperate		2797
+	888784772	halotheme2start	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\sounds_music [400]_B45EAA48.wem		\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\BossSongChoice\HaloTheme2\HaloTheme2_Start\halotheme2start		2722
+	1001791155	HaloS4Loop	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\sfx [12491]_B45EAA48.wem		\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\BossSongChoice\HaloS4Theme\HaloS4Loop\HaloS4Loop		3064
+	1025739047	halos4start	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\sfx [7484]_B45EAA48.wem		\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\GameplaySongChoice\HaloStage4\HaloStage5Start\halos4start		3256
+	1037695359	halos5_start	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\halos5_start_B45EAA48.wem		\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\GameplaySongChoice\HaloStage5\HaloS5Start\halos5_start		2438
+
+Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
+	2467752	HaloS4LoopDesperate	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\sfx [12487]_B45EAA48.wem	2467752.wem	\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\BossSongChoice\HaloS4Theme\HaloS4LoopDesperate\HaloS4LoopDesperate	
+	6346055	HaloCovDanceStart	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\halo_swarm_start_B45EAA48.wem	6346055.wem	\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\BossSongChoice\HaloCovenantDance\HaloCovDanceStart\HaloCovDanceStart	
+	104382805	halos2alt_loop	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\halos2alt_loop_B45EAA48.wem	104382805.wem	\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\GameplaySongChoice\HaloStage2Alt\HaloStage2Alt_Loop\halos2alt_loop	
+	116202059	halos4loop	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\sfx [7485]_B45EAA48.wem	116202059.wem	\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\GameplaySongChoice\HaloStage4\HaloStage4Loop\halos4loop	
+	135894708	halo_swarm_end	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\halo_swarm_end_B45EAA48.wem	135894708.wem	\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\BossSongChoice\HaloCovDanceEnd\HaloCovDanceEnd\halo_swarm_end	
+	143634801	halotheme2	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\sounds_music [401]_B45EAA48.wem	143634801.wem	\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\BossSongChoice\HaloTheme2\HaloTheme2_Loop\halotheme2	
+	158910451	halo_boss_start	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\halo_boss_start_B45EAA48.wem	158910451.wem	\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\BossSongChoice\HaloTheme\HaloThemeStart\halo_boss_start	
+	165203172	halos5_boss_loop	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\halos5_boss_loop_B45EAA48.wem	165203172.wem	\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\BossSongChoice\HaloStage5Boss\HaloS5Boss_Loop\halos5_boss_loop	
+	175059998	halos2alt_start	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\halos2alt_start_B45EAA48.wem	175059998.wem	\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\GameplaySongChoice\HaloStage2Alt\HaloStage2Alt_Start\halos2alt_start	
+	206857989	halo_stage3_loop	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\halo_stage3_loop_B45EAA48.wem	206857989.wem	\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\GameplaySongChoice\HaloStage3\HaloStage3Loop\halo_stage3_loop	
+	244212947	HWLoop	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\halo_stage2_loop_B45EAA48.wem	244212947.wem	\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\GameplaySongChoice\HaloStage2\HWLoop\HWLoop	
+	244858945	halos5_boss_start	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\halos5_boss_start_B45EAA48.wem	244858945.wem	\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\BossSongChoice\HaloStage5Boss\HaloS5Boss_Start\halos5_boss_start	
+	268033202	halos4boss_end	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\halos4boss_end_B45EAA48.wem	268033202.wem	\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\BossSongChoice\HaloS4ThemeEnd\HaloS4ThemeEnd\halos4boss_end	
+	275492874	HaloDreamAgainLoop	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\halo_stage1_loop_B45EAA48.wem	275492874.wem	\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\GameplaySongChoice\HaloDreamAgain\HaloDreamAgainLoop\HaloDreamAgainLoop	
+	278472903	halo_s3boss_loop	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\halo_s3boss_loop_B45EAA48.wem	278472903.wem	\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\BossSongChoice\HaloS3Cello\HaloS3CelloLoop\halo_s3boss_loop	
+	390626836	HaloCovDanceLoop	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\halo_swarm_loop_B45EAA48.wem	390626836.wem	\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\BossSongChoice\HaloCovenantDance\HaloCovDanceLoop\HaloCovDanceLoop	
+	488245074	HaloDreamAgainStart	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\halo_stage1_start_B45EAA48.wem	488245074.wem	\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\GameplaySongChoice\HaloDreamAgain\HaloDreamAgainStart\HaloDreamAgainStart	
+	554328354	halos5_boss_end	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\halos5_boss_end_B45EAA48.wem	554328354.wem	\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\BossSongChoice\HaloStage5BossEnd\HaloStage5BossEnd\halos5_boss_end	
+	591509814	halos5_loop	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\halos5_loop_B45EAA48.wem	591509814.wem	\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\GameplaySongChoice\HaloStage5\HaloS5Loop\halos5_loop	
+	599907185	halotheme2end	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\sounds_stream [14]_B45EAA48.wem	599907185.wem	\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\BossSongChoice\HaloTheme2End\halotheme2end\halotheme2end	
+	660184921	HaloS4Start	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\sfx [12490]_B45EAA48.wem	660184921.wem	\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\BossSongChoice\HaloS4Theme\HaloS4Start\HaloS4Start	
+	664298954	HWStart	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\halo_stage2_start_B45EAA48.wem	664298954.wem	\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\GameplaySongChoice\HaloStage2\HWStart\HWStart	
+	689852539	halo_boss_end	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\halo_boss_end_B45EAA48.wem	689852539.wem	\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\BossSongChoice\HaloThemeEnd\HaloThemeEnd\halo_boss_end	
+	774089903	halo_stage3_start	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\halo_stage3_start_B45EAA48.wem	774089903.wem	\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\GameplaySongChoice\HaloStage3\HaloStage3Start\halo_stage3_start	
+	789012021	HaloGenericEnd	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\halo_music_endidk_B45EAA48.wem	789012021.wem	\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\BossSongChoice\HaloGenericEnd\HaloGenericEnd\HaloGenericEnd	
+	802583461	halo_s3boss_start	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\halo_s3boss_start_B45EAA48.wem	802583461.wem	\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\BossSongChoice\HaloS3Cello\HaloS3CelloStart\halo_s3boss_start	
+	863279179	HaloThemeLoop	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\halo_boss_loop_B45EAA48.wem	863279179.wem	\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\BossSongChoice\HaloTheme\HaloThemeLoop\HaloThemeLoop	
+	872101712	HaloS4StartDesperate	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\sfx [12489]_B45EAA48.wem	872101712.wem	\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\BossSongChoice\HaloS4Theme\HaloS4StartDesperate\HaloS4StartDesperate	
+	888784772	halotheme2start	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\sounds_music [400]_B45EAA48.wem	888784772.wem	\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\BossSongChoice\HaloTheme2\HaloTheme2_Start\halotheme2start	
+	1001791155	HaloS4Loop	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\sfx [12491]_B45EAA48.wem	1001791155.wem	\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\BossSongChoice\HaloS4Theme\HaloS4Loop\HaloS4Loop	
+	1025739047	halos4start	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\sfx [7484]_B45EAA48.wem	1025739047.wem	\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\GameplaySongChoice\HaloStage4\HaloStage5Start\halos4start	
+	1037695359	halos5_start	G:\vrchatprojects\snowtimestagersr\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\halos5_start_B45EAA48.wem	1037695359.wem	\Interactive Music Hierarchy\Default Work Unit\ST_Music_System\GameplaySongChoice\HaloStage5\HaloS5Start\halos5_start	
+

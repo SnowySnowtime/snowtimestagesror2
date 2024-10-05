@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{0F47AF36-58FB-4A20-BC8A-9C88D6F18421}" SchemaVersion="119">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{0F47AF36-58FB-4A20-BC8A-9C88D6F18421}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Music" ID="{75DF66E7-EDB5-48B5-AC02-97BB0AE5BD8D}" ShortID="554256023">
+					<ChildrenList>
+						<Event Name="Play_Music_SystemST" ID="{CA57CA92-2D9F-4EBB-8C48-2B6B94621812}">
+							<ChildrenList>
+								<Action Name="" ID="{01FC5B7A-27CE-487E-AA26-01E4AE6BF67C}" ShortID="120100776">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ST_Music_System" ID="{513D8CE4-87BD-4857-AA45-D70DF200730C}" WorkUnitID="{BB8EC895-5216-4C73-A90E-26865F9990A9}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Pause_Music_ST" ID="{DA96ABCE-E6A9-4445-810F-C8ECA8BB4960}">
+							<ChildrenList>
+								<Action Name="" ID="{3E068A5C-3385-4D7B-B792-7DAC71488866}" ShortID="1001581875">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="7"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ST_Music_System" ID="{513D8CE4-87BD-4857-AA45-D70DF200730C}" WorkUnitID="{BB8EC895-5216-4C73-A90E-26865F9990A9}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Unpause_MusicST" ID="{BAF16A80-A604-4B2F-B5C3-F87AD93DFFDF}">
+							<ChildrenList>
+								<Action Name="" ID="{27FC1EAA-636D-488A-A379-191F77EEE91A}" ShortID="243698083">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="9"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ST_Music_System" ID="{513D8CE4-87BD-4857-AA45-D70DF200730C}" WorkUnitID="{BB8EC895-5216-4C73-A90E-26865F9990A9}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Ambience" ID="{E9D45DB5-FF3D-4CDD-9440-2275E70502D7}" ShortID="499542691">
+					<ChildrenList>
+						<Event Name="Play_AmbST_Sandtrap" ID="{D7D7D895-DAC3-4EE4-AF1A-09B94DE94D0E}">
+							<ChildrenList>
+								<Action Name="" ID="{93425188-C926-4361-9CBD-58BF7E9FABC5}" ShortID="218749916">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Halo_AmbST_Sandtrap" ID="{4EA7D266-C58D-4F1F-BBEB-5BDFB01A301D}" WorkUnitID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{404588AA-52FA-4180-89F6-850F49F8D7F8}" ShortID="590222885">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="36"/>
+										<Property Name="SeekPercent" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{0891C954-A260-41BF-A026-1EEF3A51A670}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="50"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Halo_AmbST_Sandtrap" ID="{4EA7D266-C58D-4F1F-BBEB-5BDFB01A301D}" WorkUnitID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="StopAmbST_Sandtrap" ID="{93895E0D-6237-4E83-8E2B-CAFA0289FB76}">
+							<ChildrenList>
+								<Action Name="" ID="{A0D61AA2-9138-4B84-8759-34A1C5EFE799}" ShortID="792281456">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Halo_AmbST_Sandtrap" ID="{4EA7D266-C58D-4F1F-BBEB-5BDFB01A301D}" WorkUnitID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_AmbST_Bloodgulch" ID="{B5C15745-BA8E-481D-BE01-61BE1DBEB93A}">
+							<ChildrenList>
+								<Action Name="" ID="{D34F4DC8-805C-4670-AA78-C7D0630A2CA5}" ShortID="360692390">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Halo_AmbST_Bloodgulch" ID="{E9986CDA-500E-4E3B-83C3-1150C909DB7D}" WorkUnitID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{CB9DD4D3-434E-430E-AC51-732ACD221F37}" ShortID="661426914">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="36"/>
+										<Property Name="SeekPercent" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{F58898E4-A7CA-4BED-843B-D6732D23D00C}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="50"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Halo_AmbST_Bloodgulch" ID="{E9986CDA-500E-4E3B-83C3-1150C909DB7D}" WorkUnitID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="StopAmbST_Bloodgulch" ID="{C490C3A4-A47A-4222-A2CA-3E9FB625D314}">
+							<ChildrenList>
+								<Action Name="" ID="{BDD12277-EA63-4123-817C-818BA230A7CB}" ShortID="641352678">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Halo_AmbST_Bloodgulch" ID="{E9986CDA-500E-4E3B-83C3-1150C909DB7D}" WorkUnitID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_AmbST_Gph" ID="{97B8CBBE-550D-4F5E-B6E5-42A4AD241F4B}">
+							<ChildrenList>
+								<Action Name="" ID="{5EC44855-DF46-42E8-A27E-3C19871E5F9E}" ShortID="718090199">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Halo_AmbST_Gph" ID="{0A449545-B5AB-4AFB-81A0-5212EAFDF9B3}" WorkUnitID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{D8D0B13D-4140-4C8C-B96C-0248C7297658}" ShortID="479607121">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="36"/>
+										<Property Name="SeekPercent" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{BEF50FBB-881E-4DA4-B617-7F349E162786}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="50"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Halo_AmbST_Gph" ID="{0A449545-B5AB-4AFB-81A0-5212EAFDF9B3}" WorkUnitID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="StopAmbST_Gph" ID="{2AF80026-0AE9-4CCC-996D-0AE8AF90D69F}">
+							<ChildrenList>
+								<Action Name="" ID="{950B5CFB-9DA0-4BEC-AE3E-C622F7F82B19}" ShortID="862700887">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Halo_AmbST_Gph" ID="{0A449545-B5AB-4AFB-81A0-5212EAFDF9B3}" WorkUnitID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_AmbST_HaloStream" ID="{2B968CD7-9AAA-447D-8C66-B37439CDF8F6}">
+							<ChildrenList>
+								<Action Name="" ID="{1C3315EF-4B93-487C-BD26-6B423E97C607}" ShortID="996081609">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Halo_AmbST_HaloStream" ID="{C298644D-95C8-422C-81FA-97A47D0CA9B6}" WorkUnitID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{A2FE6664-D719-4461-B03A-DA0D4811F381}" ShortID="593889296">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="36"/>
+										<Property Name="SeekPercent" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{281DF561-1EC3-4BA8-BEBB-8B74E4E3CCAD}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="50"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Halo_AmbST_HaloStream" ID="{C298644D-95C8-422C-81FA-97A47D0CA9B6}" WorkUnitID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="StopAmbST_HaloStream" ID="{90073EF3-D410-44C7-8F7F-23459ADD6A40}">
+							<ChildrenList>
+								<Action Name="" ID="{70B92B07-DF1D-469E-BBA1-98CF2C55D216}" ShortID="783575728">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Halo_AmbST_HaloStream" ID="{C298644D-95C8-422C-81FA-97A47D0CA9B6}" WorkUnitID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_AmbST_HaloEmitter" ID="{C32A133D-A90A-44B3-8CFD-D09798F3448B}">
+							<ChildrenList>
+								<Action Name="" ID="{46224E56-17DF-4A39-ABB7-8AD27CA3160B}" ShortID="1032728007">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Halo_AmbST_HaloBeam" ID="{5C6A6D35-14B6-4125-BF3C-771AB836E3F7}" WorkUnitID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{6C56A105-3AC7-450D-B160-903295B257C1}" ShortID="993679576">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="36"/>
+										<Property Name="SeekPercent" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{8F4F96D6-6851-43CE-8981-F88DDFFC24D1}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="50"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Halo_AmbST_HaloBeam" ID="{5C6A6D35-14B6-4125-BF3C-771AB836E3F7}" WorkUnitID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="StopAmbST_HaloEmitter" ID="{0FE966A2-F83D-4EF8-9901-5EF60C360A6B}">
+							<ChildrenList>
+								<Action Name="" ID="{3C41A8AD-CBE2-4D1B-A1FD-EB29E6B6EF2E}" ShortID="588768104">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Halo_AmbST_HaloBeam" ID="{5C6A6D35-14B6-4125-BF3C-771AB836E3F7}" WorkUnitID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Fire_AmbST_HaloBeamEmitter" ID="{3B465C27-EFF1-446F-BCA5-59EF9A3A69FB}">
+							<ChildrenList>
+								<Action Name="" ID="{14C16217-9166-41F2-8FC5-3CFE7B2A2ACE}" ShortID="250156630">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Halo_AmbST_HaloBeamFire" ID="{7FCA9611-0AA6-45EA-8B4E-EA71B1B34F16}" WorkUnitID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{3669E430-A233-4D77-878E-AEE4B5BFA7BA}" ShortID="38821129">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Delay" Type="Real64" Value="5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Halo_AmbST_HaloBeamFire" ID="{7FCA9611-0AA6-45EA-8B4E-EA71B1B34F16}" WorkUnitID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_AmbST_CovUplink" ID="{CEFB1566-1E25-4F30-B1C3-50CEFC47A4E8}">
+							<ChildrenList>
+								<Action Name="" ID="{AF1926A0-D076-47D0-A91B-F9FA12EEE261}" ShortID="573140402">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Halo_AmbST_Uplink" ID="{3B797EAE-77D3-45ED-B78C-E34352072C71}" WorkUnitID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{DB143EA1-8AAE-4580-9B68-4D51245E3ACB}" ShortID="350846779">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="36"/>
+										<Property Name="SeekPercent" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{2B5A17BB-051F-439A-AC6A-3708D9D4501F}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="50"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Halo_AmbST_Uplink" ID="{3B797EAE-77D3-45ED-B78C-E34352072C71}" WorkUnitID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="StopAmbST_CovUplink" ID="{26435F61-4561-41C2-88E2-66CED8C55236}">
+							<ChildrenList>
+								<Action Name="" ID="{025D43BE-A378-4390-968A-D219742799B9}" ShortID="357383918">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Halo_AmbST_Uplink" ID="{3B797EAE-77D3-45ED-B78C-E34352072C71}" WorkUnitID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_AmbST_Halo" ID="{17FCB679-7EC3-4954-AECF-69C86EF255F2}">
+							<ChildrenList>
+								<Action Name="" ID="{31B74FC9-45B4-4617-84E8-58923314B7E9}" ShortID="257287620">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Halo_AmbST_Halo" ID="{9CB4FCB0-E204-444B-A1EC-2D17090DA05F}" WorkUnitID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{6A69C70B-357E-4B83-ACB4-5DC5456DEF61}" ShortID="220528579">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="36"/>
+										<Property Name="SeekPercent" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{505E3093-D0AB-4416-B6F2-B5BFF0002DE9}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="50"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Halo_AmbST_Halo" ID="{9CB4FCB0-E204-444B-A1EC-2D17090DA05F}" WorkUnitID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="StopAmbST_Halo" ID="{799A7EB6-0BD6-41CA-AC77-07FA7561F781}">
+							<ChildrenList>
+								<Action Name="" ID="{27858F27-32C6-4633-8A2C-BCA46B7A1B33}" ShortID="634211324">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Halo_AmbST_Halo" ID="{9CB4FCB0-E204-444B-A1EC-2D17090DA05F}" WorkUnitID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_AmbST_HaloFall" ID="{8F3F3CD2-5556-4920-B173-255F913DE420}">
+							<ChildrenList>
+								<Action Name="" ID="{4009D686-A92B-4BAE-AA5B-A2001F6A7861}" ShortID="687131757">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Halo_AmbST_HaloFall" ID="{D03E64D2-870B-4CE2-903C-6E26FA9B4EEC}" WorkUnitID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{39CC3CB8-5751-4651-A198-42655F728BEB}" ShortID="406409843">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="36"/>
+										<Property Name="SeekPercent" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{0EFD483B-8F97-4E44-AA6D-49CF671D8551}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="50"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Halo_AmbST_HaloFall" ID="{D03E64D2-870B-4CE2-903C-6E26FA9B4EEC}" WorkUnitID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="StopAmbST_HaloFall" ID="{8BB378B3-B78C-46FE-8693-11CF79D46E41}">
+							<ChildrenList>
+								<Action Name="" ID="{4384603F-194E-4AFF-8DF1-BFC6E866E12F}" ShortID="243739066">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Halo_AmbST_HaloFall" ID="{D03E64D2-870B-4CE2-903C-6E26FA9B4EEC}" WorkUnitID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_AmbST_DIWaves" ID="{4359A9D7-8025-42D2-90E8-9E902791B075}">
+							<ChildrenList>
+								<Action Name="" ID="{5D6DB87C-EEEF-4B17-BA98-1EC56E0EA5D1}" ShortID="31209337">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Halo_AmbST_DI_Waves" ID="{824ABB0D-127C-4B65-9E21-6D3DA4E349C7}" WorkUnitID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{896D43AC-B7C5-4CD0-A0B1-97B73FFAAD97}" ShortID="540473420">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="36"/>
+										<Property Name="SeekPercent" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{6AE78978-3752-4AC7-8336-AE2479DCA73E}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="90"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Halo_AmbST_DI_Waves" ID="{824ABB0D-127C-4B65-9E21-6D3DA4E349C7}" WorkUnitID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="StopAmbST_DIWaves" ID="{5144B0CB-3645-4919-93A4-CBADFC576D78}">
+							<ChildrenList>
+								<Action Name="" ID="{54A594C9-B0CE-4377-837F-8D2D3AE30D15}" ShortID="1008889857">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Halo_AmbST_DI_Waves" ID="{824ABB0D-127C-4B65-9E21-6D3DA4E349C7}" WorkUnitID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
