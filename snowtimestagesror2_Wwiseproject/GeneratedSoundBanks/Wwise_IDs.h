@@ -25,6 +25,7 @@ namespace AK
         static const AkUniqueID PLAY_AMBST_HALOSTREAM = 4222771412U;
         static const AkUniqueID PLAY_AMBST_SANDTRAP = 1472472405U;
         static const AkUniqueID PLAY_MUSIC_SYSTEMST = 215921880U;
+        static const AkUniqueID PLAY_SFXST_AOTCR_ELEVATOR = 225251693U;
         static const AkUniqueID STOPAMBST_BLOODGULCH = 850893056U;
         static const AkUniqueID STOPAMBST_COVUPLINK = 1867583904U;
         static const AkUniqueID STOPAMBST_DIWAVES = 578041770U;
@@ -34,6 +35,7 @@ namespace AK
         static const AkUniqueID STOPAMBST_HALOFALL = 2789467032U;
         static const AkUniqueID STOPAMBST_HALOSTREAM = 1157367887U;
         static const AkUniqueID STOPAMBST_SANDTRAP = 4280527958U;
+        static const AkUniqueID STOPSFXST_AOTCR_ELEVATOR = 1197427262U;
         static const AkUniqueID UNPAUSE_MUSICST = 3495402943U;
     } // namespace EVENTS
 

@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="855345258" Type="User" Language="SFX" Hash="{EA7523BF-6E57-F87E-4B99-A6F8B38B6BBA}">
+		<SoundBank Id="855345258" Type="User" Language="SFX" Hash="{45723650-7978-61AB-844B-BC6E4158D1EA}">
 			<ShortName>SnowtimeStagesSounds</ShortName>
 			<Path>SnowtimeStagesSounds.bnk</Path>
 			<Media>
@@ -49,6 +49,10 @@
 					<ShortName>SnowtimeStages\Halo\Ambience\sfx [15859].wav</ShortName>
 					<CachePath>SFX/SnowtimeStages/Halo/Ambience/sfx [15859]_BF5D3B3E.wem</CachePath>
 				</File>
+				<File Id="259685453" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SnowtimeStages\Halo\elevator_exit.wav</ShortName>
+					<CachePath>SFX/SnowtimeStages/Halo/elevator_exit_BF5D3B3E.wem</CachePath>
+				</File>
 				<File Id="292168512" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SnowtimeStages\Halo\Ambience\sounds_adpcm [245].wav</ShortName>
 					<CachePath>SFX/SnowtimeStages/Halo/Ambience/sounds_adpcm [245]_BF5D3B3E.wem</CachePath>
@@ -80,6 +84,10 @@
 				<File Id="365385439" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SnowtimeStages\Halo\Ambience\sounds_adpcm [61].wav</ShortName>
 					<CachePath>SFX/SnowtimeStages/Halo/Ambience/sounds_adpcm [61]_BF5D3B3E.wem</CachePath>
+				</File>
+				<File Id="374450172" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SnowtimeStages\Halo\elevator_start.wav</ShortName>
+					<CachePath>SFX/SnowtimeStages/Halo/elevator_start_BF5D3B3E.wem</CachePath>
 				</File>
 				<File Id="429395551" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SnowtimeStages\Halo\Ambience\sfx [15863].wav</ShortName>
@@ -275,6 +283,11 @@
 						<MediaRef Id="972774779"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="225251693" Name="Play_SFXST_AOTCR_Elevator" MaxAttenuation="150">
+					<MediaRefs>
+						<MediaRef Id="374450172"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="850893056" Name="StopAmbST_Bloodgulch" MaxAttenuation="0">
 					<MediaRefs>
 						<MediaRef Id="126706442"/>
@@ -354,6 +367,12 @@
 						<MediaRef Id="972774779"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1197427262" Name="StopSfxST_AOTCR_Elevator" MaxAttenuation="150">
+					<MediaRefs>
+						<MediaRef Id="259685453"/>
+						<MediaRef Id="374450172"/>
+					</MediaRefs>
+				</Event>
 			</Events>
 			<GameParameters>
 				<GameParameter Id="3673881719" Name="Volume_SFX"/>
@@ -415,7 +434,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3261243995" Type="User" Language="SFX" Hash="{2A4A4C8F-57F1-9AAF-89D3-760D17B39641}">
+		<SoundBank Id="3261243995" Type="User" Language="SFX" Hash="{300BC96F-30A8-EA6E-CE4D-48A3C739F9F2}">
 			<ShortName>SnowtimeStagesMusic</ShortName>
 			<Path>SnowtimeStagesMusic.bnk</Path>
 			<Media>
@@ -1243,5 +1262,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{00669733-1191-C044-631E-9205649DB28E}</FileHash>
+	<FileHash>{294F2724-11CB-3C54-7A24-2C67375AF7D6}</FileHash>
 </SoundBanksInfo>

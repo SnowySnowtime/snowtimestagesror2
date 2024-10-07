@@ -493,6 +493,71 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_SFXST_AOTCR_Elevator" ID="{99D1A171-5524-49F0-9CBA-22B2D09D7D33}">
+							<ChildrenList>
+								<Action Name="" ID="{E750D844-9178-4713-8BBE-41F148528A37}" ShortID="6628111">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Halo_AOTCR_Elevator_Start" ID="{C0CC9735-2E28-4B73-9A9C-0D95B0DB158F}" WorkUnitID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{A9F2D1BC-A4A5-401D-8B80-5319B6FCB953}" ShortID="373123326">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Delay" Type="Real64" Value="11.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Halo_AOTCR_Elevator_Start" ID="{C0CC9735-2E28-4B73-9A9C-0D95B0DB158F}" WorkUnitID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="StopSfxST_AOTCR_Elevator" ID="{80C44E3D-EB3D-4567-9151-2AE8039B451D}">
+							<ChildrenList>
+								<Action Name="" ID="{9C3D9C80-31AE-4495-B2B3-41CD21FB89F2}" ShortID="940856521">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="36"/>
+										<Property Name="SeekPercent" Type="Real64" Value="100"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Halo_AOTCR_Elevator_Start" ID="{C0CC9735-2E28-4B73-9A9C-0D95B0DB158F}" WorkUnitID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{82E01FD7-3928-42BD-BBE1-0A3781178389}" ShortID="1008673602">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Halo_AOTCR_Elevator_Start" ID="{C0CC9735-2E28-4B73-9A9C-0D95B0DB158F}" WorkUnitID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{9B016234-29FD-4C77-963C-C4C088A0547C}" ShortID="911511461">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Halo_AOTCR_Elevator_End" ID="{4E06A8B6-5DC4-4AFA-8E13-2DEF7FB4B375}" WorkUnitID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{CBBBF899-DEAA-4D6F-B189-9747A6DCAC80}" ShortID="456408777">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Delay" Type="Real64" Value="7"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Halo_AOTCR_Elevator_End" ID="{4E06A8B6-5DC4-4AFA-8E13-2DEF7FB4B375}" WorkUnitID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
