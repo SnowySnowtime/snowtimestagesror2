@@ -22,8 +22,8 @@ RenderSettings:
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0.5332766, g: 0.62396055, b: 0.79910296, a: 1}
-  m_AmbientEquatorColor: {r: 0.4341537, g: 0.49693304, b: 0.61049575, a: 1}
-  m_AmbientGroundColor: {r: 0.06124607, g: 0.07818743, b: 0.095307484, a: 1}
+  m_AmbientEquatorColor: {r: 0.46207705, g: 0.52711535, b: 0.6514058, a: 1}
+  m_AmbientGroundColor: {r: 0.30498737, g: 0.35640025, b: 0.4072403, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 1
   m_SubtractiveShadowColor: {r: 0.5647059, g: 0.67058825, b: 0.8313726, a: 1}
@@ -98,7 +98,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: 744b7f6882079524fb4b29c111b9d9f5,
+  m_LightingDataAsset: {fileID: 112000000, guid: 5ab12fdc84a55684eaf3300809a7c92e,
     type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: 58f70982c4e75ca449521d6c3d9e3c6f,
     type: 2}
@@ -88584,7 +88584,7 @@ ReflectionProbe:
   m_BoxSize: {x: 1250, y: 1250, z: 1250}
   m_BoxOffset: {x: 0, y: 0, z: 0}
   m_NearClip: 0.1
-  m_FarClip: 1250
+  m_FarClip: 40000
   m_ShadowDistance: 100
   m_ClearFlags: 1
   m_BackGroundColor: {r: 1, g: 1, b: 1, a: 0}
@@ -128728,7 +128728,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 4afc3b3df793ceb428c56aa8cd76037a, type: 2}
+      objectReference: {fileID: 2100000, guid: 4afac1829f51f6541aaef02f68801ff5, type: 2}
     - target: {fileID: -7511558181221131132, guid: 68c8c12abbc7ab842aa62a57ffb75f56,
         type: 3}
       propertyPath: m_Materials.Array.data[1]
@@ -511972,7 +511972,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 64
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1922393102
 Transform:
@@ -571554,7 +571554,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -5805051536637405244, guid: d8660c53c69be174a98f5f56850d0f1d, type: 3}
+  - {fileID: 2100000, guid: 374970bc4e0d45540a2fbbf3d545c868, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

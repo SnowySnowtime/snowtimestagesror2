@@ -13,6 +13,8 @@ Material:
   m_InvalidKeywords:
   - BSSBLOOMFOGTYPE_HEIGHT
   - FINALPASS
+  - MOCHIE_PBR
+  - VIGNETTE
   - _CUBEMAP
   - _LIGHTINGMODE_REALISTIC
   - _RIM2STYLE_POIYOMI
@@ -24,8 +26,8 @@ Material:
   m_CustomRenderQueue: 2993
   stringTagMap:
     AllLockedGUIDS: 6d389267c8a1f6949b49d967b7d78906
-    OriginalKeywords: BSSBLOOMFOGTYPE_HEIGHT FINALPASS _CUBEMAP _LIGHTINGMODE_REALISTIC
-      _RIM2STYLE_POIYOMI _RIMSTYLE_POIYOMI _STOCHASTICMODE_DELIOT_HEITZ
+    OriginalKeywords: BSSBLOOMFOGTYPE_HEIGHT FINALPASS MOCHIE_PBR VIGNETTE _CUBEMAP
+      _LIGHTINGMODE_REALISTIC _RIM2STYLE_POIYOMI _RIMSTYLE_POIYOMI _STOCHASTICMODE_DELIOT_HEITZ
     OriginalShader: .poiyomi/Poiyomi Toon
     OriginalShaderGUID: 23f6705aff8bf964c87bfb3dd66ab345
     RenderType: Opaque
@@ -40,12 +42,20 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _AlphaTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BlueTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 2800000, guid: b8960a088bdbdad478c88078ffab9d8c, type: 3}
         m_Scale: {x: 4096, y: 4096}
         m_Offset: {x: 0, y: 0}
     - _CubeMap:
-        m_Texture: {fileID: 8900000, guid: 43a0734f1adb13c4eb5c6efd05c20211, type: 3}
+        m_Texture: {fileID: 8900000, guid: 4ca7aef6baeb3674c8b982825ad229c1, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _CubeMapMask:
@@ -64,6 +74,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _GreenTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _LightingAOMaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -79,6 +93,46 @@ Material:
     - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MochieMetallicMaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MochieReflCube:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RGBAMetallicMaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RGBASmoothnessMaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RGBMask:
+        m_Texture: {fileID: 2800000, guid: ff3269c4f8354e948b2b8c410a4b6738, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RedTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RgbNormalA:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RgbNormalB:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RgbNormalG:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RgbNormalR:
+        m_Texture: {fileID: 2800000, guid: b8960a088bdbdad478c88078ffab9d8c, type: 3}
+        m_Scale: {x: 1024, y: 1024}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
@@ -425,7 +479,7 @@ Material:
     - _CubeMapMaskUV: 0
     - _CubeMapNormal: 1
     - _CubeMapSaturation: 1
-    - _CubeMapSmoothness: 1
+    - _CubeMapSmoothness: 0.8
     - _CubeMapUVMode: 1
     - _CubeMapWorldNormalsStrength: 1
     - _CubemapBlendType: 0
@@ -1549,10 +1603,10 @@ Material:
     - _MirrorTextureEnabled: 0
     - _MirrorTextureForceEnabled: 0
     - _MirrorTextureUV: 0
-    - _MochieBRDF: 0
+    - _MochieBRDF: 1
     - _MochieForceFallback: 0
     - _MochieGSAAEnabled: 1
-    - _MochieLitFallback: 1
+    - _MochieLitFallback: 0
     - _MochieMetallicGlobalMask: 0
     - _MochieMetallicGlobalMaskBlendType: 2
     - _MochieMetallicMapInvert: 0
@@ -1563,14 +1617,14 @@ Material:
     - _MochieMetallicMapsStochastic: 0
     - _MochieMetallicMapsUV: 0
     - _MochieMetallicMasksUV: 0
-    - _MochieMetallicMultiplier: 0
+    - _MochieMetallicMultiplier: 0.6
     - _MochieReflectionMaskInvert: 0
-    - _MochieReflectionStrength: 1
+    - _MochieReflectionStrength: 0
     - _MochieReflectionStrengthGlobalMask: 0
     - _MochieReflectionStrengthGlobalMaskBlendType: 2
     - _MochieReflectionTintThemeIndex: 0
     - _MochieRoughnessMapInvert: 0
-    - _MochieRoughnessMultiplier: 1
+    - _MochieRoughnessMultiplier: 0.7
     - _MochieRoughnessMultiplier2: 1
     - _MochieSmoothnessGlobalMask: 0
     - _MochieSmoothnessGlobalMaskBlendType: 2
@@ -1731,8 +1785,8 @@ Material:
     - _PathingColorMapUV: 0
     - _PathingMapUV: 0
     - _PathingOverrideAlpha: 0
-    - _PoiGSAAThreshold: 0.1
-    - _PoiGSAAVariance: 0.15
+    - _PoiGSAAThreshold: 1
+    - _PoiGSAAVariance: 1
     - _PoiInternalParallax: 0
     - _PoiParallax: 0
     - _PoiUTSStyleOutlineBlend: 0
@@ -1773,7 +1827,7 @@ Material:
     - _RGBAPBRRedEnabled: 0
     - _RGBARedBlendType: 0
     - _RGBARedEmissionStrength: 0
-    - _RGBARedEnable: 0
+    - _RGBARedEnable: 1
     - _RGBARedMetallicInvert: 0
     - _RGBARedPBRSplitMaskSample: 0
     - _RGBARedPBRSplitMaskStochastic: 0
@@ -1781,7 +1835,7 @@ Material:
     - _RGBARedSmoothnessInvert: 0
     - _RGBASmoothnessMapsStochastic: 0
     - _RGBASmoothnessMapsUV: 0
-    - _RGBMaskEnabled: 0
+    - _RGBMaskEnabled: 1
     - _RGBMaskType: 0
     - _RGBMaskUV: 0
     - _RedAlphaAdd: 0
@@ -1789,7 +1843,7 @@ Material:
     - _RedTextureStochastic: 0
     - _RedTextureUV: 0
     - _RefSpecFresnel: 1
-    - _RefSpecFresnelBack: 1
+    - _RefSpecFresnelBack: 0
     - _RenderingEarlyZEnabled: 0
     - _RenderingReduceClipDistance: 0
     - _RgbAlphaGlobalMaskBlendType: 2
@@ -1825,10 +1879,10 @@ Material:
     - _RgbNormalRGlobalMaskBlendType: 2
     - _RgbNormalRGlobalMaskChannel: 0
     - _RgbNormalRMaskChannel: 0
-    - _RgbNormalRScale: 0
-    - _RgbNormalRStochastic: 0
+    - _RgbNormalRScale: 0.15
+    - _RgbNormalRStochastic: 1
     - _RgbNormalRUV: 0
-    - _RgbNormalRedBlendMode: 0
+    - _RgbNormalRedBlendMode: 1
     - _RgbRedGlobalMaskBlendType: 2
     - _RgbRedGlobalMaskChannel: 0
     - _RgbRedMaskChannel: 0
@@ -1996,7 +2050,7 @@ Material:
     - _SkinThicknessMapUV: 0
     - _SkinThicknessPower: 1
     - _SmoothnessTextureChannel: 0
-    - _Specular2ndLayer: 0
+    - _Specular2ndLayer: 1
     - _SpecularHighlights: 1
     - _SphericalDissolveClamp: 0
     - _SphericalDissolveInvert: 0
@@ -2356,8 +2410,8 @@ Material:
     - m_end_voronoiRandom: 0
     - m_lightingCategory: 1
     - m_mainCategory: 1
-    - m_modifierCategory: 0
-    - m_renderingCategory: 1
+    - m_modifierCategory: 1
+    - m_renderingCategory: 0
     - m_specialFXCategory: 0
     - m_start_ALDecalSpectrum: 0
     - m_start_ALVolumeColor: 0
@@ -2381,7 +2435,7 @@ Material:
     - m_start_Decal3AudioLink: 0
     - m_start_DecalSection: 0
     - m_start_DepthBulge: 0
-    - m_start_DetailOptions: 1
+    - m_start_DetailOptions: 0
     - m_start_DistortionAudioLink: 0
     - m_start_FXProximityColor: 0
     - m_start_FlipbookAudioLink: 0
@@ -2427,12 +2481,12 @@ Material:
     - m_start_OutlineStencilPassFrontOptions: 0
     - m_start_PPAnimations: 0
     - m_start_PathAudioLink: 0
-    - m_start_PoiGlobalCategory: 0
-    - m_start_PoiLightData: 1
+    - m_start_PoiGlobalCategory: 1
+    - m_start_PoiLightData: 0
     - m_start_PoiPostProcessingCategory: 0
     - m_start_PoiShading: 0
-    - m_start_PoiUVCategory: 0
-    - m_start_RGBMask: 1
+    - m_start_PoiUVCategory: 1
+    - m_start_RGBMask: 0
     - m_start_Rim2AudioLink: 0
     - m_start_RimAudioLink: 0
     - m_start_SphericalDissolve: 0
@@ -2458,7 +2512,7 @@ Material:
     - m_start_backFace: 0
     - m_start_backlight: 0
     - m_start_blending: 0
-    - m_start_brdf: 0
+    - m_start_brdf: 1
     - m_start_clearCoat: 0
     - m_start_clearcoatadvanced: 0
     - m_start_clearcoatglobalmask: 0
@@ -2832,7 +2886,7 @@ Material:
     - s_start_OutlineFixedSize: 0
     - s_start_OutlineLighting: 0
     - s_start_OutlineRenderingOptions: 0
-    - s_start_PBRSecondSpecular: 0
+    - s_start_PBRSecondSpecular: 1
     - s_start_PBRSplitMaskSample: 0
     - s_start_ParallaxInternalHueShift: 0
     - s_start_ParallaxInternalLayerColoring: 1
@@ -3186,7 +3240,7 @@ Material:
     - _MatcapPan: {r: 0, g: 0, b: 0, a: 0}
     - _MirrorColor: {r: 1, g: 1, b: 1, a: 1}
     - _MirrorTexturePan: {r: 0, g: 0, b: 0, a: 0}
-    - _MochieMetallicMapsPan: {r: 0, g: 0, b: 0, a: 0}
+    - _MochieMetallicMapsPan: {r: 4, g: 4, b: 0, a: 0}
     - _MochieMetallicMasksPan: {r: 0, g: 0, b: 0, a: 0}
     - _MochieReflectionTint: {r: 1, g: 1, b: 1, a: 1}
     - _MochieSpecularTint: {r: 1, g: 1, b: 1, a: 1}
@@ -3239,12 +3293,12 @@ Material:
     - _RGBARedPBRMasksPan: {r: 0, g: 0, b: 0, a: 0}
     - _RGBASmoothnessMapsPan: {r: 0, g: 0, b: 0, a: 0}
     - _RGBMaskPan: {r: 0, g: 0, b: 0, a: 0}
-    - _RedColor: {r: 1, g: 1, b: 1, a: 1}
+    - _RedColor: {r: 0, g: 0, b: 0, a: 1}
     - _RedTexturePan: {r: 0, g: 0, b: 0, a: 0}
     - _RgbNormalAPan: {r: 0, g: 0, b: 0, a: 0}
     - _RgbNormalBPan: {r: 0, g: 0, b: 0, a: 0}
     - _RgbNormalGPan: {r: 0, g: 0, b: 0, a: 0}
-    - _RgbNormalRPan: {r: 0, g: 0, b: 0, a: 0}
+    - _RgbNormalRPan: {r: 1.5, g: 1, b: 0, a: 0}
     - _Rim2Color: {r: 0.65999997, g: 0.5, b: 0.47999996, a: 1}
     - _Rim2ColorTexPan: {r: 0, g: 0, b: 0, a: 0}
     - _Rim2IndirColor: {r: 1, g: 1, b: 1, a: 1}

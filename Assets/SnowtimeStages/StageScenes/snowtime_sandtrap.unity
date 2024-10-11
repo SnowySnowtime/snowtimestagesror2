@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: 1cfe04bd556bf114895648d6b962d3d6,
+  m_LightingDataAsset: {fileID: 112000000, guid: 49ed559d84b089b478c827ef84b5d649,
     type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: 58f70982c4e75ca449521d6c3d9e3c6f,
     type: 2}
@@ -295293,7 +295293,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 1500
+    maxNumParticles: 500
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
     rotation3D: 0
@@ -295559,7 +295559,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 350
+      scalar: 125
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -322388,7 +322388,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 1500
+    maxNumParticles: 500
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
     rotation3D: 0
@@ -322654,7 +322654,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 350
+      scalar: 125
       minScalar: 10
       maxCurve:
         serializedVersion: 2

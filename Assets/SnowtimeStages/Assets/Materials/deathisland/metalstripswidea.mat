@@ -10,7 +10,7 @@ Material:
   m_Name: metalstripswidea
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ValidKeywords:
-  - _METALLICGLOSSMAP
+  - _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -86,7 +86,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: 34c88c9eb2834e141a9d6bc9515932b0, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalTex:
@@ -152,7 +152,7 @@ Material:
     - _GreenChannelSmoothness: 0
     - _LimbPrimeMask: 1
     - _LimbRemovalOn: 0
-    - _Metallic: 0
+    - _Metallic: 0.02
     - _Mode: 0
     - _NormalStrength: 0.25
     - _OcclusionStrength: 1
@@ -167,7 +167,7 @@ Material:
     - _SliceBandHeight: 1
     - _SliceHeight: 5
     - _Smoothness: 0.5
-    - _SmoothnessTextureChannel: 0
+    - _SmoothnessTextureChannel: 1
     - _SpecularExponent: 1
     - _SpecularHighlights: 1
     - _SpecularStrength: 0

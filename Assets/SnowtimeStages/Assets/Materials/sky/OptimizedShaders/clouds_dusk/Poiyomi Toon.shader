@@ -3029,7 +3029,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/5c0f1016a6fdc754bab4e66879531e88"
 				if ((2.0 /*_Mode*/) == POI_MODE_OPAQUE)
 				{
 				}
-				clip(poiFragData.alpha - (0.002 /*_Cutoff*/));
+				clip(poiFragData.alpha - (0.0 /*_Cutoff*/));
 				if ((2.0 /*_Mode*/) == POI_MODE_CUTOUT && !(0.0 /*_AlphaToCoverage*/))
 				{
 					poiFragData.alpha = 1;
@@ -5778,7 +5778,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/5c0f1016a6fdc754bab4e66879531e88"
 				{
 					poiFragData.alpha = 1;
 				}
-				clip(poiFragData.alpha - (0.002 /*_Cutoff*/));
+				clip(poiFragData.alpha - (0.0 /*_Cutoff*/));
 				if ((2.0 /*_Mode*/) == POI_MODE_CUTOUT && !(0.0 /*_AlphaToCoverage*/))
 				{
 					poiFragData.alpha = 1;
@@ -7763,7 +7763,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/5c0f1016a6fdc754bab4e66879531e88"
 				{
 					poiFragData.alpha = 1;
 				}
-				clip(poiFragData.alpha - (0.002 /*_Cutoff*/));
+				clip(poiFragData.alpha - (0.0 /*_Cutoff*/));
 				return float4(poiFragData.finalColor, poiFragData.alpha) + POI_SAFE_RGB0;
 			}
 			ENDCG

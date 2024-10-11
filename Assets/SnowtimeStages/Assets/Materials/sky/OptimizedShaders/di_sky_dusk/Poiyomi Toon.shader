@@ -3591,7 +3591,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/976909289a31dfd4fab62d0b5e57e5ff"
 			float3 applyEmission(inout PoiFragData poiFragData, in PoiMesh poiMesh, in PoiLight poiLight, in PoiCam poiCam, in PoiMods poiMods)
 			{
 				float3 emission0 = 0;
-				float emissionStrength0 = (20.0 /*_EmissionStrength*/);
+				float emissionStrength0 = (10.0 /*_EmissionStrength*/);
 				float3 emissionColor0 = 0;
 				applyALEmmissionStrength(poiMods, emissionStrength0, float4(0,0,0,0), (0.0 /*_EmissionAL0StrengthBand*/), float4(1,1,0,0), (0.0 /*_EmissionAL0MultipliersBand*/), (0.0 /*_EmissionAL0Enabled*/));
 				applyALCenterOutEmission(poiMods, poiLight.nDotV, emissionStrength0, (0.0 /*_AudioLinkEmission0CenterOutSize*/), (0.0 /*_AudioLinkEmission0CenterOutBand*/), float4(0,0,0,0), (0.0 /*_EmissionAL0Enabled*/), (1.0 /*_AudioLinkEmission0CenterOutDuration*/));
@@ -3599,11 +3599,11 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/976909289a31dfd4fab62d0b5e57e5ff"
 				#if defined(PROP_EMISSIONMAP) || !defined(OPTIMIZER_ENABLED)
 				if (!(0.0 /*_EmissionCenterOutEnabled*/))
 				{
-					emissionColor0 = POI2D_SAMPLER_PAN(_EmissionMap, _MainTex, poiUV(poiMesh.uv[(0.0 /*_EmissionMapUV*/)], float4(16,16,0,0)), float4(0.1,0.1,0,0)).rgb * lerp(1, poiFragData.baseColor, (0.0 /*_EmissionBaseColorAsMap*/)).rgb * poiThemeColor(poiMods, float4(1,1,1,1).rgb, (0.0 /*_EmissionColorThemeIndex*/));
+					emissionColor0 = POI2D_SAMPLER_PAN(_EmissionMap, _MainTex, poiUV(poiMesh.uv[(0.0 /*_EmissionMapUV*/)], float4(10,10,0,0)), float4(0.1,0.1,0,0)).rgb * lerp(1, poiFragData.baseColor, (0.0 /*_EmissionBaseColorAsMap*/)).rgb * poiThemeColor(poiMods, float4(1,1,1,1).rgb, (0.0 /*_EmissionColorThemeIndex*/));
 				}
 				else
 				{
-					emissionColor0 = UNITY_SAMPLE_TEX2D_SAMPLER(_EmissionMap, _MainTex, ((.5 + poiLight.nDotV * .5) * float4(16,16,0,0).xy) + _Time.x * (5.0 /*_EmissionCenterOutSpeed*/)).rgb * lerp(1, poiFragData.baseColor, (0.0 /*_EmissionBaseColorAsMap*/)).rgb * poiThemeColor(poiMods, float4(1,1,1,1).rgb, (0.0 /*_EmissionColorThemeIndex*/));
+					emissionColor0 = UNITY_SAMPLE_TEX2D_SAMPLER(_EmissionMap, _MainTex, ((.5 + poiLight.nDotV * .5) * float4(10,10,0,0).xy) + _Time.x * (5.0 /*_EmissionCenterOutSpeed*/)).rgb * lerp(1, poiFragData.baseColor, (0.0 /*_EmissionBaseColorAsMap*/)).rgb * poiThemeColor(poiMods, float4(1,1,1,1).rgb, (0.0 /*_EmissionColorThemeIndex*/));
 				}
 				#else
 				emissionColor0 = lerp(1, poiFragData.baseColor, (0.0 /*_EmissionBaseColorAsMap*/)).rgb * poiThemeColor(poiMods, float4(1,1,1,1).rgb, (0.0 /*_EmissionColorThemeIndex*/));
@@ -3633,7 +3633,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/976909289a31dfd4fab62d0b5e57e5ff"
 				emissionColor0 = hueShift(emissionColor0, frac((0.0 /*_EmissionHueShift*/) + (0.0 /*_EmissionHueShiftSpeed*/) * _Time.x) * (0.0 /*_EmissionHueShiftEnabled*/), (0.0 /*_EmissionHueShiftColorSpace*/));
 				emissionColor0 = lerp(emissionColor0, dot(emissionColor0, float3(0.3, 0.59, 0.11)), - ((0.0 /*_EmissionSaturation*/)) * (0.0 /*_EmissionHueShiftEnabled*/));
 				#if defined(PROP_EMISSIONMASK) || !defined(OPTIMIZER_ENABLED)
-				float emissionMask0 = UNITY_SAMPLE_TEX2D_SAMPLER(_EmissionMask, _MainTex, poiUV(poiMesh.uv[(0.0 /*_EmissionMaskUV*/)], float4(1,1,0,0.25)) + _Time.x * float4(0,0,0,0))[(0.0 /*_EmissionMaskChannel*/)];
+				float emissionMask0 = UNITY_SAMPLE_TEX2D_SAMPLER(_EmissionMask, _MainTex, poiUV(poiMesh.uv[(0.0 /*_EmissionMaskUV*/)], float4(11,11,0,0)) + _Time.x * float4(1,1,0,0))[(0.0 /*_EmissionMaskChannel*/)];
 				#else
 				float emissionMask0 = 1;
 				#endif
@@ -3712,9 +3712,9 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon/976909289a31dfd4fab62d0b5e57e5ff"
 				{
 					emissionMask1 = 1 - emissionMask1;
 				}
-				if ((2.0 /*_EmissionMask1GlobalMask*/) > 0)
+				if ((0.0 /*_EmissionMask1GlobalMask*/) > 0)
 				{
-					emissionMask1 = maskBlend(emissionMask1, poiMods.globalMask[(2.0 /*_EmissionMask1GlobalMask*/) - 1], (2.0 /*_EmissionMask1GlobalMaskBlendType*/));
+					emissionMask1 = maskBlend(emissionMask1, poiMods.globalMask[(0.0 /*_EmissionMask1GlobalMask*/) - 1], (2.0 /*_EmissionMask1GlobalMaskBlendType*/));
 				}
 				emissionStrength1 *= glowInTheDarkMultiplier1 * emissionMask1;
 				emission1 = max(emissionStrength1 * emissionColor1, 0);

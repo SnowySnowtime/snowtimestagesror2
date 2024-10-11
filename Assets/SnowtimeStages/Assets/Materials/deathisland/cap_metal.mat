@@ -8,8 +8,9 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: cap_metal
-  m_Shader: {fileID: 4800000, guid: 99d7375c08a1e8f4b939426b5a699e36, type: 3}
-  m_ValidKeywords: []
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_ValidKeywords:
+  - _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -144,14 +145,14 @@ Material:
     - _ForceSpecOn: 0
     - _FresnelBoost: 1
     - _FresnelPower: 1
-    - _GlossMapScale: 1
+    - _GlossMapScale: 0.2
     - _Glossiness: 0.5
     - _GlossyReflections: 1
     - _GreenChannelBias: 0
     - _GreenChannelSmoothness: 0
     - _LimbPrimeMask: 1
     - _LimbRemovalOn: 0
-    - _Metallic: 0
+    - _Metallic: 0.02
     - _Mode: 0
     - _NormalStrength: 0.25
     - _OcclusionStrength: 1
@@ -166,7 +167,7 @@ Material:
     - _SliceBandHeight: 1
     - _SliceHeight: 5
     - _Smoothness: 0.5
-    - _SmoothnessTextureChannel: 0
+    - _SmoothnessTextureChannel: 1
     - _SpecularExponent: 1
     - _SpecularHighlights: 1
     - _SpecularStrength: 0

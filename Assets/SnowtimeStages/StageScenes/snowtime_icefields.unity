@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: 1cfe04bd556bf114895648d6b962d3d6,
+  m_LightingDataAsset: {fileID: 112000000, guid: a5bf0da054e45e54b919be616463869f,
     type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: 58f70982c4e75ca449521d6c3d9e3c6f,
     type: 2}
@@ -24294,7 +24294,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3a50c34ed15d1b64f89e9d51e2dcd006,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 64
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a50c34ed15d1b64f89e9d51e2dcd006, type: 3}
@@ -40475,7 +40475,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 64
   m_IsActive: 1
 --- !u!114 &866883528
 MonoBehaviour:
@@ -47565,7 +47565,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 73ff1c20977611c48adc7f30d49f1cec,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 64
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73ff1c20977611c48adc7f30d49f1cec, type: 3}
@@ -79838,7 +79838,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3a50c34ed15d1b64f89e9d51e2dcd006,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 64
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a50c34ed15d1b64f89e9d51e2dcd006, type: 3}
@@ -85008,7 +85008,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 43f5de9c20b787b49aa7c92b62b65c08,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 64
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43f5de9c20b787b49aa7c92b62b65c08, type: 3}
@@ -85557,7 +85557,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3a50c34ed15d1b64f89e9d51e2dcd006,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 64
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a50c34ed15d1b64f89e9d51e2dcd006, type: 3}
@@ -89234,7 +89234,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e502f344eb07a184b9a464c31ddcfbad,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 64
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e502f344eb07a184b9a464c31ddcfbad, type: 3}

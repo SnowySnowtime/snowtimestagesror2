@@ -14,6 +14,7 @@ Material:
   - BSSBLOOMFOGTYPE_HEIGHT
   - GEOM_TYPE_BRANCH
   - GEOM_TYPE_BRANCH_DETAIL
+  - MOCHIE_PBR
   - VIGNETTE
   - VIGNETTE_MASKED
   - _CUBEMAP
@@ -28,7 +29,7 @@ Material:
   stringTagMap:
     AllLockedGUIDS: 2857637cd6a350846999f31817af70f2
     OriginalKeywords: BSSBLOOMFOGTYPE_HEIGHT GEOM_TYPE_BRANCH GEOM_TYPE_BRANCH_DETAIL
-      VIGNETTE VIGNETTE_MASKED _CUBEMAP _LIGHTINGMODE_REALISTIC _RIM2STYLE_POIYOMI
+      MOCHIE_PBR VIGNETTE VIGNETTE_MASKED _CUBEMAP _LIGHTINGMODE_REALISTIC _RIM2STYLE_POIYOMI
       _RIMSTYLE_POIYOMI _STOCHASTICMODE_DELIOT_HEITZ
     OriginalShader: .poiyomi/Poiyomi Toon
     OriginalShaderGUID: 23f6705aff8bf964c87bfb3dd66ab345
@@ -60,7 +61,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _CubeMap:
-        m_Texture: {fileID: 8900000, guid: 43a0734f1adb13c4eb5c6efd05c20211, type: 3}
+        m_Texture: {fileID: 8900000, guid: 37bc233d01381f44ea409eb89b153718, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _CubeMapMask:
@@ -97,6 +98,14 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MochieMetallicMaps:
+        m_Texture: {fileID: 2800000, guid: 71efa2d88fc51674d8d123657ed8ed11, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MochieReflCube:
+        m_Texture: {fileID: 8900000, guid: 0f8c4abb8f51ce944bd35305110749d4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _RGBAMetallicMaps:
@@ -494,7 +503,7 @@ Material:
     - _CubeMapHueShiftEnabled: 0
     - _CubeMapHueShiftSpeed: 0
     - _CubeMapIntensity: 1
-    - _CubeMapLightMask: 0
+    - _CubeMapLightMask: 0.75
     - _CubeMapMaskChannel: 0
     - _CubeMapMaskGlobalMask: 0
     - _CubeMapMaskGlobalMaskBlendType: 2
@@ -1676,10 +1685,10 @@ Material:
     - _MirrorTextureForceEnabled: 0
     - _MirrorTextureUV: 0
     - _MirrorToggle: 0
-    - _MochieBRDF: 0
+    - _MochieBRDF: 1
     - _MochieForceFallback: 0
     - _MochieGSAAEnabled: 1
-    - _MochieLitFallback: 1
+    - _MochieLitFallback: 0
     - _MochieMetallicGlobalMask: 0
     - _MochieMetallicGlobalMaskBlendType: 2
     - _MochieMetallicMapInvert: 0
@@ -1690,15 +1699,15 @@ Material:
     - _MochieMetallicMapsStochastic: 0
     - _MochieMetallicMapsUV: 0
     - _MochieMetallicMasksUV: 0
-    - _MochieMetallicMultiplier: 0
+    - _MochieMetallicMultiplier: 1
     - _MochieReflectionMaskInvert: 0
-    - _MochieReflectionStrength: 1
+    - _MochieReflectionStrength: 0
     - _MochieReflectionStrengthGlobalMask: 0
     - _MochieReflectionStrengthGlobalMaskBlendType: 2
     - _MochieReflectionTintThemeIndex: 0
     - _MochieRoughnessMapInvert: 0
-    - _MochieRoughnessMultiplier: 1
-    - _MochieRoughnessMultiplier2: 1
+    - _MochieRoughnessMultiplier: 0.3
+    - _MochieRoughnessMultiplier2: 0.5
     - _MochieSmoothnessGlobalMask: 0
     - _MochieSmoothnessGlobalMaskBlendType: 2
     - _MochieSpecularMaskInvert: 0
@@ -1865,8 +1874,8 @@ Material:
     - _PathingColorMapUV: 0
     - _PathingMapUV: 0
     - _PathingOverrideAlpha: 0
-    - _PoiGSAAThreshold: 0.1
-    - _PoiGSAAVariance: 0.15
+    - _PoiGSAAThreshold: 1
+    - _PoiGSAAVariance: 1
     - _PoiInternalParallax: 0
     - _PoiParallax: 0
     - _PoiUTSStyleOutlineBlend: 0
@@ -1925,7 +1934,7 @@ Material:
     - _RedTextureStochastic: 0
     - _RedTextureUV: 0
     - _RefSpecFresnel: 1
-    - _RefSpecFresnelBack: 1
+    - _RefSpecFresnelBack: 0
     - _ReflCubeOverrideToggle: 0
     - _ReflCubeToggle: 0
     - _ReflShadowAreaLit: 1
@@ -2164,7 +2173,7 @@ Material:
     - _SkinThicknessMapUV: 0
     - _SkinThicknessPower: 1
     - _SmoothnessTextureChannel: 0
-    - _Specular2ndLayer: 0
+    - _Specular2ndLayer: 1
     - _SpecularHighlights: 1
     - _SpecularStrength: 1
     - _SphericalDissolveClamp: 0
@@ -2632,11 +2641,11 @@ Material:
     - m_start_PPAnimations: 0
     - m_start_PathAudioLink: 0
     - m_start_PoiGlobalCategory: 1
-    - m_start_PoiLightData: 1
+    - m_start_PoiLightData: 0
     - m_start_PoiPostProcessingCategory: 0
     - m_start_PoiShading: 1
     - m_start_PoiUVCategory: 0
-    - m_start_RGBMask: 1
+    - m_start_RGBMask: 0
     - m_start_Rim2AudioLink: 0
     - m_start_RimAudioLink: 0
     - m_start_SphericalDissolve: 0
@@ -2663,7 +2672,7 @@ Material:
     - m_start_backlight: 0
     - m_start_bakedLighting: 0
     - m_start_blending: 0
-    - m_start_brdf: 0
+    - m_start_brdf: 1
     - m_start_clearCoat: 0
     - m_start_clearcoatadvanced: 0
     - m_start_clearcoatglobalmask: 0
@@ -3037,8 +3046,8 @@ Material:
     - s_start_OutlineFixedSize: 0
     - s_start_OutlineLighting: 0
     - s_start_OutlineRenderingOptions: 0
-    - s_start_PBRSecondSpecular: 0
-    - s_start_PBRSplitMaskSample: 0
+    - s_start_PBRSecondSpecular: 1
+    - s_start_PBRSplitMaskSample: 1
     - s_start_ParallaxInternalHueShift: 0
     - s_start_ParallaxInternalLayerColoring: 1
     - s_start_ParallaxInternalLayerControls: 1
@@ -3075,7 +3084,7 @@ Material:
     - s_start_VertexSphereMode: 0
     - s_start_VertexTornadoMode: 0
     - s_start_WorldTranslation: 0
-    - s_start_brdfadvanced: 0
+    - s_start_brdfadvanced: 1
     - s_start_decal1_position: 1
     - s_start_decal2_position: 1
     - s_start_decal3_position: 1
