@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: di_ring
-  m_Shader: {fileID: 4800000, guid: 6fbd24000cabe0f4494815d6a093e897, type: 3}
+  m_Shader: {fileID: 4800000, guid: df35782a8d079a94aa83337321156a47, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords:
   - BSSBLOOMFOGTYPE_HEIGHT
@@ -1298,7 +1298,7 @@ Material:
     - _LightingAdditiveMonochromatic: 0
     - _LightingAdditivePassthrough: 0.5
     - _LightingAdditiveType: 3
-    - _LightingCap: 1
+    - _LightingCap: 0
     - _LightingCapEnabled: 1
     - _LightingCastedShadows: 0
     - _LightingColorMode: 0
@@ -1596,7 +1596,7 @@ Material:
     - _NormalCorrectAmount: 0.9
     - _NormalStrength: 1
     - _OcclusionStrength: 1
-    - _OffsetFactor: 100000
+    - _OffsetFactor: 1000000
     - _OffsetUnits: 0
     - _Offset_Z: 0
     - _OutlineALColorEnabled: 0
@@ -2451,7 +2451,7 @@ Material:
     - m_start_PPAnimations: 0
     - m_start_PathAudioLink: 0
     - m_start_PoiGlobalCategory: 0
-    - m_start_PoiLightData: 0
+    - m_start_PoiLightData: 1
     - m_start_PoiPostProcessingCategory: 0
     - m_start_PoiShading: 0
     - m_start_PoiUVCategory: 0

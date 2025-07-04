@@ -3590,7 +3590,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/d2b49fdf755460c44820d6f44eeda8
 				specularMask *= poiFragData.specularMask;
 				reflectionMask *= poiFragData.reflectionMask;
 				#if defined(PROP_MOCHIEMETALLICMAPS) || !defined(OPTIMIZER_ENABLED)
-				float4 PBRMaps = POI2D_SAMPLER_PAN_STOCHASTIC(_MochieMetallicMaps, _MainTex, poiUV(poiMesh.uv[(0.0 /*_MochieMetallicMapsUV*/)], float4(64,64,0,0)), float4(0,44,0,0), (1.0 /*_MochieMetallicMapsStochastic*/));
+				float4 PBRMaps = POI2D_SAMPLER_PAN_STOCHASTIC(_MochieMetallicMaps, _MainTex, poiUV(poiMesh.uv[(0.0 /*_MochieMetallicMapsUV*/)], float4(1,1,0,0)), float4(0,44,0,0), (1.0 /*_MochieMetallicMapsStochastic*/));
 				
 				if ((0.0 /*_PBRSplitMaskSample*/))
 				{
@@ -7374,7 +7374,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/d2b49fdf755460c44820d6f44eeda8
 				specularMask *= poiFragData.specularMask;
 				reflectionMask *= poiFragData.reflectionMask;
 				#if defined(PROP_MOCHIEMETALLICMAPS) || !defined(OPTIMIZER_ENABLED)
-				float4 PBRMaps = POI2D_SAMPLER_PAN_STOCHASTIC(_MochieMetallicMaps, _MainTex, poiUV(poiMesh.uv[(0.0 /*_MochieMetallicMapsUV*/)], float4(64,64,0,0)), float4(0,44,0,0), (1.0 /*_MochieMetallicMapsStochastic*/));
+				float4 PBRMaps = POI2D_SAMPLER_PAN_STOCHASTIC(_MochieMetallicMaps, _MainTex, poiUV(poiMesh.uv[(0.0 /*_MochieMetallicMapsUV*/)], float4(1,1,0,0)), float4(0,44,0,0), (1.0 /*_MochieMetallicMapsStochastic*/));
 				
 				if ((0.0 /*_PBRSplitMaskSample*/))
 				{

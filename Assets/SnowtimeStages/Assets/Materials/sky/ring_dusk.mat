@@ -8,17 +8,22 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: ring_dusk
-  m_Shader: {fileID: 4800000, guid: 6fbd24000cabe0f4494815d6a093e897, type: 3}
+  m_Shader: {fileID: 4800000, guid: a5f35f46f3fb2ec4b9c85cbd843adf5f, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords:
+  - BSSBLOOMFOGTYPE_HEIGHT
+  - _LIGHTINGMODE_FLAT
+  - _RIM2STYLE_POIYOMI
+  - _RIMSTYLE_POIYOMI
   - _STOCHASTICMODE_DELIOT_HEITZ
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 2995
   stringTagMap:
-    AllLockedGUIDS: fc9c9e676a4721a4899521a0a0e1a624,8839370c3f973d6458957edc1e1b7068
-    OriginalKeywords: _STOCHASTICMODE_DELIOT_HEITZ
+    AllLockedGUIDS: 8839370c3f973d6458957edc1e1b7068
+    OriginalKeywords: BSSBLOOMFOGTYPE_HEIGHT _LIGHTINGMODE_FLAT _RIM2STYLE_POIYOMI
+      _RIMSTYLE_POIYOMI _STOCHASTICMODE_DELIOT_HEITZ
     OriginalShader: .poiyomi/Poiyomi Toon
     OriginalShaderGUID: 23f6705aff8bf964c87bfb3dd66ab345
     RenderType: Opaque
@@ -1287,13 +1292,13 @@ Material:
     - _LightingAddDetailShadowStrengthB: 0
     - _LightingAddDetailShadowStrengthG: 0
     - _LightingAddDetailShadowStrengthR: 1
-    - _LightingAdditiveCastedShadows: 1
-    - _LightingAdditiveEnable: 1
+    - _LightingAdditiveCastedShadows: 0
+    - _LightingAdditiveEnable: 0
     - _LightingAdditiveGradientEnd: 0.5
     - _LightingAdditiveGradientStart: 0
-    - _LightingAdditiveLimit: 1
+    - _LightingAdditiveLimit: 0
     - _LightingAdditiveLimited: 1
-    - _LightingAdditiveMonochromatic: 0
+    - _LightingAdditiveMonochromatic: 1
     - _LightingAdditivePassthrough: 0.5
     - _LightingAdditiveType: 3
     - _LightingCap: 1
@@ -1315,16 +1320,16 @@ Material:
     - _LightingIndirectUsesNormals: 0
     - _LightingMapMode: 0
     - _LightingMinLightBrightness: 0
-    - _LightingMirrorVertexLightingEnabled: 1
+    - _LightingMirrorVertexLightingEnabled: 0
     - _LightingMode: 5
-    - _LightingMonochromatic: 0
+    - _LightingMonochromatic: 1
     - _LightingMulitlayerNonLinear: 1
     - _LightingShadowMaskStrengthA: 0
     - _LightingShadowMaskStrengthB: 0
     - _LightingShadowMaskStrengthG: 0
     - _LightingShadowMaskStrengthR: 1
     - _LightingShadowMasksUV: 0
-    - _LightingVertexLightingEnabled: 1
+    - _LightingVertexLightingEnabled: 0
     - _LightingViewDirOffsetPitch: 0
     - _LightingViewDirOffsetYaw: 0
     - _LightingWrappedNormalization: 0
@@ -1594,7 +1599,7 @@ Material:
     - _NormalCorrectAmount: 0.9
     - _NormalStrength: 1
     - _OcclusionStrength: 1
-    - _OffsetFactor: 100000
+    - _OffsetFactor: 1000000
     - _OffsetUnits: 0
     - _Offset_Z: 0
     - _OutlineALColorEnabled: 0
@@ -2450,7 +2455,7 @@ Material:
     - m_start_PPAnimations: 0
     - m_start_PathAudioLink: 0
     - m_start_PoiGlobalCategory: 0
-    - m_start_PoiLightData: 0
+    - m_start_PoiLightData: 1
     - m_start_PoiPostProcessingCategory: 0
     - m_start_PoiShading: 0
     - m_start_PoiUVCategory: 0

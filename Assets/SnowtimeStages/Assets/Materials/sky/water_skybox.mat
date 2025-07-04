@@ -55,7 +55,7 @@ Material:
         m_Scale: {x: 4096, y: 4096}
         m_Offset: {x: 0, y: 0}
     - _CubeMap:
-        m_Texture: {fileID: 8900000, guid: 4ca7aef6baeb3674c8b982825ad229c1, type: 3}
+        m_Texture: {fileID: 8900000, guid: 9d15ac0a068f82c4daccb4dd15b5496b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _CubeMapMask:
@@ -1641,7 +1641,7 @@ Material:
     - _NormalCorrect: 0
     - _NormalCorrectAmount: 0.9
     - _OcclusionStrength: 1
-    - _OffsetFactor: 10000
+    - _OffsetFactor: 1000000
     - _OffsetUnits: 0
     - _Offset_Z: 0
     - _OutlineALColorEnabled: 0
@@ -2411,7 +2411,7 @@ Material:
     - m_lightingCategory: 1
     - m_mainCategory: 1
     - m_modifierCategory: 1
-    - m_renderingCategory: 0
+    - m_renderingCategory: 1
     - m_specialFXCategory: 0
     - m_start_ALDecalSpectrum: 0
     - m_start_ALVolumeColor: 0

@@ -8,17 +8,22 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: basis_dusk
-  m_Shader: {fileID: 4800000, guid: 39a9e3439f5889c4dbd1983ad507333f, type: 3}
+  m_Shader: {fileID: 4800000, guid: 2907c289b334dd34db3ed2833e20acca, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords:
+  - BSSBLOOMFOGTYPE_HEIGHT
+  - _LIGHTINGMODE_FLAT
+  - _RIM2STYLE_POIYOMI
+  - _RIMSTYLE_POIYOMI
   - _STOCHASTICMODE_DELIOT_HEITZ
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 2997
   stringTagMap:
-    AllLockedGUIDS: 75bd1c20b6ea6d94191ff4e56d7751be,0db30c6bf753beb4d9ccdd78db10793f
-    OriginalKeywords: _STOCHASTICMODE_DELIOT_HEITZ
+    AllLockedGUIDS: 0db30c6bf753beb4d9ccdd78db10793f
+    OriginalKeywords: BSSBLOOMFOGTYPE_HEIGHT _LIGHTINGMODE_FLAT _RIM2STYLE_POIYOMI
+      _RIMSTYLE_POIYOMI _STOCHASTICMODE_DELIOT_HEITZ
     OriginalShader: .poiyomi/Poiyomi Toon
     OriginalShaderGUID: 23f6705aff8bf964c87bfb3dd66ab345
     RenderType: Transparent
@@ -1259,13 +1264,13 @@ Material:
     - _LightingAddDetailShadowStrengthB: 0
     - _LightingAddDetailShadowStrengthG: 0
     - _LightingAddDetailShadowStrengthR: 1
-    - _LightingAdditiveCastedShadows: 1
-    - _LightingAdditiveEnable: 1
+    - _LightingAdditiveCastedShadows: 0
+    - _LightingAdditiveEnable: 0
     - _LightingAdditiveGradientEnd: 0.5
     - _LightingAdditiveGradientStart: 0
-    - _LightingAdditiveLimit: 1
+    - _LightingAdditiveLimit: 0
     - _LightingAdditiveLimited: 1
-    - _LightingAdditiveMonochromatic: 0
+    - _LightingAdditiveMonochromatic: 1
     - _LightingAdditivePassthrough: 0.5
     - _LightingAdditiveType: 3
     - _LightingCap: 1
@@ -1287,16 +1292,16 @@ Material:
     - _LightingIndirectUsesNormals: 0
     - _LightingMapMode: 0
     - _LightingMinLightBrightness: 0
-    - _LightingMirrorVertexLightingEnabled: 1
+    - _LightingMirrorVertexLightingEnabled: 0
     - _LightingMode: 5
-    - _LightingMonochromatic: 0
+    - _LightingMonochromatic: 1
     - _LightingMulitlayerNonLinear: 1
     - _LightingShadowMaskStrengthA: 0
     - _LightingShadowMaskStrengthB: 0
     - _LightingShadowMaskStrengthG: 0
     - _LightingShadowMaskStrengthR: 1
     - _LightingShadowMasksUV: 0
-    - _LightingVertexLightingEnabled: 1
+    - _LightingVertexLightingEnabled: 0
     - _LightingViewDirOffsetPitch: 0
     - _LightingViewDirOffsetYaw: 0
     - _LightingWrappedNormalization: 0
@@ -1563,7 +1568,7 @@ Material:
     - _NormalCorrect: 0
     - _NormalCorrectAmount: 0.9
     - _OcclusionStrength: 1
-    - _OffsetFactor: 100000
+    - _OffsetFactor: 1000000
     - _OffsetUnits: 0
     - _Offset_Z: 0
     - _OutlineALColorEnabled: 0

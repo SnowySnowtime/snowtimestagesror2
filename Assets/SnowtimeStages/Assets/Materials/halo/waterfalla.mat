@@ -22,7 +22,7 @@ Material:
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 2999
   stringTagMap:
-    AllLockedGUIDS: d463e294d0226db458f2c6769b1b717b
+    AllLockedGUIDS: d463e294d0226db458f2c6769b1b717b,d04f9d936d7cb164896a7e633688ae30
     OriginalKeywords: BSSBLOOMFOGTYPE_HEIGHT VIGNETTE_MASKED _LIGHTINGMODE_FLAT _RIM2STYLE_POIYOMI
       _RIMSTYLE_POIYOMI _STOCHASTICMODE_DELIOT_HEITZ
     OriginalShader: .poiyomi/Poiyomi Toon

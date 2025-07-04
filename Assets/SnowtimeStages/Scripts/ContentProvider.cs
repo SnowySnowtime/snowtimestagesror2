@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
+using RoR2;
+using RoR2.Skills;
 using RoR2.ContentManagement;
 using UnityEngine;
 using Path = System.IO.Path;

@@ -8,18 +8,24 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: hevdecal
-  m_Shader: {fileID: 4800000, guid: 41487c4ca05e0314794f34c77cfcf0ec, type: 3}
+  m_Shader: {fileID: 4800000, guid: ea9f3625a699db847860975884e99d1c, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords:
+  - BSSBLOOMFOGTYPE_HEIGHT
+  - MOCHIE_PBR
+  - VIGNETTE_MASKED
   - _LIGHTINGMODE_MULTILAYER_MATH
+  - _RIM2STYLE_POIYOMI
+  - _RIMSTYLE_POIYOMI
   - _STOCHASTICMODE_DELIOT_HEITZ
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 2999
   stringTagMap:
-    AllLockedGUIDS: 9dc192eecedbe1f4fa173f945d7af4a6,12626a336e795b546a03d85ae29bd988
-    OriginalKeywords: _LIGHTINGMODE_MULTILAYER_MATH _STOCHASTICMODE_DELIOT_HEITZ
+    AllLockedGUIDS: 12626a336e795b546a03d85ae29bd988
+    OriginalKeywords: BSSBLOOMFOGTYPE_HEIGHT MOCHIE_PBR VIGNETTE_MASKED _LIGHTINGMODE_MULTILAYER_MATH
+      _RIM2STYLE_POIYOMI _RIMSTYLE_POIYOMI _STOCHASTICMODE_DELIOT_HEITZ
     OriginalShader: .poiyomi/Poiyomi Toon World
     OriginalShaderGUID: 68d4032c05798c44eafe02f272e6895c
     RenderType: Transparent

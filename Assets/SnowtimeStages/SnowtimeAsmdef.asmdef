@@ -29,7 +29,8 @@
         "R2API.Core.dll",
         "AK.Wwise.Unity.API.dll",
         "AK.Wwise.Unity.MonoBehaviour.dll",
-        "AK.Wwise.Unity.API.WwiseTypes.dll"
+        "AK.Wwise.Unity.API.WwiseTypes.dll",
+        "ShaderSwapper.dll"
     ],
     "autoReferenced": true,
     "defineConstraints": [],

@@ -1,16 +1,22 @@
-﻿using System;
-using System.Collections;
-using System.Linq;
-using RoR2;
+﻿using BepInEx.Configuration;
+using EntityStates;
+using R2API;
 using RoR2.ContentManagement;
 using RoR2.ExpansionManagement;
-using UnityEngine;
+using RoR2.Networking;
+using RoR2.Skills;
+using RoR2;
+using System.Collections.Generic;
+using System.Collections;
+using System.Linq;
+using System.Reflection;
+using System.IO;
+using System;
 using UnityEngine.AddressableAssets;
 using UnityEngine.Networking;
 using UnityEngine.ResourceManagement.AsyncOperations;
-using System.Collections.Generic;
-using RoR2.Networking;
-using R2API;
+using UnityEngine;
+using ShaderSwapper;
 
 namespace Snowtime.Content
 {
@@ -21,9 +27,7 @@ namespace Snowtime.Content
 
         internal const string MusicSoundBankFileName = "SnowtimeStagesMusic.bnk";
         internal const string SndSoundBankFileName = "SnowtimeStagesSounds.bnk";
-        //internal const string MusicSoundBankFileName = "SM64BBFMusic.bnk";
         internal const string InitSoundBankFileName = "SnowtimeStagesInit.bnk";
-        //internal const string InitSoundBankFileName = "SM64BBFInit.bnk";
 
 
         private static AssetBundle _scenesAssetBundle;
@@ -32,6 +36,15 @@ namespace Snowtime.Content
         internal static UnlockableDef[] UnlockableDefs;
         internal static SceneDef[] SceneDefs;
         internal static ExpansionDef[] expansionDefs;
+		
+		internal static List<GameObject> bodyPrefabs = new List<GameObject>();
+        internal static List<GameObject> masterPrefabs = new List<GameObject>();
+        internal static List<GameObject> projectilePrefabs = new List<GameObject>();
+		
+		internal static List<SkillFamily> skillFamilies = new List<SkillFamily>();
+        internal static List<SkillDef> skillDefs = new List<SkillDef>();
+        internal static List<Type> entityStates = new List<Type>();
+		
         // Halo Content
         internal static ExpansionDef ExpansionDefSTHalo;
 
@@ -42,6 +55,10 @@ namespace Snowtime.Content
         // STH2SceneDef = Halo
         // STIFSceneDef = Ice Fields
         // STShrineSceneDef = Sandtrap
+        // STSWSceneDef = Sidewinder
+        // STNMBSceneDef = NewMombasaBridge
+        // STGMCSceneDef = gm_construct
+        // STDHSceneDef = Delta Halo
         internal static SceneDef STSceneDef;
         internal static SceneDef STIFSceneDef;
         internal static SceneDef STBGSceneDef;
@@ -49,6 +66,10 @@ namespace Snowtime.Content
         internal static SceneDef STHSceneDef;
         internal static SceneDef STH2SceneDef;
         internal static SceneDef STShrineSceneDef;
+        internal static SceneDef STSWSceneDef;
+        internal static SceneDef STNMBSceneDef;
+        internal static SceneDef STGMCSceneDef;
+        internal static SceneDef STDHSceneDef;
         internal static Sprite STSceneDefPreviewSprite;
         internal static Sprite STIFSceneDefPreviewSprite;
         internal static Sprite STBGSceneDefPreviewSprite;
@@ -56,6 +77,10 @@ namespace Snowtime.Content
         internal static Sprite STHSceneDefPreviewSprite;
         internal static Sprite STH2SceneDefPreviewSprite;
         internal static Sprite STShrineSceneDefPreviewSprite;
+        internal static Sprite STSWSceneDefPreviewSprite;
+        internal static Sprite STNMBSceneDefPreviewSprite;
+        internal static Sprite STGMCSceneDefPreviewSprite;
+        internal static Sprite STDHSceneDefPreviewSprite;
         internal static Material STBazaarSeer;
         internal static Material STIFBazaarSeer;
         internal static Material STBGBazaarSeer;
@@ -63,23 +88,13 @@ namespace Snowtime.Content
         internal static Material STHBazaarSeer;
         internal static Material STH2BazaarSeer;
         internal static Material STShrineBazaarSeer;
-
-        public static List<Material> SwappedMaterials = new List<Material>(); //debug
-
-        public static Dictionary<string, string> ShaderLookup = new Dictionary<string, string>()
-        {
-            {"stubbedror2/base/shaders/hgstandard", "RoR2/Base/Shaders/HGStandard.shader"},
-            {"stubbedror2/base/shaders/hgsnowtopped", "RoR2/Base/Shaders/HGSnowTopped.shader"},
-            {"stubbedror2/base/shaders/hgtriplanarterrainblend", "RoR2/Base/Shaders/HGTriplanarTerrainBlend.shader"},
-            {"stubbedror2/base/shaders/hgintersectioncloudremap", "RoR2/Base/Shaders/HGIntersectionCloudRemap.shader" },
-            {"stubbedror2/base/shaders/hgcloudremap", "RoR2/Base/Shaders/HGCloudRemap.shader" },
-            {"stubbedror2/base/shaders/hgdistortion", "RoR2/Base/Shaders/HGDistortion.shader" },
-            {"stubbedror2/base/shaders/speedtreecustom", "RoR2/Base/Shaders/SpeedTreeCustom.shader" },
-            {"stubbedcalm water/calmwater - dx11 - doublesided", "Calm Water/CalmWater - DX11 - DoubleSided.shader" },
-            {"stubbedcalm water/calmwater - dx11", "Calm Water/CalmWater - DX11.shader" },
-            {"stubbednature/speedtree", "RoR2/Base/Shaders/SpeedTreeCustom.shader"}
-        };
-
+        internal static Material STSWBazaarSeer;
+        internal static Material STNMBBazaarSeer;
+        internal static Material STGMCBazaarSeer;
+        internal static Material STDHBazaarSeer;
+		
+		public static List<Material> SwappedMaterials = new List<Material>();
+		
         internal static IEnumerator LoadAssetBundlesAsync(AssetBundle scenesAssetBundle, AssetBundle assetsAssetBundle, IProgress<float> progress, ContentPack contentPack)
         {
             _scenesAssetBundle = scenesAssetBundle;
@@ -92,26 +107,20 @@ namespace Snowtime.Content
             //
             //SnowtimeContent.expansionDefs.AddSingle(expansionRequest.Asset);
             Log.Debug($"Snowtime Stages found. Loading asset bundles...");
-
-            yield return LoadAllAssetsAsync(_assetsAssetBundle, progress, (Action<Material[]>)((assets) =>
+			
+			var upgradeStubbedShaders = _assetsAssetBundle.UpgradeStubbedShadersAsync();
+            while (upgradeStubbedShaders.MoveNext())
             {
-                var materials = assets;
-
-                if (materials != null)
-                {
-                    foreach (Material material in materials)
-                    {
-                        if (!material.shader.name.StartsWith("Stubbed")) { continue; }
-
-                        var replacementShader = Addressables.LoadAssetAsync<Shader>(ShaderLookup[material.shader.name.ToLower()]).WaitForCompletion();
-                        if (replacementShader)
-                        {
-                            material.shader = replacementShader;
-                            SwappedMaterials.Add(material);
-                        }
-                    }
-                }
-            }));
+                yield return upgradeStubbedShaders.Current;
+            }
+			
+			contentPack.bodyPrefabs.Add(bodyPrefabs.ToArray());
+			contentPack.masterPrefabs.Add(masterPrefabs.ToArray());
+			contentPack.projectilePrefabs.Add(projectilePrefabs.ToArray());
+			
+			contentPack.skillDefs.Add(skillDefs.ToArray());
+			contentPack.skillFamilies.Add(skillFamilies.ToArray());
+			contentPack.entityStateTypes.Add(entityStates.ToArray());
 
             yield return LoadAllAssetsAsync(_assetsAssetBundle, progress, (Action<UnlockableDef[]>)((assets) =>
             {
@@ -137,6 +146,10 @@ namespace Snowtime.Content
                 STHSceneDefPreviewSprite = assets.First(a => a.name == "texSTHaloScenePreview");
                 STH2SceneDefPreviewSprite = assets.First(a => a.name == "texSTHaloScenePreview");
                 STShrineSceneDefPreviewSprite = assets.First(a => a.name == "texSTShrineScenePreview");
+                STSWSceneDefPreviewSprite = assets.First(a => a.name == "texSTSWScenePreview");
+                STNMBSceneDefPreviewSprite = assets.First(a => a.name == "texSTNMBScenePreview");
+                STGMCSceneDefPreviewSprite = assets.First(a => a.name == "texSTGMCScenePreview");
+                STDHSceneDefPreviewSprite = assets.First(a => a.name == "texSTDHaloScenePreview");
             }));
 
             yield return LoadAllAssetsAsync(_assetsAssetBundle, progress, (Action<SceneDef[]>)((assets) =>
@@ -149,6 +162,10 @@ namespace Snowtime.Content
                 STHSceneDef = SceneDefs.First(sd => sd.cachedName == "snowtime_halo");
                 STH2SceneDef = SceneDefs.First(sd => sd.cachedName == "snowtime_halo2");
                 STShrineSceneDef = SceneDefs.First(sd => sd.cachedName == "snowtime_sandtrap");
+                STSWSceneDef = SceneDefs.First(sd => sd.cachedName == "snowtime_sidewinder");
+                STNMBSceneDef = SceneDefs.First(sd => sd.cachedName == "snowtime_newmombasabridge");
+                STGMCSceneDef = SceneDefs.First(sd => sd.cachedName == "snowtime_gmconstruct");
+                STDHSceneDef = SceneDefs.First(sd => sd.cachedName == "snowtime_deltahalo");
                 Log.Debug(STSceneDef.nameToken);
                 Log.Debug(STIFSceneDef.nameToken);
                 Log.Debug(STBGSceneDef.nameToken);
@@ -156,6 +173,10 @@ namespace Snowtime.Content
                 Log.Debug(STShrineSceneDef.nameToken);
                 Log.Debug(STHSceneDef.nameToken);
                 Log.Debug(STH2SceneDef.nameToken);
+                Log.Debug(STSWSceneDef.nameToken);
+                Log.Debug(STNMBSceneDef.nameToken);
+                Log.Debug(STGMCSceneDef.nameToken);
+                Log.Debug(STDHSceneDef.nameToken);
                 contentPack.sceneDefs.Add(assets);
             }));
 
@@ -174,6 +195,10 @@ namespace Snowtime.Content
             STHBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STHSceneDefPreviewSprite.texture);
             STH2BazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STH2SceneDefPreviewSprite.texture);
             STShrineBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STShrineSceneDefPreviewSprite.texture);
+            STSWBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STSWSceneDefPreviewSprite.texture);
+            STNMBBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STNMBSceneDefPreviewSprite.texture);
+            STGMCBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STGMCSceneDefPreviewSprite.texture);
+            STDHBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STDHSceneDefPreviewSprite.texture);
             STSceneDef.previewTexture = STSceneDefPreviewSprite.texture;
             STIFSceneDef.previewTexture = STIFSceneDefPreviewSprite.texture;
             STBGSceneDef.previewTexture = STBGSceneDefPreviewSprite.texture;
@@ -181,6 +206,10 @@ namespace Snowtime.Content
             STHSceneDef.previewTexture = STHSceneDefPreviewSprite.texture;
             STH2SceneDef.previewTexture = STH2SceneDefPreviewSprite.texture;
             STShrineSceneDef.previewTexture = STShrineSceneDefPreviewSprite.texture;
+            STSWSceneDef.previewTexture = STSWSceneDefPreviewSprite.texture;
+            STNMBSceneDef.previewTexture = STNMBSceneDefPreviewSprite.texture;
+            STGMCSceneDef.previewTexture = STGMCSceneDefPreviewSprite.texture;
+            STDHSceneDef.previewTexture = STDHSceneDefPreviewSprite.texture;
             STSceneDef.portalMaterial = STBazaarSeer;
             STIFSceneDef.portalMaterial = STIFBazaarSeer;
             STBGSceneDef.portalMaterial = STBGBazaarSeer;
@@ -188,21 +217,143 @@ namespace Snowtime.Content
             STHSceneDef.portalMaterial = STHBazaarSeer;
             STH2SceneDef.portalMaterial = STH2BazaarSeer;
             STShrineSceneDef.portalMaterial = STShrineBazaarSeer;
-
-            StageRegistration.RegisterSceneDefToLoop(STSceneDef);
-            StageRegistration.RegisterSceneDefToLoop(STIFSceneDef);
-            StageRegistration.RegisterSceneDefToLoop(STBGSceneDef);
-            StageRegistration.RegisterSceneDefToLoop(STGPHSceneDef);
-            StageRegistration.RegisterSceneDefToLoop(STShrineSceneDef);
-            StageRegistration.RegisterSceneDefToLoop(STHSceneDef);
-            StageRegistration.RegisterSceneDefToLoop(STH2SceneDef);
-            Log.Debug(STSceneDef.destinationsGroup);
-            Log.Debug(STIFSceneDef.destinationsGroup);
-            Log.Debug(STBGSceneDef.destinationsGroup);
-            Log.Debug(STGPHSceneDef.destinationsGroup);
-            Log.Debug(STHSceneDef.destinationsGroup);
-            Log.Debug(STH2SceneDef.destinationsGroup);
-            Log.Debug(STShrineSceneDef.destinationsGroup);
+            STSWSceneDef.portalMaterial = STSWBazaarSeer;
+            STNMBSceneDef.portalMaterial = STNMBBazaarSeer;
+            STGMCSceneDef.portalMaterial = STGMCBazaarSeer;
+            STDHSceneDef.portalMaterial = STDHBazaarSeer;
+			// Make a check here later for the config of what is enabled or disabled
+			Log.Debug("Blood Gulch Config Status?");
+			Log.Debug(SnowtimeStage.ToggleBloodGulch.Value);
+			if (SnowtimeStage.ToggleBloodGulch.Value == true)
+			{
+				StageRegistration.RegisterSceneDefToLoop(STBGSceneDef);
+				Log.Debug("Adding Blood Gulch to loop");
+				Log.Debug(STBGSceneDef.destinationsGroup);
+			}
+			if (SnowtimeStage.ToggleBloodGulch.Value == false)
+			{
+				Log.Debug("Skipped adding Blood Gulch to the loop");
+			}
+			Log.Debug("Sidewinder Config Status?");
+			Log.Debug(SnowtimeStage.ToggleSidewinder.Value);
+			if (SnowtimeStage.ToggleSidewinder.Value == true)
+			{
+				StageRegistration.RegisterSceneDefToLoop(STSWSceneDef);
+				Log.Debug("Adding Sidewinder to the loop");
+				Log.Debug(STSWSceneDef.destinationsGroup);
+			}
+			if (SnowtimeStage.ToggleSidewinder.Value == false)
+			{
+				Log.Debug("Skipped adding Sidewinder to the loop");
+			}
+			Log.Debug("Death Island Config Status?");
+			Log.Debug(SnowtimeStage.ToggleDeathIsland.Value);
+			if (SnowtimeStage.ToggleDeathIsland.Value == true)
+			{
+				StageRegistration.RegisterSceneDefToLoop(STSceneDef);
+				Log.Debug("Adding Death Island to the loop");
+				Log.Debug(STSceneDef.destinationsGroup);
+			}
+			if (SnowtimeStage.ToggleDeathIsland.Value == false)
+			{
+				Log.Debug("Skipped adding Death Island to the loop");
+			}
+			Log.Debug("Ice Fields Config Status?");
+			Log.Debug(SnowtimeStage.ToggleIceFields.Value);
+			if (SnowtimeStage.ToggleIceFields.Value == true)
+			{
+				StageRegistration.RegisterSceneDefToLoop(STIFSceneDef);
+				Log.Debug("Adding Ice Fields to the loop");
+				Log.Debug(STIFSceneDef.destinationsGroup);
+			}
+			if (SnowtimeStage.ToggleIceFields.Value == false)
+			{
+				Log.Debug("Skipped adding Ice Fields to the loop");
+			}
+			Log.Debug("Gephyrophobia Config Status?");
+			Log.Debug(SnowtimeStage.ToggleGephyrophobia.Value);
+			if (SnowtimeStage.ToggleGephyrophobia.Value == true)
+			{
+				StageRegistration.RegisterSceneDefToLoop(STGPHSceneDef);
+				Log.Debug("Adding Gephyrophobia to the loop");
+				Log.Debug(STGPHSceneDef.destinationsGroup);
+			}
+			if (SnowtimeStage.ToggleGephyrophobia.Value == false)
+			{
+				Log.Debug("Skipped adding Gephyrophobia to the loop");
+			}
+			Log.Debug("Sandtrap Config Status?");
+			Log.Debug(SnowtimeStage.ToggleSandtrap.Value);
+			if (SnowtimeStage.ToggleSandtrap.Value == true)
+			{
+				StageRegistration.RegisterSceneDefToLoop(STShrineSceneDef);
+				Log.Debug("Adding Sandtrap to the loop");
+				Log.Debug(STShrineSceneDef.destinationsGroup);
+			}
+			if (SnowtimeStage.ToggleSandtrap.Value == false)
+			{
+				Log.Debug("Skipped adding Sandtrap to the loop");
+			}
+			Log.Debug("Halo Config Status?");
+			Log.Debug(SnowtimeStage.ToggleHalo.Value);
+			if (SnowtimeStage.ToggleHalo.Value == true)
+			{
+				StageRegistration.RegisterSceneDefToLoop(STHSceneDef);
+				Log.Debug("Adding Halo to the loop");
+				Log.Debug(STHSceneDef.destinationsGroup);
+			}
+			if (SnowtimeStage.ToggleHalo.Value == false)
+			{
+				Log.Debug("Skipped adding Halo to the loop");
+			}
+			Log.Debug("Halo Config Status?");
+			Log.Debug(SnowtimeStage.ToggleHalo2.Value);
+			if (SnowtimeStage.ToggleHalo2.Value == true)
+			{
+				StageRegistration.RegisterSceneDefToLoop(STH2SceneDef);
+				Log.Debug("Adding Halo(Alt) to the loop");
+				Log.Debug(STH2SceneDef.destinationsGroup);
+			}
+			if (SnowtimeStage.ToggleHalo2.Value == false)
+			{
+				Log.Debug("Skipped adding Halo(Alt) to the loop");
+			}
+			Log.Debug("New Mombasa Bridge Config Status?");
+			Log.Debug(SnowtimeStage.ToggleNMB.Value);
+			if (SnowtimeStage.ToggleNMB.Value == true)
+			{
+				StageRegistration.RegisterSceneDefToLoop(STNMBSceneDef);
+				Log.Debug("Adding New Mombasa Bridge to the loop");
+				Log.Debug(STNMBSceneDef.destinationsGroup);
+			}
+			if (SnowtimeStage.ToggleNMB.Value == false)
+			{
+				Log.Debug("Skipped adding New Mombasa Bridge to the loop");
+			}
+			Log.Debug("gm_construct Config Status?");
+			Log.Debug(SnowtimeStage.ToggleGMC.Value);
+			if (SnowtimeStage.ToggleGMC.Value == true)
+			{
+				StageRegistration.RegisterSceneDefToLoop(STGMCSceneDef);
+				Log.Debug("Adding gm_construct to the loop");
+				Log.Debug(STGMCSceneDef.destinationsGroup);
+			}
+			if (SnowtimeStage.ToggleGMC.Value == false)
+			{
+				Log.Debug("Skipped adding gm_construct to the loop");
+			}
+			Log.Debug("Delta Halo Config Status?");
+			Log.Debug(SnowtimeStage.ToggleDHalo.Value);
+			if (SnowtimeStage.ToggleDHalo.Value == true)
+			{
+				StageRegistration.RegisterSceneDefToLoop(STDHSceneDef);
+				Log.Debug("Adding Delta Halo to the loop");
+				Log.Debug(STDHSceneDef.destinationsGroup);
+			}
+			if (SnowtimeStage.ToggleDHalo.Value == false)
+			{
+				Log.Debug("Skipped adding Delta Halo to the loop");
+			}
         }
 
         private static IEnumerator LoadAllAssetsAsync<T>(AssetBundle assetBundle, IProgress<float> progress, Action<T[]> onAssetsLoaded) where T : UnityEngine.Object
@@ -269,5 +420,6 @@ namespace Snowtime.Content
                     $"Error code : {akResult}");
             }
         }
+		
     }
 }

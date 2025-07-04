@@ -8,17 +8,22 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: ring_night
-  m_Shader: {fileID: 4800000, guid: 6fbd24000cabe0f4494815d6a093e897, type: 3}
+  m_Shader: {fileID: 4800000, guid: 2feff4924d1d6ef488db2de717483401, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords:
+  - BSSBLOOMFOGTYPE_HEIGHT
+  - _LIGHTINGMODE_FLAT
+  - _RIM2STYLE_POIYOMI
+  - _RIMSTYLE_POIYOMI
   - _STOCHASTICMODE_DELIOT_HEITZ
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 2995
   stringTagMap:
-    AllLockedGUIDS: fc9c9e676a4721a4899521a0a0e1a624,8839370c3f973d6458957edc1e1b7068,52bf2e188a7556e4d8d0b85d0225d588
-    OriginalKeywords: _STOCHASTICMODE_DELIOT_HEITZ
+    AllLockedGUIDS: 52bf2e188a7556e4d8d0b85d0225d588
+    OriginalKeywords: BSSBLOOMFOGTYPE_HEIGHT _LIGHTINGMODE_FLAT _RIM2STYLE_POIYOMI
+      _RIMSTYLE_POIYOMI _STOCHASTICMODE_DELIOT_HEITZ
     OriginalShader: .poiyomi/Poiyomi Toon
     OriginalShaderGUID: 23f6705aff8bf964c87bfb3dd66ab345
     RenderType: Opaque

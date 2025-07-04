@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: bb14bcfacddf10841a9fa7df5016146e
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _MainTex: {instanceID: 0}
+  - _BumpMap: {instanceID: 0}
+  - _MetallicGlossMap: {instanceID: 0}
+  - _OcclusionMap: {instanceID: 0}
+  - _EmissionMap: {instanceID: 0}
+  - _TransmissionMap: {instanceID: 0}
+  - _WindTex: {instanceID: 0}
+  - _texcoord: {instanceID: 0}
+  - _RNM0: {instanceID: 0}
+  - _RNM1: {instanceID: 0}
+  - _RNM2: {instanceID: 0}
+  nonModifiableTextures:
+  - _DFG: {fileID: 2800000, guid: 3349de6c3ca1e2746af11547bb0b5064, type: 3}
+  - _Noise: {fileID: 2800000, guid: 752a794b75d81a645af751fa3b6dd515, type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

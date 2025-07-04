@@ -18,6 +18,10 @@
 						<State Name="HaloStage4Boss" ID="{37ABEC87-3036-45FE-A02B-09839A720F69}"/>
 						<State Name="HaloStage2Alt" ID="{ABDEEF73-21D1-455D-8F20-D48552000A7C}"/>
 						<State Name="HaloTheme2Alt" ID="{38BB0D7C-43AC-4312-BCCD-63CBEF4A1B19}"/>
+						<State Name="HaloSidewinder" ID="{168425AE-5630-4317-A902-E6AA746B4B13}"/>
+						<State Name="HaloNMB" ID="{EDA5BD9E-9A9F-440F-9F81-66666C8C86A3}"/>
+						<State Name="HaloDeltaHalo" ID="{9F522B0F-54CF-4215-B3B8-DE975F177C46}"/>
+						<State Name="gmconstruct" ID="{A923F269-9F2D-4209-B5B4-CE2BDD795F63}"/>
 					</ChildrenList>
 				</StateGroup>
 				<StateGroup Name="Music_system" ID="{823819D3-4140-429B-AB21-858CFEE8595D}">

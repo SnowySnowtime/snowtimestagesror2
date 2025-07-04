@@ -1650,7 +1650,7 @@ Material:
     - _NormalCorrect: 0
     - _NormalCorrectAmount: 0.9
     - _OcclusionStrength: 1
-    - _OffsetFactor: 100000
+    - _OffsetFactor: 1000000
     - _OffsetUnits: 0
     - _Offset_Z: 0
     - _OutlineALColorEnabled: 0

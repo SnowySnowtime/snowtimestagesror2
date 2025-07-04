@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -380008858, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+  m_Name: cscLemurianError
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 1743227277682504, guid: b02bab2cc81efa941b073d661729a0cb, type: 3}
+  sendOverNetwork: 1
+  hullSize: 0
+  nodeGraphType: 0
+  requiredFlags: 0
+  forbiddenFlags: 4
+  directorCreditCost: 11
+  occupyPosition: 0
+  eliteRules: 0
+  noElites: 1
+  forbiddenAsBoss: 0
+  _loadout:
+    bodyLoadouts: []
+  inventoryToCopy: {fileID: 0}
+  equipmentToGrant: []
+  itemsToGrant:
+  - itemDef: {fileID: 11400000, guid: 95cdb9e06f426684daf27071e0880ab1, type: 2}
+    count: 1

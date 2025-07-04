@@ -1,0 +1,1126 @@
+fileFormatVersion: 2
+guid: e1e1ec045e8ecb1488a0d562a58dadc9
+ModelImporter:
+  serializedVersion: 21300
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: base_stucco1_windowsmall lm_0.001
+    second: {fileID: 2100000, guid: dfb74ff4697fc2e4fb8f489388734525, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: base_stucco1_windowsmall lm_0.05000000074505806
+    second: {fileID: 2100000, guid: dfb74ff4697fc2e4fb8f489388734525, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: base_stucco5_window lm_0.001
+    second: {fileID: 2100000, guid: c5c5c5b6b90730946a9e28e378a16f02, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: base_stucco5_window lm_0.05000000074505806
+    second: {fileID: 2100000, guid: c5c5c5b6b90730946a9e28e378a16f02, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: concrete_bubble lm_1.0
+    second: {fileID: 2100000, guid: 84a90a269e4f06d43bb4f2ff6179c0d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: concrete_bubble.001
+    second: {fileID: 2100000, guid: 84a90a269e4f06d43bb4f2ff6179c0d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: concrete_hor_strip
+    second: {fileID: 2100000, guid: 47223a7d847777648b65a1ed94fa7a9a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: concrete_hor_strip.001
+    second: {fileID: 2100000, guid: 47223a7d847777648b65a1ed94fa7a9a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: concrete_hor_strip.002
+    second: {fileID: 2100000, guid: 47223a7d847777648b65a1ed94fa7a9a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: concrete_hor_strip.003
+    second: {fileID: 2100000, guid: 47223a7d847777648b65a1ed94fa7a9a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: concrete_stained_a lm_0.001
+    second: {fileID: 2100000, guid: 171697721103ae24ca0e2b9cdac36dd5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: concrete_stained_a lm_0.05000000074505806
+    second: {fileID: 2100000, guid: 171697721103ae24ca0e2b9cdac36dd5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: concrete_stained_a lm_0.5
+    second: {fileID: 2100000, guid: 171697721103ae24ca0e2b9cdac36dd5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: concrete_stained_a.001
+    second: {fileID: 2100000, guid: 171697721103ae24ca0e2b9cdac36dd5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: concrete_stained_pier_lo lm_0.25
+    second: {fileID: 2100000, guid: 4c36592a97986514cbcd11ec9337b9f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: debris_pile
+    second: {fileID: 2100000, guid: 8aa9886e5ecfd79499bbadfd81ba57c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: debris_pile.001
+    second: {fileID: 2100000, guid: 8aa9886e5ecfd79499bbadfd81ba57c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_letters
+    second: {fileID: 2100000, guid: cab79510d836e134ba9effbbf4f7b9c2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_letters_blue
+    second: {fileID: 2100000, guid: cab79510d836e134ba9effbbf4f7b9c2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_letters_red
+    second: {fileID: 2100000, guid: cab79510d836e134ba9effbbf4f7b9c2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decal_letters_red.001
+    second: {fileID: 2100000, guid: cab79510d836e134ba9effbbf4f7b9c2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: door_metal_a
+    second: {fileID: 2100000, guid: 62ad6ce858460594daf343fe2ddf7b12, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: door_metal_a.001
+    second: {fileID: 2100000, guid: 62ad6ce858460594daf343fe2ddf7b12, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: door_metal_a.002
+    second: {fileID: 2100000, guid: 62ad6ce858460594daf343fe2ddf7b12, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: door_metal_a.003
+    second: {fileID: 2100000, guid: 62ad6ce858460594daf343fe2ddf7b12, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ec_blastdoors.006
+    second: {fileID: 2100000, guid: 08da10777795162458c768474b5c6a27, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ec_blastdoors.007
+    second: {fileID: 2100000, guid: 08da10777795162458c768474b5c6a27, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ec_blastdoors.009
+    second: {fileID: 2100000, guid: 08da10777795162458c768474b5c6a27, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ec_bridge_oceanhaze
+    second: {fileID: 2100000, guid: be5cc2a5857b3a0439915273f8f1b6d1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ec_bridge_oceanhaze.001
+    second: {fileID: 2100000, guid: be5cc2a5857b3a0439915273f8f1b6d1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ec_bridge_oceanhaze.002
+    second: {fileID: 2100000, guid: be5cc2a5857b3a0439915273f8f1b6d1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ec_bridge_oceanhaze.003
+    second: {fileID: 2100000, guid: be5cc2a5857b3a0439915273f8f1b6d1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ec_bridge_oceanhaze.004
+    second: {fileID: 2100000, guid: be5cc2a5857b3a0439915273f8f1b6d1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ec_bridge_oceanhaze.005
+    second: {fileID: 2100000, guid: be5cc2a5857b3a0439915273f8f1b6d1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ec_bridge_oceanhaze.006
+    second: {fileID: 2100000, guid: be5cc2a5857b3a0439915273f8f1b6d1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ec_bridge_oceanhaze.007
+    second: {fileID: 2100000, guid: be5cc2a5857b3a0439915273f8f1b6d1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ec_bridge_oceanhaze.008
+    second: {fileID: 2100000, guid: be5cc2a5857b3a0439915273f8f1b6d1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ec_bridge_oceanhaze.009
+    second: {fileID: 2100000, guid: be5cc2a5857b3a0439915273f8f1b6d1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ec_bridge_oceanhaze.010
+    second: {fileID: 2100000, guid: be5cc2a5857b3a0439915273f8f1b6d1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ec_bridge_oceanhaze.011
+    second: {fileID: 2100000, guid: be5cc2a5857b3a0439915273f8f1b6d1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ec_bridge_oceanhaze.012
+    second: {fileID: 2100000, guid: be5cc2a5857b3a0439915273f8f1b6d1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ec_bridge_oceanhaze.013
+    second: {fileID: 2100000, guid: be5cc2a5857b3a0439915273f8f1b6d1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ec_bridge_oceanhaze.014
+    second: {fileID: 2100000, guid: be5cc2a5857b3a0439915273f8f1b6d1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ec_bridge_oceanhaze.015
+    second: {fileID: 2100000, guid: be5cc2a5857b3a0439915273f8f1b6d1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ec_bridge_oceanhaze.016
+    second: {fileID: 2100000, guid: be5cc2a5857b3a0439915273f8f1b6d1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ec_bridge_oceanhaze.017
+    second: {fileID: 2100000, guid: be5cc2a5857b3a0439915273f8f1b6d1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ec_ocean_floor lm_9.999999747378752e-06
+    second: {fileID: 2100000, guid: c3ac9be246369af4c9b83d50e3ed5e96, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ec_ocean_floor.001
+    second: {fileID: 2100000, guid: c3ac9be246369af4c9b83d50e3ed5e96, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: foundation_panels_b lm_0.05000000074505806
+    second: {fileID: 2100000, guid: 9528d9f46d155fe43b8994a00b37e248, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: girders_a
+    second: {fileID: 2100000, guid: 2fafb4be2c216bf47b2d7f995a58c7a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: girders_a lm_0.001
+    second: {fileID: 2100000, guid: 2fafb4be2c216bf47b2d7f995a58c7a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: girders_a lm_0.002
+    second: {fileID: 2100000, guid: 2fafb4be2c216bf47b2d7f995a58c7a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: girders_a lm_0.007
+    second: {fileID: 2100000, guid: 2fafb4be2c216bf47b2d7f995a58c7a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: girders_a lm_0.008
+    second: {fileID: 2100000, guid: 2fafb4be2c216bf47b2d7f995a58c7a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: girders_a lm_0.009
+    second: {fileID: 2100000, guid: 2fafb4be2c216bf47b2d7f995a58c7a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: girders_a lm_0.010
+    second: {fileID: 2100000, guid: 2fafb4be2c216bf47b2d7f995a58c7a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: girders_a lm_0.10000000149011612
+    second: {fileID: 2100000, guid: 2fafb4be2c216bf47b2d7f995a58c7a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: girders_a%.001
+    second: {fileID: 2100000, guid: 2fafb4be2c216bf47b2d7f995a58c7a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: girders_a.001
+    second: {fileID: 2100000, guid: 2fafb4be2c216bf47b2d7f995a58c7a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: girders_a.002
+    second: {fileID: 2100000, guid: 2fafb4be2c216bf47b2d7f995a58c7a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: girders_a.006
+    second: {fileID: 2100000, guid: 2fafb4be2c216bf47b2d7f995a58c7a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: girders_a_rusty
+    second: {fileID: 2100000, guid: 2fafb4be2c216bf47b2d7f995a58c7a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hazard_strips_a
+    second: {fileID: 2100000, guid: 0b190f08248b067499909f4b4a517585, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hazard_strips_a.001
+    second: {fileID: 2100000, guid: 0b190f08248b067499909f4b4a517585, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hazard_strips_a.007
+    second: {fileID: 2100000, guid: 0b190f08248b067499909f4b4a517585, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hazard_strips_a.008
+    second: {fileID: 2100000, guid: 0b190f08248b067499909f4b4a517585, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hazard_strips_a.009
+    second: {fileID: 2100000, guid: 0b190f08248b067499909f4b4a517585, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hazard_strips_a.012
+    second: {fileID: 2100000, guid: 0b190f08248b067499909f4b4a517585, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: int_pipes_a
+    second: {fileID: 2100000, guid: 220dd657283ce1b468a2a51f4f135c2f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: int_pipes_a.001
+    second: {fileID: 2100000, guid: 220dd657283ce1b468a2a51f4f135c2f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: light_flourescent_a lp_0.001
+    second: {fileID: 2100000, guid: aa5621492b2d2de45ab30a795a93f141, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: light_flourescent_a lp_0.05000000074505806
+    second: {fileID: 2100000, guid: aa5621492b2d2de45ab30a795a93f141, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: light_flourescent_a lp_0.20000000298023224 hl_5.0
+    second: {fileID: 2100000, guid: aa5621492b2d2de45ab30a795a93f141, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: light_flourescent_a lp_0.3499999940395355
+    second: {fileID: 2100000, guid: aa5621492b2d2de45ab30a795a93f141, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: light_flourescent_a.001
+    second: {fileID: 2100000, guid: aa5621492b2d2de45ab30a795a93f141, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: light_flourescent_a_unlit
+    second: {fileID: 2100000, guid: dcf9b19f8850eee4ea3e638657560e59, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: light_flourescent_a_unlit.002
+    second: {fileID: 2100000, guid: dcf9b19f8850eee4ea3e638657560e59, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: light_flourescent_red hl_3.0
+    second: {fileID: 2100000, guid: 40d0e160c068d5c4eafde538b4e68635, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: light_warningflash_a lm_0.10000000149011612
+    second: {fileID: 2100000, guid: dc86fa495853b7d428e5b8b43832e661, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge lm_0.001
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge lm_0.002
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge lm_0.003
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge lm_0.004
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge lm_0.005
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge lm_0.006
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge lm_0.007
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge lm_0.008
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge lm_0.009
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge lm_0.010
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge lm_0.011
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge lm_0.012
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge lm_0.013
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge lm_0.014
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge lm_0.10000000149011612
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge lm_9.999999747378752e-06
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge lm_9.999999747378752e-06.001
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge lm_9.999999747378752e-06.002
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge lm_9.999999747378752e-06.003
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge lm_9.999999747378752e-06.004
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge lm_9.999999747378752e-06.005
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge lm_9.999999747378752e-06.006
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge lm_9.999999747378752e-06.007
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge lm_9.999999747378752e-06.008
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge lm_9.999999747378752e-06.009
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge lm_9.999999747378752e-06.010
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge lm_9.999999747378752e-06.011
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge lm_9.999999747378752e-06.025
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge lm_9.999999747378752e-06.026
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge lm_9.999999747378752e-06.027
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge lm_9.999999747378752e-06.042
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge%.001
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge%_.001
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge.001
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge.002
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge.003
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge.004
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge.005
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge.006
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge.007
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge.008
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge.009
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge.010
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge.013
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge.014
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge.015
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge.016
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge.017
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge.018
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge_rusty
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge_rusty lm_0.001
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge_rusty lm_0.002
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge_rusty lm_0.05000000074505806
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge_rusty lm_0.25
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge_rusty lm_9.999999747378752e-05
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey_edge_rusty.008
+    second: {fileID: 2100000, guid: 3fb5fc6757ff75f459c485e97864109e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal_slats
+    second: {fileID: 2100000, guid: 08b25f7a67a005f448844bbc261b9964, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal_slats.001
+    second: {fileID: 2100000, guid: 08b25f7a67a005f448844bbc261b9964, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal_strips_b
+    second: {fileID: 2100000, guid: 9b519bdbe7708374294a6b54d783a5b6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal_strips_b.001
+    second: {fileID: 2100000, guid: 9b519bdbe7708374294a6b54d783a5b6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal_strips_b.006
+    second: {fileID: 2100000, guid: 9b519bdbe7708374294a6b54d783a5b6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal_strips_b.007
+    second: {fileID: 2100000, guid: 9b519bdbe7708374294a6b54d783a5b6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal_strips_b.008
+    second: {fileID: 2100000, guid: 9b519bdbe7708374294a6b54d783a5b6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal_strips_b.011
+    second: {fileID: 2100000, guid: 9b519bdbe7708374294a6b54d783a5b6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal_strips_c
+    second: {fileID: 2100000, guid: b5d148188162c104191dc80d062e0821, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal_strips_c.001
+    second: {fileID: 2100000, guid: b5d148188162c104191dc80d062e0821, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal_strips_c.002
+    second: {fileID: 2100000, guid: b5d148188162c104191dc80d062e0821, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal_strips_c.003
+    second: {fileID: 2100000, guid: b5d148188162c104191dc80d062e0821, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal_strips_c.005
+    second: {fileID: 2100000, guid: b5d148188162c104191dc80d062e0821, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal_strips_c.006
+    second: {fileID: 2100000, guid: b5d148188162c104191dc80d062e0821, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal_strips_c.007
+    second: {fileID: 2100000, guid: b5d148188162c104191dc80d062e0821, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal_strips_c_rusty lm_0.001
+    second: {fileID: 2100000, guid: b5d148188162c104191dc80d062e0821, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: nm_metal_grey_panels
+    second: {fileID: 2100000, guid: 591f92de9d2f30a4aa16233e33c432a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: nm_metal_grey_panels lm_0.001
+    second: {fileID: 2100000, guid: 591f92de9d2f30a4aa16233e33c432a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: nm_metal_grey_panels lm_0.004
+    second: {fileID: 2100000, guid: 591f92de9d2f30a4aa16233e33c432a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: nm_metal_grey_panels lm_0.005
+    second: {fileID: 2100000, guid: 591f92de9d2f30a4aa16233e33c432a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: nm_metal_grey_panels lm_0.009
+    second: {fileID: 2100000, guid: 591f92de9d2f30a4aa16233e33c432a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: nm_metal_grey_panels lm_0.05000000074505806
+    second: {fileID: 2100000, guid: 591f92de9d2f30a4aa16233e33c432a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: nm_metal_grey_panels.001
+    second: {fileID: 2100000, guid: 591f92de9d2f30a4aa16233e33c432a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: nm_metal_grey_panels.002
+    second: {fileID: 2100000, guid: 591f92de9d2f30a4aa16233e33c432a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: nm_metal_grey_panels.003
+    second: {fileID: 2100000, guid: 591f92de9d2f30a4aa16233e33c432a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: nm_metal_grey_panels.004
+    second: {fileID: 2100000, guid: 591f92de9d2f30a4aa16233e33c432a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: nm_metal_grey_panels.005
+    second: {fileID: 2100000, guid: 591f92de9d2f30a4aa16233e33c432a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: nm_metal_grey_panels.006
+    second: {fileID: 2100000, guid: 591f92de9d2f30a4aa16233e33c432a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: nm_trima lm_0.001
+    second: {fileID: 2100000, guid: c5f723e1f81d60446b9e27c416523d05, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: nm_trima lm_0.05000000074505806
+    second: {fileID: 2100000, guid: c5f723e1f81d60446b9e27c416523d05, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: nm_trima lm_0.10000000149011612
+    second: {fileID: 2100000, guid: c5f723e1f81d60446b9e27c416523d05, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: nm_trima.001
+    second: {fileID: 2100000, guid: c5f723e1f81d60446b9e27c416523d05, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: panel_building_base_a
+    second: {fileID: 2100000, guid: 2a9cd483ae9b73046b8ee586e800af1c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: panel_service_door_plain
+    second: {fileID: 2100000, guid: 8a41fea6091626c42b955516a65cb703, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: panel_service_door_plain.001
+    second: {fileID: 2100000, guid: 8a41fea6091626c42b955516a65cb703, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: panel_service_door_plain.002
+    second: {fileID: 2100000, guid: 8a41fea6091626c42b955516a65cb703, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: panel_service_door_plain.003
+    second: {fileID: 2100000, guid: 8a41fea6091626c42b955516a65cb703, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: park_glass
+    second: {fileID: 2100000, guid: cddc24686ae64af4eac2537df5aeddbc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: park_glass.001
+    second: {fileID: 2100000, guid: cddc24686ae64af4eac2537df5aeddbc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: park_glass_opaque
+    second: {fileID: 2100000, guid: 65605247f18ec654598f64a025626e97, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: park_glass_opaque.001
+    second: {fileID: 2100000, guid: 65605247f18ec654598f64a025626e97, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: park_glass_opaque_low lm_0.02500000037252903
+    second: {fileID: 2100000, guid: 65605247f18ec654598f64a025626e97, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: paver_concrete lm_2.0
+    second: {fileID: 2100000, guid: d8412301c866eed4db8e509fbeb4367a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: paver_concrete lm_2.001
+    second: {fileID: 2100000, guid: d8412301c866eed4db8e509fbeb4367a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: paver_concrete lm_2.002
+    second: {fileID: 2100000, guid: d8412301c866eed4db8e509fbeb4367a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: paver_concrete.001
+    second: {fileID: 2100000, guid: d8412301c866eed4db8e509fbeb4367a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stoplight_flash
+    second: {fileID: 2100000, guid: 021afe1cbb746574ebde34f75f02377f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stoplight_flash.001
+    second: {fileID: 2100000, guid: 021afe1cbb746574ebde34f75f02377f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stoplight_flash.002
+    second: {fileID: 2100000, guid: 021afe1cbb746574ebde34f75f02377f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: street_highway_bottom lm_0.5
+    second: {fileID: 2100000, guid: 7c768ab6a11d20041a1a6b6d08bd9388, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: street_highway_bottom.001
+    second: {fileID: 2100000, guid: 7c768ab6a11d20041a1a6b6d08bd9388, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: street_straight
+    second: {fileID: 2100000, guid: 06f87a81be36c414ebb57e46ac9433c2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: street_straight.001
+    second: {fileID: 2100000, guid: 06f87a81be36c414ebb57e46ac9433c2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: street_straight_unlit
+    second: {fileID: 2100000, guid: a7e19305e5d4cfa419466bd6b971800c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: street_straight_unlit.001
+    second: {fileID: 2100000, guid: a7e19305e5d4cfa419466bd6b971800c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: street_straight_unlit.002
+    second: {fileID: 2100000, guid: a7e19305e5d4cfa419466bd6b971800c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: street_straight_unlit.003
+    second: {fileID: 2100000, guid: a7e19305e5d4cfa419466bd6b971800c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: street_tunnel_border
+    second: {fileID: 2100000, guid: d207b2b30fd04fe45b88b0ede1a65b3b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: street_tunnel_border.007
+    second: {fileID: 2100000, guid: d207b2b30fd04fe45b88b0ede1a65b3b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: street_tunnel_border.008
+    second: {fileID: 2100000, guid: d207b2b30fd04fe45b88b0ede1a65b3b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: street_tunnel_border.009
+    second: {fileID: 2100000, guid: d207b2b30fd04fe45b88b0ede1a65b3b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: street_tunnel_border.011
+    second: {fileID: 2100000, guid: d207b2b30fd04fe45b88b0ede1a65b3b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: street_tunnel_border_unlit
+    second: {fileID: 2100000, guid: c0673604e235049409e54b42c7740afa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: street_tunnel_border_unlit.001
+    second: {fileID: 2100000, guid: c0673604e235049409e54b42c7740afa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: street_tunnel_border_unlit.002
+    second: {fileID: 2100000, guid: c0673604e235049409e54b42c7740afa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: street_tunnel_border_unlit.003
+    second: {fileID: 2100000, guid: c0673604e235049409e54b42c7740afa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: toll_plaza_ground
+    second: {fileID: 2100000, guid: 38f8590ed408a1e4abac4a0e783a16be, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: toll_plaza_ground.001
+    second: {fileID: 2100000, guid: 38f8590ed408a1e4abac4a0e783a16be, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

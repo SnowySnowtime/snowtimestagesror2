@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "com.passivepicasso.thunderkit": "https://github.com/PassivePicasso/ThunderKit.git",
+    "com.thetimesweeper.henryeditortools": "https://github.com/TheTimeSweeper/HenryEditorTools.git",
     "com.unity.assetbundlebrowser": "https://github.com/Unity-Technologies/AssetBundles-Browser.git",
     "com.unity.ide.visualstudio": "2.0.22",
     "com.unity.multiplayer-hlapi": "https://github.com/risk-of-thunder/UnityMultiplayerHLAPI.git",
@@ -8,7 +9,7 @@
     "jace-locationsofprecipitation": "https://github.com/JaceDaDorito/jace-locationsofprecipitation.git",
     "riskofthunder-ror2editorkit": "https://github.com/risk-of-thunder/RoR2EditorKit.git",
     "riskofthunder-ror2importextensions": "https://github.com/risk-of-thunder/RoR2ImportExtensions.git",
-    "teammoonstorm-moonstormsharedutils": "https://github.com/TeamMoonstorm/MoonstormSharedUtils.git#2.0Dev",
+    "teammoonstorm-moonstormsharedutils": "https://github.com/TeamMoonstorm/MoonstormSharedUtils.git",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
     "com.unity.modules.animation": "1.0.0",

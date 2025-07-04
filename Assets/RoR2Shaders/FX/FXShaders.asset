@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1229136950, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+  m_Name: FXShaders
+  m_EditorClassIdentifier:
+  assets:
+  - {fileID: 4800000, guid: d766371a8cca8b54896c50fcaf3c77ee, type: 2}
+  - {fileID: 4800000, guid: 7e7bc061990a27c48a053ad33a11086d, type: 2}
+  - {fileID: 4800000, guid: d394252cec97427428373d204824363b, type: 2}
+  - {fileID: 4800000, guid: bb7aa7fa77382f1479b83a949921ad96, type: 2}
+  - {fileID: 4800000, guid: ccaa0b89fc58272498bee56cedcd66a3, type: 2}
+  - {fileID: 4800000, guid: 02891fe8452ff2a449815accd2542615, type: 2}
+  - {fileID: 4800000, guid: e4de3c02b7fc6984ab05e07af4f05921, type: 2}
+  - {fileID: 4800000, guid: 4636911ef62c1f545908f1ad58cb75f1, type: 2}

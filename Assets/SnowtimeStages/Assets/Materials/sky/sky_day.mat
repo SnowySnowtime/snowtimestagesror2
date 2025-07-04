@@ -1265,8 +1265,8 @@ Material:
     - _LightingAdditiveEnable: 0
     - _LightingAdditiveGradientEnd: 0.5
     - _LightingAdditiveGradientStart: 0
-    - _LightingAdditiveLimit: 1
-    - _LightingAdditiveLimited: 0
+    - _LightingAdditiveLimit: 0
+    - _LightingAdditiveLimited: 1
     - _LightingAdditiveMonochromatic: 1
     - _LightingAdditivePassthrough: 0.5
     - _LightingAdditiveType: 3
@@ -1565,7 +1565,7 @@ Material:
     - _NormalCorrect: 0
     - _NormalCorrectAmount: 0.9
     - _OcclusionStrength: 1
-    - _OffsetFactor: 20000
+    - _OffsetFactor: 2000000
     - _OffsetUnits: 0
     - _Offset_Z: 0
     - _OutlineALColorEnabled: 0
@@ -2406,7 +2406,7 @@ Material:
     - m_start_PPAnimations: 0
     - m_start_PathAudioLink: 0
     - m_start_PoiGlobalCategory: 0
-    - m_start_PoiLightData: 0
+    - m_start_PoiLightData: 1
     - m_start_PoiPostProcessingCategory: 0
     - m_start_PoiShading: 0
     - m_start_PoiUVCategory: 0

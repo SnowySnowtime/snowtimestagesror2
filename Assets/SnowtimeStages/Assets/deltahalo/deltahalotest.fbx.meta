@@ -1,0 +1,416 @@
+fileFormatVersion: 2
+guid: 1904d1e3399983349816beb39879d3e4
+ModelImporter:
+  serializedVersion: 21300
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bridge_doorjamb
+    second: {fileID: 2100000, guid: 7a23a097ea2ddb74abfcf96a6fd924fd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bushes
+    second: {fileID: 2100000, guid: e21f590a6a3b3fe4d9a7c3ee815e2720, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cliff_walls
+    second: {fileID: 2100000, guid: 1d697fc1e061af144926d88ee49a8601, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cracks_large
+    second: {fileID: 2100000, guid: a00e8353b006d954e86d8b29f9c7a4bd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ext_tower_floor
+    second: {fileID: 2100000, guid: 86840e6a7ef2550489111dd09c7fdab3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: floor_simple_tile
+    second: {fileID: 2100000, guid: 15d6c06790ff0884798c48a9ce9b1395, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: floor_x_tile
+    second: {fileID: 2100000, guid: ff066ba29ef8b6040ba619ef3b7b615a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: foliage_cliffs
+    second: {fileID: 2100000, guid: b8916a31c24d4ee408d1f1b0e963592e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass_dirty_edge
+    second: {fileID: 2100000, guid: daece5641c4700d43ae69797f13e38f0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: granite_mossy
+    second: {fileID: 2100000, guid: 7f2d20e12cb4fc84bbab348587c8c567, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: grass_hang
+    second: {fileID: 2100000, guid: f957022e41eb20546b0bf96ff3bc3c15, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: grotto_falls
+    second: {fileID: 2100000, guid: e93eb03f4c39fd442a0d293597e89b08, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: grotto_water
+    second: {fileID: 2100000, guid: 04ed48c9581998243ae06ecfc69a5b50, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ground_bridge
+    second: {fileID: 2100000, guid: 88f5e903825bb6c4590ed668439a0781, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ground_grotto
+    second: {fileID: 2100000, guid: 2aaeeeb87a7ea1e4ba5a9a0415158d71, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ground_grotto_puddle
+    second: {fileID: 2100000, guid: 2aaeeeb87a7ea1e4ba5a9a0415158d71, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ground_grotto_shallow
+    second: {fileID: 2100000, guid: 2aaeeeb87a7ea1e4ba5a9a0415158d71, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ground_lz
+    second: {fileID: 2100000, guid: fd8edba02212f594aa5f6d8773fece12, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ground_moss_a
+    second: {fileID: 2100000, guid: 2821a0e7ed52b39428e53d7c36ca9f3b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ground_temple
+    second: {fileID: 2100000, guid: 9cc1ba160c78a8b46b150ff194635cd2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ground_temple_entrance
+    second: {fileID: 2100000, guid: a43bf49599b1b9b42aee32e630c5a2bb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ground_towers
+    second: {fileID: 2100000, guid: c96c33c73f860f64aa6385466a7f6fb2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ground_towers_water
+    second: {fileID: 2100000, guid: c96c33c73f860f64aa6385466a7f6fb2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: island_terrain
+    second: {fileID: 2100000, guid: 3356e3775ab66c848910c9a51a8a341c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: light_bands_ag_amber
+    second: {fileID: 2100000, guid: 6544e1c94f80141488feee61e9796d21, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: light_bands_ag_white
+    second: {fileID: 2100000, guid: 87412d90869c7a144bc8dc1048594bf3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: light_volume_halogen
+    second: {fileID: 2100000, guid: 0bf8333a1de0ade4a9388e02718b808c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ocean_shore
+    second: {fileID: 2100000, guid: 782e9bd0328e8de4784fa4ae7d103435, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: panel_thick_strip
+    second: {fileID: 2100000, guid: 3f96d50d212d5814bbba09677a11081d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: panel_tread
+    second: {fileID: 2100000, guid: 4bb5de577ed19fb42a76abd1d63c8f10, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plate_ext_dc
+    second: {fileID: 2100000, guid: 86840e6a7ef2550489111dd09c7fdab3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rock_a
+    second: {fileID: 2100000, guid: 9a63c11380fceeb4684b3b104ad05f9c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stone_columns_small lm_2.0
+    second: {fileID: 2100000, guid: b5f2470ebaab39d46ad0c2f1ce4a94b9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stone_floors
+    second: {fileID: 2100000, guid: af933fa828fc7264e8320acb812e0782, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stone_floors_underwater
+    second: {fileID: 2100000, guid: af933fa828fc7264e8320acb812e0782, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stone_walls
+    second: {fileID: 2100000, guid: b5f2470ebaab39d46ad0c2f1ce4a94b9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stone_walls_dec_inset
+    second: {fileID: 2100000, guid: 0bdf60a36f5b9cd40b2d3265cbf7119b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: swordfern
+    second: {fileID: 2100000, guid: ff06af66a8400ef448afdcc064514dd1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: swordfern.001
+    second: {fileID: 2100000, guid: ff06af66a8400ef448afdcc064514dd1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: temple_pool_water
+    second: {fileID: 2100000, guid: 6ca545981e2cb6c45847a81cd29acc9d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tower_glass
+    second: {fileID: 2100000, guid: 1fa2ac19737ec6541ac5f49a1ec93b35, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tower_metal_deco_vert
+    second: {fileID: 2100000, guid: 242dd2add74971747acfb088c9a2964b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tower_metal_dirty
+    second: {fileID: 2100000, guid: 46f319a66ade1c641a856f293486facd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tower_metal_droppings
+    second: {fileID: 2100000, guid: 955e587bf280ce8418baad9af87a4ba0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tower_metal_plain
+    second: {fileID: 2100000, guid: 901732fe8a37c09499fc19cdf97afae7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tower_metal_ramps_dirty
+    second: {fileID: 2100000, guid: d90b149ba0240504ca217e92c2b1a2d3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tower_metal_tech_strips
+    second: {fileID: 2100000, guid: 77358c2c10ba60d4c8046188221847cf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tower_metal_trim
+    second: {fileID: 2100000, guid: 958d48b31e634694690255e52a5fa0a4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tower_metal_trim_c
+    second: {fileID: 2100000, guid: 9d7dbf6a02ad0c648830ec4e93a5808c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tower_metal_trim_d
+    second: {fileID: 2100000, guid: f7492c5e3df7b4d42968abad36125448, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tower_metal_trim_e
+    second: {fileID: 2100000, guid: 656240d64d6c06c468d24d53317274f6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tower_metal_trim_f
+    second: {fileID: 2100000, guid: c3cf5c5d0de149e439bf9809697894af, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tower_metal_trim_g
+    second: {fileID: 2100000, guid: 5f15fdba8d35ba74197371cbb45b99a6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tower_pool
+    second: {fileID: 2100000, guid: 6ca545981e2cb6c45847a81cd29acc9d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tower_ramps
+    second: {fileID: 2100000, guid: 48cda6f0e40fc09498173309a8d158ad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tower_vines
+    second: {fileID: 2100000, guid: da5d0c47185622140b283c7d1de6137a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tree_clifftop
+    second: {fileID: 2100000, guid: 55fb0d62caa43d34e8360942e8da7dfe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vines
+    second: {fileID: 2100000, guid: eabcdfaa3c80f384bb5b5a263c44537b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: volume_light
+    second: {fileID: 2100000, guid: 7fd826c74c1c2384690e824475136993, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wall_pipes_tile
+    second: {fileID: 2100000, guid: f64b43617211a4049aa0e32451286ede, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: waterfall
+    second: {fileID: 2100000, guid: aa90e66d2233cfb4d9fb08bc1c416bbd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: weeds_brown
+    second: {fileID: 2100000, guid: 2fab4b5a58684154497d1db8750d2246, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

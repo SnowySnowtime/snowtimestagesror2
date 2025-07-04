@@ -48,8 +48,7 @@ MonoBehaviour:
       _valueTypeQualifiedName: RoR2.Navigation.NodeFlags, RoR2, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       _serializedValue: '{"assemblyQualifiedName":"RoR2.Navigation.NodeFlags, RoR2,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","values":"NoCharacterSpawn,
-        NoChestSpawn, NoShrineSpawn"}'
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","values":"None"}'
       _defaultSerializedValue: 
     - _settingName: gateName
       _settingID: -1148318642

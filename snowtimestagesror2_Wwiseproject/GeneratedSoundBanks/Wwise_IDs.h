@@ -59,9 +59,13 @@ namespace AK
 
             namespace STATE
             {
+                static const AkUniqueID GMCONSTRUCT = 1469929416U;
                 static const AkUniqueID HALOCOVENANTDANCE = 939841948U;
+                static const AkUniqueID HALODELTAHALO = 221305505U;
                 static const AkUniqueID HALODREAMAGAIN = 3280575944U;
+                static const AkUniqueID HALONMB = 3297631070U;
                 static const AkUniqueID HALOS3CELLO = 4290557256U;
+                static const AkUniqueID HALOSIDEWINDER = 3095027865U;
                 static const AkUniqueID HALOSTAGE2 = 228356791U;
                 static const AkUniqueID HALOSTAGE2ALT = 845250980U;
                 static const AkUniqueID HALOSTAGE3 = 228356790U;
