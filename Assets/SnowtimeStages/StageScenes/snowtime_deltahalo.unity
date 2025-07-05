@@ -54065,13 +54065,13 @@ PrefabInstance:
         type: 3}
       propertyPath: data.WwiseObjectReference
       value: 
-      objectReference: {fileID: 11400000, guid: ce1fdb68895497a40b5e59bb35d07060,
+      objectReference: {fileID: 11400000, guid: 65a06fefabb0f0b4a85e2737687a2d14,
         type: 2}
     - target: {fileID: 6179434059680183871, guid: fb823c589145c8a44a2a7d1162c8b51a,
         type: 3}
       propertyPath: data.WwiseObjectReference
       value: 
-      objectReference: {fileID: 11400000, guid: ccf5b77fbe5579d42ade0b11f060f96b,
+      objectReference: {fileID: 11400000, guid: b1e93a6bf25721741b8349caa0a2d98b,
         type: 2}
     - target: {fileID: 6179434061429625809, guid: fb823c589145c8a44a2a7d1162c8b51a,
         type: 3}

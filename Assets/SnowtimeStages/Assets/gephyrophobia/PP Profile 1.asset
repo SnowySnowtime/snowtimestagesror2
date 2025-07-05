@@ -126,24 +126,24 @@ MonoBehaviour:
     defaultState: 1
   tonemapper:
     overrideState: 1
-    value: 1
+    value: 3
   toneCurveToeStrength:
-    overrideState: 0
+    overrideState: 1
     value: 0
   toneCurveToeLength:
-    overrideState: 0
+    overrideState: 1
     value: 0.5
   toneCurveShoulderStrength:
-    overrideState: 0
-    value: 0
-  toneCurveShoulderLength:
-    overrideState: 0
+    overrideState: 1
     value: 0.5
-  toneCurveShoulderAngle:
-    overrideState: 0
+  toneCurveShoulderLength:
+    overrideState: 1
     value: 0
+  toneCurveShoulderAngle:
+    overrideState: 1
+    value: 0.225
   toneCurveGamma:
-    overrideState: 0
+    overrideState: 1
     value: 1
   ldrLut:
     overrideState: 0
@@ -166,19 +166,19 @@ MonoBehaviour:
     value: 0
   saturation:
     overrideState: 1
-    value: 5
+    value: 0
   brightness:
     overrideState: 0
     value: 0
   postExposure:
     overrideState: 1
-    value: 1
+    value: 0
   contrast:
     overrideState: 1
-    value: 15
+    value: 0
   mixerRedOutRedIn:
     overrideState: 0
-    value: 100
+    value: 0
   mixerRedOutGreenIn:
     overrideState: 0
     value: 0
@@ -190,7 +190,7 @@ MonoBehaviour:
     value: 0
   mixerGreenOutGreenIn:
     overrideState: 0
-    value: 100
+    value: 199
   mixerGreenOutBlueIn:
     overrideState: 0
     value: 0
@@ -205,13 +205,13 @@ MonoBehaviour:
     value: 100
   lift:
     overrideState: 0
-    value: {x: 1, y: 1, z: 1, w: 0}
+    value: {x: 1, y: 1, z: 1, w: -0.045146722}
   gamma:
     overrideState: 0
-    value: {x: 1, y: 1, z: 1, w: 0}
+    value: {x: 1, y: 1, z: 1, w: 0.43742418}
   gain:
     overrideState: 0
-    value: {x: 1, y: 1, z: 1, w: 0}
+    value: {x: 1, y: 1, z: 1, w: -0.49817747}
   masterCurve:
     overrideState: 0
     value:
@@ -1451,13 +1451,13 @@ MonoBehaviour:
     value: 0
   fogColorStart:
     overrideState: 1
-    value: {r: 0, g: 0, b: 0, a: 1}
+    value: {r: 0, g: 0, b: 0, a: 0}
   fogColorMid:
     overrideState: 1
-    value: {r: 0, g: 0, b: 0, a: 1}
+    value: {r: 0, g: 0, b: 0, a: 0}
   fogColorEnd:
     overrideState: 1
-    value: {r: 0, g: 0, b: 0, a: 1}
+    value: {r: 0, g: 0, b: 0, a: 0}
   skyboxStrength:
     overrideState: 1
-    value: 0
+    value: 1

@@ -59,6 +59,7 @@ namespace Snowtime.Content
         // STNMBSceneDef = NewMombasaBridge
         // STGMCSceneDef = gm_construct
         // STDHSceneDef = Delta Halo
+        // STFlatSceneDef = Delta Halo
         internal static SceneDef STSceneDef;
         internal static SceneDef STIFSceneDef;
         internal static SceneDef STBGSceneDef;
@@ -70,6 +71,7 @@ namespace Snowtime.Content
         internal static SceneDef STNMBSceneDef;
         internal static SceneDef STGMCSceneDef;
         internal static SceneDef STDHSceneDef;
+        internal static SceneDef STFlatSceneDef;
         internal static Sprite STSceneDefPreviewSprite;
         internal static Sprite STIFSceneDefPreviewSprite;
         internal static Sprite STBGSceneDefPreviewSprite;
@@ -81,6 +83,7 @@ namespace Snowtime.Content
         internal static Sprite STNMBSceneDefPreviewSprite;
         internal static Sprite STGMCSceneDefPreviewSprite;
         internal static Sprite STDHSceneDefPreviewSprite;
+        internal static Sprite STFlatSceneDefPreviewSprite;
         internal static Material STBazaarSeer;
         internal static Material STIFBazaarSeer;
         internal static Material STBGBazaarSeer;
@@ -92,6 +95,7 @@ namespace Snowtime.Content
         internal static Material STNMBBazaarSeer;
         internal static Material STGMCBazaarSeer;
         internal static Material STDHBazaarSeer;
+        internal static Material STFlatBazaarSeer;
 		
 		public static List<Material> SwappedMaterials = new List<Material>();
 		
@@ -150,6 +154,7 @@ namespace Snowtime.Content
                 STNMBSceneDefPreviewSprite = assets.First(a => a.name == "texSTNMBScenePreview");
                 STGMCSceneDefPreviewSprite = assets.First(a => a.name == "texSTGMCScenePreview");
                 STDHSceneDefPreviewSprite = assets.First(a => a.name == "texSTDHaloScenePreview");
+                STFlatSceneDefPreviewSprite = assets.First(a => a.name == "texSTFlatScenePreview");
             }));
 
             yield return LoadAllAssetsAsync(_assetsAssetBundle, progress, (Action<SceneDef[]>)((assets) =>
@@ -166,6 +171,7 @@ namespace Snowtime.Content
                 STNMBSceneDef = SceneDefs.First(sd => sd.cachedName == "snowtime_newmombasabridge");
                 STGMCSceneDef = SceneDefs.First(sd => sd.cachedName == "snowtime_gmconstruct");
                 STDHSceneDef = SceneDefs.First(sd => sd.cachedName == "snowtime_deltahalo");
+                STFlatSceneDef = SceneDefs.First(sd => sd.cachedName == "snowtime_gmflatgrass");
                 Log.Debug(STSceneDef.nameToken);
                 Log.Debug(STIFSceneDef.nameToken);
                 Log.Debug(STBGSceneDef.nameToken);
@@ -177,6 +183,7 @@ namespace Snowtime.Content
                 Log.Debug(STNMBSceneDef.nameToken);
                 Log.Debug(STGMCSceneDef.nameToken);
                 Log.Debug(STDHSceneDef.nameToken);
+                Log.Debug(STFlatSceneDef.nameToken);
                 contentPack.sceneDefs.Add(assets);
             }));
 
@@ -199,6 +206,7 @@ namespace Snowtime.Content
             STNMBBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STNMBSceneDefPreviewSprite.texture);
             STGMCBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STGMCSceneDefPreviewSprite.texture);
             STDHBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STDHSceneDefPreviewSprite.texture);
+            STFlatBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STFlatSceneDefPreviewSprite.texture);
             STSceneDef.previewTexture = STSceneDefPreviewSprite.texture;
             STIFSceneDef.previewTexture = STIFSceneDefPreviewSprite.texture;
             STBGSceneDef.previewTexture = STBGSceneDefPreviewSprite.texture;
@@ -210,6 +218,7 @@ namespace Snowtime.Content
             STNMBSceneDef.previewTexture = STNMBSceneDefPreviewSprite.texture;
             STGMCSceneDef.previewTexture = STGMCSceneDefPreviewSprite.texture;
             STDHSceneDef.previewTexture = STDHSceneDefPreviewSprite.texture;
+            STFlatSceneDef.previewTexture = STFlatSceneDefPreviewSprite.texture;
             STSceneDef.portalMaterial = STBazaarSeer;
             STIFSceneDef.portalMaterial = STIFBazaarSeer;
             STBGSceneDef.portalMaterial = STBGBazaarSeer;
@@ -221,6 +230,7 @@ namespace Snowtime.Content
             STNMBSceneDef.portalMaterial = STNMBBazaarSeer;
             STGMCSceneDef.portalMaterial = STGMCBazaarSeer;
             STDHSceneDef.portalMaterial = STDHBazaarSeer;
+            STFlatSceneDef.portalMaterial = STFlatBazaarSeer;
 			// Make a check here later for the config of what is enabled or disabled
 			Log.Debug("Blood Gulch Config Status?");
 			Log.Debug(SnowtimeStage.ToggleBloodGulch.Value);
@@ -353,6 +363,18 @@ namespace Snowtime.Content
 			if (SnowtimeStage.ToggleDHalo.Value == false)
 			{
 				Log.Debug("Skipped adding Delta Halo to the loop");
+			}
+			Log.Debug("gm_flatgrass Config Status?");
+			Log.Debug(SnowtimeStage.ToggleFLAT.Value);
+			if (SnowtimeStage.ToggleFLAT.Value == true)
+			{
+				StageRegistration.RegisterSceneDefToLoop(STFlatSceneDef);
+				Log.Debug("Adding gm_flatgrass to the loop");
+				Log.Debug(STFlatSceneDef.destinationsGroup);
+			}
+			if (SnowtimeStage.ToggleFLAT.Value == false)
+			{
+				Log.Debug("Skipped adding gm_flatgrass to the loop");
 			}
         }
 

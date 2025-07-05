@@ -30,7 +30,7 @@ namespace Snowtime
     {
         public const string Author = "SnowySnowtime";
         public const string Name = nameof(SnowtimeStage);
-        public const string Version = "0.8.5";
+        public const string Version = "0.8.6";
         public const string GUID = Author + "." + Name;
 		public static ConfigEntry<bool> ToggleBloodGulch { get; set; }
 		public static ConfigEntry<bool> ToggleSidewinder { get; set; }
@@ -43,6 +43,7 @@ namespace Snowtime
 		public static ConfigEntry<bool> ToggleNMB { get; set; }
 		public static ConfigEntry<bool> ToggleGMC { get; set; }
 		public static ConfigEntry<bool> ToggleDHalo { get; set; }
+		public static ConfigEntry<bool> ToggleFLAT { get; set; }
 
         public static SnowtimeStage instance;   
         public void Awake()
@@ -61,7 +62,8 @@ namespace Snowtime
 			ToggleSandtrap = Config.Bind("Stage 4 Toggles", "Sandtrap", true, "If true, Sandtrap is added to the loop, otherwise it shall not appear");
 			ToggleHalo = Config.Bind("Stage 5 Toggles", "Halo", true, "If true, Halo is added to the loop, otherwise it shall not appear");
 			ToggleHalo2 = Config.Bind("Stage 5 Toggles", "Halo(Alt)", true, "If true, Halo(Alt) is added to the loop, otherwise it shall not appear");
-			ToggleNMB = Config.Bind("Post Loop Stage Toggles", "New Mombasa Bridge", true, "If true, New Mombasa Bridge is added to the loop, otherwise it shall not appear");
+			ToggleNMB = Config.Bind("Stage 3 Toggles", "New Mombasa Bridge", true, "If true, New Mombasa Bridge is added to the loop, otherwise it shall not appear");
+			ToggleFLAT = Config.Bind("Stage 5 Toggles", "gm_flatgrass", true, "If true, gm_flatgrass is added to the loop, otherwise it shall not appear");
 
             RegisterHooks();
 

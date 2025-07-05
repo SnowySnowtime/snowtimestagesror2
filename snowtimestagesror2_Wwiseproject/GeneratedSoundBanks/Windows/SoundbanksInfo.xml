@@ -432,13 +432,14 @@
 						<State Id="3280575944" Name="HaloDreamAgain"/>
 						<State Id="3297631070" Name="HaloNMB"/>
 						<State Id="3678796398" Name="HaloTheme"/>
+						<State Id="3973442918" Name="gmflatgrass"/>
 						<State Id="4124607734" Name="HaloStage4Boss"/>
 						<State Id="4290557256" Name="HaloS3Cello"/>
 					</States>
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3261243995" Type="User" Language="SFX" Hash="{61D72052-6FB7-01A1-90AE-EBB99D3A350E}">
+		<SoundBank Id="3261243995" Type="User" Language="SFX" Hash="{DF62CC71-5DE5-79AF-11D4-CD611CDAB1F0}">
 			<ShortName>SnowtimeStagesMusic</ShortName>
 			<Path>SnowtimeStagesMusic.bnk</Path>
 			<Media>
@@ -471,6 +472,12 @@
 					<Path>Media/56978827.wem</Path>
 					<CachePath>SFX/alt_trans_in_B45EAA48.wem</CachePath>
 					<PrefetchSize>3497</PrefetchSize>
+				</File>
+				<File Id="56989505" Language="SFX" Streaming="true" Location="Memory">
+					<ShortName>boss_loop_flattf2.wav</ShortName>
+					<Path>Media/56989505.wem</Path>
+					<CachePath>SFX/boss_loop_flattf2_B45EAA48.wem</CachePath>
+					<PrefetchSize>3546</PrefetchSize>
 				</File>
 				<File Id="102363705" Language="SFX" Streaming="true" Location="Memory">
 					<ShortName>sfx [12017].wav</ShortName>
@@ -562,11 +569,23 @@
 					<CachePath>SFX/SnowtimeStages/Halo/halo_stage3_loop_B45EAA48.wem</CachePath>
 					<PrefetchSize>4010</PrefetchSize>
 				</File>
+				<File Id="208085412" Language="SFX" Streaming="true" Location="Memory">
+					<ShortName>boss_in_flattf2.wav</ShortName>
+					<Path>Media/208085412.wem</Path>
+					<CachePath>SFX/boss_in_flattf2_B45EAA48.wem</CachePath>
+					<PrefetchSize>3228</PrefetchSize>
+				</File>
 				<File Id="216260319" Language="SFX" Streaming="true" Location="Memory">
 					<ShortName>loop1.wav</ShortName>
 					<Path>Media/216260319.wem</Path>
 					<CachePath>SFX/loop1_B45EAA48.wem</CachePath>
 					<PrefetchSize>3097</PrefetchSize>
+				</File>
+				<File Id="221612062" Language="SFX" Streaming="true" Location="Memory">
+					<ShortName>in_flattf2.wav</ShortName>
+					<Path>Media/221612062.wem</Path>
+					<CachePath>SFX/in_flattf2_B45EAA48.wem</CachePath>
+					<PrefetchSize>2241</PrefetchSize>
 				</File>
 				<File Id="226556299" Language="SFX" Streaming="true" Location="Memory">
 					<ShortName>sfx [12020].wav</ShortName>
@@ -752,6 +771,12 @@
 					<CachePath>SFX/sfx [12013]_B45EAA48.wem</CachePath>
 					<PrefetchSize>3016</PrefetchSize>
 				</File>
+				<File Id="743735855" Language="SFX" Streaming="true" Location="Memory">
+					<ShortName>loop_flattf2.wav</ShortName>
+					<Path>Media/743735855.wem</Path>
+					<CachePath>SFX/loop_flattf2_B45EAA48.wem</CachePath>
+					<PrefetchSize>3604</PrefetchSize>
+				</File>
 				<File Id="756740080" Language="SFX" Streaming="true" Location="Memory">
 					<ShortName>alt_loopg.wav</ShortName>
 					<Path>Media/756740080.wem</Path>
@@ -811,6 +836,12 @@
 					<Path>Media/888784772.wem</Path>
 					<CachePath>SFX/SnowtimeStages/Halo/sounds_music [400]_B45EAA48.wem</CachePath>
 					<PrefetchSize>2722</PrefetchSize>
+				</File>
+				<File Id="908383588" Language="SFX" Streaming="true" Location="Memory">
+					<ShortName>boss_exit_flattf2.wav</ShortName>
+					<Path>Media/908383588.wem</Path>
+					<CachePath>SFX/boss_exit_flattf2_B45EAA48.wem</CachePath>
+					<PrefetchSize>2765</PrefetchSize>
 				</File>
 				<File Id="924623190" Language="SFX" Streaming="true" Location="Memory">
 					<ShortName>alt_trans_ing.wav</ShortName>
@@ -1102,6 +1133,29 @@
 										</SwitchContainer>
 									</Children>
 								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="1359377434" Id="3973442918"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="549431000" Id="655265632"/>
+											<MediaRefs>
+												<MediaRef Id="56989505"/>
+												<MediaRef Id="208085412"/>
+											</MediaRefs>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="1359377434" Id="3973442918"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="549431000" Id="2044049779"/>
+											<MediaRefs>
+												<MediaRef Id="908383588"/>
+											</MediaRefs>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
 							</Children>
 						</SwitchContainer>
 						<SwitchContainer>
@@ -1183,6 +1237,13 @@
 									<MediaRefs>
 										<MediaRef Id="757216571"/>
 										<MediaRef Id="887763027"/>
+									</MediaRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="1359377434" Id="3973442918"/>
+									<MediaRefs>
+										<MediaRef Id="221612062"/>
+										<MediaRef Id="743735855"/>
 									</MediaRefs>
 								</SwitchContainer>
 							</Children>
@@ -1435,6 +1496,29 @@
 										</SwitchContainer>
 									</Children>
 								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="1359377434" Id="3973442918"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="549431000" Id="655265632"/>
+											<MediaRefs>
+												<MediaRef Id="56989505"/>
+												<MediaRef Id="208085412"/>
+											</MediaRefs>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="1359377434" Id="3973442918"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="549431000" Id="2044049779"/>
+											<MediaRefs>
+												<MediaRef Id="908383588"/>
+											</MediaRefs>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
 							</Children>
 						</SwitchContainer>
 						<SwitchContainer>
@@ -1516,6 +1600,13 @@
 									<MediaRefs>
 										<MediaRef Id="757216571"/>
 										<MediaRef Id="887763027"/>
+									</MediaRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="1359377434" Id="3973442918"/>
+									<MediaRefs>
+										<MediaRef Id="221612062"/>
+										<MediaRef Id="743735855"/>
 									</MediaRefs>
 								</SwitchContainer>
 							</Children>
@@ -1768,6 +1859,29 @@
 										</SwitchContainer>
 									</Children>
 								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="1359377434" Id="3973442918"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="549431000" Id="655265632"/>
+											<MediaRefs>
+												<MediaRef Id="56989505"/>
+												<MediaRef Id="208085412"/>
+											</MediaRefs>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="1359377434" Id="3973442918"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="549431000" Id="2044049779"/>
+											<MediaRefs>
+												<MediaRef Id="908383588"/>
+											</MediaRefs>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
 							</Children>
 						</SwitchContainer>
 						<SwitchContainer>
@@ -1851,6 +1965,13 @@
 										<MediaRef Id="887763027"/>
 									</MediaRefs>
 								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="1359377434" Id="3973442918"/>
+									<MediaRefs>
+										<MediaRef Id="221612062"/>
+										<MediaRef Id="743735855"/>
+									</MediaRefs>
+								</SwitchContainer>
 							</Children>
 						</SwitchContainer>
 					</SwitchContainers>
@@ -1895,6 +2016,7 @@
 						<State Id="3280575944" Name="HaloDreamAgain"/>
 						<State Id="3297631070" Name="HaloNMB"/>
 						<State Id="3678796398" Name="HaloTheme"/>
+						<State Id="3973442918" Name="gmflatgrass"/>
 						<State Id="4124607734" Name="HaloStage4Boss"/>
 						<State Id="4290557256" Name="HaloS3Cello"/>
 					</States>
@@ -1902,5 +2024,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{A0998A7F-FF78-4D11-2342-EB9001B4F42D}</FileHash>
+	<FileHash>{3CF5F8B9-7362-21F1-302A-300F38BD3CBD}</FileHash>
 </SoundBanksInfo>

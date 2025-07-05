@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 2099981080, guid: 45feadaaa90b2d2217207fb8b533753e, type: 3}
   m_Name: ADCCS_Mobs_gmc_temp_dlc1
   m_EditorClassIdentifier: 
-  targetCardCategorySelection: {fileID: 11400000, guid: 1e847fed08226d54a8f3071db77ae587,
+  targetCardCategorySelection: {fileID: 11400000, guid: c30407648c20ff14bbd8891767b20984,
     type: 2}
   categories:
   - name: Champions

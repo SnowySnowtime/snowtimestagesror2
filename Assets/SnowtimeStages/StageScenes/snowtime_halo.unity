@@ -44976,7 +44976,7 @@ MonoBehaviour:
   m_Script: {fileID: 818754807, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teleporterSpawnCard: {fileID: 11400000, guid: bd2e6e228670f2a418e8d7e005acc77b,
+  teleporterSpawnCard: {fileID: 11400000, guid: 22fc85a2586044641a65ddf2af870112,
     type: 2}
   expRewardCoefficient: 0.06666667
   eliteBias: 2

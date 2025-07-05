@@ -1,0 +1,1834 @@
+ManifestFileVersion: 0
+CRC: 1989264493
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ba6ee81b0c596a70bacacfa5bd325631
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 677e27793e8fb2dfb287c4e0fe35242f
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 54
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 86
+  Script: {instanceID: 0}
+- Class: 89
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 96
+  Script: {instanceID: 0}
+- Class: 108
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 511512695, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 1788389205, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 1052602003, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 1297580292, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 1395413934, guid: da77c7bbf69f66ab2145560542327715, type: 3}
+- Class: 114
+  Script: {fileID: 1271010, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 268574540, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+- Class: 114
+  Script: {fileID: 802132372, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 296141222, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 1143142494, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 2011550347, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 1790887305, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 678291247, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 1080798252, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 488236779, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 1783796254, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 653292689, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 1478203354, guid: 2b6c926553287666f24ffd5af5ba21cb, type: 3}
+- Class: 114
+  Script: {fileID: 2074666924, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 682687671, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+- Class: 114
+  Script: {fileID: 816898038, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 116179522, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f8258ea15b8f74c4889ce485d21cbbb1, type: 3}
+- Class: 114
+  Script: {fileID: 422384671, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 370243918, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 1282871550, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 1480773730, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 306635731, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 40b924e2dad56384a8df2a1e111bb675, type: 3}
+- Class: 114
+  Script: {fileID: 1392865457, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -448437679, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1811796171, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -2051541306, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -46258121, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 1357070253, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 883458800, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1358022786, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1783169300, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1067940895, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -197296741, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 953270592, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1277448904, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1077198318, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 261648291, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -2096938146, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 1530905962, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 161585894, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -380008858, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -186546639, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -226763392, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -235412878, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 1558202198, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1720486850, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 2014855634, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -578974823, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -335047464, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1164381806, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -104859921, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1897863358, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -585069481, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 399686202, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1161602148, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 89795172, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 1512808244, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 1144835783, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 802575700, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -875252823, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1620867292, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 298587437, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -365436499, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 871971028, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1294804675, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1970677958, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1322397448, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -146705984, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -202159943, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1792105662, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1549848242, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 1539485112, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 1063210218, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -359660931, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 1512185436, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1284244208, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1479993534, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1888550019, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1578512655, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1699741063, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1864444436, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -255427816, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 1918207524, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -609359282, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -2114938803, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -2130789662, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1085913656, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 1737450175, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -978385533, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -432102721, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1848696948, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -270136354, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1819008361, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 1952984350, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 2011136271, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -251527598, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -460905027, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1095921540, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -794597441, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 1517225185, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1124653335, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -789927658, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 952828898, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -565067572, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 1391837873, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1627637702, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 630417361, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -315171339, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1895344032, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -687176575, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1746479147, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: e31dc969aa9057e49a00309eaa07608b, type: 3}
+- Class: 114
+  Script: {fileID: -1752031980, guid: 2b6c926553287666f24ffd5af5ba21cb, type: 3}
+- Class: 114
+  Script: {fileID: -130519023, guid: 2b6c926553287666f24ffd5af5ba21cb, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5b585ce31f93d58489807db4907df51d, type: 3}
+- Class: 114
+  Script: {fileID: 495100722, guid: 45feadaaa90b2d2217207fb8b533753e, type: 3}
+- Class: 114
+  Script: {fileID: 2099981080, guid: 45feadaaa90b2d2217207fb8b533753e, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 9bbfee4d9ab2a2744b203e7e08720110, type: 3}
+- Class: 114
+  Script: {fileID: 604064435, guid: a9e21bc7bb762a5cf3086c00d123625f, type: 3}
+- Class: 114
+  Script: {fileID: -210918009, guid: a9e21bc7bb762a5cf3086c00d123625f, type: 3}
+- Class: 114
+  Script: {fileID: 1076085416, guid: a9e21bc7bb762a5cf3086c00d123625f, type: 3}
+- Class: 114
+  Script: {fileID: 1833314201, guid: a9e21bc7bb762a5cf3086c00d123625f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: b3f6f3f7c722b4544b97e3c75840aa33, type: 3}
+- Class: 114
+  Script: {fileID: -1568778350, guid: 050936fea8909af15a3fd3b64da1ff83, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 48a79b01ea5641d4aa6daa2e23605641, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8e6292b2c06870d4495f009f912b9600, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: adb84e30e02715445aeb9959894e3b4d, type: 3}
+- Class: 114
+  Script: {fileID: 337831424, guid: 1f79187d04fa6fdd168e19d4bafe7dfa, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+- Class: 114
+  Script: {fileID: 708136152, guid: e161fae64b898bc22624d03ed611378f, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 135
+  Script: {instanceID: 0}
+- Class: 136
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+- Class: 187
+  Script: {instanceID: 0}
+- Class: 193
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+- Class: 205
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+- Class: 320
+  Script: {instanceID: 0}
+- Class: 363
+  Script: {instanceID: 0}
+- Class: 850595691
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: AK.Wwise.Unity.API.WwiseTypes
+  ClassName: AK.Wwise.Bank
+- AssemblyName: AK.Wwise.Unity.API.WwiseTypes
+  ClassName: AK.Wwise.Event
+- AssemblyName: AK.Wwise.Unity.API.WwiseTypes
+  ClassName: AK.Wwise.State
+- AssemblyName: AK.Wwise.Unity.MonoBehaviour
+  ClassName: AkGameObjListenerList
+- AssemblyName: AK.Wwise.Unity.MonoBehaviour
+  ClassName: AkGameObjPositionOffsetData
+- AssemblyName: HGUnityUtils
+  ClassName: HG.BlendableTypes.BlendableBool
+- AssemblyName: HGUnityUtils
+  ClassName: HG.BlendableTypes.BlendableFloat
+- AssemblyName: HGUnityUtils
+  ClassName: HG.BlendableTypes.BlendableVector3
+- AssemblyName: HGUnityUtils
+  ClassName: HG.GeneralSerializer.SerializedField
+- AssemblyName: HGUnityUtils
+  ClassName: HG.GeneralSerializer.SerializedFieldCollection
+- AssemblyName: HGUnityUtils
+  ClassName: HG.GeneralSerializer.SerializedValue
+- AssemblyName: HGUnityUtils
+  ClassName: HG.SerializableSystemType
+- AssemblyName: R2API.Addressables
+  ClassName: R2API.AddressReferencedAssets.AddressReferencedExpansionDef
+- AssemblyName: R2API.Addressables
+  ClassName: R2API.AddressReferencedAssets.AddressReferencedSpawnCard
+- AssemblyName: R2API.Addressables
+  ClassName: R2API.AddressReferencedAssets.AddressReferencedUnlockableDef
+- AssemblyName: R2API.Director
+  ClassName: R2API.AddressReferencedAssets.AddressReferencedFamilyDirectorCardCategorySelection
+- AssemblyName: R2API.Director
+  ClassName: R2API.AddressableDCCSPool/Category
+- AssemblyName: R2API.Director
+  ClassName: R2API.AddressableDCCSPool/ConditionalPoolEntry
+- AssemblyName: R2API.Director
+  ClassName: R2API.AddressableDCCSPool/PoolEntry
+- AssemblyName: R2API.Director
+  ClassName: R2API.AddressableDirectorCard
+- AssemblyName: R2API.Director
+  ClassName: R2API.AddressableDirectorCardCategorySelection/Category
+- AssemblyName: RoR2
+  ClassName: ChildLocator/NameTransformPair
+- AssemblyName: RoR2
+  ClassName: EntityStates.SerializableEntityStateType
+- AssemblyName: RoR2
+  ClassName: RoR2.AddressableAssets.IDRSKeyAssetReference
+- AssemblyName: RoR2
+  ClassName: RoR2.AssetReferenceScene
+- AssemblyName: RoR2
+  ClassName: RoR2.CharacterCameraParamsData
+- AssemblyName: RoR2
+  ClassName: RoR2.CharacterEmoteDefinitions/EmoteDef
+- AssemblyName: RoR2
+  ClassName: RoR2.CharacterFlightParameters
+- AssemblyName: RoR2
+  ClassName: RoR2.CharacterGravityParameters
+- AssemblyName: RoR2
+  ClassName: RoR2.CharacterModel/RendererInfo
+- AssemblyName: RoR2
+  ClassName: RoR2.CombatDirector/OnSpawnedServer
+- AssemblyName: RoR2
+  ClassName: RoR2.DamageTypeCombo
+- AssemblyName: RoR2
+  ClassName: RoR2.DisplayRuleGroup
+- AssemblyName: RoR2
+  ClassName: RoR2.GameObjectToggleGroup
+- AssemblyName: RoR2
+  ClassName: RoR2.HoldoutZoneController/HoldoutZoneControllerChargedUnityEvent
+- AssemblyName: RoR2
+  ClassName: RoR2.ItemCountPair
+- AssemblyName: RoR2
+  ClassName: RoR2.ItemDisplayRule
+- AssemblyName: RoR2
+  ClassName: RoR2.ItemDisplayRuleSet/KeyAssetRuleGroup
+- AssemblyName: RoR2
+  ClassName: RoR2.MageElement
+- AssemblyName: RoR2
+  ClassName: RoR2.Navigation.NodeGraph/Link
+- AssemblyName: RoR2
+  ClassName: RoR2.Navigation.NodeGraph/LinkListIndex
+- AssemblyName: RoR2
+  ClassName: RoR2.Navigation.NodeGraph/Node
+- AssemblyName: RoR2
+  ClassName: RoR2.Navigation.NodeGraph/NodeIndex
+- AssemblyName: RoR2
+  ClassName: RoR2.OmniEffect/OmniEffectElement
+- AssemblyName: RoR2
+  ClassName: RoR2.OmniEffect/OmniEffectGroup
+- AssemblyName: RoR2
+  ClassName: RoR2.PickupIndex
+- AssemblyName: RoR2
+  ClassName: RoR2.PurchaseEvent
+- AssemblyName: RoR2
+  ClassName: RoR2.RangeFloat
+- AssemblyName: RoR2
+  ClassName: RoR2.SerializableLoadout
+- AssemblyName: RoR2
+  ClassName: RoR2.SerializablePickupIndex
+- AssemblyName: RoR2
+  ClassName: RoR2.SkillLocator/PassiveSkill
+- AssemblyName: RoR2
+  ClassName: RoR2.Skills.SkillFamily/Variant
+- AssemblyName: RoR2
+  ClassName: RoR2.UI.InspectInfo
+- AssemblyName: RoR2
+  ClassName: SerializableBitArray
+- AssemblyName: RoR2
+  ClassName: Wave
+- AssemblyName: Unity.Addressables
+  ClassName: UnityEngine.AddressableAssets.AssetReferenceGameObject
+- AssemblyName: Unity.Addressables
+  ClassName: UnityEngine.AddressableAssets.AssetReferenceT`1[UnityEngine.GameObject]
+- AssemblyName: Unity.Addressables
+  ClassName: UnityEngine.AddressableAssets.AssetReferenceT`1[UnityEngine.Material]
+- AssemblyName: Unity.Addressables
+  ClassName: UnityEngine.AddressableAssets.AssetReferenceTexture
+- AssemblyName: Unity.Postprocessing.Runtime
+  ClassName: UnityEngine.Rendering.PostProcessing.BoolParameter
+- AssemblyName: Unity.Postprocessing.Runtime
+  ClassName: UnityEngine.Rendering.PostProcessing.ColorParameter
+- AssemblyName: Unity.Postprocessing.Runtime
+  ClassName: UnityEngine.Rendering.PostProcessing.EyeAdaptationParameter
+- AssemblyName: Unity.Postprocessing.Runtime
+  ClassName: UnityEngine.Rendering.PostProcessing.FloatParameter
+- AssemblyName: Unity.Postprocessing.Runtime
+  ClassName: UnityEngine.Rendering.PostProcessing.GradingModeParameter
+- AssemblyName: Unity.Postprocessing.Runtime
+  ClassName: UnityEngine.Rendering.PostProcessing.Spline
+- AssemblyName: Unity.Postprocessing.Runtime
+  ClassName: UnityEngine.Rendering.PostProcessing.SplineParameter
+- AssemblyName: Unity.Postprocessing.Runtime
+  ClassName: UnityEngine.Rendering.PostProcessing.TextureParameter
+- AssemblyName: Unity.Postprocessing.Runtime
+  ClassName: UnityEngine.Rendering.PostProcessing.TonemapperParameter
+- AssemblyName: Unity.Postprocessing.Runtime
+  ClassName: UnityEngine.Rendering.PostProcessing.Vector2Parameter
+- AssemblyName: Unity.Postprocessing.Runtime
+  ClassName: UnityEngine.Rendering.PostProcessing.Vector4Parameter
+- AssemblyName: Unity.Postprocessing.Runtime
+  ClassName: UnityEngine.Rendering.PostProcessing.VignetteModeParameter
+- AssemblyName: Unity.Timeline
+  ClassName: UnityEngine.Timeline.TimelineAsset/EditorSettings
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.ArgumentCache
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.PersistentCallGroup
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.PersistentListenerMode
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.UnityEvent
+- AssemblyName: com.unity.multiplayer-hlapi.Runtime
+  ClassName: UnityEngine.Networking.NetworkHash128
+- AssemblyName: com.unity.multiplayer-hlapi.Runtime
+  ClassName: UnityEngine.Networking.NetworkSceneId
+Assets:
+- Assets/SnowtimeStages/Assets/misc/NewMombasaBridge/_Nodes/GroundNodes_NMB.asset
+- Assets/SnowtimeStages/Assets/bloodgulch/cluster_1.fbx
+- Assets/SnowtimeStages/Assets/CustomObjects/CovenantShipTeleporter/matDebris.mat
+- Assets/SnowtimeStages/Assets/Materials/sandtrap/cust_rubble.mat
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/concreteceiling003a.mat
+- Assets/SnowtimeStages/Assets/halo/props/tall_tree_pine_bough04.fbx
+- Assets/SnowtimeStages/Assets/CustomObjects/CovenantShipTeleporter/matTimeCrystalSolid_duplicate.mat
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/building_template007a.mat
+- Assets/SnowtimeStages/Assets/Materials/HaloDiorama2.mat
+- Assets/SnowtimeStages/Assets/Materials/sky/OptimizedShaders/basis_night/Poiyomi
+  Toon.shader
+- Assets/SnowtimeStages/Assets/Materials/sandtrap/eye.mat
+- Assets/SnowtimeStages/Assets/gephyrophobia/cluster_22.fbx
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/source_water_night.mat
+- Assets/SnowtimeStages/Assets/halo/cluster_20.fbx
+- Assets/SnowtimeStages/Assets/deathisland/large_rock03.fbx
+- Assets/SnowtimeStages/Assets/deathisland/tree1.fbx
+- Assets/SnowtimeStages/Assets/newmombasatest/decal_letters_blue.mat
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/building_template007m.mat
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/building_template010g.mat
+- Assets/SnowtimeStages/Assets/sidewinder/sidewinder.blend
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/buildinghillcluster.mat
+- Assets/SnowtimeStages/Assets/newmombasatest/props/sign_vert_facade.fbx
+- Assets/SnowtimeStages/Assets/misc/Icefields/dccs_icefield_int.asset
+- Assets/SnowtimeStages/Assets/deltahalo/materials/OptimizedShaders/tower_metal_trim_g/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/Materials/OptimizedShaders/HaloDiorama1/Poiyomi Toon.shader
+- Assets/SnowtimeStages/Assets/Materials/sandtrap/sandstorm1.mat
+- Assets/SnowtimeStages/Assets/deathisland/c_uplink.fbx
+- Assets/SnowtimeStages/Assets/newmombasatest/props/light_red_rotate.controller
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/plasterceiling003.mat
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/OptimizedShaders/citadelmetalwall/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/Materials/sandtrap/OptimizedShaders/stground/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/misc/Sidewinder/dccs_sw_mobs.asset
+- Assets/SnowtimeStages/Assets/misc/Halo/ADCCSPool_Int_halo.asset
+- Assets/SnowtimeStages/Assets/pp.prefab
+- Assets/SnowtimeStages/Assets/newmombasatest/matte_gray.mat
+- Assets/SnowtimeStages/Assets/bloodgulch/props/boulder_crouch.fbx
+- Assets/SnowtimeStages/Assets/CustomObjects/CovenantShipTeleporter/grav lift energy.tif
+- Assets/SnowtimeStages/Assets/deltahalo/materials/OptimizedShaders/rock_a/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/flatgrass_ground.mat
+- Assets/SnowtimeStages/Assets/Music/STBG_Main.asset
+- Assets/SnowtimeStages/Assets/halo/cluster_9.fbx
+- Assets/SnowtimeStages/Assets/misc/Gephyrophobia/ADCCS_Mobs_gph_dlc1.asset
+- Assets/SnowtimeStages/Assets/misc/DeathIsland/_Nodes/AirNodes_DeathIsland.asset
+- Assets/SnowtimeStages/Assets/Definitions/Logs.Stages.snowtimesidewinder.asset
+- Assets/SnowtimeStages/Assets/deltahalo/materials/vines.mat
+- Assets/SnowtimeStages/Assets/deltahalo/materials/OptimizedShaders/ground_temple_entrance/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/plasterwall.mat
+- Assets/SnowtimeStages/Assets/bloodgulch/cluster_7.fbx
+- Assets/SnowtimeStages/Assets/misc/Sidewinder/dccspool_sw_mobs.asset
+- Assets/SnowtimeStages/Assets/newmombasatest/OptimizedShaders/stoplight_flash/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/deathisland/sky/clouds.fbx
+- Assets/SnowtimeStages/Assets/misc/Gephyrophobia/dccspool_gph_int.asset
+- Assets/SnowtimeStages/Assets/newmombasatest/sky/city_sky_tether_tiled.mat
+- Assets/SnowtimeStages/Assets/misc/BloodGulch/ADCCSPool_Mobs_bg.asset
+- Assets/SnowtimeStages/Assets/misc/gm_construct/ADCCS_Int_gmc.asset
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/building_template007l.mat
+- Assets/SnowtimeStages/Assets/gmconstruct/gm_construct_props.fbx
+- Assets/SnowtimeStages/Assets/bloodgulch/props/boulder_large_grey2.fbx
+- Assets/SnowtimeStages/Assets/Materials/halo/snowtime_halo2/ReflectionProbe-0.exr
+- Assets/SnowtimeStages/Assets/misc/Gephyrophobia/dccs_gph_int_dlc1.asset
+- Assets/SnowtimeStages/Assets/newmombasatest/OptimizedShaders/decalinvis/Poiyomi
+  Toon.shader
+- Assets/SnowtimeStages/Assets/deathisland/cluster8.fbx
+- Assets/SnowtimeStages/Assets/Music/STDI_Boss.asset
+- Assets/SnowtimeStages/Assets/halo/sky/ground_dusk0.fbx
+- Assets/SnowtimeStages/Assets/deathisland/cluster9.fbx
+- Assets/SnowtimeStages/Assets/halo/cluster_30.fbx
+- Assets/SnowtimeStages/Assets/CustomObjects/PlatChest/iscPlatChest.asset
+- Assets/SnowtimeStages/Assets/Materials/deathisland/grate.mat
+- Assets/SnowtimeStages/Assets/misc/NewMombasaBridge/ADCCSPool_Int_nmb.asset
+- Assets/SnowtimeStages/Assets/misc/Halo/ADCCS_Int_halo_dlc1.asset
+- Assets/SnowtimeStages/Assets/bloodgulch/props/floor_arrow.fbx
+- Assets/SnowtimeStages/Assets/CustomObjects/CovenantShipTeleporter/battle_cruiser_c_glow.mat
+- Assets/SnowtimeStages/Assets/CustomObjects/CovenantShipTeleporter/matArcaneCircleProvi_duplicate.mat
+- Assets/SnowtimeStages/Assets/Materials/sandtrap/copperroof.mat
+- Assets/SnowtimeStages/Assets/deltahalo/materials/ground_temple_entrance.mat
+- Assets/SnowtimeStages/Assets/deltahalo/materials/OptimizedShaders/tower_metal_tech_strips/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/bloodgulch/props/boulder_large_grey3.fbx
+- Assets/SnowtimeStages/Assets/CustomObjects/GoldChest4Sandtrap/matGenericStarburst.mat
+- Assets/SnowtimeStages/Assets/newmombasatest/props/klaxon_rotate.anim
+- Assets/SnowtimeStages/Assets/icefields/cluster_18.fbx
+- Assets/SnowtimeStages/Assets/newmombasatest/signage02.mat
+- Assets/SnowtimeStages/Assets/deltahalo/OptimizedShaders/h2_opaquewater_deltahalo/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/Materials/deathisland/lights.mat
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/furnitecouch002.mat
+- Assets/SnowtimeStages/Assets/CustomObjects/CovenantShipTeleporter/battle_cruiser_a.mat
+- Assets/SnowtimeStages/Assets/halo/cluster_12.fbx
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/buildingresidential.mat
+- Assets/SnowtimeStages/Assets/deathisland/cluster10.fbx
+- Assets/SnowtimeStages/Assets/misc/gm_flatgrass/ADCCS_Mobs_flat_temp.asset
+- Assets/SnowtimeStages/Assets/gephyrophobia/sky/15_basis_sky_gephyrophobia.fbx
+- Assets/SnowtimeStages/Assets/newmombasatest/int_pipes_a.mat
+- Assets/SnowtimeStages/Assets/deathisland/tree2.fbx
+- Assets/SnowtimeStages/Assets/deltahalo/materials/OptimizedShaders/light_volume_halogen/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/deathisland/cluster21.fbx
+- Assets/SnowtimeStages/Assets/Materials/deathisland/leaves.mat
+- Assets/SnowtimeStages/Assets/deltahalo/materials/granite_mossy.mat
+- Assets/SnowtimeStages/Assets/Materials/sandtrap/cust_spine1.mat
+- Assets/SnowtimeStages/Assets/misc/gm_flatgrass/ADCCS_Mobs_flat_temp_dlc1.asset
+- Assets/SnowtimeStages/Assets/misc/Sidewinder/dccs_sw_int_dlc1.asset
+- Assets/SnowtimeStages/Assets/bloodgulch/props/tree_desert_dead.fbx
+- Assets/SnowtimeStages/Assets/Materials/sky/OptimizedShaders/di_fog/Poiyomi Toon.shader
+- Assets/SnowtimeStages/Assets/bloodgulch/cluster_21.fbx
+- Assets/SnowtimeStages/Assets/halo/props/base_tree_pine_bough.fbx
+- Assets/SnowtimeStages/Assets/newmombasatest/signage01.mat
+- Assets/SnowtimeStages/Assets/Materials/deathisland/teleporter_base.mat
+- Assets/SnowtimeStages/Assets/deltahalo/sky/OptimizedShaders/ring_afternoon/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/deltahalo/materials/light_volume_halogen.mat
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/furnitecouch001.mat
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/concretefloor026.mat
+- Assets/SnowtimeStages/Assets/halo/level_collision_stone.fbx
+- Assets/SnowtimeStages/Assets/Materials/deathisland/metal panels generator.mat
+- Assets/SnowtimeStages/Assets/Definitions/snowtime_gmflatgrass.asset
+- Assets/SnowtimeStages/Assets/Materials/sandtrap/OptimizedShaders/phantomdestroy/Poiyomi
+  Toon.shader
+- Assets/SnowtimeStages/Assets/misc/BloodGulch/ADCCS_Mobs_bg_dlc1.asset
+- Assets/SnowtimeStages/Assets/gephyrophobia/PP Profile 3.asset
+- Assets/SnowtimeStages/Assets/newmombasatest/sky/OptimizedShaders/ec_bridge_fogband/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/Materials/icefields/sw_lights.mat
+- Assets/SnowtimeStages/Assets/_expansiondef/texSnowtimeStagesHalo.png
+- Assets/SnowtimeStages/Assets/Materials/sidewinder/sidewinder_cliff.mat
+- Assets/SnowtimeStages/Assets/Music/STFLAT_Boss.asset
+- Assets/SnowtimeStages/Assets/deltahalo/materials/OptimizedShaders/light_amber/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/Materials/deathisland/lights_purple.mat
+- Assets/SnowtimeStages/Assets/halo/cluster_28.fbx
+- Assets/SnowtimeStages/Assets/Materials/deathisland/ladder.mat
+- Assets/SnowtimeStages/Assets/Materials/halo/snowtime_halo/OcclusionCullingData.asset
+- Assets/SnowtimeStages/Assets/Materials/icefields/cliff_icefields.mat
+- Assets/SnowtimeStages/Assets/gephyrophobia/cluster_2.fbx
+- Assets/SnowtimeStages/Assets/Materials/sky/sky_dusk.mat
+- Assets/SnowtimeStages/Assets/Animated/Fire.anim
+- Assets/SnowtimeStages/Assets/CustomObjects/CovenantShipTeleporter/CovenantCruiserTeleporterLunar.prefab
+- Assets/SnowtimeStages/Assets/Materials/deathisland/whitetrunk.mat
+- Assets/SnowtimeStages/Assets/misc/NewMombasaBridge/dccs_nmb_mobs_dlc1.asset
+- Assets/SnowtimeStages/Assets/Materials/deathisland/metalflatgenericclean.mat
+- Assets/SnowtimeStages/Assets/Materials/sky/ring_dusk.mat
+- Assets/SnowtimeStages/Assets/deltahalo/materials/OptimizedShaders/island_terrain/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/newmombasatest/concrete_bubble.mat
+- Assets/SnowtimeStages/Assets/newmombasatest/props/garagedoor.fbx
+- Assets/SnowtimeStages/Assets/halo/props/tall_tree_pine_trunk02.fbx
+- Assets/SnowtimeStages/Assets/misc/Sandtrap/dccs_st_mobs_dlc1.asset
+- Assets/SnowtimeStages/Assets/icefields/cluster_1.fbx
+- Assets/SnowtimeStages/Assets/newmombasatest/sky/OptimizedShaders/city_sky_tether_tiled/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/deltahalo/materials/ext_floor_tower.mat
+- Assets/SnowtimeStages/Assets/bloodgulch/cluster_2.fbx
+- Assets/SnowtimeStages/Assets/deltahalo/props/tree_bush.fbx
+- Assets/SnowtimeStages/Assets/Materials/deathisland/metalstripsnarrowext.mat
+- Assets/SnowtimeStages/Assets/misc/DeltaHalo/ADCCS_Int_dhalo.asset
+- Assets/SnowtimeStages/Assets/Definitions/snowtime_deathisland.asset
+- Assets/SnowtimeStages/Assets/misc/gm_flatgrass/dccs_flat_int_dlc2.asset
+- Assets/SnowtimeStages/Assets/misc/Sidewinder/ADCCS_Mobs_sw_dlc1.asset
+- Assets/SnowtimeStages/Assets/misc/NewMombasaBridge/_Nodes/AirNodes_NMB.asset
+- Assets/SnowtimeStages/Assets/CustomObjects/CovenantShipTeleporter/battle_cruiser_c.mat
+- Assets/SnowtimeStages/Assets/Music/STBG_Boss.asset
+- Assets/SnowtimeStages/Assets/Animated/FireAlt.anim
+- Assets/SnowtimeStages/Assets/deltahalo/materials/OptimizedShaders/ground_grotto/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/deltahalo/materials/OptimizedShaders/stone_floors/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/OptimizedShaders/florescentlight/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/newmombasatest/sky/ec_smoke_sky.mat
+- Assets/SnowtimeStages/Assets/CustomObjects/CovenantShipTeleporter/matTeleporterCovenantRange.mat
+- Assets/SnowtimeStages/Assets/Materials/sky/di_fog.mat
+- Assets/SnowtimeStages/Assets/halo/cluster_26.fbx
+- Assets/SnowtimeStages/Assets/halo/cluster_5.fbx
+- Assets/SnowtimeStages/Assets/misc/Halo/dccs_halo_int_dlc1.asset
+- Assets/SnowtimeStages/Assets/Materials/deathisland/boulderfallen.mat
+- Assets/SnowtimeStages/Assets/Materials/sky/OptimizedShaders/water_day/Poiyomi Toon.shader
+- Assets/SnowtimeStages/Assets/Music/STFLAT_Main.asset
+- Assets/SnowtimeStages/Assets/deathisland/level_collision_water.fbx
+- Assets/SnowtimeStages/Assets/EasterEggs/plasmarifle_luminous.mat
+- Assets/SnowtimeStages/Assets/Materials/bloodgulch/OptimizedShaders/bgground/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/Definitions/snowtime_icefields.asset
+- Assets/SnowtimeStages/Assets/newmombasatest/stoplight_flash.mat
+- Assets/SnowtimeStages/Assets/Materials/deathisland/light_dim.mat
+- Assets/SnowtimeStages/Assets/newmombasatest/sky/testmask.tga
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/construct_wall_bottom.mat
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/brickwall053.mat
+- Assets/SnowtimeStages/Assets/newmombasatest/sky/OptimizedShaders/nm_clouds_low/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/bloodgulch/props/boulder_large_grey1.fbx
+- Assets/SnowtimeStages/Assets/misc/Avalanche/ADCCS_Int_sidewinder.asset
+- Assets/SnowtimeStages/Assets/icefields/cluster_6.fbx
+- Assets/SnowtimeStages/Assets/Materials/deathisland/gephyfog.mat
+- Assets/SnowtimeStages/Assets/Materials/deathisland/whitebark_leaf.mat
+- Assets/SnowtimeStages/Assets/CustomObjects/CovenantShipTeleporter/covie_shield01.mat
+- Assets/SnowtimeStages/Assets/Materials/sandtrap/stonebroken.mat
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/OptimizedShaders/whiteroom/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Characters/NewCharacterTest/Skills/LemurianErrorBodyFireWeapon.asset
+- Assets/SnowtimeStages/Assets/deltahalo/materials/tower_metal_dirty.mat
+- Assets/SnowtimeStages/Assets/misc/NewMombasaBridge/ADCCS_Int_nmb_dlc2.asset
+- Assets/SnowtimeStages/Assets/newmombasatest/matte_gray_edge.mat
+- Assets/SnowtimeStages/Assets/deltahalo/materials/tower_metal_tech_strips.mat
+- Assets/SnowtimeStages/Assets/deltahalo/scenario_content.fbx
+- Assets/SnowtimeStages/Assets/EasterEggs/OptimizedShaders/dontwannabother/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/EasterEggs/sniperghost.mat
+- Assets/SnowtimeStages/Assets/EasterEggs/roadcone.fbx
+- Assets/SnowtimeStages/Assets/icefields/actualprops/mp_tree_pine_snow_tall.fbx
+- Assets/SnowtimeStages/Assets/misc/AOTCR/_Nodes/AirNodes_AOTCR.asset
+- Assets/SnowtimeStages/Characters/NewCharacterTest/cscLemurianError.asset
+- Assets/SnowtimeStages/Assets/icefields/cluster_10.fbx
+- Assets/SnowtimeStages/Assets/deathisland/level_collision.fbx
+- Assets/SnowtimeStages/Assets/newmombasatest/street_straight_unlit.mat
+- Assets/SnowtimeStages/Assets/Materials/sky/clouds.mat
+- Assets/SnowtimeStages/Assets/icefields/cluster_19.fbx
+- Assets/SnowtimeStages/Assets/misc/gm_flatgrass/dccs_flat_int_temp.asset
+- Assets/SnowtimeStages/Assets/Definitions/Logs.Stages.snowtimegmflatgrass.asset
+- Assets/SnowtimeStages/Assets/misc/Icefields/ADCCS_Int_icefield_dlc1.asset
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/OptimizedShaders/industrialbell1/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/deltahalo/materials/OptimizedShaders/ground_bridge/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/Materials/gephyrophobia/gephycliff.mat
+- Assets/SnowtimeStages/Assets/misc/BloodGulch/dccs_bg_int.asset
+- Assets/SnowtimeStages/Assets/halo/cluster_1.fbx
+- Assets/SnowtimeStages/Assets/newmombasatest/sky/OptimizedShaders/bridge_skydome/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/halo/props/tall_tree_pine_bough03.fbx
+- Assets/SnowtimeStages/Assets/CustomObjects/CovenantShipTeleporter/cruiser.fbx
+- Assets/SnowtimeStages/Assets/CustomObjects/CovenantShipTeleporter/OptimizedShaders/battle_cruiser_b_glow/Poiyomi
+  Toon.shader
+- Assets/SnowtimeStages/Assets/gephyrophobia/cluster_7.fbx
+- Assets/SnowtimeStages/Assets/newmombasatest/street_tunnel_border_unlit.mat
+- Assets/SnowtimeStages/Assets/deltahalo/props/materials/OptimizedShaders/tree_ancient/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/gephyrophobia/level_fog_planes.fbx
+- Assets/SnowtimeStages/Assets/gmconstruct/gm_construct_playablespace_test.fbx
+- Assets/SnowtimeStages/Assets/Materials/bloodgulch/bloodcliff.mat
+- Assets/SnowtimeStages/Assets/Materials/deathisland/cap_ramp2.mat
+- Assets/SnowtimeStages/Assets/CustomObjects/CovenantShipTeleporter/c_mothership2_illum.tif
+- Assets/SnowtimeStages/Assets/gephyrophobia/level_collision_stone.fbx
+- Assets/SnowtimeStages/Assets/Materials/sandtrap/for_metal_icy.mat
+- Assets/SnowtimeStages/Assets/misc/BloodGulch/dccs_bg_mobs_dlc1.asset
+- Assets/SnowtimeStages/Assets/Materials/deathisland/tubesext.mat
+- Assets/SnowtimeStages/Assets/CustomObjects/CovenantShipTeleporter/covie_shield03.mat
+- Assets/SnowtimeStages/Assets/Materials/sidewinder/stripe_red.mat
+- Assets/SnowtimeStages/Assets/misc/NewMombasaBridge/ADCCS_Mobs_nmb.asset
+- Assets/SnowtimeStages/Assets/Materials/sky/di_sky.mat
+- Assets/SnowtimeStages/Assets/EasterEggs/cone.mat
+- Assets/SnowtimeStages/Assets/misc/Sandtrap/dccs_st_int_dlc2.asset
+- Assets/SnowtimeStages/Assets/Materials/sandtrap/OptimizedShaders/copperroof/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/Materials/sky/basis_night.mat
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/metalladderye.mat
+- Assets/SnowtimeStages/Assets/misc/gm_flatgrass/ADCCS_Int_flat_dlc1.asset
+- Assets/SnowtimeStages/Assets/misc/BloodGulch/ADCCS_Int_bg_dlc1.asset
+- Assets/SnowtimeStages/Assets/misc/DeltaHalo/dccs_dhalo_mobs.asset
+- Assets/SnowtimeStages/Assets/bloodgulch/cluster_8.fbx
+- Assets/SnowtimeStages/Assets/misc/gm_flatgrass/ADCCSPool_Int_flat.asset
+- Assets/SnowtimeStages/Assets/misc/DeathIsland/dccspool_di_mobs.asset
+- Assets/SnowtimeStages/Assets/halo/cluster_19.fbx
+- Assets/SnowtimeStages/Assets/Materials/deathisland/metalstripsnarrowint.mat
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/metalladder.mat
+- Assets/SnowtimeStages/Assets/Materials/sky/ring_night.mat
+- Assets/SnowtimeStages/Assets/misc/gm_construct/dccs_gmc_mobs_dlc1.asset
+- Assets/SnowtimeStages/Assets/misc/NewMombasaBridge/ADCCS_Mobs_nmb_dlc1.asset
+- Assets/SnowtimeStages/Assets/texSTGPHScenePreview.png
+- Assets/SnowtimeStages/Assets/halo/cluster_0.fbx
+- Assets/SnowtimeStages/Assets/newmombasatest/OptimizedShaders/signage01/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Characters/NewCharacterTest/Skills/OmniExplosionVFXQuickMissing.prefab
+- Assets/SnowtimeStages/Assets/Materials/deathisland/leaves_cool.mat
+- Assets/SnowtimeStages/Assets/halo/cluster_6.fbx
+- Assets/SnowtimeStages/Assets/halo/cluster_29.fbx
+- Assets/SnowtimeStages/Assets/shrine/sky/100_sky.fbx
+- Assets/SnowtimeStages/Assets/sidewinder/sidewinder_coll.fbx
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/overlay2.mat
+- Assets/SnowtimeStages/Assets/newmombasatest/park_glass_opaque.mat
+- Assets/SnowtimeStages/Assets/newmombasatest/park_glass.mat
+- Assets/SnowtimeStages/Assets/gephyrophobia/cluster_17.fbx
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/building_template013o.mat
+- Assets/SnowtimeStages/Assets/Materials/deathisland/tree_pine_small.mat
+- Assets/SnowtimeStages/Assets/misc/gm_construct/ADCCSPool_Int_gmc.asset
+- Assets/SnowtimeStages/Assets/misc/gm_flatgrass/dccs_flat_int_dlc1.asset
+- Assets/SnowtimeStages/Assets/newmombasatest/sky/city_foreground.mat
+- Assets/SnowtimeStages/Assets/Animated/TestCylinder_Animated.controller
+- Assets/SnowtimeStages/Assets/bloodgulch/level_collision_noobj.fbx
+- Assets/SnowtimeStages/Assets/deathisland/level_bounds_trigger.fbx
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/construct_wall_top.mat
+- Assets/SnowtimeStages/Assets/gephyrophobia/cluster_3.fbx
+- Assets/SnowtimeStages/Assets/halo/level_collision_metal.fbx
+- Assets/SnowtimeStages/Assets/Materials/sky/OptimizedShaders/threshold_dusk/Poiyomi
+  Toon.shader
+- Assets/SnowtimeStages/Assets/Materials/sky/OptimizedShaders/di_ring/Poiyomi Toon.shader
+- Assets/SnowtimeStages/Assets/gephyrophobia/sky/02_sky_sky_gephyrophobia.fbx
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/plaster022c.mat
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/sky_gmconstruct.mat
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/table.mat
+- Assets/SnowtimeStages/Assets/Materials/sandtrap/OptimizedShaders/cust_rubble/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/gmflatgrass/nighttime_active.anim
+- Assets/SnowtimeStages/Assets/Materials/deathisland/tree.mat
+- Assets/SnowtimeStages/Assets/Materials/sky/basis_dusk.mat
+- Assets/SnowtimeStages/Assets/Materials/sandtrap/OptimizedShaders/clouds_sandstorm/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/misc/Gephyrophobia/ADCCS_Int_gph.asset
+- Assets/SnowtimeStages/Assets/deltahalo/sky/OptimizedShaders/capitolship/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/building_template010a.mat
+- Assets/SnowtimeStages/Assets/misc/Icefields/dccspool_icefield_int.asset
+- Assets/SnowtimeStages/Assets/EasterEggs/dontwannabother.mat
+- Assets/SnowtimeStages/Assets/newmombasatest/panel_building_base.mat
+- Assets/SnowtimeStages/Assets/newmombasatest/light_flourescent_red.mat
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/OptimizedShaders/concrete_floor028c/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/misc/Icefields/dccs_icefield_int_dlc1.asset
+- Assets/SnowtimeStages/Assets/deltahalo/props/tree_ancient_angkor.fbx
+- Assets/SnowtimeStages/Assets/misc/Sandtrap/ADCCSPool_Int_st.asset
+- Assets/SnowtimeStages/Assets/halo/cluster_27.fbx
+- Assets/SnowtimeStages/Assets/deltahalo/materials/tower_glass.mat
+- Assets/SnowtimeStages/Assets/misc/DeathIsland/ADCCSPool_Int_di.asset
+- Assets/SnowtimeStages/Assets/misc/Avalanche/dccs_sidewinder_int_dlc2.asset
+- Assets/SnowtimeStages/Assets/Materials/deathisland/ramp_red.mat
+- Assets/SnowtimeStages/Assets/deltahalo/h2_opaquewater_deltahalo.mat
+- Assets/SnowtimeStages/Assets/deltahalo/materials/OptimizedShaders/cracks_large/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/deltahalo/materials/grass_hang.mat
+- Assets/SnowtimeStages/Assets/misc/Sandtrap/dccs_st_mobs.asset
+- Assets/SnowtimeStages/Assets/misc/Icefields/ADCCSPool_Int_icefield.asset
+- Assets/SnowtimeStages/Assets/Materials/deathisland/tree_pine_1.mat
+- Assets/SnowtimeStages/Assets/Materials/sandtrap/phantomdestroy.mat
+- Assets/SnowtimeStages/Assets/newmombasatest/mombasaprops.fbx
+- Assets/SnowtimeStages/Assets/misc/gm_construct/dccs_gmc_int_dlc1.asset
+- Assets/SnowtimeStages/Assets/Materials/sidewinder/sidewinder_ground.mat
+- Assets/SnowtimeStages/Assets/bloodgulch/props/small_beacon.fbx
+- Assets/SnowtimeStages/Assets/Materials/sandtrap/OptimizedShaders/cust_spine1/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/deathisland/sky/basis.fbx
+- Assets/SnowtimeStages/Assets/deltahalo/materials/wall_pipes_tile.mat
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/nodraw_replacement.mat
+- Assets/SnowtimeStages/Assets/misc/Sidewinder/dccs_sw_int_dlc2.asset
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/decalposters2.mat
+- Assets/SnowtimeStages/Assets/newmombasatest/sky/nm_capital_ship.mat
+- Assets/SnowtimeStages/Assets/newmombasatest/sky/lc_lightning.mat
+- Assets/SnowtimeStages/Assets/Materials/deathisland/leaves_other.mat
+- Assets/SnowtimeStages/Assets/halo/sky/threshold_dusk0.fbx
+- Assets/SnowtimeStages/Assets/deltahalo/materials/tower_ramps.mat
+- Assets/SnowtimeStages/Assets/Music/STGMC_Main.asset
+- Assets/SnowtimeStages/Assets/deathisland/giant_rock05.fbx
+- Assets/SnowtimeStages/Assets/misc/Sandtrap/ADCCS_Mobs_st_dlc1.asset
+- Assets/SnowtimeStages/Assets/misc/DeathIsland/ADCCS_Int_di_dlc2.asset
+- Assets/SnowtimeStages/Assets/deathisland/cluster20.fbx
+- Assets/SnowtimeStages/Assets/gmconstruct/ConstructMirror.asset
+- Assets/SnowtimeStages/Assets/misc/Avalanche/ADCCSPool_Mobs_sidewinder.asset
+- Assets/SnowtimeStages/Assets/Materials/icefields/snowtime_icefields/ReflectionProbe-1.exr
+- Assets/SnowtimeStages/Assets/Music/STNMB_Main.asset
+- Assets/SnowtimeStages/Assets/Materials/sandtrap/klaxonthing.mat
+- Assets/SnowtimeStages/Assets/bloodgulch/props/plant_fern2.fbx
+- Assets/SnowtimeStages/Assets/CustomObjects/CovenantShipTeleporter/matGoldshoresPortalEffectEdge_duplicate.mat
+- Assets/SnowtimeStages/Assets/misc/gm_construct/ADCCSPool_Mobs_gmc.asset
+- Assets/SnowtimeStages/Assets/newmombasatest/OptimizedShaders/light_warningflash/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/Materials/deathisland/cliff.mat
+- Assets/SnowtimeStages/Assets/Materials/sky/OptimizedShaders/basis_dusk/Poiyomi
+  Toon.shader
+- Assets/SnowtimeStages/Assets/newmombasatest/OptimizedShaders/signage/Poiyomi Toon
+  World.shader
+- Assets/SnowtimeStages/Assets/Materials/sandtrap/OptimizedShaders/skydome/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/gephyrophobia/cluster_1.fbx
+- Assets/SnowtimeStages/Assets/icefields/props/icefieldsprops.fbx
+- Assets/SnowtimeStages/Assets/newmombasatest/ec_blastdoors.mat
+- Assets/SnowtimeStages/Characters/NewCharacterTest/Skills/MissingFlash.prefab
+- Assets/SnowtimeStages/Assets/sidewinder/props/snowrocks.fbx
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/overlay5.mat
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/OptimizedShaders/grasstosand/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/ratrace_lightmaps/lightsettingsyeah.lighting
+- Assets/SnowtimeStages/Assets/deltahalo/materials/OptimizedShaders/granite_mossy/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/CustomObjects/GoldChest4Sandtrap/matWideGlowCustom.mat
+- Assets/SnowtimeStages/Assets/misc/Gephyrophobia/ADCCS_Mobs_gph.asset
+- Assets/SnowtimeStages/Assets/bloodgulch/props/plant_broadleaf_short.fbx
+- Assets/SnowtimeStages/Assets/Materials/icefields/stripe_red.mat
+- Assets/SnowtimeStages/Assets/Materials/deathisland/metalstripswide.mat
+- Assets/SnowtimeStages/Assets/Materials/sidewinder/snowtime_icefields/ReflectionProbe-1.exr
+- Assets/SnowtimeStages/Assets/deltahalo/materials/tower_metal_trim_e.mat
+- Assets/SnowtimeStages/Assets/bloodgulch/props/a50_rock_large.fbx
+- Assets/SnowtimeStages/Assets/Materials/deathisland/cap_metal.mat
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/building_template013j.mat
+- Assets/SnowtimeStages/Assets/misc/gm_flatgrass/dccspool_flat_int.asset
+- Assets/SnowtimeStages/Assets/misc/Sandtrap/ADCCSPool_Mobs_st.asset
+- Assets/SnowtimeStages/Assets/CustomObjects/PlatChest/PlatChest.prefab
+- Assets/SnowtimeStages/Assets/newmombasatest/paver_concrete.mat
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/source_water_day.mat
+- Assets/SnowtimeStages/Assets/gephyrophobia/sky/14_threshold_sky_gephyrophobia.fbx
+- Assets/SnowtimeStages/Assets/deltahalo/materials/waterfall.mat
+- Assets/SnowtimeStages/Assets/misc/Halo/dccs_halo_int.asset
+- Assets/SnowtimeStages/Assets/misc/BloodGulch/ADCCS_Int_bg.asset
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/OptimizedShaders/brickwall003/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/misc/Icefields/dccs_icefield_mobs_dlc1.asset
+- Assets/SnowtimeStages/Assets/misc/Gephyrophobia/_Nodes/AirNodes_GPH.asset
+- Assets/SnowtimeStages/Assets/texSTSWScenePreview.png
+- Assets/SnowtimeStages/Assets/Materials/sky/threshold_night.mat
+- Assets/SnowtimeStages/Assets/deathisland/med_rock01.fbx
+- Assets/SnowtimeStages/Assets/deltahalo/materials/tower_metal_trim_c.mat
+- Assets/SnowtimeStages/Assets/deltahalo/materials/OptimizedShaders/grotto_falls/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/CustomObjects/GoldChest4Sandtrap/matOpaqueDustLargeDirectional.mat
+- Assets/SnowtimeStages/Assets/Materials/deathisland/lights_red.mat
+- Assets/SnowtimeStages/Assets/snowtime_gmconstruct_Profiles/worldspawn_1_2380 Profile
+  1.asset
+- Assets/SnowtimeStages/Assets/Materials/halo/waterfalla.mat
+- Assets/SnowtimeStages/Assets/Materials/halo/snowtime_halo2/ReflectionProbe-1.exr
+- Assets/SnowtimeStages/Assets/deltahalo/h2_water_test.mat
+- Assets/SnowtimeStages/Assets/deltahalo/sky/capitolship.mat
+- Assets/SnowtimeStages/Assets/gephyrophobia/cluster_5.fbx
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/OptimizedShaders/flatgrass_ground/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/Materials/deathisland/techdensecircuits.mat
+- Assets/SnowtimeStages/Assets/icefields/cluster_9.fbx
+- Assets/SnowtimeStages/Assets/Materials/sky/OptimizedShaders/di_sky_dusk/Poiyomi
+  Toon.shader
+- Assets/SnowtimeStages/Assets/gephyrophobia/level_collision_playercollide.fbx
+- Assets/SnowtimeStages/Assets/newmombasatest/OptimizedShaders/signage02/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/deltahalo/sky/OptimizedShaders/stormclouds/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/newmombasatest/sky/nm_clouds_low.mat
+- Assets/SnowtimeStages/Assets/deltahalo/sky/stormclouds.mat
+- Assets/SnowtimeStages/Assets/Music/STSW_Boss.asset
+- Assets/SnowtimeStages/Assets/Materials/deathisland/cliff_halo.mat
+- Assets/SnowtimeStages/Assets/EasterEggs/sniperrifle.mat
+- Assets/SnowtimeStages/Assets/Music/STDHALO_Main.asset
+- Assets/SnowtimeStages/Assets/misc/BloodGulch/dccs_bg_int_dlc1.asset
+- Assets/SnowtimeStages/Assets/misc/Halo/_Nodes/AirNodes_Halo2.asset
+- Assets/SnowtimeStages/Assets/halo/cluster_4.fbx
+- Assets/SnowtimeStages/Assets/Materials/sky/OptimizedShaders/sky_night/Poiyomi Toon.shader
+- Assets/SnowtimeStages/Assets/CustomObjects/CovenantShipTeleporter/matColossusPortalEffectEdge_duplicate.mat
+- Assets/SnowtimeStages/Assets/gmflatgrass/nighttime_active01.anim
+- Assets/SnowtimeStages/Assets/deathisland/cluster13.fbx
+- Assets/SnowtimeStages/Assets/CustomObjects/CovenantShipTeleporter/matShrineBossSymbol_duplicate.mat
+- Assets/SnowtimeStages/Assets/Materials/sandtrap/OptimizedShaders/copperflat/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/deltahalo/materials/OptimizedShaders/stone_columns/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/buildinglongbuilding.mat
+- Assets/SnowtimeStages/Assets/bloodgulch/level_collision_ground.fbx
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/building_template029a.mat
+- Assets/SnowtimeStages/Assets/misc/Sidewinder/dccspool_sw_int.asset
+- Assets/SnowtimeStages/Assets/misc/Sidewinder/ADCCS_Int_sw.asset
+- Assets/SnowtimeStages/Assets/Definitions/Logs.Stages.snowtimebloodgulch.asset
+- Assets/SnowtimeStages/Assets/PostProcess_Daytime.asset
+- Assets/SnowtimeStages/Assets/misc/NewMombasaBridge/dccs_nmb_mobs.asset
+- Assets/SnowtimeStages/Assets/gephyrophobia/cluster_16.fbx
+- Assets/SnowtimeStages/Assets/misc/Avalanche/dccs_sidewinder_int.asset
+- Assets/SnowtimeStages/Assets/CustomObjects/covuplinkprefab.prefab
+- Assets/SnowtimeStages/Assets/deltahalo/materials/rock_a.mat
+- Assets/SnowtimeStages/Assets/EasterEggs/sniper_screen.mat
+- Assets/SnowtimeStages/Assets/newmombasatest/girders_a.mat
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/plasticceiling002.mat
+- Assets/SnowtimeStages/Assets/snowtime_gmconstruct_Profiles/worldspawn_1_2380 Profile.asset
+- Assets/SnowtimeStages/Assets/deltahalo/materials/OptimizedShaders/ext_floor_tower/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/building_template007j.mat
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/buildinggovupscale.mat
+- Assets/SnowtimeStages/Assets/deathisland/large_rock02.fbx
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/buildingchurchcorner.mat
+- Assets/SnowtimeStages/Assets/misc/Icefields/_Nodes/AirNodes_icefield.asset
+- Assets/SnowtimeStages/Assets/misc/DeathIsland/dccs_di_mobs_dlc1.asset
+- Assets/SnowtimeStages/Assets/Music/STDHALO_Boss.asset
+- Assets/SnowtimeStages/Assets/CustomObjects/GoldChest4Sandtrap/matOpaqueDustLarge.mat
+- Assets/SnowtimeStages/Assets/CustomObjects/CovenantShipTeleporter/battle_cruiser_b.mat
+- Assets/SnowtimeStages/Assets/newmombasatest/metal_strips_b.mat
+- Assets/SnowtimeStages/Assets/misc/Avalanche/ADCCS_Mobs_sidewinder.asset
+- Assets/SnowtimeStages/Assets/halo/level_collision_dirt.fbx
+- Assets/SnowtimeStages/Assets/bloodgulch/cluster_17.fbx
+- Assets/SnowtimeStages/Assets/misc/DeltaHalo/dccs_dhalo_int.asset
+- Assets/SnowtimeStages/Assets/CustomObjects/CovenantShipTeleporter/c_mothership3.tif
+- Assets/SnowtimeStages/Assets/deltahalo/materials/stone_walls_dec_inset.mat
+- Assets/SnowtimeStages/Assets/deathisland/giant_rock02.fbx
+- Assets/SnowtimeStages/Assets/misc/Halo/dccs_halo_int_dlc2.asset
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/construct_concrete_floor.mat
+- Assets/SnowtimeStages/Assets/CustomObjects/CovenantShipTeleporter/matGolemExplosion_duplicate.mat
+- Assets/SnowtimeStages/Assets/misc/Gephyrophobia/ADCCS_Int_gph_dlc1.asset
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/metalpipe.mat
+- Assets/SnowtimeStages/Assets/Materials/deathisland/covenantcrate.mat
+- Assets/SnowtimeStages/Characters/NewCharacterTest/LemurianErrorMaster.prefab
+- Assets/SnowtimeStages/Assets/misc/Sandtrap/dccs_st_int.asset
+- Assets/SnowtimeStages/Assets/misc/Halo/dccs_halo_mobs.asset
+- Assets/SnowtimeStages/Assets/newmombasatest/concrete_stained.mat
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/canalrefinery.mat
+- Assets/SnowtimeStages/Assets/deltahalo/materials/island_terrain.mat
+- Assets/SnowtimeStages/Assets/halo/cluster_3.fbx
+- Assets/SnowtimeStages/Assets/Animated/Projectile.controller
+- Assets/SnowtimeStages/Assets/gephyrophobia/cluster_6.fbx
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/metaltruss.mat
+- Assets/SnowtimeStages/Assets/CustomObjects/CovenantShipTeleporter/OptimizedShaders/grav_lift/Poiyomi
+  Toon.shader
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/plasterceiling005.mat
+- Assets/SnowtimeStages/Characters/NewCharacterTest/MatTex/missing.tga
+- Assets/SnowtimeStages/Assets/deltahalo/materials/tower_metal_trim.mat
+- Assets/SnowtimeStages/Assets/misc/gm_flatgrass/ADCCS_Int_flat.asset
+- Assets/SnowtimeStages/Assets/CustomObjects/CovenantShipTeleporter/c_mothership1.tif
+- Assets/SnowtimeStages/Assets/Definitions/Logs.Stages.snowtimesandtrap.asset
+- Assets/SnowtimeStages/Assets/EasterEggs/sniperrifle.fbx
+- Assets/SnowtimeStages/Assets/deathisland/giant_rock04.fbx
+- Assets/SnowtimeStages/Assets/halo/props/tall_tree_pine_bough01.fbx
+- Assets/SnowtimeStages/Assets/deltahalo/materials/OptimizedShaders/cliff_walls/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/Materials/deathisland/covenantuplink.mat
+- Assets/SnowtimeStages/Assets/halo/cluster_18.fbx
+- Assets/SnowtimeStages/Assets/misc/Gephyrophobia/dccs_gph_mobs.asset
+- Assets/SnowtimeStages/Assets/newmombasatest/hazard_strips_a.mat
+- Assets/SnowtimeStages/Assets/misc/gm_flatgrass/dccs_flat_mobs.asset
+- Assets/SnowtimeStages/Assets/misc/gm_flatgrass/dccs_flat_int.asset
+- Assets/SnowtimeStages/Assets/deathisland/tree3_coll.fbx
+- Assets/SnowtimeStages/Assets/shrine/sky/75_sky.fbx
+- Assets/SnowtimeStages/Assets/Music/STHALO_Main.asset
+- Assets/SnowtimeStages/Assets/CustomObjects/CovenantShipTeleporter/matDistortionFaded_duplicate.mat
+- Assets/SnowtimeStages/Assets/Music/STIF_Boss.asset
+- Assets/SnowtimeStages/Assets/deltahalo/materials/OptimizedShaders/ground_temple/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/Materials/sky/clouds_dusk.mat
+- Assets/SnowtimeStages/Assets/Music/STNMB_Boss.asset
+- Assets/SnowtimeStages/Assets/newmombasatest/nm_metal_gray_panels.mat
+- Assets/SnowtimeStages/Assets/bloodgulch/cluster_14.fbx
+- Assets/SnowtimeStages/Assets/deltahalo/materials/ground_towers.mat
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/OptimizedShaders/building_antenna/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/Materials/deathisland/boulder_crouch.mat
+- Assets/SnowtimeStages/Assets/Materials/sky/OptimizedShaders/clouds/Poiyomi Toon.shader
+- Assets/SnowtimeStages/Assets/deathisland/cluster4.fbx
+- Assets/SnowtimeStages/Assets/misc/Avalanche/ADCCS_Mobs_sidewinder_dlc1.asset
+- Assets/SnowtimeStages/Assets/texSTNMBScenePreview.png
+- Assets/SnowtimeStages/Assets/misc/BloodGulch/ADCCS_Int_bg_dlc2.asset
+- Assets/SnowtimeStages/Assets/misc/gm_construct/ADCCS_Int_gmc_dlc2.asset
+- Assets/SnowtimeStages/Assets/misc/DeltaHalo/_Nodes/AirNodes_DeltaHalo.asset
+- Assets/SnowtimeStages/Assets/newmombasatest/OptimizedShaders/ec_ocean_floor/Poiyomi
+  Toon.shader
+- Assets/SnowtimeStages/Assets/misc/Icefields/dccspool_icefield_mobs.asset
+- Assets/SnowtimeStages/Assets/Definitions/Logs.Stages.snowtimeicefield.asset
+- Assets/SnowtimeStages/Assets/halo2/halo_a30b.fbx
+- Assets/SnowtimeStages/Assets/deltahalo/materials/OptimizedShaders/floor_simple_tile/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/Materials/sandtrap/OptimizedShaders/dullmetdest/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/icefields/actualprops/mp_boulder_snow_large_04.fbx
+- Assets/SnowtimeStages/Assets/Materials/halo/halo_ground.mat
+- Assets/SnowtimeStages/Characters/NewCharacterTest/MatTex/error_texture.tga
+- Assets/SnowtimeStages/Assets/Materials/deathisland/teleporter.mat
+- Assets/SnowtimeStages/Assets/newmombasatest/light_flourescent.mat
+- Assets/SnowtimeStages/Assets/bloodgulch/cluster_13.fbx
+- Assets/SnowtimeStages/Assets/EasterEggs/magnum.mat
+- Assets/SnowtimeStages/Assets/snowtime_gmconstruct/water_reflection_night.exr
+- Assets/SnowtimeStages/Assets/Materials/deathisland/largerock.mat
+- Assets/SnowtimeStages/Assets/Materials/deathisland/OptimizedShaders/leaves_other/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/misc/Halo/ADCCSPool_Mobs_halo.asset
+- Assets/SnowtimeStages/Assets/deathisland/level_collision_stone.fbx
+- Assets/SnowtimeStages/Assets/halo/cluster_23.fbx
+- Assets/SnowtimeStages/Assets/bloodgulch/level_collision_metal.fbx
+- Assets/SnowtimeStages/Assets/halo/cluster_8.fbx
+- Assets/SnowtimeStages/Assets/icefields/cluster_12.fbx
+- Assets/SnowtimeStages/Assets/Materials/sky/OptimizedShaders/ring_night/Poiyomi
+  Toon.shader
+- Assets/SnowtimeStages/Assets/Materials/deathisland/halowater.mat
+- Assets/SnowtimeStages/Assets/deltahalo/props/tree_ancient_large.fbx
+- Assets/SnowtimeStages/Assets/gephyrophobia/cluster_12.fbx
+- Assets/SnowtimeStages/Assets/Materials/deathisland/tree_leafy_leaves.tif
+- Assets/SnowtimeStages/Assets/deltahalo/materials/OptimizedShaders/waterfall/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/newmombasatest/foundation_panels.mat
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/industrialbell1.mat
+- Assets/SnowtimeStages/Assets/misc/Avalanche/_Nodes/AirNodes_sidewinder.asset
+- Assets/SnowtimeStages/Assets/Materials/sandtrap/hevdecal.mat
+- Assets/SnowtimeStages/Assets/deathisland/cluster6.fbx
+- Assets/SnowtimeStages/Assets/Materials/deathisland/diground.mat
+- Assets/SnowtimeStages/Assets/newmombasatest/h2_water_reflect.mat
+- Assets/SnowtimeStages/Assets/Materials/deathisland/snowtime_deathisland/ReflectionProbe-0.exr
+- Assets/SnowtimeStages/Assets/halo/props/tall_tree_pine_trunk01.fbx
+- Assets/SnowtimeStages/Assets/newmombasatest/sky/bridge_skydome.mat
+- Assets/SnowtimeStages/Assets/Music/STShrine_Boss.asset
+- Assets/SnowtimeStages/Assets/halo/cluster_7.fbx
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/building_template007b.mat
+- Assets/SnowtimeStages/Assets/CustomObjects/CovenantShipTeleporter/volumetric energy.tif
+- Assets/SnowtimeStages/Assets/newmombasatest/metal_slats.mat
+- Assets/SnowtimeStages/Characters/NewCharacterTest/MatTex/error.mat
+- Assets/SnowtimeStages/Assets/Materials/deathisland/metal panels generatorRED.mat
+- Assets/SnowtimeStages/Assets/misc/Icefields/ADCCSPool_Mobs_icefield.asset
+- Assets/SnowtimeStages/Assets/Materials/deathisland/broadleaf.mat
+- Assets/SnowtimeStages/Assets/gephyrophobia/cluster_11.fbx
+- Assets/SnowtimeStages/Assets/misc/BloodGulch/ADCCS_Mobs_bg.asset
+- Assets/SnowtimeStages/Characters/NewCharacterTest/error.fbx
+- Assets/SnowtimeStages/Assets/deathisland/cluster16.fbx
+- Assets/SnowtimeStages/Assets/deltahalo/materials/tower_metal_trim_d.mat
+- Assets/SnowtimeStages/Assets/misc/Halo/ADCCS_Int_halo_dlc2.asset
+- Assets/SnowtimeStages/Assets/Materials/HaloDiorama1.mat
+- Assets/SnowtimeStages/Assets/Materials/sky/deathislandsky.mat
+- Assets/SnowtimeStages/Assets/Materials/sandtrap/dullmetdest.mat
+- Assets/SnowtimeStages/Assets/misc/DeltaHalo/ADCCSPool_Int_dhalo.asset
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/decalposters.mat
+- Assets/SnowtimeStages/Assets/CustomObjects/CovenantShipTeleporter/battle_cruiser_b_glow.mat
+- Assets/SnowtimeStages/Assets/deltahalo/materials/OptimizedShaders/tower_metal_ramps_dirty/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/misc/DeathIsland/ADCCSPool_Mobs_di.asset
+- Assets/SnowtimeStages/Assets/icefields/actualprops/boulder_base04.fbx
+- Assets/SnowtimeStages/Assets/misc/DeathIsland/ADCCS_Mobs_di.asset
+- Assets/SnowtimeStages/Assets/Materials/sky/basis.mat
+- Assets/SnowtimeStages/Assets/Materials/sidewinder/sidewinder_ice.mat
+- Assets/SnowtimeStages/Assets/misc/Sidewinder/_Nodes/GroundNodes_SW.asset
+- Assets/SnowtimeStages/Assets/misc/DeathIsland/dccs_di_mobs.asset
+- Assets/SnowtimeStages/Assets/misc/DeathIsland/dccs_di_int_dlc1.asset
+- Assets/SnowtimeStages/Assets/texSTBGScenePreview.png
+- Assets/SnowtimeStages/Assets/icefields/cluster_21.fbx
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/building_template007c.mat
+- Assets/SnowtimeStages/Assets/bloodgulch/props/shrub_large.fbx
+- Assets/SnowtimeStages/Assets/deltahalo/props/tree_ancient_medium.fbx
+- Assets/SnowtimeStages/Assets/Materials/deathisland/OptimizedShaders/6a551d06881a8ab4e9cd35652d8fd197/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/roof_template.mat
+- Assets/SnowtimeStages/Assets/icefields/actualprops/boulder_base01.fbx
+- Assets/SnowtimeStages/Assets/Materials/bloodgulch/snowtime_bloodgulch/ReflectionProbe-0.exr
+- Assets/SnowtimeStages/Assets/bloodgulch/cluster_15.fbx
+- Assets/SnowtimeStages/Assets/deltahalo/materials/OptimizedShaders/stone_walls_dec_inset/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/Materials/halo/glass.mat
+- Assets/SnowtimeStages/Assets/Materials/gephyrophobia/energyrope.mat
+- Assets/SnowtimeStages/Assets/Materials/deathisland/unearthed.mat
+- Assets/SnowtimeStages/Assets/gephyrophobia/sky/20_ring_sky_gephyrophobia.fbx
+- Assets/SnowtimeStages/Assets/halo/sky/ring_dusk0.fbx
+- Assets/SnowtimeStages/Assets/deathisland/tree3.fbx
+- Assets/SnowtimeStages/Assets/EasterEggs/plasmarifle.fbx
+- Assets/SnowtimeStages/Assets/Materials/halo/OptimizedShaders/halo_ground/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/Materials/bloodgulch/beacon_blue.mat
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/building_template007d.mat
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/construct_concrete_ground.mat
+- Assets/SnowtimeStages/Assets/Materials/deathisland/metalpanel.mat
+- Assets/SnowtimeStages/Assets/misc/DeathIsland/_Nodes/GroundNodes_DeathIsland.asset
+- Assets/SnowtimeStages/Assets/icefields/actualprops/mp_boulder_snow_large_01.fbx
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/industrialbell.mat
+- Assets/SnowtimeStages/Assets/Materials/deathisland/metalstripsdecorativenarrow.mat
+- Assets/SnowtimeStages/Assets/icefields/cluster_16.fbx
+- Assets/SnowtimeStages/Assets/Materials/sky/gephysky.mat
+- Assets/SnowtimeStages/Assets/newmombasatest/props/junction_box_lg.fbx
+- Assets/SnowtimeStages/Assets/Materials/deathisland/boulder.mat
+- Assets/SnowtimeStages/Assets/Materials/sky/OptimizedShaders/ring_dusk/Poiyomi Toon.shader
+- Assets/SnowtimeStages/Assets/newmombasatest/titaniumlightblue.mat
+- Assets/SnowtimeStages/Assets/icefields/actualprops/boulder_base03.fbx
+- Assets/SnowtimeStages/Assets/shrine/sky/99_sky.fbx
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/florescentlight.mat
+- Assets/SnowtimeStages/Assets/halo/cluster_10.fbx
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/OptimizedShaders/invis/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/OptimizedShaders/_Mirror/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/icefields/cluster_7.fbx
+- Assets/SnowtimeStages/Assets/bloodgulch/props/boulder.fbx
+- Assets/SnowtimeStages/Assets/halo/proppos/halo_props.fbx
+- Assets/SnowtimeStages/Assets/Materials/deathisland/boulder_snow.mat
+- Assets/SnowtimeStages/Assets/icefields/cluster_3.fbx
+- Assets/SnowtimeStages/Characters/NewCharacterTest/Anims/ErrorIdle.anim
+- Assets/SnowtimeStages/Assets/deltahalo/props/tree_ancient_giant.fbx
+- Assets/SnowtimeStages/Assets/Materials/deathisland/OptimizedShaders/leaves/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/deltahalo/materials/stone_floors.mat
+- Assets/SnowtimeStages/Assets/misc/gm_construct/ADCCS_Int_gmc_temp.asset
+- Assets/SnowtimeStages/Assets/newmombasatest/nm_trima.mat
+- Assets/SnowtimeStages/Assets/misc/gm_construct/ADCCS_Mobs_gmc.asset
+- Assets/SnowtimeStages/Characters/NewCharacterTest/Skills/MissingGhost.prefab
+- Assets/SnowtimeStages/Assets/misc/DeltaHalo/_Nodes/GroundNodes_DeltaHalo.asset
+- Assets/SnowtimeStages/Assets/Materials/sky/di_ring.mat
+- Assets/SnowtimeStages/Assets/deltahalo/OptimizedShaders/oobdebug/Poiyomi Toon.shader
+- Assets/SnowtimeStages/Assets/newmombasatest/sky/OptimizedShaders/ec_smoke_sky/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/gmflatgrass/onlyanimateswhenactive01.controller
+- Assets/SnowtimeStages/Assets/bloodgulch/cluster_11.fbx
+- Assets/SnowtimeStages/Assets/Materials/halo/halowateroverlay.mat
+- Assets/SnowtimeStages/Assets/Materials/bloodgulch/beavercreek_boulder.mat
+- Assets/SnowtimeStages/Assets/misc/Halo/ADCCS_Mobs_halo_dlc1.asset
+- Assets/SnowtimeStages/Assets/newmombasatest/light_warningflash.mat
+- Assets/SnowtimeStages/Assets/misc/DeltaHalo/dccspool_dhalo_mobs.asset
+- Assets/SnowtimeStages/Assets/gmconstruct/gm_construct_decals.fbx
+- Assets/SnowtimeStages/Assets/texSTHaloScenePreview.png
+- Assets/SnowtimeStages/Assets/gephyrophobia/level_collision_metal.fbx
+- Assets/SnowtimeStages/Assets/misc/Sidewinder/ADCCSPool_Mobs_sw.asset
+- Assets/SnowtimeStages/Assets/texSTGMCScenePreview.png
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/invis.mat
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/building_template010c.mat
+- Assets/SnowtimeStages/Assets/CustomObjects/CovenantShipTeleporter/c_mothership3_bump.tif
+- Assets/SnowtimeStages/Assets/CustomObjects/CovenantShipTeleporter/iscTeleporterCovenantLunar.asset
+- Assets/SnowtimeStages/Assets/mesh/ship.fbx
+- Assets/SnowtimeStages/Assets/Definitions/Logs.Stages.snowtimenewmombasabridge.asset
+- Assets/SnowtimeStages/Assets/misc/gm_construct/dccs_gmc_int_dlc2.asset
+- Assets/SnowtimeStages/Assets/misc/Sandtrap/ADCCS_Int_st.asset
+- Assets/SnowtimeStages/Assets/Music/STGMC_Boss.asset
+- Assets/SnowtimeStages/Assets/Materials/deathisland/rock.mat
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/overlay1.mat
+- Assets/SnowtimeStages/Assets/Materials/sky/water_skybox.mat
+- Assets/SnowtimeStages/Assets/misc/gm_construct/_Nodes/AirNodes_GMOD.asset
+- Assets/SnowtimeStages/Assets/Materials/gephyrophobia/snowtime_gephyrophobia/ReflectionProbe-0.exr
+- Assets/SnowtimeStages/Characters/NewCharacterTest/Skills/MissingBall.prefab
+- Assets/SnowtimeStages/Assets/Materials/sidewinder/snowrock.mat
+- Assets/SnowtimeStages/Assets/misc/BloodGulch/ADCCSPool_Int_bg.asset
+- Assets/SnowtimeStages/Assets/CustomObjects/CovenantShipTeleporter/matTracerBright_duplicate.mat
+- Assets/SnowtimeStages/Assets/misc/Icefields/ADCCS_Mobs_icefield.asset
+- Assets/SnowtimeStages/Assets/deltahalo/materials/tower_metal_ramps_dirty.mat
+- Assets/SnowtimeStages/Assets/gephyrophobia/cluster_0.fbx
+- Assets/SnowtimeStages/Assets/deathisland/level_collision_dirt.fbx
+- Assets/SnowtimeStages/Assets/halo/cluster_16.fbx
+- Assets/SnowtimeStages/Assets/Music/STSW_Main.asset
+- Assets/SnowtimeStages/Assets/misc/Sidewinder/_Nodes/AirNodes_SW.asset
+- Assets/SnowtimeStages/Assets/misc/BloodGulch/dccs_bg_int_dlc2.asset
+- Assets/SnowtimeStages/Assets/misc/Avalanche/ADCCS_Int_sidewinder_dlc2.asset
+- Assets/SnowtimeStages/Assets/Materials/deathisland/metalpanelsgenericext.mat
+- Assets/SnowtimeStages/Assets/Materials/sky/water_day.mat
+- Assets/SnowtimeStages/Assets/bloodgulch/cluster_18.fbx
+- Assets/SnowtimeStages/Assets/deltahalo/materials/OptimizedShaders/light_volume/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/Materials/sandtrap/obelisk.mat
+- Assets/SnowtimeStages/Assets/icefields/cluster_22.fbx
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/sinkkitchen.mat
+- Assets/SnowtimeStages/Assets/icefields/actualprops/mp_boulder_snow_large_00.fbx
+- Assets/SnowtimeStages/Assets/Materials/deathisland/floor.mat
+- Assets/SnowtimeStages/Assets/deltahalo/materials/OptimizedShaders/tower_metal_trim_f/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/CustomObjects/GoldChest4Sandtrap/matTrimSheetMetalGolden_Custom.mat
+- Assets/SnowtimeStages/Assets/Materials/icefields/cliff_icefields_generic.mat
+- Assets/SnowtimeStages/Assets/deltahalo/sky/stormfront.mat
+- Assets/SnowtimeStages/Assets/EasterEggs/plasmarifle_gauge.mat
+- Assets/SnowtimeStages/Assets/Animated/Elevator_Rise.anim
+- Assets/SnowtimeStages/Assets/deathisland/cluster0.fbx
+- Assets/SnowtimeStages/Assets/halo/sky/sky_dusk0.fbx
+- Assets/SnowtimeStages/Assets/deltahalo/materials/cracks_large.mat
+- Assets/SnowtimeStages/Assets/deltahalo/materials/ground_bridge.mat
+- Assets/SnowtimeStages/Assets/newmombasatest/street_straight.mat
+- Assets/SnowtimeStages/Assets/misc/Halo/_Nodes/GroundNodes_Halo2.asset
+- Assets/SnowtimeStages/Assets/Materials/halo/OptimizedShaders/waterfalla/Poiyomi
+  Toon.shader
+- Assets/SnowtimeStages/Assets/deathisland/cluster7.fbx
+- Assets/SnowtimeStages/Assets/newmombasatest/debris.mat
+- Assets/SnowtimeStages/Assets/misc/gm_construct/dccspool_gmc_mobs.asset
+- Assets/SnowtimeStages/Assets/misc/Icefields/ADCCS_Mobs_icefield_dlc1.asset
+- Assets/SnowtimeStages/Assets/Definitions/Logs.Stages.snowtimegephyrophobia.asset
+- Assets/SnowtimeStages/Assets/Materials/sandtrap/cust_pyramid1.mat
+- Assets/SnowtimeStages/Assets/misc/DeltaHalo/ADCCS_Int_dhalo_dlc1.asset
+- Assets/SnowtimeStages/Assets/bloodgulch/props/plant_fern3.fbx
+- Assets/SnowtimeStages/Assets/snowtime_gmconstruct/OcclusionCullingData.asset
+- Assets/SnowtimeStages/Assets/deathisland/large_rock04.fbx
+- Assets/SnowtimeStages/Assets/deltahalo/props/materials/ancient_tree_leaves.mat
+- Assets/SnowtimeStages/Assets/misc/Sidewinder/ADCCS_Int_sw_dlc1.asset
+- Assets/SnowtimeStages/Assets/Materials/sky/threshold_dusk.mat
+- Assets/SnowtimeStages/Assets/gephyrophobia/cluster_15.fbx
+- Assets/SnowtimeStages/Assets/gephyrophobia/level_collision_snow.fbx
+- Assets/SnowtimeStages/Assets/Music/STIF_Main.asset
+- Assets/SnowtimeStages/Characters/NewCharacterTest/MatTex/MissingTexture.mat
+- Assets/SnowtimeStages/Assets/deathisland/cluster3.fbx
+- Assets/SnowtimeStages/Assets/texSTShrineScenePreview.png
+- Assets/SnowtimeStages/Assets/CustomObjects/PlatChest/matTrimSheetMetalPlatinum_Custom.mat
+- Assets/SnowtimeStages/Assets/Materials/deathisland/lights_shared.mat
+- Assets/SnowtimeStages/Assets/misc/gm_construct/dccs_gmc_mobs_temp.asset
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/building_template006b.mat
+- Assets/SnowtimeStages/Assets/deltahalo/materials/foliage_cliffs.mat
+- Assets/SnowtimeStages/Assets/Definitions/snowtime_halo.asset
+- Assets/SnowtimeStages/Assets/Materials/deathisland/broadtrunk.mat
+- Assets/SnowtimeStages/Assets/misc/Sidewinder/ADCCS_Mobs_sw.asset
+- Assets/SnowtimeStages/Assets/misc/BloodGulch/dccspool_bg_mobs.asset
+- Assets/SnowtimeStages/Assets/misc/gm_flatgrass/ADCCS_Mobs_flat.asset
+- Assets/SnowtimeStages/Assets/Materials/deathisland/goo.mat
+- Assets/SnowtimeStages/Assets/misc/gm_construct/_Nodes/GroundNodes_GMOD.asset
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/citadelmetalwall.mat
+- Assets/SnowtimeStages/Assets/newmombasatest/newmombasabridgebackup.blend
+- Assets/SnowtimeStages/Assets/Materials/deathisland/teleporter_volume.mat
+- Assets/SnowtimeStages/Assets/newmombasatest/props/h_semi_trailer.fbx
+- Assets/SnowtimeStages/Assets/EasterEggs/OptimizedShaders/plasmarifle_current/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/building_template003a.mat
+- Assets/SnowtimeStages/Assets/CustomObjects/GoldChest4Sandtrap/matGlow2Soft.mat
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/constructground.mat
+- Assets/SnowtimeStages/Assets/Materials/halo/snowtime_halo/ReflectionProbe-0.exr
+- Assets/SnowtimeStages/Assets/Definitions/Logs.Stages.snowtimehalo.asset
+- Assets/SnowtimeStages/Assets/Materials/sandtrap/stground.mat
+- Assets/SnowtimeStages/Assets/misc/Avalanche/dccs_sidewinder_int_dlc1.asset
+- Assets/SnowtimeStages/Assets/CustomObjects/CovenantShipTeleporter/gravlift_radius.mat
+- Assets/SnowtimeStages/Assets/newmombasatest/concrete_hor_strip.mat
+- Assets/SnowtimeStages/Assets/icefields/cluster_0.fbx
+- Assets/SnowtimeStages/Assets/Materials/deathisland/metalflatgeneric.mat
+- Assets/SnowtimeStages/Assets/Definitions/Logs.Stages.snowtimegmconstruct.asset
+- Assets/SnowtimeStages/Assets/Materials/sandtrap/OptimizedShaders/cust_pyramid1/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/gephyrophobia/cluster_4.fbx
+- Assets/SnowtimeStages/Assets/newmombasatest/semitrailer.mat
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/ceiling01.mat
+- Assets/SnowtimeStages/Assets/texSTScenePreview.png
+- Assets/SnowtimeStages/Assets/deathisland/cluster5.fbx
+- Assets/SnowtimeStages/Assets/deltahalo/materials/light_white.mat
+- Assets/SnowtimeStages/Assets/Materials/sky/threshold.mat
+- Assets/SnowtimeStages/Assets/CustomObjects/covuplink_prop.prefab
+- Assets/SnowtimeStages/Assets/Materials/deathisland/tree_dead.mat
+- Assets/SnowtimeStages/Assets/halo/cluster_21.fbx
+- Assets/SnowtimeStages/Assets/gephyrophobia/cluster_19.fbx
+- Assets/SnowtimeStages/Assets/newmombasatest/base_stucco1.mat
+- Assets/SnowtimeStages/Assets/EasterEggs/plasmarifle.mat
+- Assets/SnowtimeStages/Assets/deathisland/med_rock05.fbx
+- Assets/SnowtimeStages/Assets/Definitions/snowtime_gephyrophobia.asset
+- Assets/SnowtimeStages/Assets/icefields/actualprops/mp_tree_pine_snow_small_leaf.fbx
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/whiteroom.mat
+- Assets/SnowtimeStages/Assets/Materials/icefields/snowtime_icefields/ReflectionProbe-0.exr
+- Assets/SnowtimeStages/Assets/Materials/halo/OptimizedShaders/halowateroverlay/Poiyomi
+  Toon.shader
+- Assets/SnowtimeStages/Assets/icefields/cluster_17.fbx
+- Assets/SnowtimeStages/Assets/Materials/bloodgulch/floor_arrow.mat
+- Assets/SnowtimeStages/Assets/misc/DeltaHalo/dccspool_dhalo_int.asset
+- Assets/SnowtimeStages/Assets/gephyrophobia/cluster_10.fbx
+- Assets/SnowtimeStages/Assets/deltahalo/materials/bridge_doorjam.mat
+- Assets/SnowtimeStages/Assets/icefields/actualprops/mp_boulder_snow_large_02.fbx
+- Assets/SnowtimeStages/Assets/Materials/deathisland/floor_int.mat
+- Assets/SnowtimeStages/Assets/deltahalo/materials/OptimizedShaders/bushes/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/EasterEggs/OptimizedShaders/sniperghost/Poiyomi Toon
+  World.shader
+- Assets/SnowtimeStages/Assets/misc/Gephyrophobia/ADCCS_Int_gph_dlc2.asset
+- Assets/SnowtimeStages/Assets/Materials/deathisland/metalpanelgeneric.mat
+- Assets/SnowtimeStages/Assets/Materials/sandtrap/decor_decal.mat
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/concrete_floor028a.mat
+- Assets/SnowtimeStages/Assets/Materials/deathisland/rampmid.mat
+- Assets/SnowtimeStages/Assets/icefields/cluster_13.fbx
+- Assets/SnowtimeStages/Assets/deathisland/cluster14.fbx
+- Assets/SnowtimeStages/Assets/newmombasatest/sky/ec_bridge_fogband.mat
+- Assets/SnowtimeStages/Assets/newmombasatest/sky/OptimizedShaders/oceanhaze/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/deltahalo/materials/OptimizedShaders/tower_metal_trim_e/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/buildingindustrial.mat
+- Assets/SnowtimeStages/Assets/Materials/sky/OptimizedShaders/threshold/Poiyomi Toon.shader
+- Assets/SnowtimeStages/Assets/EasterEggs/OptimizedShaders/sniper_screen/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/Materials/sandtrap/OptimizedShaders/phantomdest/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/deltahalo/materials/OptimizedShaders/panel_tread/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/deltahalo/materials/stone_walls.mat
+- Assets/SnowtimeStages/Assets/gephyrophobia/cluster_20.fbx
+- Assets/SnowtimeStages/Assets/misc/gm_construct/ADCCS_Int_gmc_dlc1.asset
+- Assets/SnowtimeStages/Assets/gmconstruct/gm_construct_skybox.fbx
+- Assets/SnowtimeStages/Assets/misc/gm_construct/ADCCS_Mobs_gmc_temp_dlc1.asset
+- Assets/SnowtimeStages/Assets/Materials/deathisland/water.mat
+- Assets/SnowtimeStages/Assets/halo/cluster_13.fbx
+- Assets/SnowtimeStages/Assets/bloodgulch/props/small_blue_beacon.fbx
+- Assets/SnowtimeStages/Characters/NewCharacterTest/LemurianErrorBody.prefab
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/dav0rswitch.mat
+- Assets/SnowtimeStages/Assets/Materials/sidewinder/snowtime_icefields/ReflectionProbe-0.exr
+- Assets/SnowtimeStages/Assets/Definitions/snowtime_bloodgulch.asset
+- Assets/SnowtimeStages/Assets/misc/gm_flatgrass/ADCCS_Int_flat_dlc2.asset
+- Assets/SnowtimeStages/Assets/newmombasatest/props/light_red_rotate.fbx
+- Assets/SnowtimeStages/Assets/SceneInfo.prefab
+- Assets/SnowtimeStages/Assets/CustomObjects/CovenantShipTeleporter/matTPFire_duplicate.mat
+- Assets/SnowtimeStages/Assets/shrine/sky/89_sky.fbx
+- Assets/SnowtimeStages/Assets/deltahalo/materials/OptimizedShaders/tower_glass/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/Materials/sandtrap/hev1.mat
+- Assets/SnowtimeStages/Assets/Definitions/Logs.Stages.snowtimedeathisland.asset
+- Assets/SnowtimeStages/Characters/NewCharacterTest/Anims/animLemurianError.controller
+- Assets/SnowtimeStages/Assets/misc/NewMombasaBridge/ADCCS_Int_nmb_dlc1.asset
+- Assets/SnowtimeStages/Assets/misc/Gephyrophobia/dccs_gph_mobs_dlc1.asset
+- Assets/SnowtimeStages/Assets/icefields/actualprops/mp_boulder_snow_large_03.fbx
+- Assets/SnowtimeStages/Assets/CustomObjects/small_red_beacon_final.prefab
+- Assets/SnowtimeStages/Assets/newmombasatest/sky/OptimizedShaders/lc_lightning/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/bloodgulch/props/tree_desert_whitebark.fbx
+- Assets/SnowtimeStages/Assets/deltahalo/materials/stone_columns.mat
+- Assets/SnowtimeStages/Assets/Materials/sky/sandtrapsky.mat
+- Assets/SnowtimeStages/Assets/gephyrophobia/cluster_9.fbx
+- Assets/SnowtimeStages/Assets/newmombasatest/sky/earthcity_sky.fbx
+- Assets/SnowtimeStages/Assets/misc/BloodGulch/dccs_bg_mobs.asset
+- Assets/SnowtimeStages/Assets/misc/gm_flatgrass/_Nodes/GroundNodes_GMODFLAT.asset
+- Assets/SnowtimeStages/Assets/deathisland/cluster17.fbx
+- Assets/SnowtimeStages/Characters/NewCharacterTest/Skills/LemurianErrorBodyPrimaryFamily.asset
+- Assets/SnowtimeStages/Assets/gmflatgrass/onlyanimateswhenactive.controller
+- Assets/SnowtimeStages/Assets/misc/DeltaHalo/dccs_dhalo_int_dlc1.asset
+- Assets/SnowtimeStages/Assets/Materials/sandtrap/copperplate.mat
+- Assets/SnowtimeStages/Assets/deltahalo/materials/OptimizedShaders/foliage_cliffs/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/misc/DeathIsland/dccs_di_int_dlc2.asset
+- Assets/SnowtimeStages/Assets/EasterEggs/OptimizedShaders/plasmarifle_luminous/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/deltahalo/materials/tower_metal_trim_f.mat
+- Assets/SnowtimeStages/Assets/CustomObjects/CovenantShipTeleporter/matShopPortalEffectEdge_duplicate.mat
+- Assets/SnowtimeStages/Assets/icefields/cluster_4.fbx
+- Assets/SnowtimeStages/Assets/misc/Sandtrap/ADCCS_Int_st_dlc1.asset
+- Assets/SnowtimeStages/Assets/newmombasatest/toll_plaza_ground.mat
+- Assets/SnowtimeStages/Assets/bloodgulch/props/tree_desert_whitebark_coll.fbx
+- Assets/SnowtimeStages/Assets/CustomObjects/CovenantShipTeleporter/matTPLaser_duplicate.mat
+- Assets/SnowtimeStages/Assets/deltahalo/materials/ground_grotto.mat
+- Assets/SnowtimeStages/Assets/icefields/cluster_20.fbx
+- Assets/SnowtimeStages/Assets/halo/cluster_11.fbx
+- Assets/SnowtimeStages/Assets/deltahalo/props/tree_branch.fbx
+- Assets/SnowtimeStages/Assets/Music/STShrine_Main.asset
+- Assets/SnowtimeStages/Assets/newmombasatest/sky/earthcity_bridgesky.fbx
+- Assets/SnowtimeStages/Assets/deathisland/cluster1.fbx
+- Assets/SnowtimeStages/Assets/icefields/actualprops/boulder_base00.fbx
+- Assets/SnowtimeStages/Assets/mesh/gravlift.fbx
+- Assets/SnowtimeStages/Assets/CustomObjects/CovenantShipTeleporter/battle_cruiser_d.mat
+- Assets/SnowtimeStages/Assets/deathisland/giant_rock01.fbx
+- Assets/SnowtimeStages/Assets/deathisland/sky/ring.fbx
+- Assets/SnowtimeStages/Assets/CustomObjects/small_blue_beacon_final.prefab
+- Assets/SnowtimeStages/Assets/CustomObjects/CovenantShipTeleporter/PurchaseLockCovenant.prefab
+- Assets/SnowtimeStages/Assets/deathisland/sky/water.fbx
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/building_antenna.mat
+- Assets/SnowtimeStages/Assets/icefields/actualprops/boulder_base02.fbx
+- Assets/SnowtimeStages/Assets/gephyrophobia/cluster_18.fbx
+- Assets/SnowtimeStages/Assets/deltahalo/materials/OptimizedShaders/stone_walls/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/newmombasatest/signageglass.mat
+- Assets/SnowtimeStages/Assets/misc/Sidewinder/ADCCSPool_Int_sw.asset
+- Assets/SnowtimeStages/Assets/Materials/sandtrap/clouds_sandstorm.mat
+- Assets/SnowtimeStages/Assets/deltahalo/materials/swordfern.mat
+- Assets/SnowtimeStages/Assets/halo/cluster_32.fbx
+- Assets/SnowtimeStages/Assets/CustomObjects/GoldChest4Sandtrap/matOpaqueDust.mat
+- Assets/SnowtimeStages/Assets/Materials/halo/snowtime_halo/ReflectionProbe-1.exr
+- Assets/SnowtimeStages/Assets/Materials/sky/OptimizedShaders/water_skybox/Poiyomi
+  Toon.shader
+- Assets/SnowtimeStages/Assets/deltahalo/sky/OptimizedShaders/stormfront/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/halo/cluster_31.fbx
+- Assets/SnowtimeStages/Assets/Materials/icefields/icefield_ground_generic.mat
+- Assets/SnowtimeStages/Assets/Materials/icefields/sidewindergen.mat
+- Assets/SnowtimeStages/Assets/misc/DeltaHalo/ADCCS_Mobs_dhalo.asset
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/building_template007h.mat
+- Assets/SnowtimeStages/Assets/Materials/deathisland/snowtime_deathisland/ReflectionProbe-1.exr
+- Assets/SnowtimeStages/Assets/misc/Halo/_Nodes/GroundNodes_Halo.asset
+- Assets/SnowtimeStages/Assets/bloodgulch/props/boulder_doublewide.fbx
+- Assets/SnowtimeStages/Assets/newmombasatest/street_tunnel_border.mat
+- Assets/SnowtimeStages/Assets/CustomObjects/CovenantShipTeleporter/c_mothership2.tif
+- Assets/SnowtimeStages/Assets/deltahalo/sky/wall.mat
+- Assets/SnowtimeStages/Assets/Materials/deathisland/underwater.mat
+- Assets/SnowtimeStages/Assets/misc/Gephyrophobia/dccs_gph_int_dlc2.asset
+- Assets/SnowtimeStages/Assets/Materials/sandtrap/OptimizedShaders/clouds_horizon/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/newmombasatest/ec_ocean_floor.mat
+- Assets/SnowtimeStages/Assets/icefields/actualprops/mp_tree_pine_snow_small.fbx
+- Assets/SnowtimeStages/Assets/deathisland/cluster12.fbx
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/metalduct001.mat
+- Assets/SnowtimeStages/Assets/Definitions/snowtime_newmombasabridge.asset
+- Assets/SnowtimeStages/Assets/Materials/deathisland/boulder_large_gray.mat
+- Assets/SnowtimeStages/Assets/halo/props/tall_tree_pine_bough02.fbx
+- Assets/SnowtimeStages/Assets/Definitions/snowtime_sandtrap.asset
+- Assets/SnowtimeStages/Assets/misc/gm_construct/dccs_gmc_int_temp.asset
+- Assets/SnowtimeStages/Assets/Materials/deathisland/b40ramp.mat
+- Assets/SnowtimeStages/Assets/halo/props/tall_tree_pine_trunk04.fbx
+- Assets/SnowtimeStages/Assets/Materials/sky/OptimizedShaders/sky_dusk/Poiyomi Toon.shader
+- Assets/SnowtimeStages/Assets/deltahalo/materials/tower_metal_trim_g.mat
+- Assets/SnowtimeStages/Assets/deathisland/med_rock04.fbx
+- Assets/SnowtimeStages/Assets/deltahalo/materials/tree_clifftop.mat
+- Assets/SnowtimeStages/Assets/newmombasatest/props/sign_street_arch.fbx
+- Assets/SnowtimeStages/Assets/deathisland/giant_rock03.fbx
+- Assets/SnowtimeStages/Assets/halo/cluster_25.fbx
+- Assets/SnowtimeStages/Assets/deathisland/cluster18.fbx
+- Assets/SnowtimeStages/Assets/misc/gm_construct/ADCCS_Mobs_gmc_temp.asset
+- Assets/SnowtimeStages/Assets/deltahalo/materials/grotto_falls.mat
+- Assets/SnowtimeStages/Assets/CustomObjects/CovenantShipTeleporter/matGenericFlash_duplicate.mat
+- Assets/SnowtimeStages/Assets/deltahalo/materials/panel_tread.mat
+- Assets/SnowtimeStages/Assets/CustomObjects/CovenantShipTeleporter/CovenantCruiserTeleporter.prefab
+- Assets/SnowtimeStages/Assets/gmconstruct/gm_construct_lights.fbx
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/buildingsheet03a.mat
+- Assets/SnowtimeStages/Assets/Materials/gephyrophobia/snowtime_gephyrophobia/ReflectionProbe-1.exr
+- Assets/SnowtimeStages/Assets/Materials/gephyrophobia/snow.mat
+- Assets/SnowtimeStages/Assets/newmombasatest/decalinvis.mat
+- Assets/SnowtimeStages/Assets/Materials/sandtrap/hev2.mat
+- Assets/SnowtimeStages/Assets/Materials/sidewinder/OptimizedShaders/icefields_ground/Poiyomi
+  Toon.shader
+- Assets/SnowtimeStages/Assets/icefields/cluster_5.fbx
+- Assets/SnowtimeStages/Assets/deathisland/sky/fog_band.fbx
+- Assets/SnowtimeStages/Assets/newmombasatest/panel_service_door.mat
+- Assets/SnowtimeStages/Assets/Materials/deathisland/OptimizedShaders/diground/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/Materials/bloodgulch/OptimizedShaders/1e15f5ceabc437b4ab9cecd604659eee/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/Materials/sky/sky_night.mat
+- Assets/SnowtimeStages/Assets/Materials/sandtrap/snowtime_sandtrap/ReflectionProbe-1.exr
+- Assets/SnowtimeStages/Assets/misc/DeathIsland/ADCCS_Int_di_dlc1.asset
+- Assets/SnowtimeStages/Assets/misc/Gephyrophobia/_Nodes/GroundNodes_GPH.asset
+- Assets/SnowtimeStages/Assets/misc/gm_flatgrass/dccs_flat_mobs_temp.asset
+- Assets/SnowtimeStages/Assets/misc/Sidewinder/dccs_sw_int.asset
+- Assets/SnowtimeStages/Assets/newmombasatest/welcomesign.mat
+- Assets/SnowtimeStages/Assets/Music/STDI_Main.asset
+- Assets/SnowtimeStages/Assets/newmombasatest/metal_strips_c.mat
+- Assets/SnowtimeStages/Assets/deathisland/level_collision_metal.fbx
+- Assets/SnowtimeStages/Assets/Materials/deathisland/fern.mat
+- Assets/SnowtimeStages/Assets/newmombasatest/street_highway_bottom.mat
+- Assets/SnowtimeStages/Assets/deltahalo/materials/OptimizedShaders/ground_moss_a/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/Definitions/snowtime_gmconstruct.asset
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/brickwall003.mat
+- Assets/SnowtimeStages/Assets/halo/level_collision_water.fbx
+- Assets/SnowtimeStages/Assets/deltahalo/materials/glass_dirty_edge.mat
+- Assets/SnowtimeStages/Assets/misc/gm_flatgrass/ADCCSPool_Mobs_flat.asset
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/ceiling03.mat
+- Assets/SnowtimeStages/Assets/gephyrophobia/cluster_13.fbx
+- Assets/SnowtimeStages/Assets/deltahalo/materials/OptimizedShaders/glass_dirty_edge/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/misc/gm_flatgrass/dccspool_flat_mobs.asset
+- Assets/SnowtimeStages/Assets/gephyrophobia/PP Profile 4.asset
+- Assets/SnowtimeStages/Assets/deltahalo/materials/light_amber.mat
+- Assets/SnowtimeStages/Assets/gephyrophobia/PP Profile.asset
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/citycard01.mat
+- Assets/SnowtimeStages/Assets/deltahalo/materials/light_volume.mat
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/overlay3.mat
+- Assets/SnowtimeStages/Assets/misc/Gephyrophobia/dccspool_gph_mobs.asset
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/rooftop01.mat
+- Assets/SnowtimeStages/Assets/Materials/deathisland/pine_bough.mat
+- Assets/SnowtimeStages/Assets/Materials/sky/OptimizedShaders/sky_day/Poiyomi Toon.shader
+- Assets/SnowtimeStages/Assets/CustomObjects/CovenantShipTeleporter/matGlowFlower_duplicate.mat
+- Assets/SnowtimeStages/Assets/bloodgulch/cluster_3.fbx
+- Assets/SnowtimeStages/Assets/snowtime_deltahalo/ReflectionProbe-1.exr
+- Assets/SnowtimeStages/Assets/deltahalo/materials/OptimizedShaders/light_white/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/misc/DeltaHalo/ADCCS_Int_dhalo_dlc2.asset
+- Assets/SnowtimeStages/Assets/gephyrophobia/cluster_8.fbx
+- Assets/SnowtimeStages/Assets/misc/Halo/ADCCS_Mobs_halo.asset
+- Assets/SnowtimeStages/Assets/bloodgulch/cluster_5.fbx
+- Assets/SnowtimeStages/Assets/misc/Icefields/ADCCS_Int_icefield_dlc2.asset
+- Assets/SnowtimeStages/Assets/deathisland/large_rock01.fbx
+- Assets/SnowtimeStages/Assets/halo/props/base_tree_pine_trunk.fbx
+- Assets/SnowtimeStages/Assets/CustomObjects/CovenantShipTeleporter/matMSPortalEffectEdge_duplicate.mat
+- Assets/SnowtimeStages/Assets/misc/Sandtrap/ADCCS_Int_st_dlc2.asset
+- Assets/SnowtimeStages/Assets/Materials/deathisland/gratealpha.mat
+- Assets/SnowtimeStages/Assets/halo/sky/basis_dusk0.fbx
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/grasstosand.mat
+- Assets/SnowtimeStages/Assets/deathisland/sky/threshold.fbx
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/concrete_floor028c.mat
+- Assets/SnowtimeStages/Assets/Materials/sandtrap/copperlayer.mat
+- Assets/SnowtimeStages/Assets/CustomObjects/CovenantShipTeleporter/matPortalVoid_duplicate.mat
+- Assets/SnowtimeStages/Assets/halo/cluster_17.fbx
+- Assets/SnowtimeStages/Assets/Materials/sandtrap/phantomdest.mat
+- Assets/SnowtimeStages/Assets/deathisland/large_rock05.fbx
+- Assets/SnowtimeStages/Assets/Materials/sky/OptimizedShaders/basis/Poiyomi Toon.shader
+- Assets/SnowtimeStages/Assets/halo/sky/clouds_dusk0.fbx
+- Assets/SnowtimeStages/Assets/logbook/haloring.fbx
+- Assets/SnowtimeStages/Assets/mesh/gravlift2.fbx
+- Assets/SnowtimeStages/Assets/shrine/shrine.fbx
+- Assets/SnowtimeStages/Assets/Materials/deathisland/OptimizedShaders/teleporter/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/misc/DeltaHalo/dccs_dhalo_int_dlc2.asset
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/buildingprojectbuilding03.mat
+- Assets/SnowtimeStages/Assets/deltahalo/sky/ring_afternoon.mat
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/concrete_floor008.mat
+- Assets/SnowtimeStages/Assets/misc/Halo/dccspool_halo_mobs.asset
+- Assets/SnowtimeStages/Assets/deltahalo/materials/ground_moss_a.mat
+- Assets/SnowtimeStages/Assets/halo/level_collision_player.fbx
+- Assets/SnowtimeStages/Assets/mesh/ship2.fbx
+- Assets/SnowtimeStages/Assets/Music/STGPH_Main.asset
+- Assets/SnowtimeStages/Assets/Materials/deathisland/cliff_halo_tiled.mat
+- Assets/SnowtimeStages/Assets/Materials/sandtrap/clouds_horizon.mat
+- Assets/SnowtimeStages/Assets/deathisland/med_rock02.fbx
+- Assets/SnowtimeStages/Assets/Materials/bloodgulch/bgground.mat
+- Assets/SnowtimeStages/Assets/newmombasatest/OptimizedShaders/signageglass/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/CustomObjects/GoldChest4Sandtrap/matTracerBright.mat
+- Assets/SnowtimeStages/Assets/Materials/sidewinder/sidewindergen.mat
+- Assets/SnowtimeStages/Assets/bloodgulch/cluster_16.fbx
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/OptimizedShaders/brickwall053d/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/deltahalo/materials/tower_vines.mat
+- Assets/SnowtimeStages/Assets/deathisland/tree2_coll.fbx
+- Assets/SnowtimeStages/Assets/bloodgulch/cluster_9.fbx
+- Assets/SnowtimeStages/Assets/halo/props/tall_tree_pine_trunk03.fbx
+- Assets/SnowtimeStages/Assets/Materials/sandtrap/laminate_clean.mat
+- Assets/SnowtimeStages/Assets/misc/NewMombasaBridge/dccs_nmb_int_dlc1.asset
+- Assets/SnowtimeStages/Assets/sidewinder/sidewinder.fbx
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/buildingshort.mat
+- Assets/SnowtimeStages/Assets/misc/Gephyrophobia/ADCCSPool_Int_gph.asset
+- Assets/SnowtimeStages/Assets/snowtime_deltahalo/ReflectionProbe-0.exr
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/OptimizedShaders/constructground/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/building_template007i.mat
+- Assets/SnowtimeStages/Assets/misc/Sandtrap/_Nodes/AirNodes_Sandtrap.asset
+- Assets/SnowtimeStages/Assets/newmombasatest/newmombasabridge.fbx
+- Assets/SnowtimeStages/Assets/deathisland/med_rock03.fbx
+- Assets/SnowtimeStages/Assets/CustomObjects/CovenantShipTeleporter/matTPShockwave_duplicate.mat
+- Assets/SnowtimeStages/Assets/Materials/deathisland/cap_ramp1.mat
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/_Mirror.mat
+- Assets/SnowtimeStages/Characters/NewCharacterTest/Skills/escFireMissingProjectile.asset
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/OptimizedShaders/flatsign/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/deltahalo/materials/bushes.mat
+- Assets/SnowtimeStages/Assets/deltahalo/materials/weeds_brown.mat
+- Assets/SnowtimeStages/Assets/Materials/deathisland/metalstripswidea.mat
+- Assets/SnowtimeStages/Assets/logbook/HaloDiorama.prefab
+- Assets/SnowtimeStages/Assets/Materials/sandtrap/OptimizedShaders/decor_decal/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/Materials/sky/OptimizedShaders/clouds_dusk/Poiyomi
+  Toon.shader
+- Assets/SnowtimeStages/Assets/deltahalo/props/materials/tree_ancient.mat
+- Assets/SnowtimeStages/Assets/CustomObjects/CovenantShipTeleporter/shipgravlift.fbx
+- Assets/SnowtimeStages/Assets/gephyrophobia/cluster_21.fbx
+- Assets/SnowtimeStages/Assets/bloodgulch/cluster_0.fbx
+- Assets/SnowtimeStages/Assets/bloodgulch/cluster_10.fbx
+- Assets/SnowtimeStages/Assets/misc/AOTCR/_Nodes/GroundNodes_AOTCR.asset
+- Assets/SnowtimeStages/Assets/icefields/cluster_11.fbx
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/building_template013m.mat
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/OptimizedShaders/lambdaspray/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/deltahalo/sky.fbx
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/companiondoll.mat
+- Assets/SnowtimeStages/Assets/Materials/deathisland/OptimizedShaders/gratealpha/Poiyomi
+  Toon.shader
+- Assets/SnowtimeStages/Assets/misc/NewMombasaBridge/dccspool_nmb_int.asset
+- Assets/SnowtimeStages/Assets/halo/cluster_15.fbx
+- Assets/SnowtimeStages/Assets/CustomObjects/CovenantShipTeleporter/matTPLightning_duplicate.mat
+- Assets/SnowtimeStages/Assets/CustomObjects/CovenantShipTeleporter/OptimizedShaders/battle_cruiser_c_glow/Poiyomi
+  Toon.shader
+- Assets/SnowtimeStages/Assets/misc/BloodGulch/_Nodes/GroundNodes_BG.asset
+- Assets/SnowtimeStages/Assets/Definitions/snowtime_deltahalo.asset
+- Assets/SnowtimeStages/Assets/Materials/sandtrap/OptimizedShaders/hevdecal/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/newmombasatest/sky/OptimizedShaders/city_foreground/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/misc/Avalanche/ADCCSPool_Int_sidewinder.asset
+- Assets/SnowtimeStages/Assets/CustomObjects/PlatChest/TrimSnowtime.tga
+- Assets/SnowtimeStages/Assets/gephyrophobia/cluster_23.fbx
+- Assets/SnowtimeStages/Assets/bloodgulch/level_collision.fbx
+- Assets/SnowtimeStages/Assets/deltahalo/materials/panel_thick_strip.mat
+- Assets/SnowtimeStages/Assets/gephyrophobia/PP Profile 2.asset
+- Assets/SnowtimeStages/Assets/Music/STGPH_Boss.asset
+- Assets/SnowtimeStages/Assets/CustomObjects/CovenantShipTeleporter/grav_lift.mat
+- Assets/SnowtimeStages/Assets/Materials/deathisland/ramp_blue.mat
+- Assets/SnowtimeStages/Assets/CustomObjects/CovenantShipTeleporter/Sparkles.mat
+- Assets/SnowtimeStages/Assets/deltahalo/materials/cliff_walls.mat
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/OptimizedShaders/dav0rswitch/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/Materials/bloodgulch/snowtime_bloodgulch/ReflectionProbe-1.exr
+- Assets/SnowtimeStages/Assets/gmflatgrass/gmflatgrass.fbx
+- Assets/SnowtimeStages/Assets/Materials/sandtrap/sandstorm.mat
+- Assets/SnowtimeStages/Assets/deltahalo/materials/OptimizedShaders/tower_metal_trim_c/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/Materials/sandtrap/copperflat.mat
+- Assets/SnowtimeStages/Assets/misc/NewMombasaBridge/ADCCSPool_Mobs_nmb.asset
+- Assets/SnowtimeStages/Assets/deltahalo/materials/ground_temple.mat
+- Assets/SnowtimeStages/Assets/bloodgulch/props/plant_fern1.fbx
+- Assets/SnowtimeStages/Assets/bloodgulch/cluster_20.fbx
+- Assets/SnowtimeStages/Assets/Materials/sidewinder/OptimizedShaders/sidewinder_ice/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/texSTIFScenePreview.png
+- Assets/SnowtimeStages/Assets/CustomObjects/GoldChest4Sandtrap/GoldChest_Scaling.prefab
+- Assets/SnowtimeStages/Assets/halo/cluster_14.fbx
+- Assets/SnowtimeStages/Assets/newmombasatest/waves bump.tif
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/overlay4.mat
+- Assets/SnowtimeStages/Assets/misc/Sidewinder/dccs_sw_mobs_dlc1.asset
+- Assets/SnowtimeStages/Assets/gephyrophobia/cluster_14.fbx
+- Assets/SnowtimeStages/Assets/Materials/halo/waterfallc.mat
+- Assets/SnowtimeStages/Assets/misc/gm_construct/dccs_gmc_mobs.asset
+- Assets/SnowtimeStages/Assets/Materials/sky/di_sky_dusk.mat
+- Assets/SnowtimeStages/Assets/halo/cluster_2.fbx
+- Assets/SnowtimeStages/Assets/Definitions/Logs.Stages.snowtimedeltahalo.asset
+- Assets/SnowtimeStages/Assets/Materials/halo/halo_ground2.mat
+- Assets/SnowtimeStages/Assets/CustomObjects/CovenantShipTeleporter/iscTeleporterCovenant.asset
+- Assets/SnowtimeStages/Assets/misc/Avalanche/_Nodes/GroundNodes_sidewinder.asset
+- Assets/SnowtimeStages/Assets/deltahalo/materials/floor_simple_tile.mat
+- Assets/SnowtimeStages/Assets/Materials/sandtrap/snowtime_sandtrap/ReflectionProbe-0.exr
+- Assets/SnowtimeStages/Assets/deathisland/cluster11.fbx
+- Assets/SnowtimeStages/Assets/EasterEggs/magnum Variant.prefab
+- Assets/SnowtimeStages/Assets/bloodgulch/props/teleporter_base.fbx
+- Assets/SnowtimeStages/Assets/deathisland/cluster15.fbx
+- Assets/SnowtimeStages/Assets/bloodgulch/cluster_6.fbx
+- Assets/SnowtimeStages/Assets/halo/cluster_interior.fbx
+- Assets/SnowtimeStages/Assets/misc/Icefields/_Nodes/GroundNodes_icefield.asset
+- Assets/SnowtimeStages/Assets/icefields/cluster_8.fbx
+- Assets/SnowtimeStages/Assets/halo2/sky_clouds.fbx
+- Assets/SnowtimeStages/Assets/newmombasatest/props/bridge_light.fbx
+- Assets/SnowtimeStages/Assets/Materials/sandtrap/OptimizedShaders/copperplate/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/misc/Icefields/dccs_icefield_mobs.asset
+- Assets/SnowtimeStages/Assets/gephyrophobia/PP Profile 1.asset
+- Assets/SnowtimeStages/Assets/deathisland/tree1_coll.fbx
+- Assets/SnowtimeStages/Assets/newmombasatest/props/sign_angled.fbx
+- Assets/SnowtimeStages/Assets/misc/Halo/dccspool_halo_int.asset
+- Assets/SnowtimeStages/Assets/misc/Avalanche/dccs_sidewinder_mobs_dlc1.asset
+- Assets/SnowtimeStages/Assets/misc/NewMombasaBridge/dccspool_nmb_mobs.asset
+- Assets/SnowtimeStages/Assets/Materials/deathisland/tree_pine.mat
+- Assets/SnowtimeStages/Assets/Materials/deathisland/metalstripsdecorativewide.mat
+- Assets/SnowtimeStages/Assets/newmombasatest/concrete_stained_pier_lo.mat
+- Assets/SnowtimeStages/Assets/misc/Halo/_Nodes/AirNodes_Halo.asset
+- Assets/SnowtimeStages/Assets/misc/Icefields/ADCCS_Int_icefield.asset
+- Assets/SnowtimeStages/Assets/misc/Avalanche/dccspool_sidewinder_int.asset
+- Assets/SnowtimeStages/Assets/misc/BloodGulch/_Nodes/AirNodes_BG.asset
+- Assets/SnowtimeStages/Assets/newmombasatest/door.mat
+- Assets/SnowtimeStages/Assets/deltahalo/materials/floor_x_tile.mat
+- Assets/SnowtimeStages/Assets/Materials/deathisland/pine_tree.mat
+- Assets/SnowtimeStages/Assets/misc/gm_flatgrass/_Nodes/AirNodes_GMODFLAT.asset
+- Assets/SnowtimeStages/Assets/Materials/sandtrap/panel_wall.mat
+- Assets/SnowtimeStages/Assets/newmombasatest/light_flourescent_unlit.mat
+- Assets/SnowtimeStages/Assets/Materials/deathisland/OptimizedShaders/teleporter_volume/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/misc/Avalanche/ADCCS_Int_sidewinder_dlc1.asset
+- Assets/SnowtimeStages/Assets/Materials/bloodgulch/beacon_red.mat
+- Assets/SnowtimeStages/Assets/Animated/Projectile_Alt.controller
+- Assets/SnowtimeStages/Assets/bloodgulch/cluster_22.fbx
+- Assets/SnowtimeStages/Assets/deathisland/cluster19.fbx
+- Assets/SnowtimeStages/Assets/bloodgulch/props/boulder_large_grey4.fbx
+- Assets/SnowtimeStages/Assets/deltahalo/materials/ground_lz.mat
+- Assets/SnowtimeStages/Assets/halo/sky/water_dusk0.fbx
+- Assets/SnowtimeStages/Assets/deltahalo/oobdebug.mat
+- Assets/SnowtimeStages/Assets/misc/DeathIsland/dccspool_di_int.asset
+- Assets/SnowtimeStages/Assets/gmconstruct/gm_construct_playablespace.fbx
+- Assets/SnowtimeStages/Assets/deltahalo/materials/tower_metal_droppings.mat
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/foliagetrees.mat
+- Assets/SnowtimeStages/Assets/misc/BloodGulch/dccspool_bg_int.asset
+- Assets/SnowtimeStages/Assets/Definitions/snowtime_sidewinder.asset
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/metalwall.mat
+- Assets/SnowtimeStages/Characters/NewCharacterTest/MatTex/OptimizedShaders/MissingTexture/Poiyomi
+  Toon.shader
+- Assets/SnowtimeStages/Assets/misc/DeathIsland/ADCCS_Int_di.asset
+- Assets/SnowtimeStages/Assets/Materials/sandtrap/OptimizedShaders/copperlayer/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/misc/DeathIsland/ADCCS_Mobs_di_dlc1.asset
+- Assets/SnowtimeStages/Assets/texSTDHaloScenePreview.png
+- Assets/SnowtimeStages/Assets/halo/cluster_22.fbx
+- Assets/SnowtimeStages/Assets/misc/Icefields/dccs_icefield_int_dlc2.asset
+- Assets/SnowtimeStages/Assets/misc/Avalanche/dccspool_sidewinder_mobs.asset
+- Assets/SnowtimeStages/Assets/PostProcess_Daytime 1.asset
+- Assets/SnowtimeStages/Assets/deltahalo/materials/tower_metal_deco_vert.mat
+- Assets/SnowtimeStages/Assets/misc/Avalanche/dccs_sidewinder_mobs.asset
+- Assets/SnowtimeStages/Assets/CustomObjects/CovenantShipTeleporter/matShrineFloorDust_duplicate.mat
+- Assets/SnowtimeStages/Assets/Materials/icefields/stripe_blue.mat
+- Assets/SnowtimeStages/Assets/deathisland/cluster2.fbx
+- Assets/SnowtimeStages/Assets/misc/Sandtrap/dccs_st_int_dlc1.asset
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/lambdaspray.mat
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/flatsign.mat
+- Assets/SnowtimeStages/Assets/Materials/deathisland/symbol_red.mat
+- Assets/SnowtimeStages/Assets/Materials/sidewinder/stripe_blue.mat
+- Assets/SnowtimeStages/Assets/misc/gm_construct/dccspool_gmc_int.asset
+- Assets/SnowtimeStages/Assets/bloodgulch/level_collision_stone.fbx
+- Assets/SnowtimeStages/Assets/halo/OcclusionCullingData.asset
+- Assets/SnowtimeStages/Assets/newmombasatest/sky/oceanhaze.mat
+- Assets/SnowtimeStages/Assets/CustomObjects/PlatChest/PlatChestInspectDef.asset
+- Assets/SnowtimeStages/Assets/deltahalo/materials/tower_metal_plain.mat
+- Assets/SnowtimeStages/Assets/misc/NewMombasaBridge/dccs_nmb_int_dlc2.asset
+- Assets/SnowtimeStages/Assets/misc/Sandtrap/dccspool_st_int.asset
+- Assets/SnowtimeStages/Assets/Music/STHALO_Boss.asset
+- Assets/SnowtimeStages/Assets/misc/Sandtrap/ADCCS_Mobs_st.asset
+- Assets/SnowtimeStages/Assets/newmombasatest/h2_water.mat
+- Assets/SnowtimeStages/Assets/CustomObjects/CovenantShipTeleporter/covie_shield02.mat
+- Assets/SnowtimeStages/Assets/newmombasatest/OptimizedShaders/h2_water/Poiyomi Toon
+  World.shader
+- Assets/SnowtimeStages/Assets/icefields/cluster_15.fbx
+- Assets/SnowtimeStages/Assets/sidewinder/props/snowrocksmall.fbx
+- Assets/SnowtimeStages/Assets/bloodgulch/cluster_19.fbx
+- Assets/SnowtimeStages/Assets/_expansiondef/snowtimestageshalo_expdef.asset
+- Assets/SnowtimeStages/Assets/newmombasatest/flat.mat
+- Assets/SnowtimeStages/Assets/misc/Halo/ADCCS_Int_halo.asset
+- Assets/SnowtimeStages/Assets/newmombasatest/signage.mat
+- Assets/SnowtimeStages/Assets/misc/Sidewinder/ADCCS_Int_sw_dlc2.asset
+- Assets/SnowtimeStages/Assets/misc/gm_flatgrass/dccs_flat_mobs_dlc1.asset
+- Assets/SnowtimeStages/Assets/Materials/sandtrap/skydome.mat
+- Assets/SnowtimeStages/Assets/misc/Gephyrophobia/ADCCSPool_Mobs_gph.asset
+- Assets/SnowtimeStages/Assets/Materials/sky/halosky.mat
+- Assets/SnowtimeStages/Assets/misc/Gephyrophobia/dccs_gph_int.asset
+- Assets/SnowtimeStages/Assets/deltahalo/h2_water_grotto.mat
+- Assets/SnowtimeStages/Assets/misc/Sandtrap/_Nodes/GroundNodes_Sandtrap.asset
+- Assets/SnowtimeStages/Assets/newmombasatest/base_stucco5.mat
+- Assets/SnowtimeStages/Assets/CustomObjects/PlatChest/PlatChest_Scaling.prefab
+- Assets/SnowtimeStages/Assets/EasterEggs/plasmarifle_current.mat
+- Assets/SnowtimeStages/Assets/Materials/halo/OptimizedShaders/halo_ground2/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/Materials/icefields/icefields_ground.mat
+- Assets/SnowtimeStages/Assets/Materials/sky/sky_day.mat
+- Assets/SnowtimeStages/Assets/Materials/gephyrophobia/fog.mat
+- Assets/SnowtimeStages/Assets/misc/DeathIsland/dccs_di_int.asset
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/brickwall053d.mat
+- Assets/SnowtimeStages/Assets/snowtime_gmconstruct/ReflectionProbe-0.exr
+- Assets/SnowtimeStages/Assets/icefields/cluster_2.fbx
+- Assets/SnowtimeStages/Assets/deltahalo/deltahalotest.fbx
+- Assets/SnowtimeStages/Assets/texSTFlatScenePreview.png
+- Assets/SnowtimeStages/Assets/icefields/actualprops/mp_tree_pine_snow_tall_leaf.fbx
+- Assets/SnowtimeStages/Assets/bloodgulch/cluster_12.fbx
+- Assets/SnowtimeStages/Assets/misc/NewMombasaBridge/dccs_nmb_int.asset
+- Assets/SnowtimeStages/Assets/Materials/deathisland/symbol_blue.mat
+- Assets/SnowtimeStages/Assets/Materials/icefields/OptimizedShaders/icefields_ground/Poiyomi
+  Toon.shader
+- Assets/SnowtimeStages/Assets/deltahalo/materials/OptimizedShaders/bridge_doorjam/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/deathisland/sky/sky.fbx
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/concretestair005.mat
+- Assets/SnowtimeStages/Assets/deltahalo/materials/OptimizedShaders/ground_towers/Poiyomi
+  Toon World.shader
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/building_template013h.mat
+- Assets/SnowtimeStages/Assets/Materials/sky/OptimizedShaders/di_sky/Poiyomi Toon.shader
+- Assets/SnowtimeStages/Assets/misc/Sandtrap/dccspool_st_mobs.asset
+- Assets/SnowtimeStages/Assets/Materials/deathisland/boulder_doublecrouch.mat
+- Assets/SnowtimeStages/Assets/Materials/bloodgulch/beacon_frame.mat
+- Assets/SnowtimeStages/Assets/bloodgulch/cluster_4.fbx
+- Assets/SnowtimeStages/Assets/misc/gm_construct/dccs_gmc_int.asset
+- Assets/SnowtimeStages/Assets/misc/Halo/dccs_halo_mobs_dlc1.asset
+- Assets/SnowtimeStages/Assets/misc/NewMombasaBridge/ADCCS_Int_nmb.asset
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/building_template010b.mat
+- Assets/SnowtimeStages/Assets/deltahalo/props/materials/OptimizedShaders/ancient_tree_leaves/Poiyomi
+  Toon.shader
+- Assets/SnowtimeStages/Assets/misc/DeltaHalo/dccs_dhalo_mobs_dlc1.asset
+- Assets/SnowtimeStages/Assets/EasterEggs/magnum.fbx
+- Assets/SnowtimeStages/Assets/misc/DeltaHalo/ADCCSPool_Mobs_dhalo.asset
+- Assets/SnowtimeStages/Assets/CustomObjects/CovenantShipTeleporter/c_mothership3_illum.tif
+- Assets/SnowtimeStages/Assets/halo/cluster_24.fbx
+- Assets/SnowtimeStages/Assets/Definitions/snowtime_halo2.asset
+- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/buildingprojectbuilding01.mat
+- Assets/SnowtimeStages/Assets/deathisland/cluster2-1.fbx
+- Assets/SnowtimeStages/Assets/misc/DeltaHalo/ADCCS_Mobs_dhalo_dlc1.asset
+Dependencies: []
