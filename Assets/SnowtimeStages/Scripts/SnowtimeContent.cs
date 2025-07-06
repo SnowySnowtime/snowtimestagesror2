@@ -37,14 +37,6 @@ namespace Snowtime.Content
         internal static SceneDef[] SceneDefs;
         internal static ExpansionDef[] expansionDefs;
 		
-		internal static List<GameObject> bodyPrefabs = new List<GameObject>();
-        internal static List<GameObject> masterPrefabs = new List<GameObject>();
-        internal static List<GameObject> projectilePrefabs = new List<GameObject>();
-		
-		internal static List<SkillFamily> skillFamilies = new List<SkillFamily>();
-        internal static List<SkillDef> skillDefs = new List<SkillDef>();
-        internal static List<Type> entityStates = new List<Type>();
-		
         // Halo Content
         internal static ExpansionDef ExpansionDefSTHalo;
 
@@ -103,13 +95,7 @@ namespace Snowtime.Content
         {
             _scenesAssetBundle = scenesAssetBundle;
             _assetsAssetBundle = assetsAssetBundle;
-            //var expansionRequest = SnowtimeContent.LoadAssetAsync<ExpansionDef>("snowtimestageshalo_expdef", _assetsAssetBundle);
-            //expansionRequest.StartLoad();
-            //
-            //while (!expansionRequest.IsComplete)
-            //    yield return null;
-            //
-            //SnowtimeContent.expansionDefs.AddSingle(expansionRequest.Asset);
+
             Log.Debug($"Snowtime Stages found. Loading asset bundles...");
 			
 			var upgradeStubbedShaders = _assetsAssetBundle.UpgradeStubbedShadersAsync();
@@ -117,14 +103,6 @@ namespace Snowtime.Content
             {
                 yield return upgradeStubbedShaders.Current;
             }
-			
-			contentPack.bodyPrefabs.Add(bodyPrefabs.ToArray());
-			contentPack.masterPrefabs.Add(masterPrefabs.ToArray());
-			contentPack.projectilePrefabs.Add(projectilePrefabs.ToArray());
-			
-			contentPack.skillDefs.Add(skillDefs.ToArray());
-			contentPack.skillFamilies.Add(skillFamilies.ToArray());
-			contentPack.entityStateTypes.Add(entityStates.ToArray());
 
             yield return LoadAllAssetsAsync(_assetsAssetBundle, progress, (Action<UnlockableDef[]>)((assets) =>
             {
