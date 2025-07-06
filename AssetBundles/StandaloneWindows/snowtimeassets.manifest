@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1989264493
+CRC: 928143878
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: ba6ee81b0c596a70bacacfa5bd325631
+    Hash: 889d3a74486912387df6df4d57354545
   TypeTreeHash:
     serializedVersion: 2
     Hash: 677e27793e8fb2dfb287c4e0fe35242f
@@ -940,10 +940,8 @@ Assets:
 - Assets/SnowtimeStages/Assets/deltahalo/h2_water_test.mat
 - Assets/SnowtimeStages/Assets/deltahalo/sky/capitolship.mat
 - Assets/SnowtimeStages/Assets/gephyrophobia/cluster_5.fbx
-- Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/OptimizedShaders/flatgrass_ground/Poiyomi
-  Toon World.shader
-- Assets/SnowtimeStages/Assets/Materials/deathisland/techdensecircuits.mat
 - Assets/SnowtimeStages/Assets/icefields/cluster_9.fbx
+- Assets/SnowtimeStages/Assets/Materials/deathisland/techdensecircuits.mat
 - Assets/SnowtimeStages/Assets/Materials/sky/OptimizedShaders/di_sky_dusk/Poiyomi
   Toon.shader
 - Assets/SnowtimeStages/Assets/gephyrophobia/level_collision_playercollide.fbx
@@ -1593,6 +1591,7 @@ Assets:
 - Assets/SnowtimeStages/Assets/halo/props/tall_tree_pine_trunk03.fbx
 - Assets/SnowtimeStages/Assets/Materials/sandtrap/laminate_clean.mat
 - Assets/SnowtimeStages/Assets/misc/NewMombasaBridge/dccs_nmb_int_dlc1.asset
+- Assets/SnowtimeStages/Assets/test02.mat
 - Assets/SnowtimeStages/Assets/sidewinder/sidewinder.fbx
 - Assets/SnowtimeStages/Assets/gmconstruct/materials/standard/buildingshort.mat
 - Assets/SnowtimeStages/Assets/misc/Gephyrophobia/ADCCSPool_Int_gph.asset

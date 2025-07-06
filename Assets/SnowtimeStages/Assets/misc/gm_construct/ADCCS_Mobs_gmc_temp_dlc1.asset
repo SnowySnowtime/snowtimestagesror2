@@ -280,7 +280,7 @@ MonoBehaviour:
         _asset: {fileID: 0}
         _address: RoR2/Base/GreaterWisp/cscGreaterWisp.asset
         _useDirectReference: 0
-      selectionWeight: 24
+      selectionWeight: 16
       spawnDistance: 0
       preventOverhead: 0
       minimumStageCompletions: 0
@@ -328,7 +328,7 @@ MonoBehaviour:
         _asset: {fileID: 0}
         _address: RoR2/Base/Golem/cscGolem.asset
         _useDirectReference: 0
-      selectionWeight: 4
+      selectionWeight: 5
       spawnDistance: 0
       preventOverhead: 0
       minimumStageCompletions: 0
@@ -344,7 +344,7 @@ MonoBehaviour:
         _asset: {fileID: 0}
         _address: RoR2/Base/Golem/cscGolemNature.asset
         _useDirectReference: 0
-      selectionWeight: 4
+      selectionWeight: 5
       spawnDistance: 0
       preventOverhead: 0
       minimumStageCompletions: 0
@@ -360,7 +360,7 @@ MonoBehaviour:
         _asset: {fileID: 0}
         _address: RoR2/Base/Golem/cscGolemSandy.asset
         _useDirectReference: 0
-      selectionWeight: 4
+      selectionWeight: 5
       spawnDistance: 0
       preventOverhead: 0
       minimumStageCompletions: 0
@@ -376,7 +376,7 @@ MonoBehaviour:
         _asset: {fileID: 0}
         _address: RoR2/Base/Golem/cscGolemSandy.asset
         _useDirectReference: 0
-      selectionWeight: 4
+      selectionWeight: 5
       spawnDistance: 0
       preventOverhead: 0
       minimumStageCompletions: 0
@@ -392,7 +392,7 @@ MonoBehaviour:
         _asset: {fileID: 0}
         _address: RoR2/Base/Golem/cscGolemSnowy.asset
         _useDirectReference: 0
-      selectionWeight: 4
+      selectionWeight: 5
       spawnDistance: 0
       preventOverhead: 0
       minimumStageCompletions: 0
@@ -476,6 +476,22 @@ MonoBehaviour:
       spawnDistance: 0
       preventOverhead: 0
       minimumStageCompletions: 0
+      requiredUnlockableDef:
+        _asset: {fileID: 0}
+        _address: 
+        _useDirectReference: 0
+      forbiddenUnlockableDef:
+        _asset: {fileID: 0}
+        _address: 
+        _useDirectReference: 0
+    - spawnCard:
+        _asset: {fileID: 0}
+        _address: RoR2/DLC1/Gup/cscGupBody.asset
+        _useDirectReference: 0
+      selectionWeight: 16
+      spawnDistance: 0
+      preventOverhead: 0
+      minimumStageCompletions: 5
       requiredUnlockableDef:
         _asset: {fileID: 0}
         _address: 
@@ -585,7 +601,7 @@ MonoBehaviour:
         _useDirectReference: 0
     - spawnCard:
         _asset: {fileID: 0}
-        _address: RoR2/DLC1/Gup/cscGupBody.asset
+        _address: RoR2/DLC1/Gup/cscGeepBody.asset
         _useDirectReference: 0
       selectionWeight: 6
       spawnDistance: 0

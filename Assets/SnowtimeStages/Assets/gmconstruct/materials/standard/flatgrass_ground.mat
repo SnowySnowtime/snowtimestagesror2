@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: flatgrass_ground
-  m_Shader: {fileID: 4800000, guid: c80a2b8d6e7fb3542ae46178c27e06c8, type: 3}
+  m_Shader: {fileID: 4800000, guid: 8b6edc21ecee71448b8db0b8f3ff11c2, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords:
   - BSSBLOOMFOGTYPE_HEIGHT
@@ -2639,7 +2639,7 @@ Material:
     - m_start_PoiPostProcessingCategory: 0
     - m_start_PoiShading: 1
     - m_start_PoiUVCategory: 0
-    - m_start_RGBMask: 1
+    - m_start_RGBMask: 0
     - m_start_Rim2AudioLink: 0
     - m_start_RimAudioLink: 0
     - m_start_SphericalDissolve: 0
@@ -2692,7 +2692,7 @@ Material:
     - m_start_postprocess: 0
     - m_start_reflectionRim: 1
     - m_start_rim2LightOptions: 0
-    - m_start_rimLight1Options: 1
+    - m_start_rimLight1Options: 0
     - m_start_stylizedSpec: 0
     - m_start_subsurfaceScattering: 0
     - m_start_udimdiscardOptions: 0
