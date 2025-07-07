@@ -17,7 +17,7 @@ namespace Snowtime.Content
 
         public static String assetDirectory;
 
-		public IEnumerator LoadStaticContentAsync(LoadStaticContentAsyncArgs args)
+        public IEnumerator LoadStaticContentAsync(LoadStaticContentAsyncArgs args)
         {
             _contentPack.identifier = identifier;
 

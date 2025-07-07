@@ -1,6 +1,7 @@
 using EntityStates;
 using RoR2;
 using RoR2.Projectile;
+using Snowtime;
 using System.Linq;
 using UnityEngine;
 
@@ -8,9 +9,9 @@ namespace EntityStates.Snowtime_Error
 {
 	public class FireMissingProjectile : BaseState
 	{
-		public static GameObject projectilePrefab = Resources.Load<GameObject>("SnowtimeStages/Characters/NewCharacterTest/Skills/MissingBall");
-		public static GameObject effectPrefab = Resources.Load<GameObject>("SnowtimeStages/Characters/NewCharacterTest/Skills/MissingFlash");
-		public static float baseDuration = 1f;
+        public static GameObject projectilePrefab;
+        public static GameObject effectPrefab;
+        public static float baseDuration = 1f;
 		public static float damageCoefficient = 1f;
 		public static float force = 20f;
 		public static string attackString;
@@ -22,7 +23,7 @@ namespace EntityStates.Snowtime_Error
 		{
 			base.OnEnter();
 			this.duration = FireMissingProjectile.baseDuration / this.attackSpeedStat;
-			base.PlayAnimation("Gesture", FireMissingProjectile.FireMissingProjectileStateHash, FireMissingProjectile.FireMissingProjectileParamHash, this.duration);
+			//base.PlayAnimation("Gesture", FireMissingProjectile.FireMissingProjectileStateHash, FireMissingProjectile.FireMissingProjectileParamHash, this.duration);
 			// Util.PlaySound(FireMissingProjectile.attackString, base.gameObject);
 			Ray aimRay = base.GetAimRay();
 			string muzzleName = "MuzzleMouth";
@@ -32,19 +33,8 @@ namespace EntityStates.Snowtime_Error
 			}
 			if (base.isAuthority)
 			{
-				FireProjectileInfo fireProjectileInfo = default(FireProjectileInfo);
-				fireProjectileInfo.projectilePrefab = Resources.Load<GameObject>("SnowtimeStages/Characters/NewCharacterTest/Skills/MissingBall");
-				fireProjectileInfo.position = aimRay.origin;
-				fireProjectileInfo.rotation = Util.QuaternionSafeLookRotation(aimRay.direction);
-				fireProjectileInfo.owner = base.gameObject;
-				fireProjectileInfo.damage = damageStat * damageCoefficient;
-				fireProjectileInfo.force = 0;
-				fireProjectileInfo.crit = RollCrit();
-				DamageTypeCombo damageType = DamageType.Generic;
-				damageType.damageSource = DamageSource.Primary;
-				fireProjectileInfo.damageTypeOverride = damageType;
-				ProjectileManager.instance.FireProjectile(fireProjectileInfo);
-			}
+                ProjectileManager.instance.FireProjectileWithoutDamageType(FireMissingProjectile.projectilePrefab, aimRay.origin, Util.QuaternionSafeLookRotation(aimRay.direction), base.gameObject, this.damageStat * FireMissingProjectile.damageCoefficient, FireMissingProjectile.force, Util.CheckRoll(this.critStat, base.characterBody.master), DamageColorIndex.Default, null, -1f);
+            }
 		}
 
 		public override void OnExit()

@@ -309,7 +309,7 @@ MonoBehaviour:
   spawnedPickupCount: 0
   aimOriginTransform: {fileID: 4579360008205639}
   hullClassification: 0
-  portraitIcon: {fileID: 2800000, guid: f8e829b7bc39e934f96e14a4c2f92cac, type: 3}
+  portraitIcon: {fileID: 2800000, guid: 32814a996d89c6445a2c28efe3ef411d, type: 3}
   bodyColor: {r: 0.5046191, g: 0.3519936, b: 0.6603774, a: 1}
   doNotReassignToTeamBasedCollisionLayer: 0
   isChampion: 0

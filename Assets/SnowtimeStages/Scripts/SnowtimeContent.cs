@@ -36,7 +36,21 @@ namespace Snowtime.Content
         internal static UnlockableDef[] UnlockableDefs;
         internal static SceneDef[] SceneDefs;
         internal static ExpansionDef[] expansionDefs;
-		
+        internal static GameObject[] gameObjects;
+        internal static EntityStateConfiguration[] EntityStateConfigurations;
+
+        internal static GameObject CovenantCruiser;
+        internal static GameObject CovenantCruiserLunar;
+        internal static GameObject PlatChest;
+        internal static GameObject GoldChest_Scaling;
+
+        internal static GameObject LemurianErrorBody;
+        internal static GameObject LemurianErrorMaster;
+        internal static EntityStateConfiguration LemurianErrorEsc;
+        internal static GameObject MissingBall;
+        internal static GameObject MissingFlash;
+        internal static GameObject MissingExplFX;
+
         // Halo Content
         internal static ExpansionDef ExpansionDefSTHalo;
 
@@ -90,15 +104,22 @@ namespace Snowtime.Content
         internal static Material STFlatBazaarSeer;
 		
 		public static List<Material> SwappedMaterials = new List<Material>();
-		
+
+        public static List<GameObject> stbodyList = new List<GameObject>();
+        public static List<GameObject> stmasterList = new List<GameObject>();
+        public static List<EffectDef> steffectList = new List<EffectDef>();
+        public static List<GameObject> stprojectileList = new List<GameObject>();
+        public static List<GameObject> stnwobjList = new List<GameObject>();
+        public static List<EntityStateConfiguration> stentStateConfig = new List<EntityStateConfiguration>();
+
         internal static IEnumerator LoadAssetBundlesAsync(AssetBundle scenesAssetBundle, AssetBundle assetsAssetBundle, IProgress<float> progress, ContentPack contentPack)
         {
             _scenesAssetBundle = scenesAssetBundle;
             _assetsAssetBundle = assetsAssetBundle;
 
             Log.Debug($"Snowtime Stages found. Loading asset bundles...");
-			
-			var upgradeStubbedShaders = _assetsAssetBundle.UpgradeStubbedShadersAsync();
+
+            var upgradeStubbedShaders = _assetsAssetBundle.UpgradeStubbedShadersAsync();
             while (upgradeStubbedShaders.MoveNext())
             {
                 yield return upgradeStubbedShaders.Current;
@@ -108,6 +129,46 @@ namespace Snowtime.Content
             {
                 UnlockableDefs = assets;
                 contentPack.unlockableDefs.Add(assets);
+            }));
+
+            yield return LoadAllAssetsAsync(_assetsAssetBundle, progress, (Action<GameObject[]>)((assets) =>
+            {
+                // Define the custom objects
+                CovenantCruiser = assets.First(a => a.name == "CovenantCruiserTeleporter");
+                CovenantCruiserLunar = assets.First(a => a.name == "CovenantCruiserTeleporterLunar");
+                PlatChest = assets.First(a => a.name == "PlatChest");
+                GoldChest_Scaling = assets.First(a => a.name == "GoldChest_Scaling");
+                LemurianErrorBody = assets.First(a => a.name == "LemurianErrorBody");
+                LemurianErrorMaster = assets.First(a => a.name == "LemurianErrorMaster");
+                MissingBall = assets.First(a => a.name == "MissingBall");
+                MissingFlash = assets.First(a => a.name == "MissingFlash");
+                MissingExplFX = assets.First(a => a.name == "OmniExplosionVFXQuickMissing");
+                // define what list they go to
+                stnwobjList.Add(CovenantCruiser);
+                stnwobjList.Add(CovenantCruiserLunar);
+                stnwobjList.Add(PlatChest);
+                stnwobjList.Add(GoldChest_Scaling);
+                stbodyList.Add(LemurianErrorBody);
+                stmasterList.Add(LemurianErrorMaster);
+                stprojectileList.Add(MissingBall);
+                steffectList.Add(new EffectDef(MissingFlash));
+                steffectList.Add(new EffectDef(MissingExplFX));
+                // add them to the array
+                contentPack.networkedObjectPrefabs.Add(stnwobjList.ToArray());
+                contentPack.bodyPrefabs.Add(stbodyList.ToArray());
+                contentPack.masterPrefabs.Add(stmasterList.ToArray());
+                contentPack.projectilePrefabs.Add(stprojectileList.ToArray());
+                contentPack.effectDefs.Add(steffectList.ToArray());
+            }));
+
+            yield return LoadAllAssetsAsync(_assetsAssetBundle, progress, (Action<EntityStateConfiguration[]>)((assets) =>
+            {
+                // Define the custom objects
+                LemurianErrorEsc = assets.First(a => a.name == "escFireMissingProjectile");
+                // define what list they go to
+                stentStateConfig.Add(LemurianErrorEsc);
+                // add them to the array
+                contentPack.entityStateConfigurations.Add(stentStateConfig.ToArray());
             }));
 
             yield return LoadAllAssetsAsync(_assetsAssetBundle, progress, (Action<ExpansionDef[]>)((assets) =>
@@ -214,7 +275,7 @@ namespace Snowtime.Content
 			Log.Debug(SnowtimeStage.ToggleBloodGulch.Value);
 			if (SnowtimeStage.ToggleBloodGulch.Value == true)
 			{
-				StageRegistration.RegisterSceneDefToLoop(STBGSceneDef);
+				StageRegistration.RegisterSceneDefToNormalProgression(STBGSceneDef);
 				Log.Debug("Adding Blood Gulch to loop");
 				Log.Debug(STBGSceneDef.destinationsGroup);
 			}
@@ -226,7 +287,7 @@ namespace Snowtime.Content
 			Log.Debug(SnowtimeStage.ToggleSidewinder.Value);
 			if (SnowtimeStage.ToggleSidewinder.Value == true)
 			{
-				StageRegistration.RegisterSceneDefToLoop(STSWSceneDef);
+				StageRegistration.RegisterSceneDefToNormalProgression(STSWSceneDef);
 				Log.Debug("Adding Sidewinder to the loop");
 				Log.Debug(STSWSceneDef.destinationsGroup);
 			}
@@ -238,7 +299,7 @@ namespace Snowtime.Content
 			Log.Debug(SnowtimeStage.ToggleDeathIsland.Value);
 			if (SnowtimeStage.ToggleDeathIsland.Value == true)
 			{
-				StageRegistration.RegisterSceneDefToLoop(STSceneDef);
+				StageRegistration.RegisterSceneDefToNormalProgression(STSceneDef);
 				Log.Debug("Adding Death Island to the loop");
 				Log.Debug(STSceneDef.destinationsGroup);
 			}
@@ -250,7 +311,7 @@ namespace Snowtime.Content
 			Log.Debug(SnowtimeStage.ToggleIceFields.Value);
 			if (SnowtimeStage.ToggleIceFields.Value == true)
 			{
-				StageRegistration.RegisterSceneDefToLoop(STIFSceneDef);
+				StageRegistration.RegisterSceneDefToNormalProgression(STIFSceneDef);
 				Log.Debug("Adding Ice Fields to the loop");
 				Log.Debug(STIFSceneDef.destinationsGroup);
 			}
@@ -262,7 +323,7 @@ namespace Snowtime.Content
 			Log.Debug(SnowtimeStage.ToggleGephyrophobia.Value);
 			if (SnowtimeStage.ToggleGephyrophobia.Value == true)
 			{
-				StageRegistration.RegisterSceneDefToLoop(STGPHSceneDef);
+				StageRegistration.RegisterSceneDefToNormalProgression(STGPHSceneDef);
 				Log.Debug("Adding Gephyrophobia to the loop");
 				Log.Debug(STGPHSceneDef.destinationsGroup);
 			}
@@ -274,7 +335,7 @@ namespace Snowtime.Content
 			Log.Debug(SnowtimeStage.ToggleSandtrap.Value);
 			if (SnowtimeStage.ToggleSandtrap.Value == true)
 			{
-				StageRegistration.RegisterSceneDefToLoop(STShrineSceneDef);
+				StageRegistration.RegisterSceneDefToNormalProgression(STShrineSceneDef);
 				Log.Debug("Adding Sandtrap to the loop");
 				Log.Debug(STShrineSceneDef.destinationsGroup);
 			}
@@ -286,7 +347,7 @@ namespace Snowtime.Content
 			Log.Debug(SnowtimeStage.ToggleHalo.Value);
 			if (SnowtimeStage.ToggleHalo.Value == true)
 			{
-				StageRegistration.RegisterSceneDefToLoop(STHSceneDef);
+				StageRegistration.RegisterSceneDefToNormalProgression(STHSceneDef);
 				Log.Debug("Adding Halo to the loop");
 				Log.Debug(STHSceneDef.destinationsGroup);
 			}
@@ -298,7 +359,7 @@ namespace Snowtime.Content
 			Log.Debug(SnowtimeStage.ToggleHalo2.Value);
 			if (SnowtimeStage.ToggleHalo2.Value == true)
 			{
-				StageRegistration.RegisterSceneDefToLoop(STH2SceneDef);
+				StageRegistration.RegisterSceneDefToNormalProgression(STH2SceneDef);
 				Log.Debug("Adding Halo(Alt) to the loop");
 				Log.Debug(STH2SceneDef.destinationsGroup);
 			}
@@ -310,7 +371,7 @@ namespace Snowtime.Content
 			Log.Debug(SnowtimeStage.ToggleNMB.Value);
 			if (SnowtimeStage.ToggleNMB.Value == true)
 			{
-				StageRegistration.RegisterSceneDefToLoop(STNMBSceneDef);
+				StageRegistration.RegisterSceneDefToNormalProgression(STNMBSceneDef);
 				Log.Debug("Adding New Mombasa Bridge to the loop");
 				Log.Debug(STNMBSceneDef.destinationsGroup);
 			}
@@ -322,7 +383,7 @@ namespace Snowtime.Content
 			Log.Debug(SnowtimeStage.ToggleGMC.Value);
 			if (SnowtimeStage.ToggleGMC.Value == true)
 			{
-				StageRegistration.RegisterSceneDefToLoop(STGMCSceneDef);
+				StageRegistration.RegisterSceneDefToNormalProgression(STGMCSceneDef);
 				Log.Debug("Adding gm_construct to the loop");
 				Log.Debug(STGMCSceneDef.destinationsGroup);
 			}
@@ -334,7 +395,7 @@ namespace Snowtime.Content
 			Log.Debug(SnowtimeStage.ToggleDHalo.Value);
 			if (SnowtimeStage.ToggleDHalo.Value == true)
 			{
-				StageRegistration.RegisterSceneDefToLoop(STDHSceneDef);
+				StageRegistration.RegisterSceneDefToNormalProgression(STDHSceneDef);
 				Log.Debug("Adding Delta Halo to the loop");
 				Log.Debug(STDHSceneDef.destinationsGroup);
 			}
@@ -346,7 +407,7 @@ namespace Snowtime.Content
 			Log.Debug(SnowtimeStage.ToggleFLAT.Value);
 			if (SnowtimeStage.ToggleFLAT.Value == true)
 			{
-				StageRegistration.RegisterSceneDefToLoop(STFlatSceneDef);
+				StageRegistration.RegisterSceneDefToNormalProgression(STFlatSceneDef);
 				Log.Debug("Adding gm_flatgrass to the loop");
 				Log.Debug(STFlatSceneDef.destinationsGroup);
 			}

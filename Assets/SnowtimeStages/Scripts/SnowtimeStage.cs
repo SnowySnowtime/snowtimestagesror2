@@ -45,7 +45,8 @@ namespace Snowtime
 		public static ConfigEntry<bool> ToggleDHalo { get; set; }
 		public static ConfigEntry<bool> ToggleFLAT { get; set; }
 
-        public static SnowtimeStage instance;   
+        public static SnowtimeStage instance;
+
         public void Awake()
         {
             instance = this;
