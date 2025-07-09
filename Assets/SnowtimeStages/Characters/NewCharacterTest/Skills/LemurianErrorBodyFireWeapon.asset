@@ -19,8 +19,8 @@ MonoBehaviour:
   icon: {fileID: 0}
   activationStateMachineName: Weapon
   activationState:
-    _typeName: EntityStates.Treebot.Weapon.FireSyringe, RoR2, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
+    _typeName: EntityStates.Snowtime_Error.FireMissingProjectile, SnowtimeStagesAsmdef,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   interruptPriority: 0
   baseRechargeInterval: 2
   baseMaxStock: 8

@@ -21,12 +21,10 @@ MonoBehaviour:
   directorCreditCost: 11
   occupyPosition: 0
   eliteRules: 0
-  noElites: 1
+  noElites: 0
   forbiddenAsBoss: 0
   _loadout:
     bodyLoadouts: []
   inventoryToCopy: {fileID: 0}
   equipmentToGrant: []
-  itemsToGrant:
-  - itemDef: {fileID: 11400000, guid: 95cdb9e06f426684daf27071e0880ab1, type: 2}
-    count: 1
+  itemsToGrant: []

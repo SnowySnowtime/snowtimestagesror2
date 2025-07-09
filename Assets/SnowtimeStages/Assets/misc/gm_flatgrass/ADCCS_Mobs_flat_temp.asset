@@ -99,22 +99,6 @@ MonoBehaviour:
         _useDirectReference: 0
     - spawnCard:
         _asset: {fileID: 0}
-        _address: RoR2/Base/Titan/cscTitanGold.asset
-        _useDirectReference: 0
-      selectionWeight: 2
-      spawnDistance: 0
-      preventOverhead: 0
-      minimumStageCompletions: 0
-      requiredUnlockableDef:
-        _asset: {fileID: 0}
-        _address: 
-        _useDirectReference: 0
-      forbiddenUnlockableDef:
-        _asset: {fileID: 0}
-        _address: 
-        _useDirectReference: 0
-    - spawnCard:
-        _asset: {fileID: 0}
         _address: RoR2/Base/ImpBoss/cscImpBoss.asset
         _useDirectReference: 0
       selectionWeight: 16
@@ -150,22 +134,6 @@ MonoBehaviour:
         _address: RoR2/Base/RoboBallBoss/cscRoboBallBoss.asset
         _useDirectReference: 0
       selectionWeight: 16
-      spawnDistance: 0
-      preventOverhead: 0
-      minimumStageCompletions: 0
-      requiredUnlockableDef:
-        _asset: {fileID: 0}
-        _address: 
-        _useDirectReference: 0
-      forbiddenUnlockableDef:
-        _asset: {fileID: 0}
-        _address: 
-        _useDirectReference: 0
-    - spawnCard:
-        _asset: {fileID: 0}
-        _address: RoR2/Base/RoboBallBoss/cscSuperRoboBallBoss.asset
-        _useDirectReference: 0
-      selectionWeight: 1
       spawnDistance: 0
       preventOverhead: 0
       minimumStageCompletions: 0

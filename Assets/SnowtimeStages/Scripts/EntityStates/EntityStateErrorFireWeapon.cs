@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace EntityStates.Snowtime_Error
 {
-	public class FireMissingProjectile : BaseState
+    internal class FireMissingProjectile : BaseState
 	{
         public static GameObject projectilePrefab;
         public static GameObject effectPrefab;

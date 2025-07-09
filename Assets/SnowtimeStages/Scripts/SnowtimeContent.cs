@@ -41,6 +41,7 @@ namespace Snowtime.Content
 
         internal static GameObject CovenantCruiser;
         internal static GameObject CovenantCruiserLunar;
+        internal static GameObject PurchaseLockCovenant;
         internal static GameObject PlatChest;
         internal static GameObject GoldChest_Scaling;
 
@@ -48,8 +49,10 @@ namespace Snowtime.Content
         internal static GameObject LemurianErrorMaster;
         internal static EntityStateConfiguration LemurianErrorEsc;
         internal static GameObject MissingBall;
+        internal static GameObject MissingHit;
         internal static GameObject MissingFlash;
         internal static GameObject MissingExplFX;
+        internal static GameObject MissingGhost;
 
         // Halo Content
         internal static ExpansionDef ExpansionDefSTHalo;
@@ -78,6 +81,7 @@ namespace Snowtime.Content
         internal static SceneDef STGMCSceneDef;
         internal static SceneDef STDHSceneDef;
         internal static SceneDef STFlatSceneDef;
+        internal static SceneDef STHCSceneDef;
         internal static Sprite STSceneDefPreviewSprite;
         internal static Sprite STIFSceneDefPreviewSprite;
         internal static Sprite STBGSceneDefPreviewSprite;
@@ -90,6 +94,7 @@ namespace Snowtime.Content
         internal static Sprite STGMCSceneDefPreviewSprite;
         internal static Sprite STDHSceneDefPreviewSprite;
         internal static Sprite STFlatSceneDefPreviewSprite;
+        internal static Sprite STHCSceneDefPreviewSprite;
         internal static Material STBazaarSeer;
         internal static Material STIFBazaarSeer;
         internal static Material STBGBazaarSeer;
@@ -102,6 +107,7 @@ namespace Snowtime.Content
         internal static Material STGMCBazaarSeer;
         internal static Material STDHBazaarSeer;
         internal static Material STFlatBazaarSeer;
+        internal static Material STHCBazaarSeer;
 		
 		public static List<Material> SwappedMaterials = new List<Material>();
 
@@ -110,6 +116,7 @@ namespace Snowtime.Content
         public static List<EffectDef> steffectList = new List<EffectDef>();
         public static List<GameObject> stprojectileList = new List<GameObject>();
         public static List<GameObject> stnwobjList = new List<GameObject>();
+        public static List<GameObject> stghostList = new List<GameObject>();
         public static List<EntityStateConfiguration> stentStateConfig = new List<EntityStateConfiguration>();
 
         internal static IEnumerator LoadAssetBundlesAsync(AssetBundle scenesAssetBundle, AssetBundle assetsAssetBundle, IProgress<float> progress, ContentPack contentPack)
@@ -135,6 +142,7 @@ namespace Snowtime.Content
             {
                 // Define the custom objects
                 CovenantCruiser = assets.First(a => a.name == "CovenantCruiserTeleporter");
+                PurchaseLockCovenant = assets.First(a => a.name == "PurchaseLockCovenant");
                 CovenantCruiserLunar = assets.First(a => a.name == "CovenantCruiserTeleporterLunar");
                 PlatChest = assets.First(a => a.name == "PlatChest");
                 GoldChest_Scaling = assets.First(a => a.name == "GoldChest_Scaling");
@@ -143,8 +151,11 @@ namespace Snowtime.Content
                 MissingBall = assets.First(a => a.name == "MissingBall");
                 MissingFlash = assets.First(a => a.name == "MissingFlash");
                 MissingExplFX = assets.First(a => a.name == "OmniExplosionVFXQuickMissing");
+                MissingHit = assets.First(a => a.name == "MissingHit");
+                MissingGhost = assets.First(a => a.name == "MissingGhost");
                 // define what list they go to
                 stnwobjList.Add(CovenantCruiser);
+                stnwobjList.Add(PurchaseLockCovenant);
                 stnwobjList.Add(CovenantCruiserLunar);
                 stnwobjList.Add(PlatChest);
                 stnwobjList.Add(GoldChest_Scaling);
@@ -153,12 +164,14 @@ namespace Snowtime.Content
                 stprojectileList.Add(MissingBall);
                 steffectList.Add(new EffectDef(MissingFlash));
                 steffectList.Add(new EffectDef(MissingExplFX));
+                steffectList.Add(new EffectDef(MissingHit));
                 // add them to the array
                 contentPack.networkedObjectPrefabs.Add(stnwobjList.ToArray());
                 contentPack.bodyPrefabs.Add(stbodyList.ToArray());
                 contentPack.masterPrefabs.Add(stmasterList.ToArray());
                 contentPack.projectilePrefabs.Add(stprojectileList.ToArray());
                 contentPack.effectDefs.Add(steffectList.ToArray());
+                contentPack.entityStateTypes.Add(typeof(SnowtimeStage).Assembly.GetTypes().Where(type => typeof(EntityStates.EntityState).IsAssignableFrom(type)).ToArray());
             }));
 
             yield return LoadAllAssetsAsync(_assetsAssetBundle, progress, (Action<EntityStateConfiguration[]>)((assets) =>
@@ -194,6 +207,7 @@ namespace Snowtime.Content
                 STGMCSceneDefPreviewSprite = assets.First(a => a.name == "texSTGMCScenePreview");
                 STDHSceneDefPreviewSprite = assets.First(a => a.name == "texSTDHaloScenePreview");
                 STFlatSceneDefPreviewSprite = assets.First(a => a.name == "texSTFlatScenePreview");
+                STHCSceneDefPreviewSprite = assets.First(a => a.name == "texSTHCScenePreview");
             }));
 
             yield return LoadAllAssetsAsync(_assetsAssetBundle, progress, (Action<SceneDef[]>)((assets) =>
@@ -211,6 +225,7 @@ namespace Snowtime.Content
                 STGMCSceneDef = SceneDefs.First(sd => sd.cachedName == "snowtime_gmconstruct");
                 STDHSceneDef = SceneDefs.First(sd => sd.cachedName == "snowtime_deltahalo");
                 STFlatSceneDef = SceneDefs.First(sd => sd.cachedName == "snowtime_gmflatgrass");
+                STHCSceneDef = SceneDefs.First(sd => sd.cachedName == "snowtime_highcharity");
                 Log.Debug(STSceneDef.nameToken);
                 Log.Debug(STIFSceneDef.nameToken);
                 Log.Debug(STBGSceneDef.nameToken);
@@ -223,6 +238,7 @@ namespace Snowtime.Content
                 Log.Debug(STGMCSceneDef.nameToken);
                 Log.Debug(STDHSceneDef.nameToken);
                 Log.Debug(STFlatSceneDef.nameToken);
+                Log.Debug(STHCSceneDef.nameToken);
                 contentPack.sceneDefs.Add(assets);
             }));
 
@@ -246,6 +262,7 @@ namespace Snowtime.Content
             STGMCBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STGMCSceneDefPreviewSprite.texture);
             STDHBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STDHSceneDefPreviewSprite.texture);
             STFlatBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STFlatSceneDefPreviewSprite.texture);
+            STHCBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STFlatSceneDefPreviewSprite.texture);
             STSceneDef.previewTexture = STSceneDefPreviewSprite.texture;
             STIFSceneDef.previewTexture = STIFSceneDefPreviewSprite.texture;
             STBGSceneDef.previewTexture = STBGSceneDefPreviewSprite.texture;
@@ -258,6 +275,7 @@ namespace Snowtime.Content
             STGMCSceneDef.previewTexture = STGMCSceneDefPreviewSprite.texture;
             STDHSceneDef.previewTexture = STDHSceneDefPreviewSprite.texture;
             STFlatSceneDef.previewTexture = STFlatSceneDefPreviewSprite.texture;
+            STHCSceneDef.previewTexture = STFlatSceneDefPreviewSprite.texture;
             STSceneDef.portalMaterial = STBazaarSeer;
             STIFSceneDef.portalMaterial = STIFBazaarSeer;
             STBGSceneDef.portalMaterial = STBGBazaarSeer;
@@ -270,6 +288,7 @@ namespace Snowtime.Content
             STGMCSceneDef.portalMaterial = STGMCBazaarSeer;
             STDHSceneDef.portalMaterial = STDHBazaarSeer;
             STFlatSceneDef.portalMaterial = STFlatBazaarSeer;
+            STHCSceneDef.portalMaterial = STFlatBazaarSeer;
 			// Make a check here later for the config of what is enabled or disabled
 			Log.Debug("Blood Gulch Config Status?");
 			Log.Debug(SnowtimeStage.ToggleBloodGulch.Value);
@@ -415,6 +434,9 @@ namespace Snowtime.Content
 			{
 				Log.Debug("Skipped adding gm_flatgrass to the loop");
 			}
+            StageRegistration.RegisterSceneDefToNormalProgression(STHCSceneDef);
+            Log.Debug("Adding High Charity to the loop");
+				Log.Debug(STHCSceneDef.destinationsGroup);
         }
 
         private static IEnumerator LoadAllAssetsAsync<T>(AssetBundle assetBundle, IProgress<float> progress, Action<T[]> onAssetsLoaded) where T : UnityEngine.Object

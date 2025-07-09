@@ -1,0 +1,311 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1888550019, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+  m_Name: idrsError
+  m_EditorClassIdentifier: 
+  namedItemRuleGroups: []
+  namedEquipmentRuleGroups: []
+  keyAssetRuleGroups:
+  - keyAsset: {fileID: 0}
+    keyAssetAddress:
+      m_AssetGUID: 118960de11f213c45806f7f0d2aef4d6
+      m_SubObjectName: 
+      m_SubObjectType: 
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        followerPrefabAddress:
+          m_AssetGUID: a5888055b2e8dfe479af511631631c0a
+          m_SubObjectName: 
+          m_SubObjectType: 
+        childName: Hip
+        localPos: {x: 0.95, y: 1.4, z: -1.95}
+        localAngles: {x: 270, y: 0, z: 0}
+        localScale: {x: 1, y: 1, z: 1}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    keyAssetAddress:
+      m_AssetGUID: 2b9b9a2bc8a39ad4d914da2d2ee4cdcb
+      m_SubObjectName: 
+      m_SubObjectType: 
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        followerPrefabAddress:
+          m_AssetGUID: 5071e940404ac11438977d61b4f37e5c
+          m_SubObjectName: 
+          m_SubObjectType: 
+        childName: Hip
+        localPos: {x: 0, y: -8, z: 0}
+        localAngles: {x: 90, y: 0, z: 0}
+        localScale: {x: 1, y: 1, z: 1}
+        limbMask: 0
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        followerPrefabAddress:
+          m_AssetGUID: 5071e940404ac11438977d61b4f37e5c
+          m_SubObjectName: 
+          m_SubObjectType: 
+        childName: Hip
+        localPos: {x: 5.6, y: -8, z: 0}
+        localAngles: {x: 90, y: 0, z: 0}
+        localScale: {x: 1, y: 1, z: 1}
+        limbMask: 0
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        followerPrefabAddress:
+          m_AssetGUID: 5071e940404ac11438977d61b4f37e5c
+          m_SubObjectName: 
+          m_SubObjectType: 
+        childName: Hip
+        localPos: {x: 10, y: -8, z: 0}
+        localAngles: {x: 90, y: 0, z: 0}
+        localScale: {x: 1, y: 1, z: 1}
+        limbMask: 0
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        followerPrefabAddress:
+          m_AssetGUID: 5071e940404ac11438977d61b4f37e5c
+          m_SubObjectName: 
+          m_SubObjectType: 
+        childName: Hip
+        localPos: {x: -5, y: -8, z: 0}
+        localAngles: {x: 90, y: 0, z: 0}
+        localScale: {x: 1, y: 1, z: 1}
+        limbMask: 0
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        followerPrefabAddress:
+          m_AssetGUID: 5071e940404ac11438977d61b4f37e5c
+          m_SubObjectName: 
+          m_SubObjectType: 
+        childName: Hip
+        localPos: {x: -10, y: -8, z: 0}
+        localAngles: {x: 90, y: 0, z: 0}
+        localScale: {x: 1, y: 1, z: 1}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    keyAssetAddress:
+      m_AssetGUID: 463f8f6917dd8af40860b023a520f051
+      m_SubObjectName: 
+      m_SubObjectType: 
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        followerPrefabAddress:
+          m_AssetGUID: f76a390c2ffbf9645862f81533eafc69
+          m_SubObjectName: 
+          m_SubObjectType: 
+        childName: Hip
+        localPos: {x: 9.7, y: -6.2, z: -1.6}
+        localAngles: {x: 0, y: 90, z: 194}
+        localScale: {x: 10, y: 10, z: 10}
+        limbMask: 0
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        followerPrefabAddress:
+          m_AssetGUID: f76a390c2ffbf9645862f81533eafc69
+          m_SubObjectName: 
+          m_SubObjectType: 
+        childName: Hip
+        localPos: {x: 5.5, y: -6.2, z: -1.6}
+        localAngles: {x: 0, y: 90, z: 194}
+        localScale: {x: 10, y: 10, z: 10}
+        limbMask: 0
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        followerPrefabAddress:
+          m_AssetGUID: f76a390c2ffbf9645862f81533eafc69
+          m_SubObjectName: 
+          m_SubObjectType: 
+        childName: Hip
+        localPos: {x: 0.5, y: -6.2, z: -1.6}
+        localAngles: {x: 0, y: 90, z: 194}
+        localScale: {x: 10, y: 10, z: 10}
+        limbMask: 0
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        followerPrefabAddress:
+          m_AssetGUID: f76a390c2ffbf9645862f81533eafc69
+          m_SubObjectName: 
+          m_SubObjectType: 
+        childName: Hip
+        localPos: {x: -4.8, y: -6.2, z: -1.6}
+        localAngles: {x: 0, y: 90, z: 194}
+        localScale: {x: 10, y: 10, z: 10}
+        limbMask: 0
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        followerPrefabAddress:
+          m_AssetGUID: f76a390c2ffbf9645862f81533eafc69
+          m_SubObjectName: 
+          m_SubObjectType: 
+        childName: Hip
+        localPos: {x: -9.8, y: -6.2, z: -1.6}
+        localAngles: {x: 0, y: 90, z: 194}
+        localScale: {x: 10, y: 10, z: 10}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    keyAssetAddress:
+      m_AssetGUID: e0cb1a7d6e97bb14d9256eabaf1c0b9b
+      m_SubObjectName: 
+      m_SubObjectType: 
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        followerPrefabAddress:
+          m_AssetGUID: f75c662c5bc0d744d8919219eeba482d
+          m_SubObjectName: 
+          m_SubObjectType: 
+        childName: Hip
+        localPos: {x: 0.6, y: -8, z: -1.5}
+        localAngles: {x: 90, y: 0, z: 0}
+        localScale: {x: 1, y: 1, z: 1}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    keyAssetAddress:
+      m_AssetGUID: ff9f264d18696494f920343be0bf938a
+      m_SubObjectName: 
+      m_SubObjectType: 
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        followerPrefabAddress:
+          m_AssetGUID: 880352d2f519466409abd39061d75b79
+          m_SubObjectName: 
+          m_SubObjectType: 
+        childName: Hip
+        localPos: {x: 0.65, y: 0.4, z: -1.9}
+        localAngles: {x: 0, y: 0, z: 0}
+        localScale: {x: 1, y: 1, z: 1}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    keyAssetAddress:
+      m_AssetGUID: 8e33f06887d0c2d4795d76929129dbc7
+      m_SubObjectName: 
+      m_SubObjectType: 
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        followerPrefabAddress:
+          m_AssetGUID: 2b86af621f3e8724f9e51ab56aad6395
+          m_SubObjectName: 
+          m_SubObjectType: 
+        childName: Hip
+        localPos: {x: 0.8, y: -7.35, z: -1.9}
+        localAngles: {x: 180, y: 0, z: 0}
+        localScale: {x: 0.3, y: 0.4, z: 0.4}
+        limbMask: 0
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        followerPrefabAddress:
+          m_AssetGUID: 2b86af621f3e8724f9e51ab56aad6395
+          m_SubObjectName: 
+          m_SubObjectType: 
+        childName: Hip
+        localPos: {x: 5.56, y: -7.35, z: -1.9}
+        localAngles: {x: 180, y: 0, z: 0}
+        localScale: {x: 0.3, y: 0.4, z: 0.4}
+        limbMask: 0
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        followerPrefabAddress:
+          m_AssetGUID: 2b86af621f3e8724f9e51ab56aad6395
+          m_SubObjectName: 
+          m_SubObjectType: 
+        childName: Hip
+        localPos: {x: 10, y: -7.35, z: -1.9}
+        localAngles: {x: 180, y: 0, z: 0}
+        localScale: {x: 0.3, y: 0.4, z: 0.4}
+        limbMask: 0
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        followerPrefabAddress:
+          m_AssetGUID: 2b86af621f3e8724f9e51ab56aad6395
+          m_SubObjectName: 
+          m_SubObjectType: 
+        childName: Hip
+        localPos: {x: -9, y: -7.35, z: -1.9}
+        localAngles: {x: 180, y: 0, z: 0}
+        localScale: {x: 0.3, y: 0.4, z: 0.4}
+        limbMask: 0
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        followerPrefabAddress:
+          m_AssetGUID: 2b86af621f3e8724f9e51ab56aad6395
+          m_SubObjectName: 
+          m_SubObjectType: 
+        childName: Hip
+        localPos: {x: -4, y: -7.35, z: -1.9}
+        localAngles: {x: 180, y: 0, z: 0}
+        localScale: {x: 0.3, y: 0.4, z: 0.4}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    keyAssetAddress:
+      m_AssetGUID: d9114002dc5efcf4db59392053697322
+      m_SubObjectName: 
+      m_SubObjectType: 
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        followerPrefabAddress:
+          m_AssetGUID: 38d7ef1adcce0dc44ab443812a8ee569
+          m_SubObjectName: 
+          m_SubObjectType: 
+        childName: Hip
+        localPos: {x: 0, y: -9, z: -5}
+        localAngles: {x: 180, y: 0, z: 0}
+        localScale: {x: 10, y: 10, z: 10}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    keyAssetAddress:
+      m_AssetGUID: 4fc94356fd66a3142ae700bb460d1d8c
+      m_SubObjectName: 
+      m_SubObjectType: 
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        followerPrefabAddress:
+          m_AssetGUID: 767a76f115c24384498eb6bed7decc4d
+          m_SubObjectName: 
+          m_SubObjectType: 
+        childName: Hip
+        localPos: {x: 0, y: -9, z: -5}
+        localAngles: {x: 90, y: 0, z: 0}
+        localScale: {x: 1, y: 1, z: 1}
+        limbMask: 0
+  - keyAsset: {fileID: 0}
+    keyAssetAddress:
+      m_AssetGUID: fd4fd78564c97074b8911e66a23edbae
+      m_SubObjectName: 
+      m_SubObjectType: 
+    displayRuleGroup:
+      rules:
+      - ruleType: 0
+        followerPrefab: {fileID: 0}
+        followerPrefabAddress:
+          m_AssetGUID: 01c99be16781ea64cb7c24f1ff1354d4
+          m_SubObjectName: 
+          m_SubObjectType: 
+        childName: Hip
+        localPos: {x: 0.65, y: 0.4, z: -1.9}
+        localAngles: {x: 0, y: 0, z: 0}
+        localScale: {x: 1, y: 1, z: 1}
+        limbMask: 0

@@ -6,10 +6,11 @@ using RoR2.Skills;
 using RoR2.ContentManagement;
 using UnityEngine;
 using Path = System.IO.Path;
+using System.Reflection;
 
 namespace Snowtime.Content
 {
-    public class ContentProvider : IContentPackProvider
+    public partial class ContentProvider : IContentPackProvider
     {
         public string identifier => SnowtimeStage.GUID + "." + nameof(ContentProvider);
 
