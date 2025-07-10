@@ -558,6 +558,204 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Fire_AmbST_DoorGrandOpen" ID="{44BBBA56-4F5F-4A98-9635-BBFE5B7047B9}">
+							<ChildrenList>
+								<Action Name="" ID="{1B191CA2-AA22-487A-AF71-D7BCE39D9155}" ShortID="375267342">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Halo_AmbST_HC_DoorGrandOpen" ID="{90637256-F38F-4311-A99C-DAEF872D3842}" WorkUnitID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{6DCB7CC8-1178-4B11-8511-901768EBC3FF}" ShortID="221001214">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Delay" Type="Real64" Value="1.4"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Halo_AmbST_HC_DoorGrandOpen" ID="{90637256-F38F-4311-A99C-DAEF872D3842}" WorkUnitID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Fire_AmbST_DoorGrandOpened" ID="{3AB96087-7D26-46B0-A264-55A6AB684B0C}">
+							<ChildrenList>
+								<Action Name="" ID="{A3EE9D1E-5193-4F5D-9E8E-A1C18BE34063}" ShortID="567043547">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Halo_AmbST_HC_DoorGrandOpened" ID="{53453C50-421D-46DC-A4C4-3FEEF66590C6}" WorkUnitID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{2B5732FF-F571-4173-A29C-363D4F61F758}" ShortID="300962516">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Delay" Type="Real64" Value="1.4"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Halo_AmbST_HC_DoorGrandOpened" ID="{53453C50-421D-46DC-A4C4-3FEEF66590C6}" WorkUnitID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Fire_AmbST_DoorGrandClose" ID="{26F76530-E261-4594-8670-F82C8A428A91}">
+							<ChildrenList>
+								<Action Name="" ID="{899D3417-BD2E-44EF-9CBE-FC30519FFF6F}" ShortID="537111469">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Halo_AmbST_HC_DoorClose" ID="{86F3EB6C-7622-4DEE-91DF-D17E84FE0877}" WorkUnitID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{A9073271-1C73-40A7-8585-BBFEC0F2D56F}" ShortID="679655221">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Delay" Type="Real64" Value="1.4"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Halo_AmbST_HC_DoorClose" ID="{86F3EB6C-7622-4DEE-91DF-D17E84FE0877}" WorkUnitID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Fire_AmbST_DoorGrandClosed" ID="{D79ED285-40F2-41A6-B058-D417013E0580}">
+							<ChildrenList>
+								<Action Name="" ID="{CD40D467-E0A1-468D-8841-5D30EAA48A27}" ShortID="372391128">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Halo_AmbST_HC_DoorClosed" ID="{06F90D7D-FC38-4845-8B23-67C7106AB95F}" WorkUnitID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{3CE7E859-6E12-46B9-BED1-8B712017AFC6}" ShortID="341824871">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Delay" Type="Real64" Value="1.4"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Halo_AmbST_HC_DoorClosed" ID="{06F90D7D-FC38-4845-8B23-67C7106AB95F}" WorkUnitID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Fire_AmbST_DoorOpen" ID="{B14C5BA9-805B-473C-8D14-048D676C5532}">
+							<ChildrenList>
+								<Action Name="" ID="{3C7CDEDD-C96A-4930-B2AE-06B8815DAD8B}" ShortID="193650553">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Halo_AmbST_HC_DoorOpen" ID="{A964023D-816C-49E2-959E-C7DA1DA8D869}" WorkUnitID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{3C22D396-A770-4329-967E-F42C182E2D75}" ShortID="946711247">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Delay" Type="Real64" Value="1.4"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Halo_AmbST_HC_DoorOpen" ID="{A964023D-816C-49E2-959E-C7DA1DA8D869}" WorkUnitID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Fire_AmbST_DoorOpened" ID="{77994A3F-040E-44F6-AC37-8B3A72F427B4}">
+							<ChildrenList>
+								<Action Name="" ID="{23945CA1-2272-424E-AE8A-23B91789715E}" ShortID="187648756">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Halo_AmbST_HC_DoorOpened" ID="{144D37AC-1172-4D23-9073-F43F12D45289}" WorkUnitID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{A1E1EE37-E848-4B3A-9756-3359CCF3CC1E}" ShortID="807941831">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Delay" Type="Real64" Value="1.4"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Halo_AmbST_HC_DoorOpened" ID="{144D37AC-1172-4D23-9073-F43F12D45289}" WorkUnitID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Fire_AmbST_DoorClose" ID="{E37DFCBC-1CED-460B-B8FD-C445945AAE29}">
+							<ChildrenList>
+								<Action Name="" ID="{3D91336E-9C87-479D-9AD0-8A93ADDA9764}" ShortID="39256871">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Halo_AmbST_HC_DoorClose" ID="{86F3EB6C-7622-4DEE-91DF-D17E84FE0877}" WorkUnitID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{8FF5AEC2-AED1-4B46-B91B-4CD987C99529}" ShortID="1023838916">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Delay" Type="Real64" Value="1.4"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Halo_AmbST_HC_DoorClosed" ID="{06F90D7D-FC38-4845-8B23-67C7106AB95F}" WorkUnitID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Fire_AmbST_DoorClosed" ID="{55B61771-07D2-4422-B93F-A2FDEBB90440}">
+							<ChildrenList>
+								<Action Name="" ID="{2AAF17B4-9A3A-47A1-9851-569A1DC13932}" ShortID="181611421">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Halo_AmbST_HC_DoorClosed" ID="{06F90D7D-FC38-4845-8B23-67C7106AB95F}" WorkUnitID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{C3F865BB-7387-448B-8223-974EB408F501}" ShortID="913838221">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Delay" Type="Real64" Value="1.4"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Halo_AmbST_HC_DoorClosed" ID="{06F90D7D-FC38-4845-8B23-67C7106AB95F}" WorkUnitID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Fire_AmbST_DoorDelay" ID="{A4A03E66-54A2-47AB-B067-CE60DFD4769A}">
+							<ChildrenList>
+								<Action Name="" ID="{055D2793-138D-4914-AB0D-897DCC2D121D}" ShortID="873210235">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Halo_AmbST_HC_DoorDelayedRing" ID="{E376B06F-3C3C-4D41-8389-25DDBC8DEFF7}" WorkUnitID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{7A582A91-EAFF-4433-8761-C564388D201D}" ShortID="108689065">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Delay" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Halo_AmbST_HC_DoorDelayedRing" ID="{E376B06F-3C3C-4D41-8389-25DDBC8DEFF7}" WorkUnitID="{12DD6643-1E17-44FF-B0AB-8F02072075CA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

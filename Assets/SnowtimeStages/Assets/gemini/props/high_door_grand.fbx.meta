@@ -3,7 +3,32 @@ guid: 07bb0e60203006e4188ebd69c4942ce1
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cov_dark_purple
+    second: {fileID: 2100000, guid: ce936bad7fb36f948aee3fc82cebca1a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: high_door
+    second: {fileID: 2100000, guid: b537e5af15a42494cbf70f8ed57d3426, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: high_door_glass
+    second: {fileID: 2100000, guid: 28651b46c1d7a4d44bade019b1050202, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: high_door_grand
+    second: {fileID: 2100000, guid: ab8e5606e9dcc464786de79f0b81fb32, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: strip_b
+    second: {fileID: 2100000, guid: 3963c34a2a7058c4582c4d6b30cb03b1, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: sky_panels_det
-  m_Shader: {fileID: 4800000, guid: 182cbc72008f330469ea27490f7acc6b, type: 3}
+  m_Shader: {fileID: 4800000, guid: 391375be6b97df34aa38f3d031a21fd3, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords:
   - BSSBLOOMFOGTYPE_HEIGHT
@@ -21,7 +21,7 @@ Material:
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 3000
+  m_CustomRenderQueue: 2952
   stringTagMap:
     AllLockedGUIDS: 05c4a0b73d6affa4d82f9220c9d63c19
     OriginalKeywords: BSSBLOOMFOGTYPE_HEIGHT VIGNETTE_MASKED _EMISSION _LIGHTINGMODE_FLAT

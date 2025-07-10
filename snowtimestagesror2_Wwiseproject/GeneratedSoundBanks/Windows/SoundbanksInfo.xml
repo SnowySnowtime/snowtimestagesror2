@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="855345258" Type="User" Language="SFX" Hash="{45723650-7978-61AB-844B-BC6E4158D1EA}">
+		<SoundBank Id="855345258" Type="User" Language="SFX" Hash="{1FC84B7C-BA23-5912-51E3-7D1CFE44E524}">
 			<ShortName>SnowtimeStagesSounds</ShortName>
 			<Path>SnowtimeStagesSounds.bnk</Path>
 			<Media>
@@ -25,9 +25,17 @@
 					<ShortName>SnowtimeStages\Halo\Ambience\sounds_adpcm [71].wav</ShortName>
 					<CachePath>SFX/SnowtimeStages/Halo/Ambience/sounds_adpcm [71]_BF5D3B3E.wem</CachePath>
 				</File>
+				<File Id="77607217" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>1opened.wav</ShortName>
+					<CachePath>SFX/1opened_BF5D3B3E.wem</CachePath>
+				</File>
 				<File Id="81780098" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SnowtimeStages\Halo\Ambience\sfx [15872].wav</ShortName>
 					<CachePath>SFX/SnowtimeStages/Halo/Ambience/sfx [15872]_BF5D3B3E.wem</CachePath>
+				</File>
+				<File Id="99468838" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>a50_door_delay.wav</ShortName>
+					<CachePath>SFX/a50_door_delay_BF5D3B3E.wem</CachePath>
 				</File>
 				<File Id="126706442" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SnowtimeStages\Halo\Ambience\amb_bloodgulch.wav</ShortName>
@@ -36,6 +44,10 @@
 				<File Id="147628268" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SnowtimeStages\Halo\Ambience\sounds_adpcm [50].wav</ShortName>
 					<CachePath>SFX/SnowtimeStages/Halo/Ambience/sounds_adpcm [50]_BF5D3B3E.wem</CachePath>
+				</File>
+				<File Id="190584237" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>closed.wav</ShortName>
+					<CachePath>SFX/closed_BF5D3B3E.wem</CachePath>
 				</File>
 				<File Id="202510585" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SnowtimeStages\Halo\Ambience\sounds_adpcm [62].wav</ShortName>
@@ -69,6 +81,10 @@
 					<ShortName>SnowtimeStages\Halo\Ambience\sounds_adpcm [63].wav</ShortName>
 					<CachePath>SFX/SnowtimeStages/Halo/Ambience/sounds_adpcm [63]_BF5D3B3E.wem</CachePath>
 				</File>
+				<File Id="332772183" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>1closed.wav</ShortName>
+					<CachePath>SFX/1closed_BF5D3B3E.wem</CachePath>
+				</File>
 				<File Id="337202894" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SnowtimeStages\Halo\Ambience\sfx [15865].wav</ShortName>
 					<CachePath>SFX/SnowtimeStages/Halo/Ambience/sfx [15865]_BF5D3B3E.wem</CachePath>
@@ -97,6 +113,10 @@
 					<ShortName>SnowtimeStages\Halo\Ambience\sounds_adpcm [49].wav</ShortName>
 					<CachePath>SFX/SnowtimeStages/Halo/Ambience/sounds_adpcm [49]_BF5D3B3E.wem</CachePath>
 				</File>
+				<File Id="495516897" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>close.wav</ShortName>
+					<CachePath>SFX/close_BF5D3B3E.wem</CachePath>
+				</File>
 				<File Id="541664431" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SnowtimeStages\Halo\Ambience\sounds_adpcm [243].wav</ShortName>
 					<CachePath>SFX/SnowtimeStages/Halo/Ambience/sounds_adpcm [243]_BF5D3B3E.wem</CachePath>
@@ -104,6 +124,10 @@
 				<File Id="553762712" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SnowtimeStages\Halo\Ambience\sounds_adpcm [239].wav</ShortName>
 					<CachePath>SFX/SnowtimeStages/Halo/Ambience/sounds_adpcm [239]_BF5D3B3E.wem</CachePath>
+				</File>
+				<File Id="594341728" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>1open.wav</ShortName>
+					<CachePath>SFX/1open_BF5D3B3E.wem</CachePath>
 				</File>
 				<File Id="615580275" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SnowtimeStages\Halo\Ambience\sfx [15861].wav</ShortName>
@@ -137,6 +161,10 @@
 					<ShortName>SnowtimeStages\Halo\Ambience\sfx [15862].wav</ShortName>
 					<CachePath>SFX/SnowtimeStages/Halo/Ambience/sfx [15862]_BF5D3B3E.wem</CachePath>
 				</File>
+				<File Id="776760515" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>opened.wav</ShortName>
+					<CachePath>SFX/opened_BF5D3B3E.wem</CachePath>
+				</File>
 				<File Id="784947540" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SnowtimeStages\Halo\Ambience\amb_gph.wav</ShortName>
 					<CachePath>SFX/SnowtimeStages/Halo/Ambience/amb_gph_B45EAA48.wem</CachePath>
@@ -153,6 +181,10 @@
 					<ShortName>SnowtimeStages\Halo\Ambience\sounds_adpcm [242].wav</ShortName>
 					<CachePath>SFX/SnowtimeStages/Halo/Ambience/sounds_adpcm [242]_BF5D3B3E.wem</CachePath>
 				</File>
+				<File Id="832360779" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>open.wav</ShortName>
+					<CachePath>SFX/open_BF5D3B3E.wem</CachePath>
+				</File>
 				<File Id="882735341" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SnowtimeStages\Halo\Ambience\sounds_adpcm [51].wav</ShortName>
 					<CachePath>SFX/SnowtimeStages/Halo/Ambience/sounds_adpcm [51]_BF5D3B3E.wem</CachePath>
@@ -160,6 +192,10 @@
 				<File Id="898607792" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SnowtimeStages\Halo\Ambience\sounds_adpcm [241].wav</ShortName>
 					<CachePath>SFX/SnowtimeStages/Halo/Ambience/sounds_adpcm [241]_BF5D3B3E.wem</CachePath>
+				</File>
+				<File Id="903827200" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>1close.wav</ShortName>
+					<CachePath>SFX/1close_BF5D3B3E.wem</CachePath>
 				</File>
 				<File Id="920485722" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SnowtimeStages\Halo\Ambience\sounds_adpcm [70].wav</ShortName>
@@ -199,6 +235,52 @@
 				</File>
 			</Media>
 			<Events>
+				<Event Id="532269280" Name="Fire_AmbST_DoorClose" MaxAttenuation="100">
+					<MediaRefs>
+						<MediaRef Id="332772183"/>
+						<MediaRef Id="903827200"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3514251460" Name="Fire_AmbST_DoorClosed" MaxAttenuation="100">
+					<MediaRefs>
+						<MediaRef Id="332772183"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="711500953" Name="Fire_AmbST_DoorDelay" MaxAttenuation="100">
+					<MediaRefs>
+						<MediaRef Id="99468838"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="4248130170" Name="Fire_AmbST_DoorGrandClose" MaxAttenuation="100">
+					<MediaRefs>
+						<MediaRef Id="903827200"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="351327850" Name="Fire_AmbST_DoorGrandClosed" MaxAttenuation="100">
+					<MediaRefs>
+						<MediaRef Id="332772183"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="7727614" Name="Fire_AmbST_DoorGrandOpen" MaxAttenuation="100">
+					<MediaRefs>
+						<MediaRef Id="832360779"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3470514889" Name="Fire_AmbST_DoorGrandOpened" MaxAttenuation="100">
+					<MediaRefs>
+						<MediaRef Id="776760515"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="933394836" Name="Fire_AmbST_DoorOpen" MaxAttenuation="100">
+					<MediaRefs>
+						<MediaRef Id="594341728"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3350972863" Name="Fire_AmbST_DoorOpened" MaxAttenuation="100">
+					<MediaRefs>
+						<MediaRef Id="77607217"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1853828655" Name="Fire_AmbST_HaloBeamEmitter" MaxAttenuation="100">
 					<MediaRefs>
 						<MediaRef Id="623683944"/>
@@ -427,6 +509,7 @@
 						<State Id="845250980" Name="HaloStage2Alt"/>
 						<State Id="939841948" Name="HaloCovenantDance"/>
 						<State Id="1469929416" Name="gmconstruct"/>
+						<State Id="1997977425" Name="HaloHighCharity"/>
 						<State Id="2292831825" Name="HaloTheme2Alt"/>
 						<State Id="3095027865" Name="HaloSidewinder"/>
 						<State Id="3280575944" Name="HaloDreamAgain"/>
@@ -439,7 +522,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3261243995" Type="User" Language="SFX" Hash="{DF62CC71-5DE5-79AF-11D4-CD611CDAB1F0}">
+		<SoundBank Id="3261243995" Type="User" Language="SFX" Hash="{8B112D02-D308-979A-A0C9-835437BE6DF6}">
 			<ShortName>SnowtimeStagesMusic</ShortName>
 			<Path>SnowtimeStagesMusic.bnk</Path>
 			<Media>
@@ -461,6 +544,12 @@
 					<CachePath>SFX/SnowtimeStages/Halo/halo_swarm_start_B45EAA48.wem</CachePath>
 					<PrefetchSize>2731</PrefetchSize>
 				</File>
+				<File Id="9487910" Language="SFX" Streaming="true" Location="Memory">
+					<ShortName>alt_trans_in_hc_boss.wav</ShortName>
+					<Path>Media/9487910.wem</Path>
+					<CachePath>SFX/alt_trans_in_hc_boss_B45EAA48.wem</CachePath>
+					<PrefetchSize>3361</PrefetchSize>
+				</File>
 				<File Id="38030759" Language="SFX" Streaming="true" Location="Memory">
 					<ShortName>loop1_delta.wav</ShortName>
 					<Path>Media/38030759.wem</Path>
@@ -478,6 +567,12 @@
 					<Path>Media/56989505.wem</Path>
 					<CachePath>SFX/boss_loop_flattf2_B45EAA48.wem</CachePath>
 					<PrefetchSize>3546</PrefetchSize>
+				</File>
+				<File Id="66648753" Language="SFX" Streaming="true" Location="Memory">
+					<ShortName>alt_loop1_hc_boss.wav</ShortName>
+					<Path>Media/66648753.wem</Path>
+					<CachePath>SFX/alt_loop1_hc_boss_B45EAA48.wem</CachePath>
+					<PrefetchSize>3952</PrefetchSize>
 				</File>
 				<File Id="102363705" Language="SFX" Streaming="true" Location="Memory">
 					<ShortName>sfx [12017].wav</ShortName>
@@ -556,6 +651,18 @@
 					<Path>Media/178977274.wem</Path>
 					<CachePath>SFX/loop2g_B45EAA48.wem</CachePath>
 					<PrefetchSize>3507</PrefetchSize>
+				</File>
+				<File Id="183319073" Language="SFX" Streaming="true" Location="Memory">
+					<ShortName>alt_loop2_hc_boss.wav</ShortName>
+					<Path>Media/183319073.wem</Path>
+					<CachePath>SFX/alt_loop2_hc_boss_B45EAA48.wem</CachePath>
+					<PrefetchSize>3486</PrefetchSize>
+				</File>
+				<File Id="189911723" Language="SFX" Streaming="true" Location="Memory">
+					<ShortName>loop1_hc_boss.wav</ShortName>
+					<Path>Media/189911723.wem</Path>
+					<CachePath>SFX/loop1_hc_boss_B45EAA48.wem</CachePath>
+					<PrefetchSize>3364</PrefetchSize>
 				</File>
 				<File Id="194268644" Language="SFX" Streaming="true" Location="Memory">
 					<ShortName>alt_loop1_dboss.wav</ShortName>
@@ -671,6 +778,12 @@
 					<CachePath>SFX/alt_loop1_B45EAA48.wem</CachePath>
 					<PrefetchSize>3629</PrefetchSize>
 				</File>
+				<File Id="441788739" Language="SFX" Streaming="true" Location="Memory">
+					<ShortName>in_hc_boss.wav</ShortName>
+					<Path>Media/441788739.wem</Path>
+					<CachePath>SFX/in_hc_boss_B45EAA48.wem</CachePath>
+					<PrefetchSize>2737</PrefetchSize>
+				</File>
 				<File Id="470152458" Language="SFX" Streaming="true" Location="Memory">
 					<ShortName>sfx [12019].wav</ShortName>
 					<Path>Media/470152458.wem</Path>
@@ -771,6 +884,12 @@
 					<CachePath>SFX/sfx [12013]_B45EAA48.wem</CachePath>
 					<PrefetchSize>3016</PrefetchSize>
 				</File>
+				<File Id="727588551" Language="SFX" Streaming="true" Location="Memory">
+					<ShortName>out_hc_boss.wav</ShortName>
+					<Path>Media/727588551.wem</Path>
+					<CachePath>SFX/out_hc_boss_B45EAA48.wem</CachePath>
+					<PrefetchSize>3134</PrefetchSize>
+				</File>
 				<File Id="743735855" Language="SFX" Streaming="true" Location="Memory">
 					<ShortName>loop_flattf2.wav</ShortName>
 					<Path>Media/743735855.wem</Path>
@@ -801,6 +920,12 @@
 					<CachePath>SFX/SnowtimeStages/Halo/halo_music_endidk_B45EAA48.wem</CachePath>
 					<PrefetchSize>2544</PrefetchSize>
 				</File>
+				<File Id="794824996" Language="SFX" Streaming="true" Location="Memory">
+					<ShortName>loop2_hc.wav</ShortName>
+					<Path>Media/794824996.wem</Path>
+					<CachePath>SFX/loop2_hc_B45EAA48.wem</CachePath>
+					<PrefetchSize>2956</PrefetchSize>
+				</File>
 				<File Id="802583461" Language="SFX" Streaming="true" Location="Memory">
 					<ShortName>SnowtimeStages\Halo\halo_s3boss_start.wav</ShortName>
 					<Path>Media/802583461.wem</Path>
@@ -824,6 +949,12 @@
 					<Path>Media/872101712.wem</Path>
 					<CachePath>SFX/SnowtimeStages/Halo/sfx [12489]_B45EAA48.wem</CachePath>
 					<PrefetchSize>2797</PrefetchSize>
+				</File>
+				<File Id="874018907" Language="SFX" Streaming="true" Location="Memory">
+					<ShortName>in_hc.wav</ShortName>
+					<Path>Media/874018907.wem</Path>
+					<CachePath>SFX/in_hc_B45EAA48.wem</CachePath>
+					<PrefetchSize>3732</PrefetchSize>
 				</File>
 				<File Id="887763027" Language="SFX" Streaming="true" Location="Memory">
 					<ShortName>loop_tf2.wav</ShortName>
@@ -884,6 +1015,12 @@
 					<Path>Media/1037695359.wem</Path>
 					<CachePath>SFX/SnowtimeStages/Halo/halos5_start_B45EAA48.wem</CachePath>
 					<PrefetchSize>2438</PrefetchSize>
+				</File>
+				<File Id="1053739204" Language="SFX" Streaming="true" Location="Memory">
+					<ShortName>loop1_hc.wav</ShortName>
+					<Path>Media/1053739204.wem</Path>
+					<CachePath>SFX/loop1_hc_B45EAA48.wem</CachePath>
+					<PrefetchSize>2873</PrefetchSize>
 				</File>
 			</Media>
 			<Events>
@@ -1156,6 +1293,32 @@
 										</SwitchContainer>
 									</Children>
 								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="1359377434" Id="1997977425"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="549431000" Id="655265632"/>
+											<MediaRefs>
+												<MediaRef Id="9487910"/>
+												<MediaRef Id="66648753"/>
+												<MediaRef Id="183319073"/>
+												<MediaRef Id="189911723"/>
+												<MediaRef Id="441788739"/>
+											</MediaRefs>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="1359377434" Id="1997977425"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="549431000" Id="2044049779"/>
+											<MediaRefs>
+												<MediaRef Id="727588551"/>
+											</MediaRefs>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
 							</Children>
 						</SwitchContainer>
 						<SwitchContainer>
@@ -1244,6 +1407,14 @@
 									<MediaRefs>
 										<MediaRef Id="221612062"/>
 										<MediaRef Id="743735855"/>
+									</MediaRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="1359377434" Id="1997977425"/>
+									<MediaRefs>
+										<MediaRef Id="794824996"/>
+										<MediaRef Id="874018907"/>
+										<MediaRef Id="1053739204"/>
 									</MediaRefs>
 								</SwitchContainer>
 							</Children>
@@ -1519,6 +1690,32 @@
 										</SwitchContainer>
 									</Children>
 								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="1359377434" Id="1997977425"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="549431000" Id="655265632"/>
+											<MediaRefs>
+												<MediaRef Id="9487910"/>
+												<MediaRef Id="66648753"/>
+												<MediaRef Id="183319073"/>
+												<MediaRef Id="189911723"/>
+												<MediaRef Id="441788739"/>
+											</MediaRefs>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="1359377434" Id="1997977425"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="549431000" Id="2044049779"/>
+											<MediaRefs>
+												<MediaRef Id="727588551"/>
+											</MediaRefs>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
 							</Children>
 						</SwitchContainer>
 						<SwitchContainer>
@@ -1607,6 +1804,14 @@
 									<MediaRefs>
 										<MediaRef Id="221612062"/>
 										<MediaRef Id="743735855"/>
+									</MediaRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="1359377434" Id="1997977425"/>
+									<MediaRefs>
+										<MediaRef Id="794824996"/>
+										<MediaRef Id="874018907"/>
+										<MediaRef Id="1053739204"/>
 									</MediaRefs>
 								</SwitchContainer>
 							</Children>
@@ -1882,6 +2087,32 @@
 										</SwitchContainer>
 									</Children>
 								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="1359377434" Id="1997977425"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="549431000" Id="655265632"/>
+											<MediaRefs>
+												<MediaRef Id="9487910"/>
+												<MediaRef Id="66648753"/>
+												<MediaRef Id="183319073"/>
+												<MediaRef Id="189911723"/>
+												<MediaRef Id="441788739"/>
+											</MediaRefs>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="1359377434" Id="1997977425"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="549431000" Id="2044049779"/>
+											<MediaRefs>
+												<MediaRef Id="727588551"/>
+											</MediaRefs>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
 							</Children>
 						</SwitchContainer>
 						<SwitchContainer>
@@ -1972,6 +2203,14 @@
 										<MediaRef Id="743735855"/>
 									</MediaRefs>
 								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="1359377434" Id="1997977425"/>
+									<MediaRefs>
+										<MediaRef Id="794824996"/>
+										<MediaRef Id="874018907"/>
+										<MediaRef Id="1053739204"/>
+									</MediaRefs>
+								</SwitchContainer>
 							</Children>
 						</SwitchContainer>
 					</SwitchContainers>
@@ -2011,6 +2250,7 @@
 						<State Id="845250980" Name="HaloStage2Alt"/>
 						<State Id="939841948" Name="HaloCovenantDance"/>
 						<State Id="1469929416" Name="gmconstruct"/>
+						<State Id="1997977425" Name="HaloHighCharity"/>
 						<State Id="2292831825" Name="HaloTheme2Alt"/>
 						<State Id="3095027865" Name="HaloSidewinder"/>
 						<State Id="3280575944" Name="HaloDreamAgain"/>
@@ -2024,5 +2264,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{3CF5F8B9-7362-21F1-302A-300F38BD3CBD}</FileHash>
+	<FileHash>{D163C7E5-383E-897B-36C8-3B0D9986353B}</FileHash>
 </SoundBanksInfo>

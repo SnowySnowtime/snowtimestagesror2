@@ -3,7 +3,227 @@ guid: eb39f558a331ff44b9200673ed8d6dac
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: c_bloom_purplight
+    second: {fileID: 2100000, guid: 9689d55389ce8b34a8ae59e3330c98cc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: c_bloom_redblink
+    second: {fileID: 2100000, guid: 5a86f25fcf7e848438bbd3d7e639fc19, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: c_light_white
+    second: {fileID: 2100000, guid: 32747b21d7278f742b0fb85c0cdc63ea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cov_blue
+    second: {fileID: 2100000, guid: de11280622a920c43a696a432e335336, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cov_blue_dirty
+    second: {fileID: 2100000, guid: d372068f660263241a88cdf9ab361987, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cov_blue_ext
+    second: {fileID: 2100000, guid: 73a3db5702a989d4ebb15fbf9a12411c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cov_dark_blue
+    second: {fileID: 2100000, guid: b64b47c94010bc840983a434be405650, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cov_dark_purple
+    second: {fileID: 2100000, guid: ce936bad7fb36f948aee3fc82cebca1a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cov_machine_a
+    second: {fileID: 2100000, guid: 37a982ade3186f04f8d6e53302a6615e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cov_purple
+    second: {fileID: 2100000, guid: b4b0d74dee71912479fbc75e99d074ad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cov_rug
+    second: {fileID: 2100000, guid: b2381ee06fe25264289b9a04f99b57af, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: decor_strip
+    second: {fileID: 2100000, guid: edd1e607c607fbe42a1bc954f4f0e10a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: gemwater
+    second: {fileID: 2100000, guid: f4c2d197f73079a47a5bec8453d1d97a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass_etched_a_illum
+    second: {fileID: 2100000, guid: 9b12f47c74624244d873376086126e5e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: grand_door
+    second: {fileID: 2100000, guid: e15c83926c6551d418497a0cc396048c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: high_cliffa
+    second: {fileID: 2100000, guid: 67f37a4b3df8b6641be2a3931e680b2a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: high_clouds
+    second: {fileID: 2100000, guid: 2dd71666af97a004ab5ee9a950986ee0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: high_rocky
+    second: {fileID: 2100000, guid: ab73289fe9daebe44a3059bd9cefa756, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: light_floorstrip_purple
+    second: {fileID: 2100000, guid: 69073544965e3ec47af5608dbaa9b0ce, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: light_vertstrip_a
+    second: {fileID: 2100000, guid: e53da7701a8a89c4dbdb50487e1aa043, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: matte_grey
+    second: {fileID: 2100000, guid: 94e20708686348743b098f0dec70217c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: panel_f_blue
+    second: {fileID: 2100000, guid: f60429260875a094793636a5f2f922c7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: panel_f_blue_ribbed
+    second: {fileID: 2100000, guid: 8c2b43944843a7c408b303fc4e47322c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: panel_f_purple
+    second: {fileID: 2100000, guid: b903895d12d7fbc4f9f8bbbc6e59b956, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: panel_g_blue
+    second: {fileID: 2100000, guid: 2b5a407c513604c42bd4d140763ada04, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: panel_g_purple
+    second: {fileID: 2100000, guid: cf3251a2d0060dd41877b7c80db35393, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: phantom_panel
+    second: {fileID: 2100000, guid: 56bb10a85b382a546acc55ae78dd8c09, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: prof_stat_halo
+    second: {fileID: 2100000, guid: f3d5da17d269eb8408766a4c72081ffa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: prof_stat_halo_outer
+    second: {fileID: 2100000, guid: b70df32b935b1224194b7b19b224567c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rounded_carapace
+    second: {fileID: 2100000, guid: 8125a20fe04d1cd4ba96c59ab4ad728b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rubber_mat_a
+    second: {fileID: 2100000, guid: 52a4a0af65a87a441aa89c058c8d0d25, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rubber_mat_a_flat
+    second: {fileID: 2100000, guid: deb097ec94a52594ea5b934eeae08616, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rubber_trim_a
+    second: {fileID: 2100000, guid: 3a33ff202fb1ad949af551e9499a9240, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sanctum_floor
+    second: {fileID: 2100000, guid: 05ce7439950ec92499947e9ce4da01e8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stainedglass
+    second: {fileID: 2100000, guid: 40a54668d8893424fa920f48002194db, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stainedglass_x
+    second: {fileID: 2100000, guid: da703a003d8f05e4f95454f9c2674390, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: strip_a_blue
+    second: {fileID: 2100000, guid: f27cd64bfb4b0704383939ab0c9ff0c2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: strip_a_purple
+    second: {fileID: 2100000, guid: be5ad2e848f08ca4a9295d1d294f52a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: strip_b
+    second: {fileID: 2100000, guid: 3963c34a2a7058c4582c4d6b30cb03b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: strip_b.001
+    second: {fileID: 2100000, guid: 3963c34a2a7058c4582c4d6b30cb03b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: strip_b.002
+    second: {fileID: 2100000, guid: 3963c34a2a7058c4582c4d6b30cb03b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tree_ancient
+    second: {fileID: 2100000, guid: 2b311de28c1bda9438dbc7a057238945, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tree_ancient_leaves
+    second: {fileID: 2100000, guid: ea4b0ec121a24cb49ba07559634950d2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wide_volume_white
+    second: {fileID: 2100000, guid: 9cf824eddcd71af4597b16fece854814, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

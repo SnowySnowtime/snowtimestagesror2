@@ -1280,6 +1280,267 @@
 										<ActiveSource Name="elevator_exit" ID="{FEB982E0-CF1F-49E9-94D3-51D2BE4B9EB4}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<Sound Name="Halo_AmbST_HC_DoorDelayedRing" ID="{E376B06F-3C3C-4D41-8389-25DDBC8DEFF7}" ShortID="679606254">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="HighCharityDoorAttenuation" ID="{69AA9F22-27D3-4DF6-97FE-CED3DD53427C}" WorkUnitID="{0F6FBB52-9644-42F0-91E4-7E88EFF537B0}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="a50_door_delay" ID="{8D160804-E8B3-4C6B-88BC-68001B96FF5E}">
+											<Language>SFX</Language>
+											<AudioFile>a50_door_delay.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="99468838"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="a50_door_delay" ID="{8D160804-E8B3-4C6B-88BC-68001B96FF5E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Halo_AmbST_HC_DoorGrandOpen" ID="{90637256-F38F-4311-A99C-DAEF872D3842}" ShortID="113101389">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="HighCharityDoorAttenuation" ID="{69AA9F22-27D3-4DF6-97FE-CED3DD53427C}" WorkUnitID="{0F6FBB52-9644-42F0-91E4-7E88EFF537B0}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="open" ID="{2478D7D6-CD83-4D41-AB5F-7A85126780AD}">
+											<Language>SFX</Language>
+											<AudioFile>open.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="832360779"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="open" ID="{2478D7D6-CD83-4D41-AB5F-7A85126780AD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Halo_AmbST_HC_DoorGrandOpened" ID="{53453C50-421D-46DC-A4C4-3FEEF66590C6}" ShortID="914834448">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="HighCharityDoorAttenuation" ID="{69AA9F22-27D3-4DF6-97FE-CED3DD53427C}" WorkUnitID="{0F6FBB52-9644-42F0-91E4-7E88EFF537B0}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="opened" ID="{5E4EFFE5-6560-4FB2-887B-56661789DE52}">
+											<Language>SFX</Language>
+											<AudioFile>opened.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="776760515"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="opened" ID="{5E4EFFE5-6560-4FB2-887B-56661789DE52}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Halo_AmbST_HC_DoorGrandClose" ID="{427C71E9-5E6F-4A6A-B105-D8852DEE67FE}" ShortID="74683160">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="HighCharityDoorAttenuation" ID="{69AA9F22-27D3-4DF6-97FE-CED3DD53427C}" WorkUnitID="{0F6FBB52-9644-42F0-91E4-7E88EFF537B0}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="close" ID="{27E78D73-3BFD-43D8-8AAE-779A3D90D7E8}">
+											<Language>SFX</Language>
+											<AudioFile>close.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="495516897"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="close" ID="{27E78D73-3BFD-43D8-8AAE-779A3D90D7E8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Halo_AmbST_HC_DoorGrandClosed" ID="{8162EFD9-E4D5-4292-BAE9-EBCB1C78F399}" ShortID="81103403">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="HighCharityDoorAttenuation" ID="{69AA9F22-27D3-4DF6-97FE-CED3DD53427C}" WorkUnitID="{0F6FBB52-9644-42F0-91E4-7E88EFF537B0}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="closed" ID="{8A29BEB5-035F-422E-9BD2-C5186824F948}">
+											<Language>SFX</Language>
+											<AudioFile>closed.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="190584237"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="closed" ID="{8A29BEB5-035F-422E-9BD2-C5186824F948}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Halo_AmbST_HC_DoorClose" ID="{86F3EB6C-7622-4DEE-91DF-D17E84FE0877}" ShortID="697307162">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="HighCharityDoorAttenuation" ID="{69AA9F22-27D3-4DF6-97FE-CED3DD53427C}" WorkUnitID="{0F6FBB52-9644-42F0-91E4-7E88EFF537B0}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="1close" ID="{C8E80565-B410-4470-9C38-973D67ACF8C7}">
+											<Language>SFX</Language>
+											<AudioFile>1close.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="903827200"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="1close" ID="{C8E80565-B410-4470-9C38-973D67ACF8C7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Halo_AmbST_HC_DoorClosed" ID="{06F90D7D-FC38-4845-8B23-67C7106AB95F}" ShortID="715978738">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="HighCharityDoorAttenuation" ID="{69AA9F22-27D3-4DF6-97FE-CED3DD53427C}" WorkUnitID="{0F6FBB52-9644-42F0-91E4-7E88EFF537B0}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="1closed" ID="{1051D6DF-4393-418B-8827-4C309ECCA2CB}">
+											<Language>SFX</Language>
+											<AudioFile>1closed.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="332772183"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="1closed" ID="{1051D6DF-4393-418B-8827-4C309ECCA2CB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Halo_AmbST_HC_DoorOpen" ID="{A964023D-816C-49E2-959E-C7DA1DA8D869}" ShortID="1020841035">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="HighCharityDoorAttenuation" ID="{69AA9F22-27D3-4DF6-97FE-CED3DD53427C}" WorkUnitID="{0F6FBB52-9644-42F0-91E4-7E88EFF537B0}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="1open" ID="{EBBC4103-CE0E-4B10-8B44-3EBA3C93D66A}">
+											<Language>SFX</Language>
+											<AudioFile>1open.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="594341728"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="1open" ID="{EBBC4103-CE0E-4B10-8B44-3EBA3C93D66A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Halo_AmbST_HC_DoorOpened" ID="{144D37AC-1172-4D23-9073-F43F12D45289}" ShortID="720545340">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="HighCharityDoorAttenuation" ID="{69AA9F22-27D3-4DF6-97FE-CED3DD53427C}" WorkUnitID="{0F6FBB52-9644-42F0-91E4-7E88EFF537B0}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8BD37B98-8800-4171-AFE0-D90A31D8F9A5}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E9DE069C-7C30-49C5-B718-15EBCC98A5A1}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="1opened" ID="{75273CB4-C8F4-47B7-AB49-92909D724C3B}">
+											<Language>SFX</Language>
+											<AudioFile>1opened.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="77607217"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="1opened" ID="{75273CB4-C8F4-47B7-AB49-92909D724C3B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 							<ObjectLists>
 								<ObjectList Name="RTPC">

@@ -1,9 +1,14 @@
 Event	ID	Name			Wwise Object Path	Notes
+	7727614	Fire_AmbST_DoorGrandOpen			\Default Work Unit\Ambience\Fire_AmbST_DoorGrandOpen	
 	225251693	Play_SFXST_AOTCR_Elevator			\Default Work Unit\Ambience\Play_SFXST_AOTCR_Elevator	
 	324384551	Play_AmbST_HaloFall			\Default Work Unit\Ambience\Play_AmbST_HaloFall	
+	351327850	Fire_AmbST_DoorGrandClosed			\Default Work Unit\Ambience\Fire_AmbST_DoorGrandClosed	
+	532269280	Fire_AmbST_DoorClose			\Default Work Unit\Ambience\Fire_AmbST_DoorClose	
 	578041770	StopAmbST_DIWaves			\Default Work Unit\Ambience\StopAmbST_DIWaves	
 	594011829	Play_AmbST_CovUplink			\Default Work Unit\Ambience\Play_AmbST_CovUplink	
+	711500953	Fire_AmbST_DoorDelay			\Default Work Unit\Ambience\Fire_AmbST_DoorDelay	
 	850893056	StopAmbST_Bloodgulch			\Default Work Unit\Ambience\StopAmbST_Bloodgulch	
+	933394836	Fire_AmbST_DoorOpen			\Default Work Unit\Ambience\Fire_AmbST_DoorOpen	
 	1157367887	StopAmbST_HaloStream			\Default Work Unit\Ambience\StopAmbST_HaloStream	
 	1197427262	StopSfxST_AOTCR_Elevator			\Default Work Unit\Ambience\StopSfxST_AOTCR_Elevator	
 	1472472405	Play_AmbST_Sandtrap			\Default Work Unit\Ambience\Play_AmbST_Sandtrap	
@@ -15,10 +20,14 @@ Event	ID	Name			Wwise Object Path	Notes
 	2690190287	Play_AmbST_Bloodgulch			\Default Work Unit\Ambience\Play_AmbST_Bloodgulch	
 	2789467032	StopAmbST_HaloFall			\Default Work Unit\Ambience\StopAmbST_HaloFall	
 	2977579975	StopAmbST_HaloEmitter			\Default Work Unit\Ambience\StopAmbST_HaloEmitter	
+	3350972863	Fire_AmbST_DoorOpened			\Default Work Unit\Ambience\Fire_AmbST_DoorOpened	
 	3413103659	Play_AmbST_DIWaves			\Default Work Unit\Ambience\Play_AmbST_DIWaves	
+	3470514889	Fire_AmbST_DoorGrandOpened			\Default Work Unit\Ambience\Fire_AmbST_DoorGrandOpened	
+	3514251460	Fire_AmbST_DoorClosed			\Default Work Unit\Ambience\Fire_AmbST_DoorClosed	
 	3659379894	Play_AmbST_HaloEmitter			\Default Work Unit\Ambience\Play_AmbST_HaloEmitter	
 	3740280511	StopAmbST_Halo			\Default Work Unit\Ambience\StopAmbST_Halo	
 	4222771412	Play_AmbST_HaloStream			\Default Work Unit\Ambience\Play_AmbST_HaloStream	
+	4248130170	Fire_AmbST_DoorGrandClose			\Default Work Unit\Ambience\Fire_AmbST_DoorGrandClose	
 	4280527958	StopAmbST_Sandtrap			\Default Work Unit\Ambience\StopAmbST_Sandtrap	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
@@ -28,9 +37,12 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	32476423	wave5	G:\vrchatprojects\_RoR2Project\snowtimestagesror2\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\Ambience\sounds_adpcm [237]_BF5D3B3E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\Sfx Mixer\Halo_AmbST_DI_Waves\wave5		39226
 	49904372	waterfall2	G:\vrchatprojects\_RoR2Project\snowtimestagesror2\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\Ambience\sounds_adpcm [53]_BF5D3B3E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\Sfx Mixer\Halo_AmbST_HaloFall\waterfall2		31276
 	70426441	uplink3	G:\vrchatprojects\_RoR2Project\snowtimestagesror2\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\Ambience\sounds_adpcm [71]_BF5D3B3E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\Sfx Mixer\Halo_AmbST_Uplink\uplink3		44522
+	77607217	Halo_AmbST_HC_DoorOpened	G:\vrchatprojects\_RoR2Project\snowtimestagesror2\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\1opened_BF5D3B3E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\Sfx Mixer\Halo_AmbST_HC_DoorOpened		7464
 	81780098	Sandtrap14	G:\vrchatprojects\_RoR2Project\snowtimestagesror2\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\Ambience\sfx [15872]_BF5D3B3E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\Sfx Mixer\Halo_AmbST_Sandtrap\Sandtrap14		125031
+	99468838	Halo_AmbST_HC_DoorDelayedRing	G:\vrchatprojects\_RoR2Project\snowtimestagesror2\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\a50_door_delay_BF5D3B3E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\Sfx Mixer\Halo_AmbST_HC_DoorDelayedRing		9004
 	126706442	Halo_AmbST_Bloodgulch	G:\vrchatprojects\_RoR2Project\snowtimestagesror2\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\Ambience\amb_bloodgulch_B45EAA48.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\Sfx Mixer\Halo_AmbST_Bloodgulch		400608
 	147628268	electric2	G:\vrchatprojects\_RoR2Project\snowtimestagesror2\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\Ambience\sounds_adpcm [50]_BF5D3B3E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\Sfx Mixer\Halo_AmbST_HaloBeam\electric2		38835
+	190584237	Halo_AmbST_HC_DoorGrandClosed	G:\vrchatprojects\_RoR2Project\snowtimestagesror2\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\closed_BF5D3B3E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\Sfx Mixer\Halo_AmbST_HC_DoorGrandClosed		11475
 	202510585	stream02	G:\vrchatprojects\_RoR2Project\snowtimestagesror2\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\Ambience\sounds_adpcm [62]_BF5D3B3E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\Sfx Mixer\Halo_AmbST_HaloStream\stream02		36770
 	225494125	wave14	G:\vrchatprojects\_RoR2Project\snowtimestagesror2\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\Ambience\sounds_adpcm [246]_BF5D3B3E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\Sfx Mixer\Halo_AmbST_DI_Waves\wave14		39651
 	237531637	Sandtrap01	G:\vrchatprojects\_RoR2Project\snowtimestagesror2\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\Ambience\sfx [15859]_BF5D3B3E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\Sfx Mixer\Halo_AmbST_Sandtrap\Sandtrap01		135677
@@ -39,6 +51,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	292914169	wave8	G:\vrchatprojects\_RoR2Project\snowtimestagesror2\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\Ambience\sounds_adpcm [240]_BF5D3B3E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\Sfx Mixer\Halo_AmbST_DI_Waves\wave8		28626
 	296014189	Halo_AmbST_Halo	G:\vrchatprojects\_RoR2Project\snowtimestagesror2\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\Ambience\amb_halo_B45EAA48.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\Sfx Mixer\Halo_AmbST_Halo		315519
 	318755419	stream03	G:\vrchatprojects\_RoR2Project\snowtimestagesror2\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\Ambience\sounds_adpcm [63]_BF5D3B3E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\Sfx Mixer\Halo_AmbST_HaloStream\stream03		47597
+	332772183	Halo_AmbST_HC_DoorClosed	G:\vrchatprojects\_RoR2Project\snowtimestagesror2\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\1closed_BF5D3B3E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\Sfx Mixer\Halo_AmbST_HC_DoorClosed		8014
 	337202894	Sandtrap07	G:\vrchatprojects\_RoR2Project\snowtimestagesror2\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\Ambience\sfx [15865]_BF5D3B3E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\Sfx Mixer\Halo_AmbST_Sandtrap\Sandtrap07		124932
 	344832910	Sandtrap13	G:\vrchatprojects\_RoR2Project\snowtimestagesror2\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\Ambience\sfx [15871]_BF5D3B3E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\Sfx Mixer\Halo_AmbST_Sandtrap\Sandtrap13		98270
 	352334311	Sandtrap10	G:\vrchatprojects\_RoR2Project\snowtimestagesror2\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\Ambience\sfx [15868]_BF5D3B3E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\Sfx Mixer\Halo_AmbST_Sandtrap\Sandtrap10		115256
@@ -46,8 +59,10 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	374450172	Halo_AOTCR_Elevator_Start	G:\vrchatprojects\_RoR2Project\snowtimestagesror2\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\elevator_start_BF5D3B3E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\Sfx Mixer\Halo_AOTCR_Elevator_Start		176178
 	429395551	Sandtrap05	G:\vrchatprojects\_RoR2Project\snowtimestagesror2\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\Ambience\sfx [15863]_BF5D3B3E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\Sfx Mixer\Halo_AmbST_Sandtrap\Sandtrap05		125693
 	461361302	electric1	G:\vrchatprojects\_RoR2Project\snowtimestagesror2\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\Ambience\sounds_adpcm [49]_BF5D3B3E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\Sfx Mixer\Halo_AmbST_HaloBeam\electric1		34283
+	495516897	Halo_AmbST_HC_DoorGrandClose	G:\vrchatprojects\_RoR2Project\snowtimestagesror2\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\close_BF5D3B3E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\Sfx Mixer\Halo_AmbST_HC_DoorGrandClose		13291
 	541664431	wave11	G:\vrchatprojects\_RoR2Project\snowtimestagesror2\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\Ambience\sounds_adpcm [243]_BF5D3B3E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\Sfx Mixer\Halo_AmbST_DI_Waves\wave11		38056
 	553762712	wave7	G:\vrchatprojects\_RoR2Project\snowtimestagesror2\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\Ambience\sounds_adpcm [239]_BF5D3B3E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\Sfx Mixer\Halo_AmbST_DI_Waves\wave7		28410
+	594341728	Halo_AmbST_HC_DoorOpen	G:\vrchatprojects\_RoR2Project\snowtimestagesror2\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\1open_BF5D3B3E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\Sfx Mixer\Halo_AmbST_HC_DoorOpen		15073
 	615580275	Sandtrap03	G:\vrchatprojects\_RoR2Project\snowtimestagesror2\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\Ambience\sfx [15861]_BF5D3B3E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\Sfx Mixer\Halo_AmbST_Sandtrap\Sandtrap03		114619
 	623683944	Halo_AmbST_HaloBeamFire	G:\vrchatprojects\_RoR2Project\snowtimestagesror2\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\Ambience\fire_BF5D3B3E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\Sfx Mixer\Halo_AmbST_HaloBeamFire		33037
 	651322841	Sandtrap11	G:\vrchatprojects\_RoR2Project\snowtimestagesror2\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\Ambience\sfx [15869]_BF5D3B3E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\Sfx Mixer\Halo_AmbST_Sandtrap\Sandtrap11		198240
@@ -56,12 +71,15 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	658406052	Sandtrap12	G:\vrchatprojects\_RoR2Project\snowtimestagesror2\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\Ambience\sfx [15870]_BF5D3B3E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\Sfx Mixer\Halo_AmbST_Sandtrap\Sandtrap12		125714
 	740851311	wave6	G:\vrchatprojects\_RoR2Project\snowtimestagesror2\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\Ambience\sounds_adpcm [238]_BF5D3B3E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\Sfx Mixer\Halo_AmbST_DI_Waves\wave6		26382
 	775254967	Sandtrap04	G:\vrchatprojects\_RoR2Project\snowtimestagesror2\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\Ambience\sfx [15862]_BF5D3B3E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\Sfx Mixer\Halo_AmbST_Sandtrap\Sandtrap04		198090
+	776760515	Halo_AmbST_HC_DoorGrandOpened	G:\vrchatprojects\_RoR2Project\snowtimestagesror2\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\opened_BF5D3B3E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\Sfx Mixer\Halo_AmbST_HC_DoorGrandOpened		13487
 	784947540	Halo_AmbST_Gph	G:\vrchatprojects\_RoR2Project\snowtimestagesror2\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\Ambience\amb_gph_B45EAA48.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\Sfx Mixer\Halo_AmbST_Gph		812228
 	806381464	wave3	G:\vrchatprojects\_RoR2Project\snowtimestagesror2\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\Ambience\sounds_adpcm [235]_BF5D3B3E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\Sfx Mixer\Halo_AmbST_DI_Waves\wave3		32038
 	807763340	Sandtrap09	G:\vrchatprojects\_RoR2Project\snowtimestagesror2\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\Ambience\sfx [15867]_BF5D3B3E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\Sfx Mixer\Halo_AmbST_Sandtrap\Sandtrap09		153901
 	810493595	wave10	G:\vrchatprojects\_RoR2Project\snowtimestagesror2\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\Ambience\sounds_adpcm [242]_BF5D3B3E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\Sfx Mixer\Halo_AmbST_DI_Waves\wave10		33430
+	832360779	Halo_AmbST_HC_DoorGrandOpen	G:\vrchatprojects\_RoR2Project\snowtimestagesror2\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\open_BF5D3B3E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\Sfx Mixer\Halo_AmbST_HC_DoorGrandOpen		14085
 	882735341	electric3	G:\vrchatprojects\_RoR2Project\snowtimestagesror2\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\Ambience\sounds_adpcm [51]_BF5D3B3E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\Sfx Mixer\Halo_AmbST_HaloBeam\electric3		44505
 	898607792	wave9	G:\vrchatprojects\_RoR2Project\snowtimestagesror2\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\Ambience\sounds_adpcm [241]_BF5D3B3E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\Sfx Mixer\Halo_AmbST_DI_Waves\wave9		31038
+	903827200	Halo_AmbST_HC_DoorClose	G:\vrchatprojects\_RoR2Project\snowtimestagesror2\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\1close_BF5D3B3E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\Sfx Mixer\Halo_AmbST_HC_DoorClose		13253
 	920485722	uplink2_1	G:\vrchatprojects\_RoR2Project\snowtimestagesror2\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\Ambience\sounds_adpcm [70]_BF5D3B3E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\Sfx Mixer\Halo_AmbST_Uplink\uplink2_1		37691
 	922025978	uplink1	G:\vrchatprojects\_RoR2Project\snowtimestagesror2\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\Ambience\sounds_adpcm [69]_BF5D3B3E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\Sfx Mixer\Halo_AmbST_Uplink\uplink1		47850
 	926163908	wave4	G:\vrchatprojects\_RoR2Project\snowtimestagesror2\snowtimestagesror2_Wwiseproject\.cache\Windows\SFX\SnowtimeStages\Halo\Ambience\sounds_adpcm [236]_BF5D3B3E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\Sfx Mixer\Halo_AmbST_DI_Waves\wave4		33969

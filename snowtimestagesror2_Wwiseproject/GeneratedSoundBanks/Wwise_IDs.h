@@ -13,6 +13,15 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID FIRE_AMBST_DOORCLOSE = 532269280U;
+        static const AkUniqueID FIRE_AMBST_DOORCLOSED = 3514251460U;
+        static const AkUniqueID FIRE_AMBST_DOORDELAY = 711500953U;
+        static const AkUniqueID FIRE_AMBST_DOORGRANDCLOSE = 4248130170U;
+        static const AkUniqueID FIRE_AMBST_DOORGRANDCLOSED = 351327850U;
+        static const AkUniqueID FIRE_AMBST_DOORGRANDOPEN = 7727614U;
+        static const AkUniqueID FIRE_AMBST_DOORGRANDOPENED = 3470514889U;
+        static const AkUniqueID FIRE_AMBST_DOOROPEN = 933394836U;
+        static const AkUniqueID FIRE_AMBST_DOOROPENED = 3350972863U;
         static const AkUniqueID FIRE_AMBST_HALOBEAMEMITTER = 1853828655U;
         static const AkUniqueID PAUSE_MUSIC_ST = 3469389233U;
         static const AkUniqueID PLAY_AMBST_BLOODGULCH = 2690190287U;
@@ -64,6 +73,7 @@ namespace AK
                 static const AkUniqueID HALOCOVENANTDANCE = 939841948U;
                 static const AkUniqueID HALODELTAHALO = 221305505U;
                 static const AkUniqueID HALODREAMAGAIN = 3280575944U;
+                static const AkUniqueID HALOHIGHCHARITY = 1997977425U;
                 static const AkUniqueID HALONMB = 3297631070U;
                 static const AkUniqueID HALOS3CELLO = 4290557256U;
                 static const AkUniqueID HALOSIDEWINDER = 3095027865U;

@@ -3,7 +3,97 @@ guid: 0c1cb89b0e77e1b4d89fcec5c1b5c21a
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cov_dark_purple
+    second: {fileID: 2100000, guid: ce936bad7fb36f948aee3fc82cebca1a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cov_petal
+    second: {fileID: 2100000, guid: 1b02304bb638e384c88b1a31d287344d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cov_rug
+    second: {fileID: 2100000, guid: b2381ee06fe25264289b9a04f99b57af, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: light_floorstrip_purple
+    second: {fileID: 2100000, guid: 69073544965e3ec47af5608dbaa9b0ce, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: light_vertstrip_a
+    second: {fileID: 2100000, guid: e53da7701a8a89c4dbdb50487e1aa043, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: panel_f_blue
+    second: {fileID: 2100000, guid: f60429260875a094793636a5f2f922c7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: panel_f_purple
+    second: {fileID: 2100000, guid: b903895d12d7fbc4f9f8bbbc6e59b956, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: panel_g_blue
+    second: {fileID: 2100000, guid: 2b5a407c513604c42bd4d140763ada04, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: panel_g_purple
+    second: {fileID: 2100000, guid: cf3251a2d0060dd41877b7c80db35393, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rounded_carapace
+    second: {fileID: 2100000, guid: 8125a20fe04d1cd4ba96c59ab4ad728b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rubber_mat_a
+    second: {fileID: 2100000, guid: 52a4a0af65a87a441aa89c058c8d0d25, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rubber_trim_a
+    second: {fileID: 2100000, guid: 3a33ff202fb1ad949af551e9499a9240, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stainedglass
+    second: {fileID: 2100000, guid: 40a54668d8893424fa920f48002194db, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stainedglass_x
+    second: {fileID: 2100000, guid: da703a003d8f05e4f95454f9c2674390, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: strip_a_blue
+    second: {fileID: 2100000, guid: f27cd64bfb4b0704383939ab0c9ff0c2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: strip_a_purple
+    second: {fileID: 2100000, guid: be5ad2e848f08ca4a9295d1d294f52a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: strip_b
+    second: {fileID: 2100000, guid: 3963c34a2a7058c4582c4d6b30cb03b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wide_volume_white
+    second: {fileID: 2100000, guid: 9cf824eddcd71af4597b16fece854814, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
