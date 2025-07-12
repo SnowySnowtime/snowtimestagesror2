@@ -70043,6 +70043,7 @@ GameObject:
   - component: {fileID: 64471847689100257}
   - component: {fileID: 114090703722623692}
   - component: {fileID: 114992580146401765}
+  - component: {fileID: 8862102912387475350}
   m_Layer: 11
   m_Name: TeleporterBaseMesh
   m_TagString: Untagged
@@ -70196,6 +70197,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   surfaceDef: {fileID: 11400000, guid: 9d49c7039668474429b1b4205d5b94b4, type: 2}
+--- !u!114 &8862102912387475350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1744439414031263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1943580792, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 40
+  center: {fileID: 4230156398716627}
 --- !u!1 &1745808115989226
 GameObject:
   m_ObjectHideFlags: 0
@@ -77387,7 +77402,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4668304060880218
 Transform:
   m_ObjectHideFlags: 0

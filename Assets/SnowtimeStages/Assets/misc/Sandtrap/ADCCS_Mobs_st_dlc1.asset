@@ -21,7 +21,7 @@ MonoBehaviour:
         _asset: {fileID: 0}
         _address: RoR2/Base/Beetle/cscBeetleQueen.asset
         _useDirectReference: 0
-      selectionWeight: 1
+      selectionWeight: 8
       spawnDistance: 0
       preventOverhead: 0
       minimumStageCompletions: 0
@@ -70,7 +70,7 @@ MonoBehaviour:
     cards:
     - spawnCard:
         _asset: {fileID: 0}
-        _address: RoR2/Base/Golem/cscGolem.asset
+        _address: RoR2/Base/Golem/cscGolemSandy.asset
         _useDirectReference: 0
       selectionWeight: 3
       spawnDistance: 0
@@ -88,7 +88,7 @@ MonoBehaviour:
         _asset: {fileID: 0}
         _address: RoR2/Base/Beetle/cscBeetleGuard.asset
         _useDirectReference: 0
-      selectionWeight: 3
+      selectionWeight: 6
       spawnDistance: 0
       preventOverhead: 0
       minimumStageCompletions: 0

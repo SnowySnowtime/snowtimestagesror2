@@ -20045,6 +20045,12 @@ PrefabInstance:
       propertyPath: priority
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3899154211248274377, guid: b6adc0a4ee632bd41a07a43d60450e2c,
+        type: 3}
+      propertyPath: sharedProfile
+      value: 
+      objectReference: {fileID: 11400000, guid: c37608ee829cbd7458a95a86b891f119,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6adc0a4ee632bd41a07a43d60450e2c, type: 3}
 --- !u!1 &527959485

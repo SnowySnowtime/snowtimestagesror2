@@ -434,7 +434,7 @@ Material:
     - _CubeMapUVMode: 1
     - _CubeMapWorldNormalsStrength: 1
     - _CubemapBlendType: 0
-    - _Cull: 2
+    - _Cull: 0
     - _CurvFix: 1
     - _CurvatureU: 0
     - _CurvatureV: 0
@@ -2362,7 +2362,7 @@ Material:
     - m_lightingCategory: 1
     - m_mainCategory: 1
     - m_modifierCategory: 0
-    - m_renderingCategory: 0
+    - m_renderingCategory: 1
     - m_specialFXCategory: 1
     - m_start_ALDecalSpectrum: 0
     - m_start_ALVolumeColor: 0

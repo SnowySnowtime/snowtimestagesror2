@@ -434,9 +434,18 @@ namespace Snowtime.Content
 			{
 				Log.Debug("Skipped adding gm_flatgrass to the loop");
 			}
-            StageRegistration.RegisterSceneDefToNormalProgression(STHCSceneDef);
-            Log.Debug("Adding High Charity to the loop");
-				Log.Debug(STHCSceneDef.destinationsGroup);
+            Log.Debug("High Charity Config Status?");
+            Log.Debug(SnowtimeStage.ToggleHC.Value);
+            if (SnowtimeStage.ToggleHC.Value == true)
+            {
+                StageRegistration.RegisterSceneDefToNormalProgression(STHCSceneDef);
+                Log.Debug("Adding High Charity to the loop");
+                Log.Debug(STHCSceneDef.destinationsGroup);
+            }
+            if (SnowtimeStage.ToggleHC.Value == false)
+            {
+                Log.Debug("Skipped adding High Charity to the loop");
+            }
         }
 
         private static IEnumerator LoadAllAssetsAsync<T>(AssetBundle assetBundle, IProgress<float> progress, Action<T[]> onAssetsLoaded) where T : UnityEngine.Object

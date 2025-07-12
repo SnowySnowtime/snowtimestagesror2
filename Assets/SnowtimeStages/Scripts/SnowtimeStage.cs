@@ -44,6 +44,7 @@ namespace Snowtime
 		public static ConfigEntry<bool> ToggleGMC { get; set; }
 		public static ConfigEntry<bool> ToggleDHalo { get; set; }
 		public static ConfigEntry<bool> ToggleFLAT { get; set; }
+		public static ConfigEntry<bool> ToggleHC { get; set; }
 
         public static SnowtimeStage instance;
 
@@ -65,6 +66,7 @@ namespace Snowtime
 			ToggleHalo2 = Config.Bind("Stage 5 Toggles", "Halo(Alt)", true, "If true, Halo(Alt) is added to the loop, otherwise it shall not appear");
 			ToggleNMB = Config.Bind("Stage 3 Toggles", "New Mombasa Bridge", true, "If true, New Mombasa Bridge is added to the loop, otherwise it shall not appear");
 			ToggleFLAT = Config.Bind("Stage 5 Toggles", "gm_flatgrass", true, "If true, gm_flatgrass is added to the loop, otherwise it shall not appear");
+			ToggleHC = Config.Bind("Stage 4 Toggles", "High Charity", true, "If true, High Charity is added to the loop, otherwise it shall not appear");
 
             RegisterHooks();
 

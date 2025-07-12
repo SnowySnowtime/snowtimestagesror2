@@ -21,9 +21,9 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 1
-  m_AmbientSkyColor: {r: 0.6901961, g: 0.5647059, b: 0.47843137, a: 1}
-  m_AmbientEquatorColor: {r: 0.3019608, g: 0.2509804, b: 0.21176471, a: 1}
-  m_AmbientGroundColor: {r: 0.22745098, g: 0.1882353, b: 0.15686275, a: 1}
+  m_AmbientSkyColor: {r: 0.5188679, g: 0.4216935, b: 0.35488605, a: 1}
+  m_AmbientEquatorColor: {r: 0.122641504, g: 0.10204196, b: 0.086196154, a: 1}
+  m_AmbientGroundColor: {r: 0.1792453, g: 0.15247123, b: 0.13105199, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 1
   m_SubtractiveShadowColor: {r: 0.83137256, g: 0.6597372, b: 0.5647059, a: 1}
@@ -390390,6 +390390,75 @@ MonoBehaviour:
   forbiddenHulls: 0
   flags: 2
   gateName: 
+--- !u!1001 &1345044514
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 871541626202108517, guid: 16db6a11a435bb846867e414f60ac4b8,
+        type: 3}
+      propertyPath: m_Name
+      value: Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 871541626202108569, guid: 16db6a11a435bb846867e414f60ac4b8,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 871541626202108569, guid: 16db6a11a435bb846867e414f60ac4b8,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -130.66357
+      objectReference: {fileID: 0}
+    - target: {fileID: 871541626202108569, guid: 16db6a11a435bb846867e414f60ac4b8,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 19.74049
+      objectReference: {fileID: 0}
+    - target: {fileID: 871541626202108569, guid: 16db6a11a435bb846867e414f60ac4b8,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 462.86533
+      objectReference: {fileID: 0}
+    - target: {fileID: 871541626202108569, guid: 16db6a11a435bb846867e414f60ac4b8,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 871541626202108569, guid: 16db6a11a435bb846867e414f60ac4b8,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 871541626202108569, guid: 16db6a11a435bb846867e414f60ac4b8,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 871541626202108569, guid: 16db6a11a435bb846867e414f60ac4b8,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 871541626202108569, guid: 16db6a11a435bb846867e414f60ac4b8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 871541626202108569, guid: 16db6a11a435bb846867e414f60ac4b8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 871541626202108569, guid: 16db6a11a435bb846867e414f60ac4b8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 16db6a11a435bb846867e414f60ac4b8, type: 3}
 --- !u!1 &1345848830
 GameObject:
   m_ObjectHideFlags: 0
@@ -506403,6 +506472,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: pp
       objectReference: {fileID: 0}
+    - target: {fileID: 3899154211248274377, guid: b6adc0a4ee632bd41a07a43d60450e2c,
+        type: 3}
+      propertyPath: priority
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3899154211248274377, guid: b6adc0a4ee632bd41a07a43d60450e2c,
+        type: 3}
+      propertyPath: sharedProfile
+      value: 
+      objectReference: {fileID: 11400000, guid: c37608ee829cbd7458a95a86b891f119,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6adc0a4ee632bd41a07a43d60450e2c, type: 3}
 --- !u!1 &1725342579
