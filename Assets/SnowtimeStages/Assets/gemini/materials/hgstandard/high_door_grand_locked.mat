@@ -7,11 +7,10 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: light_floorstrip_purple
+  m_Name: high_door_grand_locked
   m_Shader: {fileID: 4800000, guid: 6983ef21d508b4e46806f5a4283436ce, type: 3}
   m_ValidKeywords: []
-  m_InvalidKeywords:
-  - FRESNEL_EMISSION
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
@@ -46,7 +45,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmTex:
-        m_Texture: {fileID: 2800000, guid: 2c3f1c97721093949ad333279706162d, type: 3}
+        m_Texture: {fileID: 2800000, guid: ebfd968c81f212443978ab8ba586d7bc, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
@@ -70,7 +69,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _FresnelRamp:
-        m_Texture: {fileID: 2800000, guid: fb75773f2fb3614458ef2eef2fbbf21e, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _GreenChannelNormalTex:
@@ -82,7 +81,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 2c3f1c97721093949ad333279706162d, type: 3}
+        m_Texture: {fileID: 2800000, guid: ffd3d2697940e4e4daeca719be0a07d5, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -90,7 +89,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 17e59a4a4fe607247a8ad0226ddb7b00, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -130,9 +129,9 @@ Material:
     - _EliteBrightnessMax: 1
     - _EliteBrightnessMin: 0
     - _EliteIndex: 0
-    - _EmPower: 10
+    - _EmPower: 6
     - _EnableCutout: 0
-    - _FEON: 1
+    - _FEON: 0
     - _Fade: 1
     - _FadeBias: 0
     - _FlowEmissionStrength: 1
@@ -163,7 +162,7 @@ Material:
     - _PrintDirection: 0
     - _PrintEmissionToAlbedoLerp: 0
     - _PrintOn: 0
-    - _RampInfo: 1
+    - _RampInfo: 0
     - _SecondarySmoothness: 0
     - _SliceAlphaDepth: 0.1
     - _SliceBandHeight: 1
@@ -180,7 +179,7 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmColor: {r: 0.6666667, g: 0.17647055, b: 1, a: 1}
+    - _EmColor: {r: 1, g: 0.20392157, b: 0.32156864, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _FlashColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []

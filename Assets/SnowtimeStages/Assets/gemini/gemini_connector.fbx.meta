@@ -102,6 +102,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: stainedglass
+    second: {fileID: 2100000, guid: 40a54668d8893424fa920f48002194db, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: stainedglass_dim
     second: {fileID: 2100000, guid: 40a54668d8893424fa920f48002194db, type: 2}
   - first:
@@ -237,7 +242,7 @@ ModelImporter:
     extraExposedTransformPaths: []
     extraUserProperties: []
     clipAnimations: []
-    isReadable: 0
+    isReadable: 1
   meshes:
     lODScreenPercentages: []
     globalScale: 1

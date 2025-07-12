@@ -41,7 +41,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3339573939945636338}
   - component: {fileID: 6053642834637542896}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: L6 default default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -726,7 +726,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4845780891515842407}
   - component: {fileID: 170320574412931570}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: L6 nomatanims
   m_TagString: Untagged
   m_Icon: {fileID: 0}

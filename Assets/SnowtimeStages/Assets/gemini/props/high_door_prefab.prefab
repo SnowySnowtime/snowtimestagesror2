@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 941082426401698215}
   - component: {fileID: 8598838038908200357}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: L6 default default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -826,7 +826,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9052791317328503659}
   - component: {fileID: 3142722093416802956}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: L6 no matanim
   m_TagString: Untagged
   m_Icon: {fileID: 0}
