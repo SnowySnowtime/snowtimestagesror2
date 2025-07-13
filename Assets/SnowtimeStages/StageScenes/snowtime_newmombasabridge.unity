@@ -217187,6 +217187,32 @@ PrefabInstance:
       propertyPath: sceneDirectorInteractibleCredits
       value: 777
       objectReference: {fileID: 0}
+    - target: {fileID: 6179434059680183808, guid: fb823c589145c8a44a2a7d1162c8b51a,
+        type: 3}
+      propertyPath: possibleMonsterFamilies.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6179434059680183808, guid: fb823c589145c8a44a2a7d1162c8b51a,
+        type: 3}
+      propertyPath: possibleMonsterFamilies.Array.data[0].selectionWeight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6179434059680183808, guid: fb823c589145c8a44a2a7d1162c8b51a,
+        type: 3}
+      propertyPath: possibleMonsterFamilies.Array.data[0].maximumStageCompletion
+      value: 254
+      objectReference: {fileID: 0}
+    - target: {fileID: 6179434059680183808, guid: fb823c589145c8a44a2a7d1162c8b51a,
+        type: 3}
+      propertyPath: possibleMonsterFamilies.Array.data[0].monsterFamilyCategories
+      value: 
+      objectReference: {fileID: 11400000, guid: ec1c383fea19bc745aa1e397659581b0,
+        type: 2}
+    - target: {fileID: 6179434059680183808, guid: fb823c589145c8a44a2a7d1162c8b51a,
+        type: 3}
+      propertyPath: possibleMonsterFamilies.Array.data[0].familySelectionChatString
+      value: SNOWTIME_FAMILY_ERROR
+      objectReference: {fileID: 0}
     - target: {fileID: 6179434059680183809, guid: fb823c589145c8a44a2a7d1162c8b51a,
         type: 3}
       propertyPath: airNodeGroup

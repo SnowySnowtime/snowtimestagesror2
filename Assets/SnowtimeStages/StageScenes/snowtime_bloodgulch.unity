@@ -179184,7 +179184,13 @@ MonoBehaviour:
   interactableCards: []
   interactableCategories: {fileID: 0}
   monsterCategories: {fileID: 0}
-  possibleMonsterFamilies: []
+  possibleMonsterFamilies:
+  - monsterFamilyCategories: {fileID: 11400000, guid: ec1c383fea19bc745aa1e397659581b0,
+      type: 2}
+    familySelectionChatString: SNOWTIME_FAMILY_ERROR
+    selectionWeight: 1
+    minimumStageCompletion: 0
+    maximumStageCompletion: 254
 --- !u!4 &6179434060812620119
 Transform:
   m_ObjectHideFlags: 0
@@ -179234,7 +179240,8 @@ MonoBehaviour:
   MultiPositionType: 1
   multiPositionTypeLabel: 0
   attenuationSphereColor: {r: 1, g: 0, b: 0, a: 0.1}
-  LargeModePositions: []
+  LargeModePositions:
+  - {fileID: 0}
   multiPositionArray: []
 --- !u!114 &6179434060812620139
 MonoBehaviour:
@@ -179307,7 +179314,8 @@ MonoBehaviour:
   MultiPositionType: 1
   multiPositionTypeLabel: 0
   attenuationSphereColor: {r: 1, g: 0, b: 0, a: 0.1}
-  LargeModePositions: []
+  LargeModePositions:
+  - {fileID: 0}
   multiPositionArray: []
 --- !u!1 &7122231972902599831
 GameObject:

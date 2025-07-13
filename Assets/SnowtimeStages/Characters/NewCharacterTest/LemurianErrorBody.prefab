@@ -162,7 +162,6 @@ GameObject:
   - component: {fileID: 114601706304568664}
   - component: {fileID: 7493020938793391868}
   - component: {fileID: 704028453807477675}
-  - component: {fileID: 5132406672844278859}
   m_Layer: 0
   m_Name: LemurianErrorBody
   m_TagString: Untagged
@@ -255,22 +254,22 @@ MonoBehaviour:
   bodyFlags: 8192
   lavaCooldown: 0.2
   rootMotionInMainState: 0
-  mainRootSpeed: 33
-  baseMaxHealth: 80
+  mainRootSpeed: 30
+  baseMaxHealth: 177
   baseRegen: 0
   baseMaxShield: 0
-  baseMoveSpeed: 7
+  baseMoveSpeed: 6
   baseAcceleration: 30
-  baseJumpPower: 11
+  baseJumpPower: 10
   baseDamage: 3
   baseAttackSpeed: 4
-  baseCrit: 0
+  baseCrit: 15
   baseArmor: 0
   baseVisionDistance: Infinity
   baseJumpCount: 1
   sprintingSpeedMultiplier: 1.45
   autoCalculateLevelStats: 1
-  levelMaxHealth: 24
+  levelMaxHealth: 53
   levelRegen: 0
   levelMaxShield: 0
   levelMoveSpeed: 0
@@ -335,7 +334,7 @@ MonoBehaviour:
   m_Script: {fileID: -1067940895, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraParams: {fileID: 0}
+  cameraParams: {fileID: 11400000, guid: 4c30b8392c5aa5b43bb15af22d168f66, type: 2}
   cameraPivotTransform: {fileID: 0}
   fovOverride: 0
   recoil: {x: 0, y: 0}
@@ -800,21 +799,6 @@ MonoBehaviour:
   address: RoR2/DLC2/FalseSon/FSCrosshair.prefab
   targetComponent: {fileID: 114659510021863904}
   targetMemberInfoName: (CharacterBody) _defaultCrosshairPrefab
---- !u!114 &5132406672844278859
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1073535321735529}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9bbfee4d9ab2a2744b203e7e08720110, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  address: RoR2/Base/Common/ccpStandard.asset
-  targetComponent: {fileID: 114021819188408377}
-  targetMemberInfoName: 
 --- !u!1 &1086390532128006
 GameObject:
   m_ObjectHideFlags: 0

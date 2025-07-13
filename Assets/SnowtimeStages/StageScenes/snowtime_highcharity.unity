@@ -186546,7 +186546,13 @@ MonoBehaviour:
   interactableCards: []
   interactableCategories: {fileID: 0}
   monsterCategories: {fileID: 0}
-  possibleMonsterFamilies: []
+  possibleMonsterFamilies:
+  - monsterFamilyCategories: {fileID: 11400000, guid: ec1c383fea19bc745aa1e397659581b0,
+      type: 2}
+    familySelectionChatString: SNOWTIME_FAMILY_ERROR
+    selectionWeight: 1
+    minimumStageCompletion: 0
+    maximumStageCompletion: 254
 --- !u!114 &1488967581
 MonoBehaviour:
   m_ObjectHideFlags: 0

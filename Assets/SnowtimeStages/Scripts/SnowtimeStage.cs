@@ -12,6 +12,8 @@ using System.Security;
 using System;
 using UnityEngine.AddressableAssets;
 using UnityEngine;
+using R2API;
+using Snowtime.Content;
 
 #pragma warning disable CS0618 // Type or member is obsolete
 [assembly: SecurityPermission(SecurityAction.RequestMinimum, SkipVerification = true)]
@@ -30,7 +32,7 @@ namespace Snowtime
     {
         public const string Author = "SnowySnowtime";
         public const string Name = nameof(SnowtimeStage);
-        public const string Version = "0.9.1";
+        public const string Version = "0.9.3";
         public const string GUID = Author + "." + Name;
 		public static ConfigEntry<bool> ToggleBloodGulch { get; set; }
 		public static ConfigEntry<bool> ToggleSidewinder { get; set; }
@@ -47,6 +49,11 @@ namespace Snowtime
 		public static ConfigEntry<bool> ToggleHC { get; set; }
 
         public static SnowtimeStage instance;
+
+        public static DifficultyDef SnowtimeLegendaryDiffDef;
+        public static DifficultyIndex SnowtimeLegendaryDiffIndex;
+        public static bool Legendary = false;
+        private int defMonsterCap;
 
         public void Awake()
         {
@@ -69,9 +76,69 @@ namespace Snowtime
 			ToggleHC = Config.Bind("Stage 4 Toggles", "High Charity", true, "If true, High Charity is added to the loop, otherwise it shall not appear");
 
             RegisterHooks();
+            AddDifficulty();
 
             ContentManager.collectContentPackProviders += GiveToRoR2OurContentPackProviders;
             Language.collectLanguageRootFolders += CollectLanguageRootFolders;
+
+            Run.onRunStartGlobal += (Run run) =>
+            {
+                Legendary = false;
+                if (run.selectedDifficulty == SnowtimeLegendaryDiffIndex)
+                {
+                    Legendary = true;
+                    CharacterMaster.onStartGlobal += CharacterMaster_OnStartGlobal;
+                    OnLegendaryStart(run);
+                }
+            };
+
+            Run.onRunDestroyGlobal += (Run run) =>
+            {
+                Legendary = false;
+                OnLegendaryEnd(run);
+            };
+        }
+
+        public void AddDifficulty()
+        {
+            SnowtimeLegendaryDiffDef = new(3.5f, "SNOWTIME_LEGENDARY_NAME", "SNOWTIME_LEGENDARY_ICON", "SNOWTIME_LEGENDARY_DESC", new Color32(100, 170, 255, 255), "stLeg", false);
+            SnowtimeLegendaryDiffDef.iconSprite = SnowtimeContent.SnowtimeLegendaryIcon;
+            SnowtimeLegendaryDiffDef.foundIconSprite = true;
+            SnowtimeLegendaryDiffIndex = DifficultyAPI.AddDifficulty(SnowtimeLegendaryDiffDef);
+        }
+
+        private void CharacterMaster_OnStartGlobal(CharacterMaster obj)
+        {
+            if (obj.teamIndex != TeamIndex.Player)
+            {
+                if (obj.inventory) obj.inventory.GiveItem(RoR2Content.Items.AlienHead, 3);
+                if (obj.inventory) obj.inventory.GiveItem(RoR2Content.Items.BoostAttackSpeed, 10);
+                if (obj.inventory) obj.inventory.GiveItem(RoR2Content.Items.BoostHp, 3);
+                if (obj.inventory) obj.inventory.GiveItem(RoR2Content.Items.PersonalShield, 3);
+                if (obj.inventory) obj.inventory.GiveItem(RoR2Content.Items.Knurl, 1);
+            }
+        }
+
+        private void OnLegendaryStart(Run run)
+        {
+            defMonsterCap = TeamCatalog.GetTeamDef(TeamIndex.Monster).softCharacterLimit;
+
+            TeamCatalog.GetTeamDef(TeamIndex.Monster).softCharacterLimit *= 2;
+            TeamCatalog.GetTeamDef(TeamIndex.Void).softCharacterLimit *= 2;
+            TeamCatalog.GetTeamDef(TeamIndex.Lunar).softCharacterLimit *= 2;
+            On.RoR2.CombatDirector.Awake += CombatDirector_Awake;
+        }
+        private void OnLegendaryEnd(Run run)
+        {
+            TeamCatalog.GetTeamDef(TeamIndex.Monster).softCharacterLimit = defMonsterCap;
+            TeamCatalog.GetTeamDef(TeamIndex.Void).softCharacterLimit *= defMonsterCap;
+            TeamCatalog.GetTeamDef(TeamIndex.Lunar).softCharacterLimit *= defMonsterCap;
+        }
+
+        private void CombatDirector_Awake(On.RoR2.CombatDirector.orig_Awake orig, CombatDirector self)
+        {
+            self.creditMultiplier *= 2;
+            orig(self);
         }
 
         private void RegisterHooks()

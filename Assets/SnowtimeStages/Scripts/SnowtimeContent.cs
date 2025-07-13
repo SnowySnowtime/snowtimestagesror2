@@ -17,6 +17,7 @@ using UnityEngine.Networking;
 using UnityEngine.ResourceManagement.AsyncOperations;
 using UnityEngine;
 using ShaderSwapper;
+using R2API.ScriptableObjects;
 
 namespace Snowtime.Content
 {
@@ -30,8 +31,8 @@ namespace Snowtime.Content
         internal const string InitSoundBankFileName = "SnowtimeStagesInit.bnk";
 
 
-        private static AssetBundle _scenesAssetBundle;
-        private static AssetBundle _assetsAssetBundle;
+        public static AssetBundle _stscenesAssetBundle;
+        public static AssetBundle _stassetsAssetBundle;
 
         internal static UnlockableDef[] UnlockableDefs;
         internal static SceneDef[] SceneDefs;
@@ -95,6 +96,7 @@ namespace Snowtime.Content
         internal static Sprite STDHSceneDefPreviewSprite;
         internal static Sprite STFlatSceneDefPreviewSprite;
         internal static Sprite STHCSceneDefPreviewSprite;
+        public static Sprite SnowtimeLegendaryIcon;
         internal static Material STBazaarSeer;
         internal static Material STIFBazaarSeer;
         internal static Material STBGBazaarSeer;
@@ -121,24 +123,24 @@ namespace Snowtime.Content
 
         internal static IEnumerator LoadAssetBundlesAsync(AssetBundle scenesAssetBundle, AssetBundle assetsAssetBundle, IProgress<float> progress, ContentPack contentPack)
         {
-            _scenesAssetBundle = scenesAssetBundle;
-            _assetsAssetBundle = assetsAssetBundle;
+            _stscenesAssetBundle = scenesAssetBundle;
+            _stassetsAssetBundle = assetsAssetBundle;
 
             Log.Debug($"Snowtime Stages found. Loading asset bundles...");
 
-            var upgradeStubbedShaders = _assetsAssetBundle.UpgradeStubbedShadersAsync();
+            var upgradeStubbedShaders = _stassetsAssetBundle.UpgradeStubbedShadersAsync();
             while (upgradeStubbedShaders.MoveNext())
             {
                 yield return upgradeStubbedShaders.Current;
             }
 
-            yield return LoadAllAssetsAsync(_assetsAssetBundle, progress, (Action<UnlockableDef[]>)((assets) =>
+            yield return LoadAllAssetsAsync(_stassetsAssetBundle, progress, (Action<UnlockableDef[]>)((assets) =>
             {
                 UnlockableDefs = assets;
                 contentPack.unlockableDefs.Add(assets);
             }));
 
-            yield return LoadAllAssetsAsync(_assetsAssetBundle, progress, (Action<GameObject[]>)((assets) =>
+            yield return LoadAllAssetsAsync(_stassetsAssetBundle, progress, (Action<GameObject[]>)((assets) =>
             {
                 // Define the custom objects
                 CovenantCruiser = assets.First(a => a.name == "CovenantCruiserTeleporter");
@@ -174,7 +176,7 @@ namespace Snowtime.Content
                 contentPack.entityStateTypes.Add(typeof(SnowtimeStage).Assembly.GetTypes().Where(type => typeof(EntityStates.EntityState).IsAssignableFrom(type)).ToArray());
             }));
 
-            yield return LoadAllAssetsAsync(_assetsAssetBundle, progress, (Action<EntityStateConfiguration[]>)((assets) =>
+            yield return LoadAllAssetsAsync(_stassetsAssetBundle, progress, (Action<EntityStateConfiguration[]>)((assets) =>
             {
                 // Define the custom objects
                 LemurianErrorEsc = assets.First(a => a.name == "escFireMissingProjectile");
@@ -184,7 +186,7 @@ namespace Snowtime.Content
                 contentPack.entityStateConfigurations.Add(stentStateConfig.ToArray());
             }));
 
-            yield return LoadAllAssetsAsync(_assetsAssetBundle, progress, (Action<ExpansionDef[]>)((assets) =>
+            yield return LoadAllAssetsAsync(_stassetsAssetBundle, progress, (Action<ExpansionDef[]>)((assets) =>
             {
                 expansionDefs = assets;
                 ExpansionDefSTHalo = assets.First(a => a.name == "snowtimestageshalo_expdef");
@@ -193,7 +195,7 @@ namespace Snowtime.Content
             }));
 
 
-            yield return LoadAllAssetsAsync(_assetsAssetBundle, progress, (Action<Sprite[]>)((assets) =>
+            yield return LoadAllAssetsAsync(_stassetsAssetBundle, progress, (Action<Sprite[]>)((assets) =>
             {
                 STSceneDefPreviewSprite = assets.First(a => a.name == "texSTScenePreview");
                 STIFSceneDefPreviewSprite = assets.First(a => a.name == "texSTIFScenePreview");
@@ -208,9 +210,10 @@ namespace Snowtime.Content
                 STDHSceneDefPreviewSprite = assets.First(a => a.name == "texSTDHaloScenePreview");
                 STFlatSceneDefPreviewSprite = assets.First(a => a.name == "texSTFlatScenePreview");
                 STHCSceneDefPreviewSprite = assets.First(a => a.name == "texSTHCScenePreview");
+                SnowtimeLegendaryIcon = assets.First(a => a.name == "texSnowtimeLegendary");
             }));
 
-            yield return LoadAllAssetsAsync(_assetsAssetBundle, progress, (Action<SceneDef[]>)((assets) =>
+            yield return LoadAllAssetsAsync(_stassetsAssetBundle, progress, (Action<SceneDef[]>)((assets) =>
             {
                 SceneDefs = assets;
                 STSceneDef = SceneDefs.First(sd => sd.cachedName == "snowtime_deathisland");
@@ -242,7 +245,7 @@ namespace Snowtime.Content
                 contentPack.sceneDefs.Add(assets);
             }));
 
-            yield return LoadAllAssetsAsync(_assetsAssetBundle, progress, (Action<MusicTrackDef[]>)((assets) =>
+            yield return LoadAllAssetsAsync(_stassetsAssetBundle, progress, (Action<MusicTrackDef[]>)((assets) =>
             {
                 contentPack.musicTrackDefs.Add(assets);
                 Log.Debug("loaded musicDefs for SnowtimeStages");

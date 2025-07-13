@@ -24,14 +24,17 @@ MonoBehaviour:
         _address: 
         _useDirectReference: 0
       weight: 1
-      requiredExpansions:
-      - _asset: {fileID: 0}
-        _address: RoR2/DLC1/Common/DLC1.asset
-        _useDirectReference: 0
-    includedIfNoConditionsMet:
-    - dccs: {fileID: 11400000, guid: e5fec69219caafd4e95f4595a25c3492, type: 2}
+      requiredExpansions: []
+    includedIfNoConditionsMet: []
+  - name: Family
+    categoryWeight: 0.02
+    alwaysIncluded: []
+    includedIfConditionsMet:
+    - dccs: {fileID: 11400000, guid: 1ebef58b69e430e4597d8b74b49fcc9f, type: 2}
       familyDccs:
         _asset: {fileID: 0}
         _address: 
         _useDirectReference: 0
-      weight: 3
+      weight: 1
+      requiredExpansions: []
+    includedIfNoConditionsMet: []
