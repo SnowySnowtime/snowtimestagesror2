@@ -8,10 +8,10 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: error
-  m_Shader: {fileID: 4800000, guid: da7f0fcce3de3a448a50e80b9ec1210f, type: 2}
-  m_ValidKeywords:
-  - FORCE_SPEC
+  m_Shader: {fileID: 4800000, guid: 6983ef21d508b4e46806f5a4283436ce, type: 3}
+  m_ValidKeywords: []
   m_InvalidKeywords:
+  - FORCE_SPEC
   - _EMISSION
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
@@ -131,7 +131,7 @@ Material:
     - _EliteBrightnessMax: 0.125
     - _EliteBrightnessMin: 0.1
     - _EliteIndex: 0
-    - _EmPower: 10
+    - _EmPower: 0.065
     - _EnableCutout: 0
     - _FEON: 0
     - _Fade: 1
