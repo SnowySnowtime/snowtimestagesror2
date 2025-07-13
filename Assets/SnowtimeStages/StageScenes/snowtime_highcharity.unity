@@ -186539,7 +186539,7 @@ MonoBehaviour:
     type: 2}
   contentSourceMixLimitOverride: 0
   contentSourceMixLimitOverrideValue: 2
-  sceneDirectorInteractibleCredits: 500
+  sceneDirectorInteractibleCredits: 800
   sceneDirectorMonsterCredits: 350
   bonusInteractibleCreditObjects: []
   monsterCards: []

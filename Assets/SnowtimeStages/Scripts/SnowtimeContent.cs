@@ -262,7 +262,7 @@ namespace Snowtime.Content
             STGMCBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STGMCSceneDefPreviewSprite.texture);
             STDHBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STDHSceneDefPreviewSprite.texture);
             STFlatBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STFlatSceneDefPreviewSprite.texture);
-            STHCBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STFlatSceneDefPreviewSprite.texture);
+            STHCBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STHCSceneDefPreviewSprite.texture);
             STSceneDef.previewTexture = STSceneDefPreviewSprite.texture;
             STIFSceneDef.previewTexture = STIFSceneDefPreviewSprite.texture;
             STBGSceneDef.previewTexture = STBGSceneDefPreviewSprite.texture;
@@ -275,7 +275,7 @@ namespace Snowtime.Content
             STGMCSceneDef.previewTexture = STGMCSceneDefPreviewSprite.texture;
             STDHSceneDef.previewTexture = STDHSceneDefPreviewSprite.texture;
             STFlatSceneDef.previewTexture = STFlatSceneDefPreviewSprite.texture;
-            STHCSceneDef.previewTexture = STFlatSceneDefPreviewSprite.texture;
+            STHCSceneDef.previewTexture = STHCSceneDefPreviewSprite.texture;
             STSceneDef.portalMaterial = STBazaarSeer;
             STIFSceneDef.portalMaterial = STIFBazaarSeer;
             STBGSceneDef.portalMaterial = STBGBazaarSeer;
@@ -288,7 +288,7 @@ namespace Snowtime.Content
             STGMCSceneDef.portalMaterial = STGMCBazaarSeer;
             STDHSceneDef.portalMaterial = STDHBazaarSeer;
             STFlatSceneDef.portalMaterial = STFlatBazaarSeer;
-            STHCSceneDef.portalMaterial = STFlatBazaarSeer;
+            STHCSceneDef.portalMaterial = STHCBazaarSeer;
 			// Make a check here later for the config of what is enabled or disabled
 			Log.Debug("Blood Gulch Config Status?");
 			Log.Debug(SnowtimeStage.ToggleBloodGulch.Value);
