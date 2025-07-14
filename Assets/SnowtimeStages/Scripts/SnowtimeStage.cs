@@ -99,22 +99,14 @@ namespace Snowtime
             };
         }
 
-        public void AddDifficulty()
-        {
-            SnowtimeLegendaryDiffDef = new(3.5f, "SNOWTIME_LEGENDARY_NAME", "SNOWTIME_LEGENDARY_ICON", "SNOWTIME_LEGENDARY_DESC", new Color32(100, 170, 255, 255), "stLeg", false);
-            SnowtimeLegendaryDiffDef.iconSprite = SnowtimeContent.SnowtimeLegendaryIcon;
-            SnowtimeLegendaryDiffDef.foundIconSprite = true;
-            SnowtimeLegendaryDiffIndex = DifficultyAPI.AddDifficulty(SnowtimeLegendaryDiffDef);
-        }
-
         private void CharacterMaster_OnStartGlobal(CharacterMaster obj)
         {
             if (obj.teamIndex != TeamIndex.Player)
             {
-                if (obj.inventory) obj.inventory.GiveItem(RoR2Content.Items.AlienHead, 3);
-                if (obj.inventory) obj.inventory.GiveItem(RoR2Content.Items.BoostAttackSpeed, 10);
-                if (obj.inventory) obj.inventory.GiveItem(RoR2Content.Items.BoostHp, 3);
-                if (obj.inventory) obj.inventory.GiveItem(RoR2Content.Items.PersonalShield, 3);
+                if (obj.inventory) obj.inventory.GiveItem(RoR2Content.Items.AlienHead, 1);
+                if (obj.inventory) obj.inventory.GiveItem(RoR2Content.Items.BoostAttackSpeed, 5);
+                if (obj.inventory) obj.inventory.GiveItem(RoR2Content.Items.BoostHp, 4);
+                if (obj.inventory) obj.inventory.GiveItem(RoR2Content.Items.PersonalShield, 5);
                 if (obj.inventory) obj.inventory.GiveItem(RoR2Content.Items.Knurl, 1);
             }
         }
@@ -160,6 +152,14 @@ namespace Snowtime
         {
             addContentPackProvider(new Content.ContentProvider());
         }
+
+        public void AddDifficulty()
+        {
+            SnowtimeLegendaryDiffDef = new(3.5f, "SNOWTIME_LEGENDARY_NAME", "SNOWTIME_LEGENDARY_ICON", "SNOWTIME_LEGENDARY_DESC", new Color32(100, 170, 255, 255), "stLeg", false);
+            SnowtimeLegendaryDiffDef.foundIconSprite = true;
+            SnowtimeLegendaryDiffIndex = DifficultyAPI.AddDifficulty(SnowtimeLegendaryDiffDef);
+        }
+
         public void CollectLanguageRootFolders(List<string> folders)
         {
             folders.Add(System.IO.Path.Combine(System.IO.Path.GetDirectoryName(base.Info.Location), "Language"));

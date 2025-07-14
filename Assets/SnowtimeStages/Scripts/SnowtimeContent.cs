@@ -449,6 +449,9 @@ namespace Snowtime.Content
             {
                 Log.Debug("Skipped adding High Charity to the loop");
             }
+
+            SnowtimeStage.SnowtimeLegendaryDiffDef.iconSprite = SnowtimeLegendaryIcon;
+            SnowtimeStage.SnowtimeLegendaryDiffDef.foundIconSprite = true;
         }
 
         private static IEnumerator LoadAllAssetsAsync<T>(AssetBundle assetBundle, IProgress<float> progress, Action<T[]> onAssetsLoaded) where T : UnityEngine.Object
