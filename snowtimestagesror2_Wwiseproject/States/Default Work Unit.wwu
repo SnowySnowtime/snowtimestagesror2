@@ -24,6 +24,7 @@
 						<State Name="gmconstruct" ID="{A923F269-9F2D-4209-B5B4-CE2BDD795F63}"/>
 						<State Name="gmflatgrass" ID="{7BC52C9A-F346-43C6-AF35-0860902830D3}"/>
 						<State Name="HaloHighCharity" ID="{5D264EF3-B8B5-4828-8DA9-9853E1A0D536}"/>
+						<State Name="gmbigcity" ID="{02E6836E-07F0-473B-8823-55BAECBA6921}"/>
 					</ChildrenList>
 				</StateGroup>
 				<StateGroup Name="Music_system" ID="{823819D3-4140-429B-AB21-858CFEE8595D}">

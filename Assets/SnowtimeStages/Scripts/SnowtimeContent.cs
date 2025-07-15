@@ -70,7 +70,9 @@ namespace Snowtime.Content
         // STNMBSceneDef = NewMombasaBridge
         // STGMCSceneDef = gm_construct
         // STDHSceneDef = Delta Halo
-        // STFlatSceneDef = Delta Halo
+        // STFlatSceneDef = gm_flatgrass
+        // STHCSceneDef = High Charity
+        // STCitySceneDef = gm_bigcity
         internal static SceneDef STSceneDef;
         internal static SceneDef STIFSceneDef;
         internal static SceneDef STBGSceneDef;
@@ -84,6 +86,7 @@ namespace Snowtime.Content
         internal static SceneDef STDHSceneDef;
         internal static SceneDef STFlatSceneDef;
         internal static SceneDef STHCSceneDef;
+        internal static SceneDef STCitySceneDef;
         internal static Sprite STSceneDefPreviewSprite;
         internal static Sprite STIFSceneDefPreviewSprite;
         internal static Sprite STBGSceneDefPreviewSprite;
@@ -97,6 +100,7 @@ namespace Snowtime.Content
         internal static Sprite STDHSceneDefPreviewSprite;
         internal static Sprite STFlatSceneDefPreviewSprite;
         internal static Sprite STHCSceneDefPreviewSprite;
+        internal static Sprite STCitySceneDefPreviewSprite;
         public static Sprite SnowtimeLegendaryIcon;
         internal static Material STBazaarSeer;
         internal static Material STIFBazaarSeer;
@@ -111,6 +115,7 @@ namespace Snowtime.Content
         internal static Material STDHBazaarSeer;
         internal static Material STFlatBazaarSeer;
         internal static Material STHCBazaarSeer;
+        internal static Material STCityBazaarSeer;
 		
 		public static List<Material> SwappedMaterials = new List<Material>();
 
@@ -212,6 +217,7 @@ namespace Snowtime.Content
                 STDHSceneDefPreviewSprite = assets.First(a => a.name == "texSTDHaloScenePreview");
                 STFlatSceneDefPreviewSprite = assets.First(a => a.name == "texSTFlatScenePreview");
                 STHCSceneDefPreviewSprite = assets.First(a => a.name == "texSTHCScenePreview");
+                STCitySceneDefPreviewSprite = assets.First(a => a.name == "texSTCityScenePreview");
                 SnowtimeLegendaryIcon = assets.First(a => a.name == "texSnowtimeLegendaryPLNK");
             }));
 
@@ -231,6 +237,7 @@ namespace Snowtime.Content
                 STDHSceneDef = SceneDefs.First(sd => sd.cachedName == "snowtime_deltahalo");
                 STFlatSceneDef = SceneDefs.First(sd => sd.cachedName == "snowtime_gmflatgrass");
                 STHCSceneDef = SceneDefs.First(sd => sd.cachedName == "snowtime_highcharity");
+                STCitySceneDef = SceneDefs.First(sd => sd.cachedName == "snowtime_gmbigcity");
                 Log.Debug(STSceneDef.nameToken);
                 Log.Debug(STIFSceneDef.nameToken);
                 Log.Debug(STBGSceneDef.nameToken);
@@ -244,6 +251,7 @@ namespace Snowtime.Content
                 Log.Debug(STDHSceneDef.nameToken);
                 Log.Debug(STFlatSceneDef.nameToken);
                 Log.Debug(STHCSceneDef.nameToken);
+                Log.Debug(STCitySceneDef.nameToken);
                 contentPack.sceneDefs.Add(assets);
             }));
 
@@ -268,6 +276,7 @@ namespace Snowtime.Content
             STDHBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STDHSceneDefPreviewSprite.texture);
             STFlatBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STFlatSceneDefPreviewSprite.texture);
             STHCBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STHCSceneDefPreviewSprite.texture);
+            STCityBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STCitySceneDefPreviewSprite.texture);
             STSceneDef.previewTexture = STSceneDefPreviewSprite.texture;
             STIFSceneDef.previewTexture = STIFSceneDefPreviewSprite.texture;
             STBGSceneDef.previewTexture = STBGSceneDefPreviewSprite.texture;
@@ -281,6 +290,7 @@ namespace Snowtime.Content
             STDHSceneDef.previewTexture = STDHSceneDefPreviewSprite.texture;
             STFlatSceneDef.previewTexture = STFlatSceneDefPreviewSprite.texture;
             STHCSceneDef.previewTexture = STHCSceneDefPreviewSprite.texture;
+            STCitySceneDef.previewTexture = STCitySceneDefPreviewSprite.texture;
             STSceneDef.portalMaterial = STBazaarSeer;
             STIFSceneDef.portalMaterial = STIFBazaarSeer;
             STBGSceneDef.portalMaterial = STBGBazaarSeer;
@@ -294,6 +304,7 @@ namespace Snowtime.Content
             STDHSceneDef.portalMaterial = STDHBazaarSeer;
             STFlatSceneDef.portalMaterial = STFlatBazaarSeer;
             STHCSceneDef.portalMaterial = STHCBazaarSeer;
+            STCitySceneDef.portalMaterial = STHCBazaarSeer;
 			// Make a check here later for the config of what is enabled or disabled
 			Log.Debug("Blood Gulch Config Status?");
 			Log.Debug(SnowtimeStage.ToggleBloodGulch.Value);
@@ -451,6 +462,7 @@ namespace Snowtime.Content
             {
                 Log.Debug("Skipped adding High Charity to the loop");
             }
+            Log.Debug("A large city has been hidden in the Bazaar.");
 
             SnowtimeStage.SnowtimeLegendaryDiffDef.iconSprite = SnowtimeLegendaryIcon;
             SnowtimeStage.SnowtimeLegendaryDiffDef.foundIconSprite = true;

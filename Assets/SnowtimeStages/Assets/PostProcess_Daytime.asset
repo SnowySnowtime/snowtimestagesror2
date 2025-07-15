@@ -45,7 +45,7 @@ MonoBehaviour:
     value: {r: 0.2830189, g: 0.2070818, b: 0.121484526, a: 0}
   fogColorEnd:
     overrideState: 1
-    value: {r: 0.8773585, g: 0.75223655, b: 0.47592562, a: 1}
+    value: {r: 0.8396226, g: 0.7005827, b: 0.3920879, a: 1}
   skyboxStrength:
     overrideState: 1
     value: 0
@@ -180,7 +180,7 @@ MonoBehaviour:
     value: 0
   postExposure:
     overrideState: 1
-    value: 4
+    value: 1.5
   contrast:
     overrideState: 1
     value: 15
@@ -218,7 +218,7 @@ MonoBehaviour:
     overrideState: 0
     value: {x: 1, y: 1, z: 1, w: -0.23702031}
   gain:
-    overrideState: 1
+    overrideState: 0
     value: {x: 1, y: 1, z: 1, w: -1}
   masterCurve:
     overrideState: 0

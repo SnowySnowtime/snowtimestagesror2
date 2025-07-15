@@ -68,6 +68,7 @@ namespace AK
 
             namespace STATE
             {
+                static const AkUniqueID GMBIGCITY = 2769048344U;
                 static const AkUniqueID GMCONSTRUCT = 1469929416U;
                 static const AkUniqueID GMFLATGRASS = 3973442918U;
                 static const AkUniqueID HALOCOVENANTDANCE = 939841948U;

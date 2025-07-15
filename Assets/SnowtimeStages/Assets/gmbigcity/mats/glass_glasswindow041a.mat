@@ -8,21 +8,27 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: glass_glasswindow041a
-  m_Shader: {fileID: 4800000, guid: ba784852a5efa3c41905f5a4009b0eab, type: 3}
+  m_Shader: {fileID: 4800000, guid: cff72f5befb927743a906f6047ff3b86, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords:
+  - BSSBLOOMFOGTYPE_HEIGHT
+  - MOCHIE_PBR
+  - VIGNETTE_MASKED
   - _LIGHTINGMODE_REALISTIC
+  - _RIM2STYLE_POIYOMI
+  - _RIMSTYLE_POIYOMI
   - _STOCHASTICMODE_DELIOT_HEITZ
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2000
+  m_CustomRenderQueue: 3000
   stringTagMap:
-    AllLockedGUIDS: 4291d19f0243e4b41b5bf0bede8b875c,d9cf0382efac95c48a9f46659aed6fee,f7707ec59e71ad94586cc7552f602835,f72dfe1be0ee81a4fb2d7626483f3abf,fcb5840d9c5411e4e86ca5d594d1a156,d4d7b32afe346274e81a04cbf40b77b9,d9902693b9dfd2647b8464ed0772ceb4,6c5ecda7a277a7b43b7c62391e63c288,25d63957edd58184d9c36467c4592881,c481e4a3bcd0b4d4f92493f2fa166025,c03d009265676ed498ff488c36b6f1ba,48898e19574b4c14b932d5d32326c08c,dab5f7bc188dadc4badd4a75af74c037,a6d7e7c3fbcf3fa4aa815728f2c81a71,359981cfdcdd1d44396052af95676b26,ee73dbcaedbd08b458d302bb8ee8cd86,dd52bee19af613144a813834b152a6c6,bdd251047627a584494d49bd91908b24,3e0a74f69e0ae8e48902f41366b85809,93d23a0e7530cb547b55b2f654677406,5e74f71d2063fa345a2792962d5eb56e,c1c5756e6086b844383fdb29a0da58e5,1306dde7ce0a8ed44af9d117e8357f3e,c33c3680983a88a48b8ced0e7127f42d,d2a32f6c6c133614ba20b869e88e3b97,119d44dfa3486864b9e47342d6d516b8,4eb8c6f6852513e4e956666ce5d77859,55ee5e46b250f3349b92cd79b7c4ffa9,fc09081f7555af4408ab2e0622029d8c,46a8e049efd9ed443a68e344b8b81c7e,bbb8144e1948ba3438ba8e3f9f33491e,24645e35b17147b40b4da4f2d1b8a1c5,da7714ea8f06405439eae99f4be0f6c5,f6f4720f575c2a0438085da952a62684,eabf303f3e5a2bc46953615bee32908c,32e2ac9674fe4e942b1e6e156a76c8e8,c123f1bd291d9b5488b4e14b93ea443f,e0a6da903055a5e4e801b2bd0234bd05,b82add78538b35d419e04c5b6a3a3353,a3348e68911b03740b64c121e7df079f,9446b7e7d099e884fab885a2257ed9a3,661f7b211d9e4e1468aefd7fa04e3cd8,4097f095c50c59c439d8238c811b1720,40fda3004d140d04586a335c5a3b2e84,a5cbca0b066c9884abd1b3f9277933e0,eb3840930cf0e5b41a743d558b145401,1afa8a1d5cf23f041ba6ba92eb03a37b,64d1170d29ba15446a7bccb7f0166139,12cf87378c64b8447941541a827783ab,3b4b1658c28368a49831322b22ad5902,22a2556e1cf7d1a4eb2b3ecc7645b361,1d5377bbe2c335244a2ebaadaf6e4cb9,c4c2bc76631d16c4d8234e8bb5c8d6f6,1ef29ba658d06f648bb5ecbc7f302d5c,595f4b74a7a15854cac908542938c6e8,ca0de5c76a968b14d8ea61a27c72bf9b,484dafa264ce2e54eaf8c1afaba16152,9627c42ab7fb86a439be09fb7517d8ac,b7ed90b4cf303204bb4b6d7e81ae4437,7e903546c97e8ef45b603ddcce7dfe22,6d212a0e669c0604abd53eca3a27e54f,4cd2a973e7f876b4f8efc24891b17a3f,c198cba373438fe49b6a44b7e8fb41e0,64ba91caf87ac0f41a71a900b914ba88,7692e7c02a43c3e4d9ecb7ca44e1a420,d75433fcbc5773a47b1770fd31ffb394,7d1b962edeb6b314d9074345fc94d992,5268a6f71b054a94791db34ed75d43e0,ade8d080ef0efc440a8cdc456484fc09,6ed4ed41fd56bc54a84bb02dd6bc6523,5d4760fc10eb96748801b4255b616833,c710f517825775b4bb19c872b4e522ec,12b366edde0dbdb4890c585e481072ff,eafc032d1c3bf594083a5a651634824f,17d46e9fed3d4274f85331940a464c10,bb5e41b7fa20cf248a88a572e1dd295c,f9c3d7c2a0990c44d9adfc3eb3db44fd,cba2d2ff4b6c6234a888193493b83dcc,157d73661453f334fa7f5831529a80be,13e9490d159bf2d46bf82ae2aa7354de,98daa64a1fd24ab47befc38aee393d46,6ef66288ab7180445a95363f2afb0068,ce8af72dff6ba70458adc3e3f4c7669e,f3f4fd9697840ea4bbd1c712b4d2b29a,2172c721888bb5f4195329bde7588577,cf8be7065ec3a5646bfd5b5807a77129,0751cd7e37386eb41a48bd0533cbd8d6,ae53e55d9eab6ff4087e371deffcfa4f,4650e911c60922843b63d238f2d150f1,4f2e116a9ada7cb4da5d9c1c71b4f566,6fab5032707835443b3d2f8ba3936c9d,b9e72d2ff84972540ac85367ce3db146,ff3b50bebc7231f4b8d9f29bafd0480c,de2359c5370a9184c8c6dadec4089bed,3dec961dfcd57224b812f419573957bf,c101ae91ff294b54d945596750f6f3f2,2e76922ba42f42e4f836a678f1be0183,40247902a45771949aa189a21e53d2ea,fdeef14a64db64340b4cf51b296c7ce0,53434fd228b0f81438b90deb65cb4d3e,9e546ec2a04ee454bb092fb1b50398e0,5e8f220f330d748429ce0a57190909a4,a6324ac6a534e5e40ac01abf0f3e483f,dbe2e6d3092faa44797f17574f78bdef,c10d30c2a8be7fe44a29a28b211a7a78,6b7720347868ee84581d4ce876bcfcbc,5b0cc8538a65530408a3b91e6c9775fa,2b7256ae31916ad44a20eeb2b47e530b,f321d08aa1741df46b9bb4116508ae33,66e100434185f6142a7fc63b7770d7b6,f5822ab6cf1a47343aa8444c87d07e25,a9e2d455a3719d94b9733df580e7e931,18740c4a0a2eb224bb4213c86456188b,f880fe4ff51e5d548aef72dd8eb7942f,73a797e009cbef74793702f60a8d4e14,914de5b24c0f6a240b0774ddf1132573,9159567fa4b5b1347b7b4a98a4da6abd,9a132d80bc3bb6346ac4e25c7fcaa37d,35a5d072bd2073c4598b162326be5ad7,d5f2c06b018370340ae56a26998b2f4b,5eb27076df200c14f982d10ed62607bf,a770a40d0f8847d46a977dfcd0b3c091,f8e5ff44d807d014c851b9e17df98a87,6312b3be769493c4ebc903ecf188888c,87e4728b96911464cb088957dae09e3c,295eb8f5d2831e946b599407ba2327d5,4791f003bc0332d4995ab24e408a7d0e,167ab25f915a4e44082f343c1d72d91c,6d058cc94e8a73546bc675d2759d8dd9,b68fdc223cb6306468a10028867bae2a,7028019c58f116146a1f891179ce3971,629a66a8988f2fd4c86bfcbf4ab935c1,f6c22898af7866b4da692d3ecc973e5d,1d0c1e4bee27e3e4bbb905b9ed4e95d1,d8fad92f75d71774694f07e9e0fab632,4d6cfcdffdfe9ec47b89a7a5fde1893e,13e286b293e8f894b9cc3666e2ccbfcb,fd8e6df5ee6d24e4597bde8290cc7480,17adae2588e9bb84b9695ee29ddfc21f,6a488de65573eae42a2167f4790196c2,c385de83aa717e641b7eb221d5ff24a8,ec6e064c02b183240b5951f8f27d798a,8d1cb98baae4529408c0b846e873e67e,d5b4f7cf040da35458a37fd0fe71bf17,d41236ce61dce9e448bcaa67360f5ed3,349309df6d6050e4c95c08ef6e42073e,40089b42e114d174bbf4d79991fe05a4,5314e6d852b920b4ca9e963279422a89,b6558db4fb2a4594f87405ab6e20567d,53b1af210da79f54b8c17db5fa560f73,932789172ab10e4439359905cace38d5,04eb594c6e48c68489a587e6f909fc9f,9f277bdc3b5c9a44496a96b4c2246948,401368e6158128b4288cb0e458d5a08d,aff2c67df220c144cb6fbfcac7932e9e,4a2f2d4ba0da5d340ac1bba8ffbbe1c0,8515373599dfa6346b3a3e7d459ca56d,ab29202b3364e5e4c89699161e47e296,a7bba92fcd8d82846a6fbb31e276c40a,0387bcd4de7970640aebf0caedfcccc7,6f8b5439f8d3405459dd2419b90f8046,6e3fbadc1afbe644e87bf039b4a5408c,0176c45eaf39dc340a8aca725bca55c1,95163fa7b6a9c154da3997cc590e1f63,c95e9c3b36128804d90333ca8ba90927,4ce3f0089511ac0479beb9693946b69b,ae06b68a61bee474aaa88f9dfbfd4634,03f97acc43032e4498bd6d503cd723b6,eaf4b3d651c44264688dcbc6c07fea9e,292855573d2db234c830c5e52a0db732,0b2d6d5b1a685ef4fb7831e05b0633d2,fcdcb8e0c563cd7479287511c4f65e0b,7e30d2010154b8c4c8114ffb058bad5a,775247e7b96e7cf4f9bcfe4f57627eb4,7689fcb154a13d54ea913d76c3cb2062,f674f686c69135644adb024e4a7438cc,b422f062bc975bf4e89f2c537cfabf06,ca8151909f3ffd143900d208c23d479a,e90a0aa12a104f6408233acbcc8334ed,d2a20419c3114c94e8766444259852ca,68e82849328a1124aaa20cb54d899965,6c9c8955ca8f2104fb298d010419b416,ed6be50f45e31af488cdf65594d6ee01,0c7e2877fc60e284685a0b9c7d080916,c9dd19e5ede0659418599c7ccfe6b76f,2f41637ace09f8145823e38cf30aadcd,a478c33264dc819479e20c26b61a99d2,36a830df17db0a64fa118e9c33d88c27,64edfeb8d40bb2f42a3760f95293359f,6763261ca2e9cf2489d1d2cffffb50a2,4495203208341f14ebab4ad513b92d3d,ffd12ad3fb4409f449e3e33b38154aa2,8623d8e2ce1bf8b44949f6d6e1c6d798,28467526ec333ff419f778ecbfed874e,41912929fa0b9a342a401342d1afe1b3,86613751710e0c34281f069f822fc4cb,ab8e0908eba77c6449f13ff97a5c60af,83a658f3ec165c6418f63252a90600b5,b7da6bfce97f20c4598856569349f505,79d5b3a9adf4e734d87ff79f641215e6,84ef875ba3461dc44a31ea5dedbb84e7,9a842b5c675c55548840309fcae7a683,1d80e2cd79337aa40a7022f0bb16c20e,5b02af910d5cc7e4ab3d062a6c04f55b,1ac943500a9343f4b8ac303df58223b0,ec24015b1babbc544bbb9db8937a44ba,c233aa97b4aaae145a3f2d94104bf797,2e1de542126b8294db17c5e9e630aee3,32e7665d968d1ff4386b7a9136a87747,215362172f2b4b7469fa62b82be2a266,594da4ece2153d940be8ec301692a208,34d3e0217caacb14d95f97eb005f9b3d,a1f208f72d9392947bf006ddaef47c8c,dd7afac34f56fc2438919a46886f429e,b1900bc6a04d5ae4fa3ff767d41ad370,97051d027eae3a24784563e016430c04,914aefd7a94d2ad4db460e4d490d4914,3e1a25c822cb50244a4dd7a64f4ba1a2,8993bae35135eae4fb0d8f85420fc6c7,6178a2c0b3433324c9a053152b5b6ef5,585cc9fea99f588449755599cd782385,5b7b2c17fec9e76488d39afa4e93e6fa,ea1704f5b905f2a418efebf7b8a6b9fd,9c9375bbb2b436a48aa220d63b36a01d,be596827d91176b4a966ba59fe84dc99,0957c6f1639854f41b54e4c38674c074,5e4f6868d96812b418f3b9d291c02b15,190ce76beb0719448adda15801c3bdc6,59a3863c96ff70640a602bde2762e73d,a363a4d0c264ed54cab4e7b0a0a78cc4,4c6e47f179489d04baa652d3cc914a65,c0d39f1a18be0a148b6f58e0e95a1289,d0acc71c61c70f44babf77329eac86c7,21b6b3effffbcd245933bd59be8e9f59,0efb807433a31a1488b61456f93649bf,e9dd1384a7452364a8795fe1f38e0abf,8383a95119281904391d729367d0176b,c95b07da6cfe92d46a13228df9bb049a,1b4fd5be4546b3947a0f289879fc56d5,f485c788099099447a9e78030f3e7b69,10f20405614645c47ab057a9fec70d10,828ed3d8678e3ff45b6126d61e4abd93,b0133b3a8359577479047f0b6b25269c,d703eec936c4c5c47bc618de94ff333b,42d8cbd12e24e404a938825f85bd29d9
-    OriginalKeywords: _LIGHTINGMODE_REALISTIC _STOCHASTICMODE_DELIOT_HEITZ
+    AllLockedGUIDS: 46a8e049efd9ed443a68e344b8b81c7e
+    OriginalKeywords: BSSBLOOMFOGTYPE_HEIGHT MOCHIE_PBR VIGNETTE_MASKED _LIGHTINGMODE_REALISTIC
+      _RIM2STYLE_POIYOMI _RIMSTYLE_POIYOMI _STOCHASTICMODE_DELIOT_HEITZ
     OriginalShader: .poiyomi/Poiyomi Toon World
     OriginalShaderGUID: 68d4032c05798c44eafe02f272e6895c
-    RenderType: Opaque
+    RenderType: Transparent
     _stripped_tex__ClothDFG: 76d65cbce584df7449699fb8406f60ea
     _stripped_tex__SkinLUT: d13510bb2be49aa40a66a0101efb6a36
     _stripped_tex__ToonRamp: 61bd594533da4fc42bd46ef93ba5a4f6
@@ -52,6 +58,14 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: 79b48525dc67c4e43bdbc4be02d442f5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MochieMetallicMaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MochieReflCube:
+        m_Texture: {fileID: 8900000, guid: 5a09a7e2e88176f4aaf35d9f87eb6a4d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
@@ -132,7 +146,7 @@ Material:
     - _AlphaDitherBias: 0
     - _AlphaDitherGradient: 0.1
     - _AlphaDithering: 0
-    - _AlphaForceOpaque: 1
+    - _AlphaForceOpaque: 0
     - _AlphaFresnel: 0
     - _AlphaFresnelAlpha: 0
     - _AlphaFresnelGlobalMask: 0
@@ -147,7 +161,7 @@ Material:
     - _AlphaMaskValue: 0
     - _AlphaMipScale: 0.25
     - _AlphaMod: 0
-    - _AlphaPremultiply: 0
+    - _AlphaPremultiply: 1
     - _AlphaSharpenedA2C: 0
     - _AlphaTextureStochastic: 0
     - _AlphaTextureUV: 0
@@ -325,7 +339,7 @@ Material:
     - _BlackLightMasking3Key: 4
     - _BlackLightMaskingEnabled: 0
     - _BlendOp: 0
-    - _BlendOpAlpha: 0
+    - _BlendOpAlpha: 4
     - _BlueAlphaAdd: 0
     - _BlueColorThemeIndex: 0
     - _BlueTextureStochastic: 0
@@ -410,7 +424,7 @@ Material:
     - _CurvatureU: 0
     - _CurvatureV: 0
     - _CustomColors: 0
-    - _Cutoff: 0.5
+    - _Cutoff: 0
     - _Decal0ApplyGlobalMaskBlendType: 0
     - _Decal0ApplyGlobalMaskIndex: 0
     - _Decal0ChannelSeparation: 0
@@ -685,8 +699,8 @@ Material:
     - _DistortionStrength1AudioLinkBand: 0
     - _DistortionStrengthAudioLinkBand: 0
     - _DistortionUvToDistort: 0
-    - _DstBlend: 0
-    - _DstBlendAlpha: 10
+    - _DstBlend: 10
+    - _DstBlendAlpha: 1
     - _EmissionAL0Enabled: 0
     - _EmissionAL0MultipliersBand: 0
     - _EmissionAL0StrengthBand: 0
@@ -1526,8 +1540,8 @@ Material:
     - _MirrorTextureEnabled: 0
     - _MirrorTextureForceEnabled: 0
     - _MirrorTextureUV: 0
-    - _MochieBRDF: 0
-    - _MochieForceFallback: 0
+    - _MochieBRDF: 1
+    - _MochieForceFallback: 1
     - _MochieGSAAEnabled: 1
     - _MochieLitFallback: 1
     - _MochieMetallicGlobalMask: 0
@@ -1557,7 +1571,7 @@ Material:
     - _MochieSpecularStrengthGlobalMask: 0
     - _MochieSpecularStrengthGlobalMaskBlendType: 2
     - _MochieSpecularTintThemeIndex: 0
-    - _Mode: 0
+    - _Mode: 3
     - _ModelAngleMax: 90
     - _ModelAngleMin: 45
     - _MultilayerMathBlurMapUV: 0
@@ -1578,8 +1592,8 @@ Material:
     - _OutlineBlendOpAlpha: 4
     - _OutlineClipAtZeroWidth: 0
     - _OutlineCull: 1
-    - _OutlineDstBlend: 0
-    - _OutlineDstBlendAlpha: 0
+    - _OutlineDstBlend: 10
+    - _OutlineDstBlendAlpha: 1
     - _OutlineEmission: 0
     - _OutlineExpansionMode: 1
     - _OutlineFixWidth: 0.5
@@ -2185,7 +2199,7 @@ Material:
     - _VoronoiType: 1
     - _ZClip: 1
     - _ZTest: 4
-    - _ZWrite: 1
+    - _ZWrite: 0
     - footer_discord: 0
     - footer_github: 0
     - footer_patreon: 0
@@ -2332,7 +2346,7 @@ Material:
     - m_end_videoEffects: 0
     - m_end_voronoi: 0
     - m_end_voronoiRandom: 0
-    - m_lightingCategory: 0
+    - m_lightingCategory: 1
     - m_mainCategory: 0
     - m_modifierCategory: 0
     - m_renderingCategory: 0
@@ -2348,7 +2362,7 @@ Material:
     - m_start_CRT: 0
     - m_start_CenterOutDissolve: 0
     - m_start_ColorAdjust: 0
-    - m_start_CubeMap: 0
+    - m_start_CubeMap: 1
     - m_start_Decal0: 0
     - m_start_Decal0AudioLink: 0
     - m_start_Decal1: 0
@@ -2437,7 +2451,7 @@ Material:
     - m_start_backlight: 0
     - m_start_bakedLighting: 0
     - m_start_blending: 0
-    - m_start_brdf: 0
+    - m_start_brdf: 1
     - m_start_clearCoat: 0
     - m_start_clearcoatadvanced: 0
     - m_start_clearcoatglobalmask: 0
@@ -2867,7 +2881,7 @@ Material:
     - s_start_outline_al_color: 0
     - s_start_vertexRounding: 0
     - s_start_vertexRoundingAL: 0
-    - shader_is_using_thry_editor: 0
+    - shader_is_using_thry_editor: 69
     - shader_locale: 0
     - shader_master_label: 0
     m_Colors:
