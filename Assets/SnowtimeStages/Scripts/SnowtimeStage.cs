@@ -95,6 +95,7 @@ namespace Snowtime
             Run.onRunDestroyGlobal += (Run run) =>
             {
                 Legendary = false;
+                CharacterMaster.onStartGlobal -= CharacterMaster_OnStartGlobal;
                 OnLegendaryEnd(run);
             };
         }
@@ -114,22 +115,21 @@ namespace Snowtime
         private void OnLegendaryStart(Run run)
         {
             defMonsterCap = TeamCatalog.GetTeamDef(TeamIndex.Monster).softCharacterLimit;
-
-            TeamCatalog.GetTeamDef(TeamIndex.Monster).softCharacterLimit *= 2;
-            TeamCatalog.GetTeamDef(TeamIndex.Void).softCharacterLimit *= 2;
-            TeamCatalog.GetTeamDef(TeamIndex.Lunar).softCharacterLimit *= 2;
+            Log.Debug(defMonsterCap);
             On.RoR2.CombatDirector.Awake += CombatDirector_Awake;
         }
         private void OnLegendaryEnd(Run run)
         {
-            TeamCatalog.GetTeamDef(TeamIndex.Monster).softCharacterLimit = defMonsterCap;
-            TeamCatalog.GetTeamDef(TeamIndex.Void).softCharacterLimit *= defMonsterCap;
-            TeamCatalog.GetTeamDef(TeamIndex.Lunar).softCharacterLimit *= defMonsterCap;
+            On.RoR2.CombatDirector.Awake -= CombatDirector_Awake;
         }
 
         private void CombatDirector_Awake(On.RoR2.CombatDirector.orig_Awake orig, CombatDirector self)
         {
+            // Run when Legendary
             self.creditMultiplier *= 2;
+            TeamCatalog.GetTeamDef(TeamIndex.Monster).softCharacterLimit *= 2;
+            TeamCatalog.GetTeamDef(TeamIndex.Void).softCharacterLimit *= 2;
+            TeamCatalog.GetTeamDef(TeamIndex.Lunar).softCharacterLimit *= 2;
             orig(self);
         }
 

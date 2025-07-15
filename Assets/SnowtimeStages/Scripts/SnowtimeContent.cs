@@ -57,6 +57,7 @@ namespace Snowtime.Content
 
         // Halo Content
         internal static ExpansionDef ExpansionDefSTHalo;
+        internal static ExpansionDef ExpansionDefSTSource;
 
         // STSceneDef = Death Island
         // STBGSceneDef = Blood Gulch
@@ -188,9 +189,10 @@ namespace Snowtime.Content
 
             yield return LoadAllAssetsAsync(_stassetsAssetBundle, progress, (Action<ExpansionDef[]>)((assets) =>
             {
-                expansionDefs = assets;
                 ExpansionDefSTHalo = assets.First(a => a.name == "snowtimestageshalo_expdef");
+                ExpansionDefSTSource = assets.First(a => a.name == "snowtimestagessource_expdef");
                 Log.Debug("SnowtimeStages:Halo Expansion Definition Added");
+                Log.Debug("SnowtimeStages:Source Expansion Definition Added");
                 contentPack.expansionDefs.Add(assets);
             }));
 
@@ -210,7 +212,7 @@ namespace Snowtime.Content
                 STDHSceneDefPreviewSprite = assets.First(a => a.name == "texSTDHaloScenePreview");
                 STFlatSceneDefPreviewSprite = assets.First(a => a.name == "texSTFlatScenePreview");
                 STHCSceneDefPreviewSprite = assets.First(a => a.name == "texSTHCScenePreview");
-                SnowtimeLegendaryIcon = assets.First(a => a.name == "texSnowtimeLegendary");
+                SnowtimeLegendaryIcon = assets.First(a => a.name == "texSnowtimeLegendaryPLNK");
             }));
 
             yield return LoadAllAssetsAsync(_stassetsAssetBundle, progress, (Action<SceneDef[]>)((assets) =>
