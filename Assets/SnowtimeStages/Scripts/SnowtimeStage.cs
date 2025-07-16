@@ -32,7 +32,7 @@ namespace Snowtime
     {
         public const string Author = "SnowySnowtime";
         public const string Name = nameof(SnowtimeStage);
-        public const string Version = "0.9.3";
+        public const string Version = "0.9.4";
         public const string GUID = Author + "." + Name;
 		public static ConfigEntry<bool> ToggleBloodGulch { get; set; }
 		public static ConfigEntry<bool> ToggleSidewinder { get; set; }
@@ -88,7 +88,7 @@ namespace Snowtime
                 {
                     Legendary = true;
                     CharacterMaster.onStartGlobal += CharacterMaster_OnStartGlobal;
-                    OnLegendaryStart(run);
+                    //OnLegendaryStart(run);
                 }
             };
 
@@ -96,7 +96,7 @@ namespace Snowtime
             {
                 Legendary = false;
                 CharacterMaster.onStartGlobal -= CharacterMaster_OnStartGlobal;
-                OnLegendaryEnd(run);
+               // OnLegendaryEnd(run);
             };
         }
 
@@ -105,17 +105,16 @@ namespace Snowtime
             if (obj.teamIndex != TeamIndex.Player)
             {
                 if (obj.inventory) obj.inventory.GiveItem(RoR2Content.Items.AlienHead, 1);
-                if (obj.inventory) obj.inventory.GiveItem(RoR2Content.Items.BoostAttackSpeed, 5);
+                if (obj.inventory) obj.inventory.GiveItem(RoR2Content.Items.BoostAttackSpeed, 3);
                 if (obj.inventory) obj.inventory.GiveItem(RoR2Content.Items.BoostHp, 4);
                 if (obj.inventory) obj.inventory.GiveItem(RoR2Content.Items.PersonalShield, 5);
+                if (obj.inventory) obj.inventory.GiveItem(RoR2Content.Items.BoostDamage, 10);
                 if (obj.inventory) obj.inventory.GiveItem(RoR2Content.Items.Knurl, 1);
             }
         }
 
         private void OnLegendaryStart(Run run)
         {
-            defMonsterCap = TeamCatalog.GetTeamDef(TeamIndex.Monster).softCharacterLimit;
-            Log.Debug(defMonsterCap);
             On.RoR2.CombatDirector.Awake += CombatDirector_Awake;
         }
         private void OnLegendaryEnd(Run run)
@@ -125,8 +124,6 @@ namespace Snowtime
 
         private void CombatDirector_Awake(On.RoR2.CombatDirector.orig_Awake orig, CombatDirector self)
         {
-            // Run when Legendary
-            self.creditMultiplier *= 2;
             TeamCatalog.GetTeamDef(TeamIndex.Monster).softCharacterLimit *= 2;
             TeamCatalog.GetTeamDef(TeamIndex.Void).softCharacterLimit *= 2;
             TeamCatalog.GetTeamDef(TeamIndex.Lunar).softCharacterLimit *= 2;
