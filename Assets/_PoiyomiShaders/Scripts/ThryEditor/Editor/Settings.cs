@@ -2,16 +2,14 @@
 // Copyright (C) 2019 Thryrallo
 
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Text.RegularExpressions;
+using Thry.ThryEditor.Helpers;
 using UnityEditor;
 using UnityEditor.PackageManager;
 using UnityEngine;
 
-namespace Thry
+namespace Thry.ThryEditor
 {
     public abstract class ModuleSettings
     {
@@ -23,17 +21,24 @@ namespace Thry
     public class Settings : EditorWindow
     {
 
-        public static void firstTimePopup()
+        public static void OpenFirstTimePopup()
         {
             Settings window = (Settings)EditorWindow.GetWindow(typeof(Settings));
             window._isFirstPopop = true;
             window.Show();
         }
 
-        public static void updatedPopup(int compare)
+        public static void OpenUpgradePopup()
         {
             Settings window = (Settings)EditorWindow.GetWindow(typeof(Settings));
-            window._updatedVersion = compare;
+            window._showUpgradeInfo = true;
+            window.Show();
+        }
+
+        public static void OpenDowngradePopup()
+        {
+            Settings window = (Settings)EditorWindow.GetWindow(typeof(Settings));
+            window._showDowngradeWarning = true;
             window.Show();
         }
 
@@ -46,7 +51,8 @@ namespace Thry
         public ModuleSettings[] moduleSettings;
 
         private bool _isFirstPopop = false;
-        private int _updatedVersion = 0;
+        private bool _showDowngradeWarning = false;
+        private bool _showUpgradeInfo = false;
 
         private bool _is_init = false;
         private bool _isInstallingVAI = false;
@@ -74,14 +80,14 @@ namespace Thry
             _is_init = true;
 
             if (thry_message == null)
-                WebHelper.DownloadStringASync(Thry.URL.SETTINGS_MESSAGE_URL, (Action<string>)delegate (string s) { thry_message = Parser.Deserialize<ButtonData>(s); });
+                WebHelper.DownloadStringASync(URL.SETTINGS_MESSAGE_URL, (Action<string>)delegate (string s) { thry_message = Parser.Deserialize<ButtonData>(s);});
         }
 
         //------------------Main GUI
         void OnGUI()
         {
             if (!_is_init || moduleSettings==null) InitVariables();
-            GUILayout.Label("ThryEditor v" + Config.Singleton.verion);
+            GUILayout.Label("ThryEditor v" + Config.Instance.Version);
 
             _scrollPosition = EditorGUILayout.BeginScrollView(_scrollPosition);
             GUINotification();
@@ -112,9 +118,9 @@ namespace Thry
         {
             if (_isFirstPopop)
                 GUILayout.Label(" " + EditorLocale.editor.Get("first_install_message"), Styles.greenStyle);
-            else if (_updatedVersion == -1)
+            else if (_showUpgradeInfo)
                 GUILayout.Label(" " + EditorLocale.editor.Get("update_message"), Styles.greenStyle);
-            else if (_updatedVersion == 1)
+            else if (_showDowngradeWarning)
                 GUILayout.Label(" " + EditorLocale.editor.Get("downgrade_message"), Styles.orangeStyle);
         }
 
@@ -126,7 +132,7 @@ namespace Thry
                 if(thry_message.text.Length > 0)
                 {
                     doDrawLine = true;
-                    GUILayout.Label(new GUIContent(thry_message.text,thry_message.hover), thry_message.center_position?Styles.richtext_center: Styles.richtext);
+                    GUILayout.Label(new GUIContent(thry_message.text,thry_message.hover), thry_message.center_position?Styles.middleCenter_richText_wordWrap: Styles.upperLeft_richText_wordWrap);
                     Rect r = GUILayoutUtility.GetLastRect();
                     if(thry_message.action.type != DefineableActionType.NONE)
                         EditorGUIUtility.AddCursorRect(r, MouseCursor.Link);
@@ -153,42 +159,52 @@ namespace Thry
         {
             EditorGUILayout.Space();
             GUILayout.Label(EditorLocale.editor.Get("shader_ui_design_header"), EditorStyles.boldLabel);
-            Dropdown("default_texture_type");
-            Toggle("showRenderQueue");
+            Dropdown(nameof(Config.default_texture_type));
+            Toggle(nameof(Config.showRenderQueue));
             Toggle(nameof(Config.showColorspaceWarnings));
+            Toggle(nameof(Config.showStarNextToNonDefaultProperties));
 
             EditorGUILayout.Space();
             GUILayout.Label(EditorLocale.editor.Get("shader_ui_features_header"), EditorStyles.boldLabel);
             EditorGUILayout.Space();
-            Toggle("autoMarkPropertiesAnimated");
-            Toggle("allowCustomLockingRenaming");
+            Toggle(nameof(Config.autoMarkPropertiesAnimated));
+            Toggle(nameof(Config.allowCustomLockingRenaming));
             GUIGradients();
+            Toggle(nameof(Config.showNotes));
 
             EditorGUILayout.Space();
             GUILayout.Label(EditorLocale.editor.Get("avatar_fixes_header"), EditorStyles.boldLabel);
-            Toggle("autoSetAnchorOverride");
-            Dropdown("humanBoneAnchor");
-            Text("anchorOverrideObjectName");
+            Toggle(nameof(Config.autoSetAnchorOverride));
+            Dropdown(nameof(Config.humanBoneAnchor));
+            Text(nameof(Config.anchorOverrideObjectName));
 
             EditorGUILayout.Space();
             GUILayout.Label(EditorLocale.editor.Get("textures_header"), EditorStyles.boldLabel);
-            Dropdown("texturePackerCompressionWithAlphaOverwrite");
-            Dropdown("texturePackerCompressionNoAlphaOverwrite");
-            Dropdown("gradientEditorCompressionOverwrite");
+            Dropdown(nameof(Config.texturePackerCompressionWithAlphaOverwrite));
+            Dropdown(nameof(Config.texturePackerCompressionNoAlphaOverwrite));
+            Dropdown(nameof(Config.gradientEditorCompressionOverwrite));
+            
+            EditorGUILayout.Space();
+            GUILayout.Label(EditorLocale.editor.Get("texture_packer_header"), EditorStyles.boldLabel);
+            Toggle(nameof(Config.inlinePackerChrunchCompression));
+            Dropdown(nameof(Config.inlinePackerSaveLocation));
+            if (Config.Instance.inlinePackerSaveLocation == TextureSaveLocation.custom)
+                Text(nameof(Config.inlinePackerSaveLocationCustom));
 
             EditorGUILayout.Space();
             GUILayout.Label(EditorLocale.editor.Get("technical_header"), EditorStyles.boldLabel);
-            Toggle("forceAsyncCompilationPreview");
-            Toggle("saveAfterLockUnlock");
-            Toggle("fixKeywordsWhenLocking");
+            Toggle(nameof(Config.forceAsyncCompilationPreview));
+            Toggle(nameof(Config.saveAfterLockUnlock));
+            Toggle(nameof(Config.fixKeywordsWhenLocking));
 
             EditorGUILayout.Space();
             GUILayout.Label(EditorLocale.editor.Get("developer_header"), EditorStyles.boldLabel);
-            Toggle("showManualReloadButton");
-            Toggle("enableDeveloperMode");
-            if(Config.Singleton.enableDeveloperMode)
+            Dropdown(nameof(Config.loggingLevel));
+            Toggle(nameof(Config.showManualReloadButton));
+            Toggle(nameof(Config.enableDeveloperMode));
+            if(Config.Instance.enableDeveloperMode)
             {
-                Toggle("disableUnlockedShaderStrippingOnBuild");
+                Toggle(nameof(Config.disableUnlockedShaderStrippingOnBuild));
             }
         }
 
@@ -196,7 +212,7 @@ namespace Thry
         {
             GUILayout.BeginHorizontal(GUILayout.ExpandWidth(false));
             Text("gradient_name", false);
-            string gradient_name = Config.Singleton.gradient_name;
+            string gradient_name = Config.Instance.gradient_name;
             if (gradient_name.Contains("<hash>"))
                 GUILayout.Label(EditorLocale.editor.Get("gradient_good_naming"), Styles.greenStyle, GUILayout.ExpandWidth(false));
             else if (gradient_name.Contains("<material>"))
@@ -263,7 +279,7 @@ namespace Thry
 
         private static void Text(string configField, string text, string tooltip, bool createHorizontal)
         {
-            Config config = Config.Singleton;
+            Config config = Config.Instance;
             System.Reflection.FieldInfo field = typeof(Config).GetField(configField);
             if (field != null)
             {
@@ -296,7 +312,7 @@ namespace Thry
 
         private static void Toggle(string configField, string label, string hover, GUIStyle label_style = null)
         {
-            Config config = Config.Singleton;
+            Config config = Config.Instance;
             System.Reflection.FieldInfo field = typeof(Config).GetField(configField);
             if (field != null)
             {
@@ -322,7 +338,7 @@ namespace Thry
 
         private static void Dropdown(string configField, string label, string hover, GUIStyle label_style = null)
         {
-            Config config = Config.Singleton;
+            Config config = Config.Instance;
             System.Reflection.FieldInfo field = typeof(Config).GetField(configField);
             if (field != null)
             {
@@ -353,8 +369,8 @@ namespace Thry
             EditorGUILayout.EndHorizontal();
             if(EditorGUI.EndChangeCheck())
             {
-                Config.Singleton.locale = EditorLocale.editor.available_locales[EditorLocale.editor.selected_locale_index];
-                Config.Singleton.Save();
+                Config.Instance.locale = EditorLocale.editor.available_locales[EditorLocale.editor.selected_locale_index];
+                Config.Instance.Save();
                 ShaderEditor.ReloadActive();
             }
         }
@@ -384,9 +400,9 @@ namespace Thry
 
         private static bool Foldout(GUIContent content, bool expanded)
         {
-            var rect = GUILayoutUtility.GetRect(16f + 20f, 22f, Styles.dropDownHeader);
+            var rect = GUILayoutUtility.GetRect(16f + 20f, 22f, Styles.dropdownHeader);
             rect = EditorGUI.IndentedRect(rect);
-            GUI.Box(rect, content, Styles.dropDownHeader);
+            GUI.Box(rect, content, Styles.dropdownHeader);
             var toggleRect = new Rect(rect.x + 4f, rect.y + 2f, 13f, 13f);
             Event e = Event.current;
             if (e.type == EventType.Repaint)

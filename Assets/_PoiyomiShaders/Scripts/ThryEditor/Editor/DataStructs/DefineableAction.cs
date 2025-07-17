@@ -1,14 +1,15 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text.RegularExpressions;
+using Thry.ThryEditor.Helpers;
 using UnityEditor;
 using UnityEngine;
 
-namespace Thry
+namespace Thry.ThryEditor
 {
     public class DefineableAction
     {
+        public static DefineableAction None => new DefineableAction();
+
         public DefineableActionType type = DefineableActionType.NONE;
         public string data = "";
         public void Perform(Material[] targets)
@@ -21,7 +22,7 @@ namespace Thry
                 case DefineableActionType.SET_PROPERTY:
                     string[] set = Regex.Split(data, @"=");
                     if (set.Length > 1)
-                        MaterialHelper.SetMaterialValue(set[0].Trim(), set[1].Trim());
+                        MaterialHelper.SetValueAdvanced(set[0].Trim(), set[1].Trim());
                     break;
                 case DefineableActionType.SET_TAG:
                     string[] keyValue = Regex.Split(data, @"=");
@@ -57,12 +58,12 @@ namespace Thry
         }
 
         private static DefineableAction ParseForThryParser(string s)
-        {
+        { 
             return Parse(s);
         }
         public static DefineableAction Parse(string s)
         {
-            s = s.Trim();
+            s = s.Trim(' ', '"');
             DefineableAction action = new DefineableAction();
             if (s.StartsWith("http", StringComparison.Ordinal) || s.StartsWith("www", StringComparison.Ordinal))
             {

@@ -25,6 +25,10 @@ namespace Poi.Tools.ShaderTranslator
             DoubleMultiplicative = 7
         }
 
+        protected enum PoiUvMirrorMode { Off, Flip, LeftOnly, RightOnly, FlipRightOnly }
+
+        protected enum PoiUvSymmetryMode { Off, Symmetry, Flipped }
+
         protected ScriptedShaderTranslator()
         {
             PropertyTranslations.AddRange(AddProperties());
@@ -49,12 +53,25 @@ namespace Poi.Tools.ShaderTranslator
         }
 
         /// <summary>
+        /// Conditional that's checked before everything else.
+        /// </summary>
+        /// <param name="sourceMaterial">Material to check</param>
+        /// <returns>True to continue and false to cancel translation</returns>
+        public virtual bool CanTranslateMaterial(Material sourceMaterial)
+        {
+            return true;
+        }
+
+        /// <summary>
         /// Switch shader and translate material
         /// </summary>
         /// <param name="sourceMaterial">Material to translate</param>
         /// <param name="newShaderName">Shader to translate to</param>
         public void Translate(Material sourceMaterial, string newShaderName)
         {
+            if(!CanTranslateMaterial(sourceMaterial))
+                return;
+
             Shader newShader = GetTargetShader(sourceMaterial, newShaderName);
             if(!newShader)
             {
@@ -75,14 +92,12 @@ namespace Poi.Tools.ShaderTranslator
                 Material = sourceMaterial,
                 originalRenderQueue = sourceMaterial.renderQueue,
                 SourcePropertiesAndValues = SourceShader.GetPropertiesWithValues(sourceMaterial),
-                ThryShaderEditor = new ShaderEditor
-                {
-                    LastShader = sourceMaterial.shader,
-                }
+                ThryShaderEditor = new ShaderEditor()
             };
 
-            sourceMaterial.shader = newShader;
-            context.ThryShaderEditor.Shader = newShader;
+            context.ThryShaderEditor.SetShader(newShader, sourceMaterial.shader); // Seems like this needs to run first
+            sourceMaterial.shader = newShader; // Then we need to actually switch shader
+
             context.ThryShaderEditor.FakePartialInitilizationForLocaleGathering(newShader);
             context.ThryShaderEditor.Materials[0] = sourceMaterial;
 
@@ -180,6 +195,7 @@ namespace Poi.Tools.ShaderTranslator
                         vectorValue = new Vector4(col.r, col.g, col.b, col.a);
                     else
                         throw new InvalidCastException($"Can't cast {value.GetType()} to {typeof(Vector4)}");
+                    thryProperty.VectorValue = Vector4.one; // Ok so, hear me out. Either Thry or Unity doesn't seem to like it when I'm setting a value that's 0 to 0, and when the stored shader value loads, it gets overwritten. Setting it to something else fixes it
 
                     thryProperty.VectorValue = vectorValue;
                     break;
@@ -194,6 +210,7 @@ namespace Poi.Tools.ShaderTranslator
 #endif
                 case MaterialProperty.PropType.Float:
                 case MaterialProperty.PropType.Range:
+                    thryProperty.FloatValue = 1f; // Ok so, hear me out. Either Thry or Unity doesn't seem to like it when I'm setting a value that's 0 to 0, and when the stored shader value loads, it gets overwritten. Setting it to something else fixes it
                     thryProperty.FloatValue = Convert.ToSingle(value);
                     break;
                 default:
@@ -228,11 +245,19 @@ namespace Poi.Tools.ShaderTranslator
         /// <returns></returns>
         protected T GetSourcePropertyValue<T>(TranslationContext context, string propertyName)
         {
-            return GetSourcePropertyValue<T>(context, context.SourcePropertiesAndValues.First(x => x.Key.name == propertyName).Key);
+            var property = context.SourcePropertiesAndValues
+                .FirstOrDefault(x => x.Key.name == propertyName).Key;
+
+            if (property == null)
+                return default;
+
+            return GetSourcePropertyValue<T>(context, property);
         }
 
         /// <summary>
-        /// Set the value of our property in the translation context. This is used by automatic translations and other properties
+        /// Set the value of our property in the translation context. This is used by automatic translations and other properties.
+        /// WARNING: Since this overwrites the value in the context, properties that check the context for the value see the new value and not the original one from the shader.
+        /// You should probably use SetContextPropertyValue to set the value in the new material directly instead. 
         /// </summary>
         /// <param name="context">The context of our translation</param>
         /// <param name="property">The property to set the value of</param>

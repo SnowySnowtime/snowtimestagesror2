@@ -1,14 +1,7 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using Thry.ThryEditor;
 using UnityEditor;
 using UnityEngine;
-using UnityEngine.UIElements;
 
-namespace Thry
+namespace Thry.ThryEditor
 {
     public class ShaderSection : ShaderGroup
     {
@@ -21,14 +14,14 @@ namespace Thry
         {
         }
 
-        public override void DrawInternal(GUIContent content, Rect? rect = null, bool useEditorIndent = false, bool isInHeader = false)
+        protected override void DrawInternal(GUIContent content, Rect? rect = null, bool useEditorIndent = false, bool isInHeader = false)
         {
             if (Options.margin_top > 0)
             {
                 GUILayoutUtility.GetRect(0, Options.margin_top);
             }
 
-            ShaderProperty reference = Options.reference_property != null ? ActiveShaderEditor.PropertyDictionary[Options.reference_property] : null;
+            ShaderProperty reference = Options.reference_property != null ? MyShaderUI.PropertyDictionary[Options.reference_property] : null;
             bool has_header = string.IsNullOrWhiteSpace(this.Content.text) == false || reference != null;
 
             int headerTextX = 18;
@@ -41,12 +34,12 @@ namespace Thry
             {
                 // Draw as border line
                 Vector4 borderWidths = new Vector4(3, (has_header ? HEADER_HEIGHT : 3), 3, 3);
-                GUI.DrawTexture(border, Texture2D.whiteTexture, ScaleMode.StretchToFill, true, 0, Styles.COLOR_BACKGROUND_1, borderWidths, 5);
+                GUI.DrawTexture(border, Texture2D.whiteTexture, ScaleMode.StretchToFill, true, 0, Colors.backgroundDark, borderWidths, 5);
             }
             else
             {
                 // Draw as solid
-                GUI.DrawTexture(border, Texture2D.whiteTexture, ScaleMode.StretchToFill, true, 0, Styles.COLOR_BACKGROUND_1, Vector4.zero, 5);
+                GUI.DrawTexture(border, Texture2D.whiteTexture, ScaleMode.StretchToFill, true, 0, Colors.backgroundDark, Vector4.zero, 5);
             }
 
             // Draw Reference
@@ -84,7 +77,7 @@ namespace Thry
             if (IsExpanded)
             {
                 EditorGUI.BeginDisabledGroup(DoDisableChildren);
-                foreach (ShaderPart part in parts)
+                foreach (ShaderPart part in Children)
                 {
                     part.Draw();
                 }

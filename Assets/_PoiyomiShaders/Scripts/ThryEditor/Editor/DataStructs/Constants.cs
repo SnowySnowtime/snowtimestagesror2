@@ -1,11 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text.RegularExpressions;
-using UnityEditor;
-using UnityEngine;
-
-namespace Thry
+namespace Thry.ThryEditor
 {
     public class PATH
     {

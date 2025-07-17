@@ -1,17 +1,17 @@
 ﻿// Material/Shader Inspector for Unity 2017/2018
 // Copyright (C) 2019 Thryrallo
 
-using JetBrains.Annotations;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text.RegularExpressions;
+using Thry.ThryEditor.Helpers;
 using UnityEditor;
 using UnityEngine;
 
-namespace Thry
+namespace Thry.ThryEditor
 {
     public class UnityHelper
     {
@@ -334,8 +334,7 @@ namespace Thry
             if (CheckForEditorRemove(assets))
             {
                 Debug.Log("[Thry] ShaderEditor is being deleted.");
-                Config.Singleton.verion = "0";
-                Config.Singleton.Save();
+                Config.Instance.ClearVersion();
             }
         }
 

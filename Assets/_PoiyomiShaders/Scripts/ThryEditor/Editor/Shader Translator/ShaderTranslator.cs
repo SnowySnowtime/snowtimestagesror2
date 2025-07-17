@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Linq.Expressions;
 using System.Text.RegularExpressions;
+using Thry.ThryEditor.Helpers;
 using UnityEditor;
 using UnityEditor.ProjectWindowCallback;
 using UnityEngine;
@@ -275,8 +275,7 @@ namespace Thry.ThryEditor.ShaderTranslations
                 GUI.backgroundColor = Color.green;
                 if(GUILayout.Button($"Apply {editor.SuggestedTranslationDefinition.Name}"))
                 {
-                    editor.SuggestedTranslationDefinition.Apply(editor);
-                    editor.SuggestedTranslationDefinition = null;
+                    editor.ApplySuggestedTranslationDefinition();
                 }
                 GUI.backgroundColor = backup;
                 GUILayoutUtility.GetRect(0, 5);
@@ -285,7 +284,7 @@ namespace Thry.ThryEditor.ShaderTranslations
 
         public static void TranslationSelectionGUI(Rect r, ShaderEditor editor)
         {
-            if (GUILib.ButtonWithCursor(r, Styles.icon_style_shaders, "Shader Translation"))
+            if (GUILib.ButtonWithCursor(r, Icons.shaders, "Shader Translation"))
             {
                 EditorUtility.DisplayCustomMenu(r, TranslationDefinitions.Select(t => new GUIContent(t.Name)).ToArray(), -1, ConfirmTranslationSelection, editor);
             }
@@ -296,7 +295,7 @@ namespace Thry.ThryEditor.ShaderTranslations
             TranslationDefinitions[selected].Apply(userData as ShaderEditor);
         }
 
-        [MenuItem("Assets/Thry/Shader Translator/New Definition", priority = 380)]
+        [MenuItem("Assets/Thry/Shaders/New Translator Definition", priority = 380)]
         static void CreateNewTranslationDefinition()
         {
             // This allows you to name your asset before creating it

@@ -1,14 +1,8 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using Thry.ThryEditor;
+using Thry.ThryEditor.Helpers;
 using UnityEditor;
 using UnityEngine;
-using UnityEngine.UIElements;
 
-namespace Thry
+namespace Thry.ThryEditor
 {
     public class ShaderTextureProperty : ShaderProperty
     {
@@ -22,6 +16,7 @@ namespace Thry
         {
             _doCustomDrawLogic = forceThryUI;
             this.hasScaleOffset = hasScaleOffset;
+            PropertyValueChanged += (PropertyValueEventArgs args) => _isVRAMDirty = true;
         }
 
         protected override void InitOptions()
@@ -43,16 +38,10 @@ namespace Thry
             }
         }
 
-        protected override void OnPropertyValueChanged()
-        {
-            base.OnPropertyValueChanged();
-            _isVRAMDirty = true;
-        }
-
-        public override void PreDraw()
+        protected override void PreDraw()
         {
             DrawingData.CurrentTextureProperty = this;
-            this._doCustomDrawLogic = !this._hasDrawer;
+            this._doCustomDrawLogic = _drawer == null;
             if (this._isVRAMDirty)
             {
                 UpdateVRAM();
@@ -60,31 +49,11 @@ namespace Thry
             }
         }
 
-        public override void DrawDefault()
+        protected override void DrawDefault()
         {
             Rect pos = GUILayoutUtility.GetRect(Content, Styles.vectorPropertyStyle);
-            GUILib.ConfigTextureProperty(pos, MaterialProperty, Content, ActiveShaderEditor.Editor, hasFoldoutProperties);
+            GUILib.ConfigTextureProperty(pos, MaterialProperty, Content, MyMaterialEditor, hasFoldoutProperties);
             DrawingData.LastGuiObjectRect = pos;
-        }
-
-        public override void TransferFromMaterialAndGroup(Material m, ShaderPart p, bool isTopCall = false, MaterialProperty.PropType[] skipPropertyTypes = null)
-        {
-            if (ShouldSkipProperty(p.MaterialProperty, skipPropertyTypes)) return;
-            if (MaterialProperty.type != p.MaterialProperty.type) return;
-            MaterialHelper.CopyMaterialValueFromProperty(MaterialProperty, p.MaterialProperty);
-            TransferReferencePropertiesToMaterial(m, p);
-        }
-        private void TransferReferencePropertiesToMaterial(Material target, ShaderPart p)
-        {
-            if (p.Options.reference_properties == null || this.Options.reference_properties == null) return;
-            for (int i = 0; i < p.Options.reference_properties.Length && i < Options.reference_properties.Length; i++)
-            {
-                if (ActiveShaderEditor.PropertyDictionary.ContainsKey(this.Options.reference_properties[i]) == false) continue;
-
-                ShaderProperty targetP = ActiveShaderEditor.PropertyDictionary[this.Options.reference_properties[i]];
-                ShaderProperty sourceP = p.ActiveShaderEditor.PropertyDictionary[p.Options.reference_properties[i]];
-                MaterialHelper.CopyMaterialValueFromProperty(targetP.MaterialProperty, sourceP.MaterialProperty);
-            }
         }
     }
 

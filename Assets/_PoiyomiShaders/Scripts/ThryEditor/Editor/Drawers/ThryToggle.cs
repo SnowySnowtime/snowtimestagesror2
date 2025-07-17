@@ -1,13 +1,8 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
 using UnityEditor;
 using UnityEngine;
-using static Thry.GradientEditor;
-using static Thry.TexturePacker;
 
-namespace Thry
+namespace Thry.ThryEditor.Drawers
 {
     public class ThryToggleDrawer : MaterialPropertyDrawer
     {
@@ -86,8 +81,9 @@ namespace Thry
             if (hasKeyword)
             {
                 CheckKeyword(prop);
-                DrawingData.LastPropertyDoesntAllowAnimation = true;
+                ShaderProperty.DisallowAnimation();
             }
+            ShaderProperty.RegisterDrawer(this);
             return base.GetPropertyHeight(prop, label, editor);
         }
 
@@ -112,7 +108,7 @@ namespace Thry
 
             bool value = (Math.Abs(prop.GetNumber()) > 0.001f);
             EditorGUI.showMixedValue = prop.hasMixedValue;
-            if (left) value = EditorGUI.ToggleLeft(position, label, value, Styles.style_toggle_left_richtext);
+            if (left) value = EditorGUI.ToggleLeft(position, label, value, Styles.upperLeft_richText);
             else value = EditorGUI.Toggle(position, label, value);
             EditorGUI.showMixedValue = false;
             if (EditorGUI.EndChangeCheck())

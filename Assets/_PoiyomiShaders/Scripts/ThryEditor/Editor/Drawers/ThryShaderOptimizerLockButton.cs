@@ -1,13 +1,11 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using Thry.ThryEditor.Helpers;
 using UnityEditor;
 using UnityEngine;
-using static Thry.GradientEditor;
-using static Thry.TexturePacker;
 
-namespace Thry
+namespace Thry.ThryEditor.Drawers
 {
     public class ThryShaderOptimizerLockButtonDrawer : MaterialPropertyDrawer
     {
@@ -41,40 +39,41 @@ namespace Thry
             ShaderEditor.Active.IsLockedMaterial = shaderOptimizer.GetNumber() == 1;
             if (shaderOptimizer.hasMixedValue)
             {
-                EditorGUI.BeginChangeCheck();
-                GUILayout.Button(EditorLocale.editor.Get("lockin_button_multi").ReplaceVariables(materialEditor.targets.Length));
-                if (EditorGUI.EndChangeCheck())
+                if(GUILayout.Button(EditorLocale.editor.Get("lockin_button_multi").ReplaceVariables(materialEditor.targets.Length)))
                 {
                     SaveChangeStack();
-                    ShaderOptimizer.SetLockedForAllMaterials(shaderOptimizer.targets.Select(t => t as Material), shaderOptimizer.floatValue == 1 ? 0 : 1, true, false, false, shaderOptimizer);
+                    ShaderOptimizer.ToggleLockFromPropertyButton(shaderOptimizer);
                     RestoreChangeStack();
                 }
             }
             else
             {
-                EditorGUI.BeginChangeCheck();
+                bool didClickButton = false;
                 if (shaderOptimizer.GetNumber() == 0)
                 {
                     if (materialEditor.targets.Length == 1)
-                        RectifiedLayout.Button(EditorLocale.editor.Get("lockin_button_single"));
-                    else RectifiedLayout.Button(EditorLocale.editor.Get("lockin_button_multi").ReplaceVariables(materialEditor.targets.Length));
+                        didClickButton = RectifiedLayout.Button(EditorLocale.editor.Get("lockin_button_single"));
+                    else
+                        didClickButton = RectifiedLayout.Button(EditorLocale.editor.Get("lockin_button_multi").ReplaceVariables(materialEditor.targets.Length));
                 }
                 else
                 {
                     if (materialEditor.targets.Length == 1)
-                        RectifiedLayout.Button(EditorLocale.editor.Get("unlock_button_single"));
-                    else RectifiedLayout.Button(EditorLocale.editor.Get("unlock_button_multi").ReplaceVariables(materialEditor.targets.Length));
+                        didClickButton = RectifiedLayout.Button(EditorLocale.editor.Get("unlock_button_single"));
+                    else
+                        didClickButton = RectifiedLayout.Button(EditorLocale.editor.Get("unlock_button_multi").ReplaceVariables(materialEditor.targets.Length));
                 }
-                if (EditorGUI.EndChangeCheck())
+                if (didClickButton)
                 {
                     SaveChangeStack();
-                    ShaderOptimizer.SetLockedForAllMaterials(shaderOptimizer.targets.Select(t => t as Material), shaderOptimizer.GetNumber() == 1 ? 0 : 1, true, false, false, shaderOptimizer);
+                    ShaderOptimizer.ToggleLockFromPropertyButton(shaderOptimizer);
                     RestoreChangeStack();
+                    Object[] targets = Selection.objects;
                 }
             }
-            if (Config.Singleton.allowCustomLockingRenaming || ShaderEditor.Active.HasCustomRenameSuffix)
+            if (Config.Instance.allowCustomLockingRenaming || ShaderEditor.Active.HasCustomRenameSuffix)
             {
-                EditorGUI.BeginDisabledGroup(!Config.Singleton.allowCustomLockingRenaming || ShaderEditor.Active.IsLockedMaterial);
+                EditorGUI.BeginDisabledGroup(!Config.Instance.allowCustomLockingRenaming || ShaderEditor.Active.IsLockedMaterial);
                 EditorGUI.BeginChangeCheck();
                 EditorGUI.showMixedValue = ShaderEditor.Active.HasMixedCustomPropertySuffix;
                 ShaderEditor.Active.RenamedPropertySuffix = EditorGUILayout.TextField("Locked property suffix: ", ShaderEditor.Active.RenamedPropertySuffix);
@@ -88,7 +87,7 @@ namespace Thry
                         ShaderEditor.Active.RenamedPropertySuffix = ShaderOptimizer.GetRenamedPropertySuffix(ShaderEditor.Active.Materials[0]);
                     ShaderEditor.Active.HasCustomRenameSuffix = ShaderOptimizer.HasCustomRenameSuffix(ShaderEditor.Active.Materials[0]);
                 }
-                if (!Config.Singleton.allowCustomLockingRenaming)
+                if (!Config.Instance.allowCustomLockingRenaming)
                 {
                     EditorGUILayout.HelpBox("This feature is disabled in the config file. You can enable it by setting allowCustomLockingRenaming to true.", MessageType.Info);
                 }
@@ -132,8 +131,8 @@ namespace Thry
 
         public override float GetPropertyHeight(MaterialProperty prop, string label, MaterialEditor editor)
         {
-            DrawingData.LastPropertyUsedCustomDrawer = true;
-            DrawingData.LastPropertyDoesntAllowAnimation = true;
+            ShaderProperty.RegisterDrawer(this);
+            ShaderProperty.DisallowAnimation();
             ShaderEditor.Active.DoUseShaderOptimizer = true;
             return -2;
         }

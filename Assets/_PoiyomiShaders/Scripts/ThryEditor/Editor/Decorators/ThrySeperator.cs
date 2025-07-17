@@ -1,17 +1,11 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
 using UnityEditor;
 using UnityEngine;
-using static Thry.GradientEditor;
-using static Thry.TexturePacker;
 
-namespace Thry
+namespace Thry.ThryEditor.Decorators
 {
     public class ThrySeperatorDecorator : MaterialPropertyDrawer
     {
-        Color _color = Styles.COLOR_FG;
+        Color _color = Colors.foreground;
 
         public ThrySeperatorDecorator() { }
         public ThrySeperatorDecorator(string c)
@@ -21,7 +15,7 @@ namespace Thry
 
         public override float GetPropertyHeight(MaterialProperty prop, string label, MaterialEditor editor)
         {
-            DrawingData.RegisterDecorator(this);
+            ShaderProperty.RegisterDecorator(this);
             return 1;
         }
 
