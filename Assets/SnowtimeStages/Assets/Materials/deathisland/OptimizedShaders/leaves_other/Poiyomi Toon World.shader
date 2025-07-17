@@ -177,6 +177,37 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/965cd73c7ec7ec144bcfcb47049853
 		[HideInInspector] m_OutlineCategory (" Outlines--{reference_property:_EnableOutlines,button_help:{text:Tutorial,action:{type:URL,data:https://www.poiyomi.com/outlines/main},hover:Documentation}}", Float) = 0
 		[HideInInspector] m_specialFXCategory ("Special FX", Float) = 0
 		[HideInInspector] m_vertexCategory ("Vertex Options", Float) = 0
+		[HideInInspector] m_start_vertexManipulation (" Basics & Fun--{reference_property:_VertexManipulationsEnabled, button_help:{text:Tutorial,action:{type:URL,data:https://www.poiyomi.com/vertex-options/basics},hover:Documentation}}", Float) = 0
+		[HideInInspector][ThryToggle(AUTO_EXPOSURE)]_VertexManipulationsEnabled ("Enabled", Float) = 0
+		[sRGBWarning][ThryRGBAPacker(Mask R, Mask G, Mask B, Mask A, Linear, false)] _VertexBasicsMask ("RGBA Effects Mask [Click to Expand]--{reference_properties:[_VertexBasicsMaskUVPan, VertexBasicsMaskUV]}", 2D) = "white" { }
+		[HideInInspector][Vector2] _VertexBasicsMaskUVPan ("Panning", Vector) = (0, 0, 0, 0)
+		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3)] VertexBasicsMaskUV ("UV", Int) = 0
+		[ThryWideEnum(R, 0, G, 1, B, 2, A, 3, Vert Col R, 4, Vert Col G, 5, Vert Col B, 6, Vert Col A, 7)] _VertexBasicsMaskChannel ("Basics Mask Channel", Float) = 0
+		[Vector3]_VertexManipulationLocalTranslation ("Local Translation", Vector) = (0, 0, 0, 1)
+		[Vector3]_VertexManipulationWorldTranslation ("World Translation", Vector) = (0, 0, 0, 1)
+		_VertexManipulationLocalScale ("Scale", Vector) = (1, 1, 1, 1)
+		[Vector3]_VertexManipulationLocalRotation ("Rotation", Vector) = (0, 0, 0, 1)
+		[Vector3]_VertexManipulationLocalRotationSpeed ("Rotation Speed", Vector) = (0, 0, 0, 1)
+		[HideInInspector] s_start_VertexWind ("Wind / Flag--{reference_property:_VertexWindEnabled,persistent_expand:true}", Float) = 0
+		[HideInInspector][ToggleUI]_VertexWindEnabled ("Enabled", Float) = 0
+		[ThryWideEnum(R, 0, G, 1, B, 2, A, 3, Vert Col R, 4, Vert Col G, 5, Vert Col B, 6, Vert Col A, 7)]_VertexWindMaskChannel ("Mask Channel", Float) = 0
+		[Header(Primary Wave)]
+		_VertexWindPrimaryDirection ("Direction", Vector) = (1, 0, 0, 0)
+		_VertexWindPrimaryAmplitude ("Amplitude", Float) = 0.1
+		_VertexWindPrimarySpeed ("Speed", Float) = 1
+		_VertexWindPrimaryFrequency ("Frequency", Float) = 1
+		[Header(Detail Wave)]
+		_VertexWindDetailDirection ("Direction", Vector) = (0, 1, 0, 0)
+		_VertexWindDetailAmplitude ("Amplitude", Float) = 0.05
+		_VertexWindDetailSpeed ("Speed", Float) = 2.5
+		_VertexWindDetailFrequency ("Frequency", Float) = 5
+		[Header(Turbulence)]
+		[ThryWideEnum(R, 0, G, 1, B, 2, A, 3, Vert Col R, 4, Vert Col G, 5, Vert Col B, 6, Vert Col A, 7)]_VertexWindNoiseChannel ("Noise Channel (from Basics Mask)", Float) = 0
+		_VertexWindNoiseStrength ("Noise Strength", Range(0, 1)) = 0.5
+		_VertexWindNoiseScale ("Noise Scale", Float) = 10
+		_VertexWindNoiseSpeed ("Noise Speed", Float) = 0.5
+		[HideInInspector] s_end_VertexWind ("Wind / Flag", Float) = 0
+		[HideInInspector] m_end_vertexManipulation ("Vertex Options", Float) = 0
 		[HideInInspector] m_modifierCategory ("Global Modifiers & Data", Float) = 0
 		[HideInInspector] m_start_PoiGlobalCategory ("Global Data and Masks", Float) = 0
 		[HideInInspector] m_start_GlobalThemes ("Global Themes--{button_help:{text:Tutorial,action:{type:URL,data:https://www.poiyomi.com/color-and-normals/global-themes},hover:Documentation}}", Float) = 0
@@ -331,6 +362,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/965cd73c7ec7ec144bcfcb47049853
 			BlendOp [_BlendOp], [_BlendOpAlpha]
 			Blend [_SrcBlend] [_DstBlend], [_SrcBlendAlpha] [_DstBlendAlpha]
 			CGPROGRAM
+ #define AUTO_EXPOSURE 
  #define VIGNETTE_MASKED 
  #define _LIGHTINGMODE_FLAT 
  #define _STOCHASTICMODE_DELIOT_HEITZ 
@@ -620,6 +652,32 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/965cd73c7ec7ec144bcfcb47049853
 			float _UVModWorldPos1;
 			float _UVModLocalPos0;
 			float _UVModLocalPos1;
+			#ifdef AUTO_EXPOSURE
+			sampler2D _VertexBasicsMask;
+			float4 _VertexBasicsMask_ST;
+			float4 _VertexBasicsMaskUVPan;
+			float VertexBasicsMaskUV;
+			float _VertexBasicsMaskChannel;
+			float4 _VertexManipulationLocalTranslation;
+			float4 _VertexManipulationWorldTranslation;
+			float4 _VertexManipulationLocalRotation;
+			float3 _VertexManipulationLocalRotationSpeed;
+			float4 _VertexManipulationLocalScale;
+			float _VertexWindEnabled;
+			float _VertexWindMaskChannel;
+			float4 _VertexWindPrimaryDirection;
+			float _VertexWindPrimaryAmplitude;
+			float _VertexWindPrimarySpeed;
+			float _VertexWindPrimaryFrequency;
+			float4 _VertexWindDetailDirection;
+			float _VertexWindDetailAmplitude;
+			float _VertexWindDetailSpeed;
+			float _VertexWindDetailFrequency;
+			float _VertexWindNoiseChannel;
+			float _VertexWindNoiseStrength;
+			float _VertexWindNoiseScale;
+			float _VertexWindNoiseSpeed;
+			#endif
 			float _ShadowStrength;
 			float _LightingIgnoreAmbientColor;
 			float3 _LightingShadowColor;
@@ -2277,6 +2335,64 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/965cd73c7ec7ec144bcfcb47049853
 				vertexAudioLink[3] = 0.0 == 0 ? AudioLinkData(ALPASS_AUDIOLINK + float2(0, 3))[0] : AudioLinkData(ALPASS_FILTEREDAUDIOLINK + float2((1 - 0.0) * 15.95, 3))[0];
 				vertexAudioLink[4] = AudioLinkData(ALPASS_GENERALVU + float2(8, 0))[0];
 				#endif
+				#ifdef AUTO_EXPOSURE
+				float3 ALLocalTranslation = 0;
+				float3 ALrotation = 0;
+				float3 CTALRotation = 0;
+				float3 ALScale = 0;
+				float3 ALWorldTranslation = 0;
+				float ALHeight = 0;
+				float ALRoundingAmount = 0;
+				float4 ALSpectrumLocalOffset = 0;
+				float4 vertexMaskTex = tex2Dlod(_VertexBasicsMask, float4(poiUV(vertexUV(v, 0.0), float4(1,1,0,0)) + float4(0,0,0,0).xy * _Time.x, 0, 0));
+				float vertexEffectsMask[8] = {
+					vertexMaskTex.r,
+					vertexMaskTex.g,
+					vertexMaskTex.b,
+					vertexMaskTex.a,
+					v.color.r,
+					v.color.g,
+					v.color.b,
+					v.color.a
+				};
+				float basicsMask = vertexEffectsMask[0.0];
+				float4 rotation = float4(
+				lerp(float3(0, 0, 0), float4(0,0,0,1).xyz, basicsMask) +
+				float3(180, 0, 0) +
+				lerp(float3(0, 0, 0), float4(0,0,0,1).xyz, basicsMask) * _Time.x +
+				ALrotation +
+				CTALRotation,
+				float4(0,0,0,1).w
+				);
+				float4 localTranslation = lerp(float4(0, 0, 0, 0), float4(0,0,0,1), basicsMask) + float4(ALLocalTranslation, 0) + ALSpectrumLocalOffset;
+				float4 manualScale = lerp(float4(1, 1, 1, 1), float4(1,1,1,1), basicsMask);
+				float4 localScale = manualScale + float4(ALScale, 0);
+				v.normal = rotate_with_quaternion(v.normal, rotation.xyz);
+				v.tangent.xyz = rotate_with_quaternion(v.tangent.xyz, rotation.xyz);
+				v.vertex = transform(v.vertex, localTranslation, rotation, localScale);
+				o.normal = UnityObjectToWorldNormal(v.normal);
+				float3 heightOffset = 0;
+				
+				if (1.0)
+				{
+					float windMask = vertexEffectsMask[0.0];
+					if (windMask > 0)
+					{
+						float3 worldPos = mul(unity_ObjectToWorld, v.vertex).xyz;
+						float2 noiseUV = worldPos.xz * 10.0 * .1 + _Time.y * 0.5;
+						float noise = tex2Dlod(_VertexBasicsMask, float4(poiUV(noiseUV, float4(1,1,0,0)), 0, 0))[0.0] * 2 - 1;
+						float turbulence = lerp(1, noise, 0.5);
+						float primaryWave = sin(_Time.y * 1.0 + dot(worldPos, normalize(float4(1,-1,1,-1).xyz)) * 1.0) * turbulence;
+						float detailWave = sin(_Time.y * 2.5 + dot(worldPos, normalize(float4(0,1,0,0).xyz)) * 5.0) * turbulence;
+						float3 primaryOffset = primaryWave * normalize(float4(1,-1,1,-1).xyz) * 0.1;
+						float3 detailOffset = detailWave * normalize(float4(0,1,0,0).xyz) * 0.1;
+						float3 windOffset = (primaryOffset +detailOffset);
+						v.vertex.xyz += mul(unity_WorldToObject, float4(windOffset, 0)).xyz * windMask;
+					}
+				}
+				float3 worldTranslation = lerp(float3(0, 0, 0), float4(0,0,0,1).xyz, basicsMask);
+				v.vertex.xyz += mul(unity_WorldToObject, worldTranslation + ALWorldTranslation + heightOffset).xyz;
+				#endif
 				o.normal = UnityObjectToWorldNormal(v.normal);
 				o.tangent.xyz = UnityObjectToWorldDir(v.tangent);
 				o.tangent.w = v.tangent.w;
@@ -2503,7 +2619,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/965cd73c7ec7ec144bcfcb47049853
 				shadowAttenuation = lerp(1, poiLight.additiveShadow, poiLight.attenuationStrength);
 				#endif
 				#ifdef POI_PASS_ADD
-				if (3.0 == 3)
+				if (1.0 == 3)
 				{
 					#if defined(POINT) || defined(SPOT)
 					#if defined(_LIGHTINGMODE_REALISTIC) || defined(_LIGHTINGMODE_CLOTH) || defined(_LIGHTINGMODE_WRAPPED)
@@ -2513,20 +2629,20 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/965cd73c7ec7ec144bcfcb47049853
 					#endif
 					#endif
 				}
-				if (3.0 == 0)
+				if (1.0 == 0)
 				{
 					poiLight.rampedLightMap = max(0, poiLight.nDotL);
 					poiLight.finalLighting = poiLight.directColor * attenuation * max(0, poiLight.nDotL) * poiLight.detailShadow * shadowAttenuation;
 					return;
 				}
-				if (3.0 == 1)
+				if (1.0 == 1)
 				{
 					#if defined(POINT_COOKIE) || defined(DIRECTIONAL_COOKIE)
 					float passthrough = 0;
 					#else
 					float passthrough = 0.5;
 					#endif
-					float2 ToonAddGradient = float2(0.0, 0.5);
+					float2 ToonAddGradient = float2(0.0, 1.0);
 					if (ToonAddGradient.x == ToonAddGradient.y) ToonAddGradient.y += 0.0001;
 					poiLight.rampedLightMap = smoothstep(ToonAddGradient.y, ToonAddGradient.x, 1 - (.5 * poiLight.nDotL + .5));
 					#if defined(POINT) || defined(SPOT)
@@ -2558,7 +2674,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/965cd73c7ec7ec144bcfcb47049853
 					float3 vertexLighting = float3(0, 0, 0);
 					for (int index = 0; index < 4; index++)
 					{
-						float lightingMode = 3.0;
+						float lightingMode = 1.0;
 						if (lightingMode == 3)
 						{
 							#if defined(_LIGHTINGMODE_REALISTIC)
@@ -2573,7 +2689,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/965cd73c7ec7ec144bcfcb47049853
 						}
 						if (lightingMode == 1)
 						{
-							float2 ToonAddGradient = float2(0.0, 0.5);
+							float2 ToonAddGradient = float2(0.0, 1.0);
 							if (ToonAddGradient.x == ToonAddGradient.y) ToonAddGradient.y += 0.0001;
 							vertexLighting = max(vertexLighting, lerp(poiLight.vColor[index], poiLight.vColor[index] * 0.5, smoothstep(ToonAddGradient.x, ToonAddGradient.y, 1 - (.5 * poiLight.vDotNL[index] + .5))) * poiLight.detailShadow);
 						}
@@ -2812,7 +2928,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/965cd73c7ec7ec144bcfcb47049853
 						poiLight.vPosition[index] = float3(unity_4LightPosX0[index], unity_4LightPosY0[index], unity_4LightPosZ0[index]);
 						float3 vertexToLightSource = poiLight.vPosition[index] - poiMesh.worldPos;
 						poiLight.vDirection[index] = normalize(vertexToLightSource);
-						poiLight.vColor[index] = 1.0 ? MaxLuminance(unity_LightColor[index].rgb * poiLight.vAttenuation[index], 1.0) : unity_LightColor[index].rgb * poiLight.vAttenuation[index];
+						poiLight.vColor[index] = 0.0 ? MaxLuminance(unity_LightColor[index].rgb * poiLight.vAttenuation[index], 1.0) : unity_LightColor[index].rgb * poiLight.vAttenuation[index];
 						poiLight.vColor[index] = lerp(poiLight.vColor[index], dot(poiLight.vColor[index], float3(0.299, 0.587, 0.114)), 0.0);
 						poiLight.vHalfDir[index] = Unity_SafeNormalize(poiLight.vDirection[index] + poiCam.viewDir);
 						poiLight.vDotNL[index] = dot(poiMesh.normals[1], poiLight.vDirection[index]);
@@ -3059,12 +3175,12 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/965cd73c7ec7ec144bcfcb47049853
 				#endif
 				poiLight.additiveShadow = UNITY_SHADOW_ATTENUATION(i, poiMesh.worldPos);
 				poiLight.attenuationStrength = 0.85;
-				poiLight.directColor = 1.0 ? MaxLuminance(_LightColor0.rgb * poiLight.attenuation, 1.0) : _LightColor0.rgb * poiLight.attenuation;
+				poiLight.directColor = 0.0 ? MaxLuminance(_LightColor0.rgb * poiLight.attenuation, 1.0) : _LightColor0.rgb * poiLight.attenuation;
 				#if defined(POINT_COOKIE) || defined(DIRECTIONAL_COOKIE)
 				poiLight.indirectColor = 0;
 				#else
 				poiLight.indirectColor = lerp(0, poiLight.directColor, 0.5);
-				poiLight.indirectColor = 1.0 ? MaxLuminance(poiLight.indirectColor, 1.0) : poiLight.indirectColor;
+				poiLight.indirectColor = 0.0 ? MaxLuminance(poiLight.indirectColor, 1.0) : poiLight.indirectColor;
 				#endif
 				poiLight.directColor = lerp(poiLight.directColor, dot(poiLight.directColor, float3(0.299, 0.587, 0.114)), 0.0);
 				poiLight.indirectColor = lerp(poiLight.indirectColor, dot(poiLight.indirectColor, float3(0.299, 0.587, 0.114)), 0.0);
@@ -3202,6 +3318,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/965cd73c7ec7ec144bcfcb47049853
 			BlendOp [_AddBlendOp], [_AddBlendOpAlpha]
 			Blend [_AddSrcBlend] [_AddDstBlend], [_AddSrcBlendAlpha] [_AddDstBlendAlpha]
 			CGPROGRAM
+ #define AUTO_EXPOSURE 
  #define VIGNETTE_MASKED 
  #define _LIGHTINGMODE_FLAT 
  #define _STOCHASTICMODE_DELIOT_HEITZ 
@@ -3490,6 +3607,32 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/965cd73c7ec7ec144bcfcb47049853
 			float _UVModWorldPos1;
 			float _UVModLocalPos0;
 			float _UVModLocalPos1;
+			#ifdef AUTO_EXPOSURE
+			sampler2D _VertexBasicsMask;
+			float4 _VertexBasicsMask_ST;
+			float4 _VertexBasicsMaskUVPan;
+			float VertexBasicsMaskUV;
+			float _VertexBasicsMaskChannel;
+			float4 _VertexManipulationLocalTranslation;
+			float4 _VertexManipulationWorldTranslation;
+			float4 _VertexManipulationLocalRotation;
+			float3 _VertexManipulationLocalRotationSpeed;
+			float4 _VertexManipulationLocalScale;
+			float _VertexWindEnabled;
+			float _VertexWindMaskChannel;
+			float4 _VertexWindPrimaryDirection;
+			float _VertexWindPrimaryAmplitude;
+			float _VertexWindPrimarySpeed;
+			float _VertexWindPrimaryFrequency;
+			float4 _VertexWindDetailDirection;
+			float _VertexWindDetailAmplitude;
+			float _VertexWindDetailSpeed;
+			float _VertexWindDetailFrequency;
+			float _VertexWindNoiseChannel;
+			float _VertexWindNoiseStrength;
+			float _VertexWindNoiseScale;
+			float _VertexWindNoiseSpeed;
+			#endif
 			float _ShadowStrength;
 			float _LightingIgnoreAmbientColor;
 			float3 _LightingShadowColor;
@@ -5143,6 +5286,64 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/965cd73c7ec7ec144bcfcb47049853
 				vertexAudioLink[3] = 0.0 == 0 ? AudioLinkData(ALPASS_AUDIOLINK + float2(0, 3))[0] : AudioLinkData(ALPASS_FILTEREDAUDIOLINK + float2((1 - 0.0) * 15.95, 3))[0];
 				vertexAudioLink[4] = AudioLinkData(ALPASS_GENERALVU + float2(8, 0))[0];
 				#endif
+				#ifdef AUTO_EXPOSURE
+				float3 ALLocalTranslation = 0;
+				float3 ALrotation = 0;
+				float3 CTALRotation = 0;
+				float3 ALScale = 0;
+				float3 ALWorldTranslation = 0;
+				float ALHeight = 0;
+				float ALRoundingAmount = 0;
+				float4 ALSpectrumLocalOffset = 0;
+				float4 vertexMaskTex = tex2Dlod(_VertexBasicsMask, float4(poiUV(vertexUV(v, 0.0), float4(1,1,0,0)) + float4(0,0,0,0).xy * _Time.x, 0, 0));
+				float vertexEffectsMask[8] = {
+					vertexMaskTex.r,
+					vertexMaskTex.g,
+					vertexMaskTex.b,
+					vertexMaskTex.a,
+					v.color.r,
+					v.color.g,
+					v.color.b,
+					v.color.a
+				};
+				float basicsMask = vertexEffectsMask[0.0];
+				float4 rotation = float4(
+				lerp(float3(0, 0, 0), float4(0,0,0,1).xyz, basicsMask) +
+				float3(180, 0, 0) +
+				lerp(float3(0, 0, 0), float4(0,0,0,1).xyz, basicsMask) * _Time.x +
+				ALrotation +
+				CTALRotation,
+				float4(0,0,0,1).w
+				);
+				float4 localTranslation = lerp(float4(0, 0, 0, 0), float4(0,0,0,1), basicsMask) + float4(ALLocalTranslation, 0) + ALSpectrumLocalOffset;
+				float4 manualScale = lerp(float4(1, 1, 1, 1), float4(1,1,1,1), basicsMask);
+				float4 localScale = manualScale + float4(ALScale, 0);
+				v.normal = rotate_with_quaternion(v.normal, rotation.xyz);
+				v.tangent.xyz = rotate_with_quaternion(v.tangent.xyz, rotation.xyz);
+				v.vertex = transform(v.vertex, localTranslation, rotation, localScale);
+				o.normal = UnityObjectToWorldNormal(v.normal);
+				float3 heightOffset = 0;
+				
+				if (1.0)
+				{
+					float windMask = vertexEffectsMask[0.0];
+					if (windMask > 0)
+					{
+						float3 worldPos = mul(unity_ObjectToWorld, v.vertex).xyz;
+						float2 noiseUV = worldPos.xz * 10.0 * .1 + _Time.y * 0.5;
+						float noise = tex2Dlod(_VertexBasicsMask, float4(poiUV(noiseUV, float4(1,1,0,0)), 0, 0))[0.0] * 2 - 1;
+						float turbulence = lerp(1, noise, 0.5);
+						float primaryWave = sin(_Time.y * 1.0 + dot(worldPos, normalize(float4(1,-1,1,-1).xyz)) * 1.0) * turbulence;
+						float detailWave = sin(_Time.y * 2.5 + dot(worldPos, normalize(float4(0,1,0,0).xyz)) * 5.0) * turbulence;
+						float3 primaryOffset = primaryWave * normalize(float4(1,-1,1,-1).xyz) * 0.1;
+						float3 detailOffset = detailWave * normalize(float4(0,1,0,0).xyz) * 0.1;
+						float3 windOffset = (primaryOffset +detailOffset);
+						v.vertex.xyz += mul(unity_WorldToObject, float4(windOffset, 0)).xyz * windMask;
+					}
+				}
+				float3 worldTranslation = lerp(float3(0, 0, 0), float4(0,0,0,1).xyz, basicsMask);
+				v.vertex.xyz += mul(unity_WorldToObject, worldTranslation + ALWorldTranslation + heightOffset).xyz;
+				#endif
 				o.normal = UnityObjectToWorldNormal(v.normal);
 				o.tangent.xyz = UnityObjectToWorldDir(v.tangent);
 				o.tangent.w = v.tangent.w;
@@ -5369,7 +5570,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/965cd73c7ec7ec144bcfcb47049853
 				shadowAttenuation = lerp(1, poiLight.additiveShadow, poiLight.attenuationStrength);
 				#endif
 				#ifdef POI_PASS_ADD
-				if (3.0 == 3)
+				if (1.0 == 3)
 				{
 					#if defined(POINT) || defined(SPOT)
 					#if defined(_LIGHTINGMODE_REALISTIC) || defined(_LIGHTINGMODE_CLOTH) || defined(_LIGHTINGMODE_WRAPPED)
@@ -5379,20 +5580,20 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/965cd73c7ec7ec144bcfcb47049853
 					#endif
 					#endif
 				}
-				if (3.0 == 0)
+				if (1.0 == 0)
 				{
 					poiLight.rampedLightMap = max(0, poiLight.nDotL);
 					poiLight.finalLighting = poiLight.directColor * attenuation * max(0, poiLight.nDotL) * poiLight.detailShadow * shadowAttenuation;
 					return;
 				}
-				if (3.0 == 1)
+				if (1.0 == 1)
 				{
 					#if defined(POINT_COOKIE) || defined(DIRECTIONAL_COOKIE)
 					float passthrough = 0;
 					#else
 					float passthrough = 0.5;
 					#endif
-					float2 ToonAddGradient = float2(0.0, 0.5);
+					float2 ToonAddGradient = float2(0.0, 1.0);
 					if (ToonAddGradient.x == ToonAddGradient.y) ToonAddGradient.y += 0.0001;
 					poiLight.rampedLightMap = smoothstep(ToonAddGradient.y, ToonAddGradient.x, 1 - (.5 * poiLight.nDotL + .5));
 					#if defined(POINT) || defined(SPOT)
@@ -5424,7 +5625,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/965cd73c7ec7ec144bcfcb47049853
 					float3 vertexLighting = float3(0, 0, 0);
 					for (int index = 0; index < 4; index++)
 					{
-						float lightingMode = 3.0;
+						float lightingMode = 1.0;
 						if (lightingMode == 3)
 						{
 							#if defined(_LIGHTINGMODE_REALISTIC)
@@ -5439,7 +5640,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/965cd73c7ec7ec144bcfcb47049853
 						}
 						if (lightingMode == 1)
 						{
-							float2 ToonAddGradient = float2(0.0, 0.5);
+							float2 ToonAddGradient = float2(0.0, 1.0);
 							if (ToonAddGradient.x == ToonAddGradient.y) ToonAddGradient.y += 0.0001;
 							vertexLighting = max(vertexLighting, lerp(poiLight.vColor[index], poiLight.vColor[index] * 0.5, smoothstep(ToonAddGradient.x, ToonAddGradient.y, 1 - (.5 * poiLight.vDotNL[index] + .5))) * poiLight.detailShadow);
 						}
@@ -5678,7 +5879,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/965cd73c7ec7ec144bcfcb47049853
 						poiLight.vPosition[index] = float3(unity_4LightPosX0[index], unity_4LightPosY0[index], unity_4LightPosZ0[index]);
 						float3 vertexToLightSource = poiLight.vPosition[index] - poiMesh.worldPos;
 						poiLight.vDirection[index] = normalize(vertexToLightSource);
-						poiLight.vColor[index] = 1.0 ? MaxLuminance(unity_LightColor[index].rgb * poiLight.vAttenuation[index], 1.0) : unity_LightColor[index].rgb * poiLight.vAttenuation[index];
+						poiLight.vColor[index] = 0.0 ? MaxLuminance(unity_LightColor[index].rgb * poiLight.vAttenuation[index], 1.0) : unity_LightColor[index].rgb * poiLight.vAttenuation[index];
 						poiLight.vColor[index] = lerp(poiLight.vColor[index], dot(poiLight.vColor[index], float3(0.299, 0.587, 0.114)), 0.0);
 						poiLight.vHalfDir[index] = Unity_SafeNormalize(poiLight.vDirection[index] + poiCam.viewDir);
 						poiLight.vDotNL[index] = dot(poiMesh.normals[1], poiLight.vDirection[index]);
@@ -5925,12 +6126,12 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/965cd73c7ec7ec144bcfcb47049853
 				#endif
 				poiLight.additiveShadow = UNITY_SHADOW_ATTENUATION(i, poiMesh.worldPos);
 				poiLight.attenuationStrength = 0.85;
-				poiLight.directColor = 1.0 ? MaxLuminance(_LightColor0.rgb * poiLight.attenuation, 1.0) : _LightColor0.rgb * poiLight.attenuation;
+				poiLight.directColor = 0.0 ? MaxLuminance(_LightColor0.rgb * poiLight.attenuation, 1.0) : _LightColor0.rgb * poiLight.attenuation;
 				#if defined(POINT_COOKIE) || defined(DIRECTIONAL_COOKIE)
 				poiLight.indirectColor = 0;
 				#else
 				poiLight.indirectColor = lerp(0, poiLight.directColor, 0.5);
-				poiLight.indirectColor = 1.0 ? MaxLuminance(poiLight.indirectColor, 1.0) : poiLight.indirectColor;
+				poiLight.indirectColor = 0.0 ? MaxLuminance(poiLight.indirectColor, 1.0) : poiLight.indirectColor;
 				#endif
 				poiLight.directColor = lerp(poiLight.directColor, dot(poiLight.directColor, float3(0.299, 0.587, 0.114)), 0.0);
 				poiLight.indirectColor = lerp(poiLight.indirectColor, dot(poiLight.indirectColor, float3(0.299, 0.587, 0.114)), 0.0);
@@ -6072,6 +6273,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/965cd73c7ec7ec144bcfcb47049853
 			BlendOp [_BlendOp], [_BlendOpAlpha]
 			Blend [_SrcBlend] [_DstBlend], [_SrcBlendAlpha] [_DstBlendAlpha]
 			CGPROGRAM
+ #define AUTO_EXPOSURE 
  #define VIGNETTE_MASKED 
  #define _LIGHTINGMODE_FLAT 
  #define _STOCHASTICMODE_DELIOT_HEITZ 
@@ -6264,6 +6466,32 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/965cd73c7ec7ec144bcfcb47049853
 			float _UVModWorldPos1;
 			float _UVModLocalPos0;
 			float _UVModLocalPos1;
+			#ifdef AUTO_EXPOSURE
+			sampler2D _VertexBasicsMask;
+			float4 _VertexBasicsMask_ST;
+			float4 _VertexBasicsMaskUVPan;
+			float VertexBasicsMaskUV;
+			float _VertexBasicsMaskChannel;
+			float4 _VertexManipulationLocalTranslation;
+			float4 _VertexManipulationWorldTranslation;
+			float4 _VertexManipulationLocalRotation;
+			float3 _VertexManipulationLocalRotationSpeed;
+			float4 _VertexManipulationLocalScale;
+			float _VertexWindEnabled;
+			float _VertexWindMaskChannel;
+			float4 _VertexWindPrimaryDirection;
+			float _VertexWindPrimaryAmplitude;
+			float _VertexWindPrimarySpeed;
+			float _VertexWindPrimaryFrequency;
+			float4 _VertexWindDetailDirection;
+			float _VertexWindDetailAmplitude;
+			float _VertexWindDetailSpeed;
+			float _VertexWindDetailFrequency;
+			float _VertexWindNoiseChannel;
+			float _VertexWindNoiseStrength;
+			float _VertexWindNoiseScale;
+			float _VertexWindNoiseSpeed;
+			#endif
 			struct appdata
 			{
 				float4 vertex : POSITION;
@@ -7889,6 +8117,64 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/965cd73c7ec7ec144bcfcb47049853
 				vertexAudioLink[2] = 0.0 == 0 ? AudioLinkData(ALPASS_AUDIOLINK + float2(0, 2))[0] : AudioLinkData(ALPASS_FILTEREDAUDIOLINK + float2((1 - 0.0) * 15.95, 2))[0];
 				vertexAudioLink[3] = 0.0 == 0 ? AudioLinkData(ALPASS_AUDIOLINK + float2(0, 3))[0] : AudioLinkData(ALPASS_FILTEREDAUDIOLINK + float2((1 - 0.0) * 15.95, 3))[0];
 				vertexAudioLink[4] = AudioLinkData(ALPASS_GENERALVU + float2(8, 0))[0];
+				#endif
+				#ifdef AUTO_EXPOSURE
+				float3 ALLocalTranslation = 0;
+				float3 ALrotation = 0;
+				float3 CTALRotation = 0;
+				float3 ALScale = 0;
+				float3 ALWorldTranslation = 0;
+				float ALHeight = 0;
+				float ALRoundingAmount = 0;
+				float4 ALSpectrumLocalOffset = 0;
+				float4 vertexMaskTex = tex2Dlod(_VertexBasicsMask, float4(poiUV(vertexUV(v, 0.0), float4(1,1,0,0)) + float4(0,0,0,0).xy * _Time.x, 0, 0));
+				float vertexEffectsMask[8] = {
+					vertexMaskTex.r,
+					vertexMaskTex.g,
+					vertexMaskTex.b,
+					vertexMaskTex.a,
+					v.color.r,
+					v.color.g,
+					v.color.b,
+					v.color.a
+				};
+				float basicsMask = vertexEffectsMask[0.0];
+				float4 rotation = float4(
+				lerp(float3(0, 0, 0), float4(0,0,0,1).xyz, basicsMask) +
+				float3(180, 0, 0) +
+				lerp(float3(0, 0, 0), float4(0,0,0,1).xyz, basicsMask) * _Time.x +
+				ALrotation +
+				CTALRotation,
+				float4(0,0,0,1).w
+				);
+				float4 localTranslation = lerp(float4(0, 0, 0, 0), float4(0,0,0,1), basicsMask) + float4(ALLocalTranslation, 0) + ALSpectrumLocalOffset;
+				float4 manualScale = lerp(float4(1, 1, 1, 1), float4(1,1,1,1), basicsMask);
+				float4 localScale = manualScale + float4(ALScale, 0);
+				v.normal = rotate_with_quaternion(v.normal, rotation.xyz);
+				v.tangent.xyz = rotate_with_quaternion(v.tangent.xyz, rotation.xyz);
+				v.vertex = transform(v.vertex, localTranslation, rotation, localScale);
+				o.normal = UnityObjectToWorldNormal(v.normal);
+				float3 heightOffset = 0;
+				
+				if (1.0)
+				{
+					float windMask = vertexEffectsMask[0.0];
+					if (windMask > 0)
+					{
+						float3 worldPos = mul(unity_ObjectToWorld, v.vertex).xyz;
+						float2 noiseUV = worldPos.xz * 10.0 * .1 + _Time.y * 0.5;
+						float noise = tex2Dlod(_VertexBasicsMask, float4(poiUV(noiseUV, float4(1,1,0,0)), 0, 0))[0.0] * 2 - 1;
+						float turbulence = lerp(1, noise, 0.5);
+						float primaryWave = sin(_Time.y * 1.0 + dot(worldPos, normalize(float4(1,-1,1,-1).xyz)) * 1.0) * turbulence;
+						float detailWave = sin(_Time.y * 2.5 + dot(worldPos, normalize(float4(0,1,0,0).xyz)) * 5.0) * turbulence;
+						float3 primaryOffset = primaryWave * normalize(float4(1,-1,1,-1).xyz) * 0.1;
+						float3 detailOffset = detailWave * normalize(float4(0,1,0,0).xyz) * 0.1;
+						float3 windOffset = (primaryOffset +detailOffset);
+						v.vertex.xyz += mul(unity_WorldToObject, float4(windOffset, 0)).xyz * windMask;
+					}
+				}
+				float3 worldTranslation = lerp(float3(0, 0, 0), float4(0,0,0,1).xyz, basicsMask);
+				v.vertex.xyz += mul(unity_WorldToObject, worldTranslation + ALWorldTranslation + heightOffset).xyz;
 				#endif
 				o.normal = UnityObjectToWorldNormal(v.normal);
 				o.tangent.xyz = UnityObjectToWorldDir(v.tangent);
@@ -8247,6 +8533,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/965cd73c7ec7ec144bcfcb47049853
 			BlendOp [_BlendOp], [_BlendOpAlpha]
 			Blend [_SrcBlend] [_DstBlend], [_SrcBlendAlpha] [_DstBlendAlpha]
 			CGPROGRAM
+ #define AUTO_EXPOSURE 
  #define VIGNETTE_MASKED 
  #define _LIGHTINGMODE_FLAT 
  #define _STOCHASTICMODE_DELIOT_HEITZ 
@@ -8460,6 +8747,32 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/965cd73c7ec7ec144bcfcb47049853
 			float _UVModWorldPos1;
 			float _UVModLocalPos0;
 			float _UVModLocalPos1;
+			#ifdef AUTO_EXPOSURE
+			sampler2D _VertexBasicsMask;
+			float4 _VertexBasicsMask_ST;
+			float4 _VertexBasicsMaskUVPan;
+			float VertexBasicsMaskUV;
+			float _VertexBasicsMaskChannel;
+			float4 _VertexManipulationLocalTranslation;
+			float4 _VertexManipulationWorldTranslation;
+			float4 _VertexManipulationLocalRotation;
+			float3 _VertexManipulationLocalRotationSpeed;
+			float4 _VertexManipulationLocalScale;
+			float _VertexWindEnabled;
+			float _VertexWindMaskChannel;
+			float4 _VertexWindPrimaryDirection;
+			float _VertexWindPrimaryAmplitude;
+			float _VertexWindPrimarySpeed;
+			float _VertexWindPrimaryFrequency;
+			float4 _VertexWindDetailDirection;
+			float _VertexWindDetailAmplitude;
+			float _VertexWindDetailSpeed;
+			float _VertexWindDetailFrequency;
+			float _VertexWindNoiseChannel;
+			float _VertexWindNoiseStrength;
+			float _VertexWindNoiseScale;
+			float _VertexWindNoiseSpeed;
+			#endif
 			struct appdata
 			{
 				float4 vertex : POSITION;
@@ -10085,6 +10398,64 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/965cd73c7ec7ec144bcfcb47049853
 				vertexAudioLink[2] = 0.0 == 0 ? AudioLinkData(ALPASS_AUDIOLINK + float2(0, 2))[0] : AudioLinkData(ALPASS_FILTEREDAUDIOLINK + float2((1 - 0.0) * 15.95, 2))[0];
 				vertexAudioLink[3] = 0.0 == 0 ? AudioLinkData(ALPASS_AUDIOLINK + float2(0, 3))[0] : AudioLinkData(ALPASS_FILTEREDAUDIOLINK + float2((1 - 0.0) * 15.95, 3))[0];
 				vertexAudioLink[4] = AudioLinkData(ALPASS_GENERALVU + float2(8, 0))[0];
+				#endif
+				#ifdef AUTO_EXPOSURE
+				float3 ALLocalTranslation = 0;
+				float3 ALrotation = 0;
+				float3 CTALRotation = 0;
+				float3 ALScale = 0;
+				float3 ALWorldTranslation = 0;
+				float ALHeight = 0;
+				float ALRoundingAmount = 0;
+				float4 ALSpectrumLocalOffset = 0;
+				float4 vertexMaskTex = tex2Dlod(_VertexBasicsMask, float4(poiUV(vertexUV(v, 0.0), float4(1,1,0,0)) + float4(0,0,0,0).xy * _Time.x, 0, 0));
+				float vertexEffectsMask[8] = {
+					vertexMaskTex.r,
+					vertexMaskTex.g,
+					vertexMaskTex.b,
+					vertexMaskTex.a,
+					v.color.r,
+					v.color.g,
+					v.color.b,
+					v.color.a
+				};
+				float basicsMask = vertexEffectsMask[0.0];
+				float4 rotation = float4(
+				lerp(float3(0, 0, 0), float4(0,0,0,1).xyz, basicsMask) +
+				float3(180, 0, 0) +
+				lerp(float3(0, 0, 0), float4(0,0,0,1).xyz, basicsMask) * _Time.x +
+				ALrotation +
+				CTALRotation,
+				float4(0,0,0,1).w
+				);
+				float4 localTranslation = lerp(float4(0, 0, 0, 0), float4(0,0,0,1), basicsMask) + float4(ALLocalTranslation, 0) + ALSpectrumLocalOffset;
+				float4 manualScale = lerp(float4(1, 1, 1, 1), float4(1,1,1,1), basicsMask);
+				float4 localScale = manualScale + float4(ALScale, 0);
+				v.normal = rotate_with_quaternion(v.normal, rotation.xyz);
+				v.tangent.xyz = rotate_with_quaternion(v.tangent.xyz, rotation.xyz);
+				v.vertex = transform(v.vertex, localTranslation, rotation, localScale);
+				o.normal = UnityObjectToWorldNormal(v.normal);
+				float3 heightOffset = 0;
+				
+				if (1.0)
+				{
+					float windMask = vertexEffectsMask[0.0];
+					if (windMask > 0)
+					{
+						float3 worldPos = mul(unity_ObjectToWorld, v.vertex).xyz;
+						float2 noiseUV = worldPos.xz * 10.0 * .1 + _Time.y * 0.5;
+						float noise = tex2Dlod(_VertexBasicsMask, float4(poiUV(noiseUV, float4(1,1,0,0)), 0, 0))[0.0] * 2 - 1;
+						float turbulence = lerp(1, noise, 0.5);
+						float primaryWave = sin(_Time.y * 1.0 + dot(worldPos, normalize(float4(1,-1,1,-1).xyz)) * 1.0) * turbulence;
+						float detailWave = sin(_Time.y * 2.5 + dot(worldPos, normalize(float4(0,1,0,0).xyz)) * 5.0) * turbulence;
+						float3 primaryOffset = primaryWave * normalize(float4(1,-1,1,-1).xyz) * 0.1;
+						float3 detailOffset = detailWave * normalize(float4(0,1,0,0).xyz) * 0.1;
+						float3 windOffset = (primaryOffset +detailOffset);
+						v.vertex.xyz += mul(unity_WorldToObject, float4(windOffset, 0)).xyz * windMask;
+					}
+				}
+				float3 worldTranslation = lerp(float3(0, 0, 0), float4(0,0,0,1).xyz, basicsMask);
+				v.vertex.xyz += mul(unity_WorldToObject, worldTranslation + ALWorldTranslation + heightOffset).xyz;
 				#endif
 				o.normal = UnityObjectToWorldNormal(v.normal);
 				o.tangent.xyz = UnityObjectToWorldDir(v.tangent);

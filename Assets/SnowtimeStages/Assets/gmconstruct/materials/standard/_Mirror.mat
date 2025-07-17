@@ -13,7 +13,7 @@ Material:
   m_InvalidKeywords:
   - BSSBLOOMFOGTYPE_HEIGHT
   - VIGNETTE_MASKED
-  - _LIGHTINGMODE_FLAT
+  - _LIGHTINGMODE_REALISTIC
   - _RIM2STYLE_POIYOMI
   - _RIMSTYLE_POIYOMI
   - _STOCHASTICMODE_DELIOT_HEITZ
@@ -23,8 +23,8 @@ Material:
   m_CustomRenderQueue: 1999
   stringTagMap:
     AllLockedGUIDS: b2db2093a1bea6d4781cca9afbdee76e
-    OriginalKeywords: BSSBLOOMFOGTYPE_HEIGHT VIGNETTE_MASKED _LIGHTINGMODE_FLAT _RIM2STYLE_POIYOMI
-      _RIMSTYLE_POIYOMI _STOCHASTICMODE_DELIOT_HEITZ
+    OriginalKeywords: BSSBLOOMFOGTYPE_HEIGHT VIGNETTE_MASKED _LIGHTINGMODE_REALISTIC
+      _RIM2STYLE_POIYOMI _RIMSTYLE_POIYOMI _STOCHASTICMODE_DELIOT_HEITZ
     OriginalShader: .poiyomi/Poiyomi Toon World
     OriginalShaderGUID: 1b58d372fe360874a8fb767d53f955b0
     RenderType: Opaque
@@ -979,7 +979,7 @@ Material:
     - _FogHeightScale: 1
     - _FogScale: 1
     - _FogStartOffset: 0
-    - _ForceFlatRampedLightmap: 0
+    - _ForceFlatRampedLightmap: 1
     - _ForgotToLockMaterial: 1
     - _FresnelStrength: 1
     - _GGXAnisotropics: 0
@@ -1380,10 +1380,10 @@ Material:
     - _LightingAddDetailShadowStrengthR: 0
     - _LightingAdditiveCastedShadows: 0
     - _LightingAdditiveEnable: 1
-    - _LightingAdditiveGradientEnd: 0.5
+    - _LightingAdditiveGradientEnd: 1
     - _LightingAdditiveGradientStart: 0
     - _LightingAdditiveLimit: 1
-    - _LightingAdditiveLimited: 1
+    - _LightingAdditiveLimited: 0
     - _LightingAdditiveMonochromatic: 1
     - _LightingAdditivePassthrough: 0
     - _LightingAdditiveType: 1
@@ -1408,7 +1408,7 @@ Material:
     - _LightingMapMode: 0
     - _LightingMinLightBrightness: 1
     - _LightingMirrorVertexLightingEnabled: 0
-    - _LightingMode: 5
+    - _LightingMode: 6
     - _LightingMonochromatic: 1
     - _LightingMulitlayerNonLinear: 1
     - _LightingShadowMaskStrengthA: 0

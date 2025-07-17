@@ -11,6 +11,7 @@ Material:
   m_Shader: {fileID: 4800000, guid: 33559d04f7ec6fd4296ed0ca07cd754b, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords:
+  - AUTO_EXPOSURE
   - BSSBLOOMFOGTYPE_HEIGHT
   - VIGNETTE_MASKED
   - _LIGHTINGMODE_FLAT
@@ -23,8 +24,8 @@ Material:
   m_CustomRenderQueue: 2450
   stringTagMap:
     AllLockedGUIDS: 1fd4730077dc8df499623c299110a725
-    OriginalKeywords: BSSBLOOMFOGTYPE_HEIGHT VIGNETTE_MASKED _LIGHTINGMODE_FLAT _RIM2STYLE_POIYOMI
-      _RIMSTYLE_POIYOMI _STOCHASTICMODE_DELIOT_HEITZ
+    OriginalKeywords: AUTO_EXPOSURE BSSBLOOMFOGTYPE_HEIGHT VIGNETTE_MASKED _LIGHTINGMODE_FLAT
+      _RIM2STYLE_POIYOMI _RIMSTYLE_POIYOMI _STOCHASTICMODE_DELIOT_HEITZ
     OriginalShader: .poiyomi/Poiyomi Toon World
     OriginalShaderGUID: 1b58d372fe360874a8fb767d53f955b0
     RenderType: Opaque
@@ -61,6 +62,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: 1e708b6e51163fb4a9d384fdcc1a9faf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _VertexBasicsMask:
+        m_Texture: {fileID: 2800000, guid: 2a51120216960914d8e525bf52cf495a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
@@ -1309,13 +1314,13 @@ Material:
     - _LightingAddDetailShadowStrengthR: 1
     - _LightingAdditiveCastedShadows: 0.85
     - _LightingAdditiveEnable: 1
-    - _LightingAdditiveGradientEnd: 0.5
+    - _LightingAdditiveGradientEnd: 1
     - _LightingAdditiveGradientStart: 0
     - _LightingAdditiveLimit: 1
-    - _LightingAdditiveLimited: 1
+    - _LightingAdditiveLimited: 0
     - _LightingAdditiveMonochromatic: 0
     - _LightingAdditivePassthrough: 0.5
-    - _LightingAdditiveType: 3
+    - _LightingAdditiveType: 1
     - _LightingCap: 1
     - _LightingCapEnabled: 1
     - _LightingCastedShadows: 0.85
@@ -2323,7 +2328,7 @@ Material:
     - _VertexManipulationHeightMapChannel: 0
     - _VertexManipulationHeightMaskChannel: 0
     - _VertexManipulationHeightMaskUV: 0
-    - _VertexManipulationsEnabled: 0
+    - _VertexManipulationsEnabled: 1
     - _VertexRoundingDivision: 0.02
     - _VertexRoundingEnabled: 0
     - _VertexRoundingMaskChannel: 0
@@ -2342,14 +2347,14 @@ Material:
     - _VertexTornadoIntensity: 100
     - _VertexTornadoMaskChannel: 0
     - _VertexTornadoMode: 0
-    - _VertexTornadoRadius: 0.2
+    - _VertexTornadoRadius: 1
     - _VertexTornadoSpeed: 5
     - _VertexTornadoTopHeight: 1
     - _VertexTornadoVerticalPull: 0
-    - _VertexWindDetailAmplitude: 0.05
+    - _VertexWindDetailAmplitude: 0.1
     - _VertexWindDetailFrequency: 5
     - _VertexWindDetailSpeed: 2.5
-    - _VertexWindEnabled: 0
+    - _VertexWindEnabled: 1
     - _VertexWindMaskChannel: 0
     - _VertexWindNoiseChannel: 0
     - _VertexWindNoiseScale: 10
@@ -2627,7 +2632,7 @@ Material:
     - m_start_PoiGlobalCategory: 0
     - m_start_PoiLightData: 1
     - m_start_PoiPostProcessingCategory: 0
-    - m_start_PoiShading: 0
+    - m_start_PoiShading: 1
     - m_start_PoiUVCategory: 0
     - m_start_RGBMask: 0
     - m_start_Rim2AudioLink: 0
@@ -2696,12 +2701,12 @@ Material:
     - m_start_uvPolar: 0
     - m_start_vertexGlitching: 0
     - m_start_vertexLookAt: 0
-    - m_start_vertexManipulation: 0
+    - m_start_vertexManipulation: 1
     - m_start_videoEffects: 0
     - m_start_voronoi: 0
     - m_start_voronoiRandom: 0
     - m_thirdpartyCategory: 0
-    - m_vertexCategory: 0
+    - m_vertexCategory: 1
     - s_end_ALAlpha: 0
     - s_end_ALDecalAudioModsOptions: 0
     - s_end_ALDecalBand: 0
@@ -3647,7 +3652,7 @@ Material:
     - _VertexSpectrumOffsetMin: {r: 0, g: 0, b: 0, a: 1}
     - _VertexSphereCenter: {r: 0, g: 0, b: 0, a: 1}
     - _VertexWindDetailDirection: {r: 0, g: 1, b: 0, a: 0}
-    - _VertexWindPrimaryDirection: {r: 1, g: 0, b: 0, a: 0}
+    - _VertexWindPrimaryDirection: {r: 1, g: -1, b: 1, a: -1}
     - _VertexWorldTranslationALMax: {r: 0, g: 0, b: 0, a: 1}
     - _VertexWorldTranslationALMin: {r: 0, g: 0, b: 0, a: 1}
     - _VideoMaskTexturePan: {r: 0, g: 0, b: 0, a: 0}

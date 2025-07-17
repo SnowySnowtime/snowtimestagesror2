@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: buildingsheet03a
-  m_Shader: {fileID: 4800000, guid: 703be3fbe482176408d81636d0184237, type: 3}
+  m_Shader: {fileID: 4800000, guid: 6889ecaa401736a4685b4de2740e4675, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords:
   - _LIGHTINGMODE_REALISTIC
@@ -18,7 +18,7 @@ Material:
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 1999
   stringTagMap:
-    AllLockedGUIDS: 331e82273dea9e94b97f417a5196d690,7f4a581e21f5b0c4086920dbe3a08257,264c09e90ffe4514d8fc6ed18777c361,9a21114d7f9f11344b317177534d413a,af9d41d08a00c2e43858d12b71330ba9,57a62ab9a3dc8e542b9b2f5b16c292f0,d3e25c320e32aa14a9b1ae09bf5de0d7,e381deace5c029b4b8816938fe80ed1e,69cfaf4145232144bacbecc984a1f665,2e8f91a6a26f9894fb227e0a4e86e7f1,c134ff188db6ea94093b32fd1b963560,9b839ea9be8519145b7c429ad4d7a821,5b3eae423e69c9648ac2ae0b4e67d375,2912d4194e7121e429ea524bb91e9df8,72a3bca1b42d3f741acf72d05619e4e7,17d496939c8920546b68715abe321b34,f9216a958d16b1640990cb7f2021a362,206e53c698c0d9a49a441ae57879c3de,aceabc9638847734cb08332592ac3b18,2889530a0fe6c5048a920545e7e4cf15,b0286c2bebf109942b1180f1fa48b6e4,7ba45ee1170742148b8f4e94686b2309,5feb147bff903b04fb0af912db4c1b18,9d681dbdc4a26d446832878d4b9584d4,228d960da05bf6a45b28a79404639836,0c02e69bb49940740ae2a4ba16f63181,ac9e2466bb1f9f646ad73af3f6957307,c12f6c428e7d43c40b89711abd6aced2,6b3fdc7faf2f9e04a9192abfcc1eb19a,f7fdb6b3c8b09f643a163eee39de100a,0e4afaa1d4ca90f4da70df76a44f8d5f,5c65d742868714b4a8d434fcce0cde9a,b8a3024c33c030741837933ff71eb5fd,3ea7b5ffd220b734c86e04c98c66c7aa,82bd523b5ba8d3848acb0f9bb9eb4391,76fe7fe08444b414fb37f267123ddd36,5a8d044a98c3e2d468c1e2bae7ff3566,ca13c180c1d14274aaa03795a77c760f,eefedb8e626951040a76fbb4a3c7cfc4,c66daa02696428142ab03b355d3dd825,f54aabd2f9b8dcb47a9d16d220b42d54,200746d1b178349409208754a9c0dc73,b0d3f0f4b676414488d024c8ad608acc,c998239dfe5cdab42a94a4dbc507a300,2862517e724a30f4d9194b44c4b0788a,3068f79a31833cb4fbaefc647cb61692,4a6e5a2f9ef745f45a9143be6f55d7b5,78359850ddee94749bf8b635b60dbfb3,7af27799969e0f54a8ee81c0ad638440,4dccb2f35b5ecc247a2f2ebe75c1564c,c6b9fe5a5f1b182418b777d2998443a9,2cbc35a0fa5b0c548a947644a9593c46,77b7bc677863cf8459df92df628972e8
+    AllLockedGUIDS: 0e4afaa1d4ca90f4da70df76a44f8d5f,5c65d742868714b4a8d434fcce0cde9a,b8a3024c33c030741837933ff71eb5fd,3ea7b5ffd220b734c86e04c98c66c7aa,82bd523b5ba8d3848acb0f9bb9eb4391,76fe7fe08444b414fb37f267123ddd36,5a8d044a98c3e2d468c1e2bae7ff3566,ca13c180c1d14274aaa03795a77c760f,eefedb8e626951040a76fbb4a3c7cfc4,c66daa02696428142ab03b355d3dd825,f54aabd2f9b8dcb47a9d16d220b42d54,200746d1b178349409208754a9c0dc73,b0d3f0f4b676414488d024c8ad608acc,c998239dfe5cdab42a94a4dbc507a300,2862517e724a30f4d9194b44c4b0788a,3068f79a31833cb4fbaefc647cb61692,4a6e5a2f9ef745f45a9143be6f55d7b5,78359850ddee94749bf8b635b60dbfb3,7af27799969e0f54a8ee81c0ad638440,4dccb2f35b5ecc247a2f2ebe75c1564c,c6b9fe5a5f1b182418b777d2998443a9,2cbc35a0fa5b0c548a947644a9593c46,77b7bc677863cf8459df92df628972e8
     OriginalKeywords: _LIGHTINGMODE_REALISTIC _STOCHASTICMODE_DELIOT_HEITZ
     OriginalShader: .poiyomi/Poiyomi Toon World
     OriginalShaderGUID: 1b58d372fe360874a8fb767d53f955b0
@@ -1391,13 +1391,13 @@ Material:
     - _LightingAddDetailShadowStrengthR: 0
     - _LightingAdditiveCastedShadows: 1
     - _LightingAdditiveEnable: 1
-    - _LightingAdditiveGradientEnd: 0.5
+    - _LightingAdditiveGradientEnd: 1
     - _LightingAdditiveGradientStart: 0
     - _LightingAdditiveLimit: 1
-    - _LightingAdditiveLimited: 1
+    - _LightingAdditiveLimited: 0
     - _LightingAdditiveMonochromatic: 0
     - _LightingAdditivePassthrough: 0
-    - _LightingAdditiveType: 0
+    - _LightingAdditiveType: 1
     - _LightingCap: 1
     - _LightingCapEnabled: 0
     - _LightingCastedShadows: 1

@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: overlay4
-  m_Shader: {fileID: 4800000, guid: 4b980cf2afae6774d903459eae759597, type: 3}
+  m_Shader: {fileID: 4800000, guid: 312089544ed4e0c40bb0793999fecdfb, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords:
   - _LIGHTINGMODE_REALISTIC
@@ -18,7 +18,7 @@ Material:
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 2450
   stringTagMap:
-    AllLockedGUIDS: e4a2d3a39d63509499f1dfcbc8db345e,2939e3180e3cffb46b06fe0f6ebe71db,51ffb43dfeca27641bcd0863e46dfb53,572f35455f4d03e4190f81b2f20c4a8d,97b1d3ed7796eeb4d8fe917296570d41,13dbe0732025664489bb910da4c78757,96f351b353a5cd5429373c0d2d9029dd,0dde99517e71e6747b03688051cfccc7,b1787fb566228b4458dd34fbf97984ba,a2d9dcfce4b9ff44bbfb409151862c88,b86cfee8f3fee554686863e21397c3f0,695ae2bd0e4eede4c80fa0b287370cc2
+    AllLockedGUIDS: 2939e3180e3cffb46b06fe0f6ebe71db,51ffb43dfeca27641bcd0863e46dfb53,572f35455f4d03e4190f81b2f20c4a8d,97b1d3ed7796eeb4d8fe917296570d41,13dbe0732025664489bb910da4c78757,96f351b353a5cd5429373c0d2d9029dd,0dde99517e71e6747b03688051cfccc7,b1787fb566228b4458dd34fbf97984ba,a2d9dcfce4b9ff44bbfb409151862c88,b86cfee8f3fee554686863e21397c3f0,695ae2bd0e4eede4c80fa0b287370cc2
     OriginalKeywords: _LIGHTINGMODE_REALISTIC _STOCHASTICMODE_DELIOT_HEITZ
     OriginalShader: .poiyomi/Poiyomi Toon World
     OriginalShaderGUID: 1b58d372fe360874a8fb767d53f955b0
@@ -1391,13 +1391,13 @@ Material:
     - _LightingAddDetailShadowStrengthR: 0
     - _LightingAdditiveCastedShadows: 1
     - _LightingAdditiveEnable: 1
-    - _LightingAdditiveGradientEnd: 0.5
+    - _LightingAdditiveGradientEnd: 1
     - _LightingAdditiveGradientStart: 0
     - _LightingAdditiveLimit: 1
-    - _LightingAdditiveLimited: 1
+    - _LightingAdditiveLimited: 0
     - _LightingAdditiveMonochromatic: 0
     - _LightingAdditivePassthrough: 0
-    - _LightingAdditiveType: 0
+    - _LightingAdditiveType: 1
     - _LightingCap: 1
     - _LightingCapEnabled: 0
     - _LightingCastedShadows: 1
