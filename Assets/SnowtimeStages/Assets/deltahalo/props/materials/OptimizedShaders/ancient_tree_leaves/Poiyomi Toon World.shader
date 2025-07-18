@@ -2442,10 +2442,10 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/ea4b0ec121a24cb49ba07559634950
 						float2 noiseUV = worldPos.xz * 10.0 * .1 + _Time.y * 0.5;
 						float noise = tex2Dlod(_VertexBasicsMask, float4(poiUV(noiseUV, float4(1,1,0,0)), 0, 0))[3.0] * 2 - 1;
 						float turbulence = lerp(1, noise, 0.5);
-						float primaryWave = sin(_Time.y * 1.0 + dot(worldPos, normalize(float4(1,-1,1,-1).xyz)) * 1.0) * turbulence;
-						float detailWave = sin(_Time.y * 2.5 + dot(worldPos, normalize(float4(0,1,0,0).xyz)) * 5.0) * turbulence;
+						float primaryWave = sin(_Time.y * 2.0 + dot(worldPos, normalize(float4(1,-1,1,-1).xyz)) * 2.0) * turbulence;
+						float detailWave = sin(_Time.y * 2.0 + dot(worldPos, normalize(float4(-1,1,1,-1).xyz)) * 5.0) * turbulence;
 						float3 primaryOffset = primaryWave * normalize(float4(1,-1,1,-1).xyz) * 0.1;
-						float3 detailOffset = detailWave * normalize(float4(0,1,0,0).xyz) * 0.05;
+						float3 detailOffset = detailWave * normalize(float4(-1,1,1,-1).xyz) * 0.25;
 						float3 windOffset = (primaryOffset +detailOffset);
 						v.vertex.xyz += mul(unity_WorldToObject, float4(windOffset, 0)).xyz * windMask;
 					}
@@ -5556,10 +5556,10 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/ea4b0ec121a24cb49ba07559634950
 						float2 noiseUV = worldPos.xz * 10.0 * .1 + _Time.y * 0.5;
 						float noise = tex2Dlod(_VertexBasicsMask, float4(poiUV(noiseUV, float4(1,1,0,0)), 0, 0))[3.0] * 2 - 1;
 						float turbulence = lerp(1, noise, 0.5);
-						float primaryWave = sin(_Time.y * 1.0 + dot(worldPos, normalize(float4(1,-1,1,-1).xyz)) * 1.0) * turbulence;
-						float detailWave = sin(_Time.y * 2.5 + dot(worldPos, normalize(float4(0,1,0,0).xyz)) * 5.0) * turbulence;
+						float primaryWave = sin(_Time.y * 2.0 + dot(worldPos, normalize(float4(1,-1,1,-1).xyz)) * 2.0) * turbulence;
+						float detailWave = sin(_Time.y * 2.0 + dot(worldPos, normalize(float4(-1,1,1,-1).xyz)) * 5.0) * turbulence;
 						float3 primaryOffset = primaryWave * normalize(float4(1,-1,1,-1).xyz) * 0.1;
-						float3 detailOffset = detailWave * normalize(float4(0,1,0,0).xyz) * 0.05;
+						float3 detailOffset = detailWave * normalize(float4(-1,1,1,-1).xyz) * 0.25;
 						float3 windOffset = (primaryOffset +detailOffset);
 						v.vertex.xyz += mul(unity_WorldToObject, float4(windOffset, 0)).xyz * windMask;
 					}
@@ -8522,10 +8522,10 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/ea4b0ec121a24cb49ba07559634950
 						float2 noiseUV = worldPos.xz * 10.0 * .1 + _Time.y * 0.5;
 						float noise = tex2Dlod(_VertexBasicsMask, float4(poiUV(noiseUV, float4(1,1,0,0)), 0, 0))[3.0] * 2 - 1;
 						float turbulence = lerp(1, noise, 0.5);
-						float primaryWave = sin(_Time.y * 1.0 + dot(worldPos, normalize(float4(1,-1,1,-1).xyz)) * 1.0) * turbulence;
-						float detailWave = sin(_Time.y * 2.5 + dot(worldPos, normalize(float4(0,1,0,0).xyz)) * 5.0) * turbulence;
+						float primaryWave = sin(_Time.y * 2.0 + dot(worldPos, normalize(float4(1,-1,1,-1).xyz)) * 2.0) * turbulence;
+						float detailWave = sin(_Time.y * 2.0 + dot(worldPos, normalize(float4(-1,1,1,-1).xyz)) * 5.0) * turbulence;
 						float3 primaryOffset = primaryWave * normalize(float4(1,-1,1,-1).xyz) * 0.1;
-						float3 detailOffset = detailWave * normalize(float4(0,1,0,0).xyz) * 0.05;
+						float3 detailOffset = detailWave * normalize(float4(-1,1,1,-1).xyz) * 0.25;
 						float3 windOffset = (primaryOffset +detailOffset);
 						v.vertex.xyz += mul(unity_WorldToObject, float4(windOffset, 0)).xyz * windMask;
 					}
@@ -10842,10 +10842,10 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/ea4b0ec121a24cb49ba07559634950
 						float2 noiseUV = worldPos.xz * 10.0 * .1 + _Time.y * 0.5;
 						float noise = tex2Dlod(_VertexBasicsMask, float4(poiUV(noiseUV, float4(1,1,0,0)), 0, 0))[3.0] * 2 - 1;
 						float turbulence = lerp(1, noise, 0.5);
-						float primaryWave = sin(_Time.y * 1.0 + dot(worldPos, normalize(float4(1,-1,1,-1).xyz)) * 1.0) * turbulence;
-						float detailWave = sin(_Time.y * 2.5 + dot(worldPos, normalize(float4(0,1,0,0).xyz)) * 5.0) * turbulence;
+						float primaryWave = sin(_Time.y * 2.0 + dot(worldPos, normalize(float4(1,-1,1,-1).xyz)) * 2.0) * turbulence;
+						float detailWave = sin(_Time.y * 2.0 + dot(worldPos, normalize(float4(-1,1,1,-1).xyz)) * 5.0) * turbulence;
 						float3 primaryOffset = primaryWave * normalize(float4(1,-1,1,-1).xyz) * 0.1;
-						float3 detailOffset = detailWave * normalize(float4(0,1,0,0).xyz) * 0.05;
+						float3 detailOffset = detailWave * normalize(float4(-1,1,1,-1).xyz) * 0.25;
 						float3 windOffset = (primaryOffset +detailOffset);
 						v.vertex.xyz += mul(unity_WorldToObject, float4(windOffset, 0)).xyz * windMask;
 					}

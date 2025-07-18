@@ -131,7 +131,7 @@ Material:
         m_Scale: {x: 4, y: 4}
         m_Offset: {x: 0, y: 0}
     - _RgbNormalR:
-        m_Texture: {fileID: 2800000, guid: 607da3fc3decc724da51187258e42b91, type: 3}
+        m_Texture: {fileID: 2800000, guid: 68dcdf56835638243bc50c7fe3f6f6ec, type: 3}
         m_Scale: {x: 95, y: 95}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
@@ -1446,13 +1446,13 @@ Material:
     - _LightingAddDetailShadowStrengthR: 0
     - _LightingAdditiveCastedShadows: 1
     - _LightingAdditiveEnable: 1
-    - _LightingAdditiveGradientEnd: 0.5
+    - _LightingAdditiveGradientEnd: 1
     - _LightingAdditiveGradientStart: 0
     - _LightingAdditiveLimit: 1
-    - _LightingAdditiveLimited: 1
+    - _LightingAdditiveLimited: 0
     - _LightingAdditiveMonochromatic: 0
     - _LightingAdditivePassthrough: 0
-    - _LightingAdditiveType: 0
+    - _LightingAdditiveType: 1
     - _LightingCap: 1
     - _LightingCapEnabled: 0
     - _LightingCastedShadows: 1
@@ -2067,28 +2067,28 @@ Material:
     - _RgbNormalAGlobalMaskBlendType: 2
     - _RgbNormalAGlobalMaskChannel: 0
     - _RgbNormalAMaskChannel: 3
-    - _RgbNormalAScale: 0.5
+    - _RgbNormalAScale: 1
     - _RgbNormalAStochastic: 1
     - _RgbNormalAUV: 0
     - _RgbNormalAlphaBlendMode: 1
     - _RgbNormalBGlobalMaskBlendType: 2
     - _RgbNormalBGlobalMaskChannel: 0
     - _RgbNormalBMaskChannel: 2
-    - _RgbNormalBScale: 0.25
+    - _RgbNormalBScale: 1
     - _RgbNormalBStochastic: 1
     - _RgbNormalBUV: 0
     - _RgbNormalBlueBlendMode: 1
     - _RgbNormalGGlobalMaskBlendType: 2
     - _RgbNormalGGlobalMaskChannel: 0
     - _RgbNormalGMaskChannel: 1
-    - _RgbNormalGScale: 0.25
+    - _RgbNormalGScale: 1
     - _RgbNormalGStochastic: 0
     - _RgbNormalGUV: 0
     - _RgbNormalGreenBlendMode: 1
     - _RgbNormalRGlobalMaskBlendType: 2
     - _RgbNormalRGlobalMaskChannel: 0
     - _RgbNormalRMaskChannel: 0
-    - _RgbNormalRScale: 0.25
+    - _RgbNormalRScale: 1
     - _RgbNormalRStochastic: 1
     - _RgbNormalRUV: 0
     - _RgbNormalRedBlendMode: 1
@@ -2841,9 +2841,9 @@ Material:
     - m_start_PoiGlobalCategory: 0
     - m_start_PoiLightData: 1
     - m_start_PoiPostProcessingCategory: 0
-    - m_start_PoiShading: 0
+    - m_start_PoiShading: 1
     - m_start_PoiUVCategory: 0
-    - m_start_RGBMask: 0
+    - m_start_RGBMask: 1
     - m_start_Rim2AudioLink: 0
     - m_start_RimAudioLink: 0
     - m_start_SphericalDissolve: 0
@@ -2872,7 +2872,7 @@ Material:
     - m_start_backlight: 0
     - m_start_bakedLighting: 0
     - m_start_blending: 0
-    - m_start_brdf: 0
+    - m_start_brdf: 1
     - m_start_clearCoat: 0
     - m_start_clearcoatadvanced: 0
     - m_start_clearcoatglobalmask: 0

@@ -457,7 +457,7 @@
 										<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-5</Value>
+												<Value>-8</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -554,7 +554,7 @@
 										<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-5</Value>
+												<Value>-8</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>

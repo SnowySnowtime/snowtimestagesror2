@@ -15,7 +15,7 @@ Material:
   - FINALPASS
   - MOCHIE_PBR
   - VIGNETTE_MASKED
-  - _LIGHTINGMODE_MULTILAYER_MATH
+  - _LIGHTINGMODE_REALISTIC
   - _RIM2STYLE_POIYOMI
   - _RIMSTYLE_POIYOMI
   - _STOCHASTICMODE_DELIOT_HEITZ
@@ -26,7 +26,7 @@ Material:
   stringTagMap:
     AllLockedGUIDS: 9deb34be31e900742869f739a56a2561
     OriginalKeywords: BSSBLOOMFOGTYPE_HEIGHT FINALPASS MOCHIE_PBR VIGNETTE_MASKED
-      _LIGHTINGMODE_MULTILAYER_MATH _RIM2STYLE_POIYOMI _RIMSTYLE_POIYOMI _STOCHASTICMODE_DELIOT_HEITZ
+      _LIGHTINGMODE_REALISTIC _RIM2STYLE_POIYOMI _RIMSTYLE_POIYOMI _STOCHASTICMODE_DELIOT_HEITZ
     OriginalShader: .poiyomi/Poiyomi Toon World
     OriginalShaderGUID: 1b58d372fe360874a8fb767d53f955b0
     RenderType: Opaque
@@ -87,30 +87,6 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MochieReflCube:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MultilayerMathBlurMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _Shadow2ndColorTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _Shadow3rdColorTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _ShadowBorderMask:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _ShadowColorTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _ShadowStrengthMask:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -1426,13 +1402,13 @@ Material:
     - _LightingAddDetailShadowStrengthR: 0
     - _LightingAdditiveCastedShadows: 1
     - _LightingAdditiveEnable: 1
-    - _LightingAdditiveGradientEnd: 0.5
+    - _LightingAdditiveGradientEnd: 1
     - _LightingAdditiveGradientStart: 0
     - _LightingAdditiveLimit: 1
-    - _LightingAdditiveLimited: 1
+    - _LightingAdditiveLimited: 0
     - _LightingAdditiveMonochromatic: 0
     - _LightingAdditivePassthrough: 0
-    - _LightingAdditiveType: 0
+    - _LightingAdditiveType: 1
     - _LightingCap: 1
     - _LightingCapEnabled: 0
     - _LightingCastedShadows: 1
@@ -1454,7 +1430,7 @@ Material:
     - _LightingMapMode: 0
     - _LightingMinLightBrightness: 0
     - _LightingMirrorVertexLightingEnabled: 0
-    - _LightingMode: 1
+    - _LightingMode: 6
     - _LightingMonochromatic: 1
     - _LightingMulitlayerNonLinear: 1
     - _LightingShadowMaskStrengthA: 0
@@ -2745,9 +2721,9 @@ Material:
     - m_end_videoEffects: 0
     - m_end_voronoi: 0
     - m_end_voronoiRandom: 0
-    - m_lightingCategory: 0
+    - m_lightingCategory: 1
     - m_mainCategory: 1
-    - m_modifierCategory: 1
+    - m_modifierCategory: 0
     - m_renderingCategory: 0
     - m_specialFXCategory: 0
     - m_start_ALDecalSpectrum: 0
@@ -2821,7 +2797,7 @@ Material:
     - m_start_PoiGlobalCategory: 0
     - m_start_PoiLightData: 1
     - m_start_PoiPostProcessingCategory: 0
-    - m_start_PoiShading: 0
+    - m_start_PoiShading: 1
     - m_start_PoiUVCategory: 0
     - m_start_RGBMask: 0
     - m_start_Rim2AudioLink: 0

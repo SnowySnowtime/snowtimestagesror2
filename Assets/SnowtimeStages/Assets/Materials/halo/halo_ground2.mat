@@ -8,28 +8,18 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: halo_ground2
-  m_Shader: {fileID: 4800000, guid: 6f77719d722cd4749aab06256f0115b3, type: 3}
+  m_Shader: {fileID: 4800000, guid: f46141ccfbd32ea489e65613e5fbfc8a, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords:
-  - BSSBLOOMFOGTYPE_HEIGHT
-  - FINALPASS
-  - GEOM_TYPE_BRANCH
-  - GEOM_TYPE_BRANCH_DETAIL
-  - VIGNETTE
-  - VIGNETTE_MASKED
   - _LIGHTINGMODE_REALISTIC
-  - _RIM2STYLE_POIYOMI
-  - _RIMSTYLE_POIYOMI
   - _STOCHASTICMODE_DELIOT_HEITZ
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 1999
   stringTagMap:
-    AllLockedGUIDS: c991b731638c565409f0181404b4d0ae
-    OriginalKeywords: BSSBLOOMFOGTYPE_HEIGHT FINALPASS GEOM_TYPE_BRANCH GEOM_TYPE_BRANCH_DETAIL
-      VIGNETTE VIGNETTE_MASKED _LIGHTINGMODE_REALISTIC _RIM2STYLE_POIYOMI _RIMSTYLE_POIYOMI
-      _STOCHASTICMODE_DELIOT_HEITZ
+    AllLockedGUIDS: 3764df2513fbd5a45981c6d4ccb7c55e,c991b731638c565409f0181404b4d0ae
+    OriginalKeywords: _LIGHTINGMODE_REALISTIC _STOCHASTICMODE_DELIOT_HEITZ
     OriginalShader: .poiyomi/Poiyomi Toon World
     OriginalShaderGUID: 1b58d372fe360874a8fb767d53f955b0
     RenderType: Opaque
@@ -2847,7 +2837,7 @@ Material:
     - m_start_PoiPostProcessingCategory: 0
     - m_start_PoiShading: 1
     - m_start_PoiUVCategory: 0
-    - m_start_RGBMask: 1
+    - m_start_RGBMask: 0
     - m_start_Rim2AudioLink: 0
     - m_start_RimAudioLink: 0
     - m_start_SphericalDissolve: 0

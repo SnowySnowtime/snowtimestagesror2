@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: halo_ground
-  m_Shader: {fileID: 4800000, guid: 161baf30a5cc86c41b0ed7d5e6c7e8be, type: 3}
+  m_Shader: {fileID: 4800000, guid: f46141ccfbd32ea489e65613e5fbfc8a, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords:
   - BSSBLOOMFOGTYPE_HEIGHT
@@ -26,7 +26,7 @@ Material:
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 1999
   stringTagMap:
-    AllLockedGUIDS: 3764df2513fbd5a45981c6d4ccb7c55e
+    AllLockedGUIDS: 3764df2513fbd5a45981c6d4ccb7c55e,c991b731638c565409f0181404b4d0ae
     OriginalKeywords: BSSBLOOMFOGTYPE_HEIGHT FINALPASS GEOM_TYPE_BRANCH GEOM_TYPE_BRANCH_DETAIL
       VIGNETTE VIGNETTE_MASKED _LIGHTINGMODE_REALISTIC _RIM2STYLE_POIYOMI _RIMSTYLE_POIYOMI
       _STOCHASTICMODE_DELIOT_HEITZ

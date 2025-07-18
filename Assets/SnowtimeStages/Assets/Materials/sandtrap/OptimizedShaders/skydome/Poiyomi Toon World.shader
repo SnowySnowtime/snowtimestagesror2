@@ -3202,7 +3202,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/2ded21c193b02f34396ee62e0ca6db
 				poiFragData.finalColor = poiFragData.baseColor;
 				poiFragData.finalColor = poiFragData.baseColor * poiLight.finalLighting;
 				#ifndef POI_PASS_BASETWO
-				poiFragData.alpha = 0.0 ? 1 : poiFragData.alpha;
+				poiFragData.alpha = 1.0 ? 1 : poiFragData.alpha;
 				#else
 				poiFragData.alpha = _AlphaForceOpaque2 ? 1 : poiFragData.alpha;
 				#endif
@@ -3211,11 +3211,11 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/2ded21c193b02f34396ee62e0ca6db
 				poiFragData.emission = max(poiFragData.emission * 1.0, 0);
 				poiFragData.finalColor = max(poiFragData.finalColor * 1.0, 0);
 				#endif
-				if (4.0 == POI_MODE_OPAQUE)
+				if (0.0 == POI_MODE_OPAQUE)
 				{
 				}
 				clip(poiFragData.alpha - 0.0);
-				if (4.0 == POI_MODE_CUTOUT && !0.0)
+				if (0.0 == POI_MODE_CUTOUT && !0.0)
 				{
 					poiFragData.alpha = 1;
 				}
@@ -6066,17 +6066,17 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/2ded21c193b02f34396ee62e0ca6db
 				poiFragData.finalColor = poiFragData.baseColor;
 				poiFragData.finalColor = poiFragData.baseColor * poiLight.finalLighting;
 				#ifndef POI_PASS_BASETWO
-				poiFragData.alpha = 0.0 ? 1 : poiFragData.alpha;
+				poiFragData.alpha = 1.0 ? 1 : poiFragData.alpha;
 				#else
 				poiFragData.alpha = _AlphaForceOpaque2 ? 1 : poiFragData.alpha;
 				#endif
 				poiFragData.finalColor += poiLight.finalLightAdd;
-				if (4.0 == POI_MODE_OPAQUE)
+				if (0.0 == POI_MODE_OPAQUE)
 				{
 					poiFragData.alpha = 1;
 				}
 				clip(poiFragData.alpha - 0.0);
-				if (4.0 == POI_MODE_CUTOUT && !0.0)
+				if (0.0 == POI_MODE_CUTOUT && !0.0)
 				{
 					poiFragData.alpha = 1;
 				}
@@ -6084,7 +6084,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/2ded21c193b02f34396ee62e0ca6db
 				{
 					poiFragData.alpha = saturate(poiFragData.alpha * 10.0);
 				}
-				if (4.0 != POI_MODE_TRANSPARENT)
+				if (0.0 != POI_MODE_TRANSPARENT)
 				{
 					poiFragData.finalColor *= poiFragData.alpha;
 				}
@@ -8367,11 +8367,11 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/2ded21c193b02f34396ee62e0ca6db
 				applyAlphaOptions(poiFragData, poiMesh, poiCam, poiMods);
 				poiFragData.finalColor = poiFragData.baseColor;
 				#ifndef POI_PASS_BASETWO
-				poiFragData.alpha = 0.0 ? 1 : poiFragData.alpha;
+				poiFragData.alpha = 1.0 ? 1 : poiFragData.alpha;
 				#else
 				poiFragData.alpha = _AlphaForceOpaque2 ? 1 : poiFragData.alpha;
 				#endif
-				if (4.0 == POI_MODE_OPAQUE)
+				if (0.0 == POI_MODE_OPAQUE)
 				{
 					poiFragData.alpha = 1;
 				}
@@ -10756,12 +10756,12 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/2ded21c193b02f34396ee62e0ca6db
 				}
 				poiFragData.finalColor = poiFragData.baseColor;
 				#ifndef POI_PASS_BASETWO
-				poiFragData.alpha = 0.0 ? 1 : poiFragData.alpha;
+				poiFragData.alpha = 1.0 ? 1 : poiFragData.alpha;
 				#else
 				poiFragData.alpha = _AlphaForceOpaque2 ? 1 : poiFragData.alpha;
 				#endif
 				poiFragData.finalColor += poiLight.finalLightAdd;
-				if (4.0 == POI_MODE_OPAQUE)
+				if (0.0 == POI_MODE_OPAQUE)
 				{
 					poiFragData.alpha = 1;
 				}

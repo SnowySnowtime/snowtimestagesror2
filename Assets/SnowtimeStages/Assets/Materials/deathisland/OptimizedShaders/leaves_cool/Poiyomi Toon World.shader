@@ -2380,12 +2380,12 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/35496199ea2f5ac45bd05e94879a7e
 					{
 						float3 worldPos = mul(unity_ObjectToWorld, v.vertex).xyz;
 						float2 noiseUV = worldPos.xz * 10.0 * .1 + _Time.y * 0.5;
-						float noise = tex2Dlod(_VertexBasicsMask, float4(poiUV(noiseUV, float4(1,1,0,0)), 0, 0))[0.0] * 2 - 1;
+						float noise = tex2Dlod(_VertexBasicsMask, float4(poiUV(noiseUV, float4(1,1,0,0)), 0, 0))[3.0] * 2 - 1;
 						float turbulence = lerp(1, noise, 0.5);
-						float primaryWave = sin(_Time.y * 1.0 + dot(worldPos, normalize(float4(1,-1,1,-1).xyz)) * 1.0) * turbulence;
+						float primaryWave = sin(_Time.y * 2.0 + dot(worldPos, normalize(float4(1,0,0,0).xyz)) * 1.0) * turbulence;
 						float detailWave = sin(_Time.y * 2.5 + dot(worldPos, normalize(float4(0,1,0,0).xyz)) * 5.0) * turbulence;
-						float3 primaryOffset = primaryWave * normalize(float4(1,-1,1,-1).xyz) * 0.1;
-						float3 detailOffset = detailWave * normalize(float4(0,1,0,0).xyz) * 0.1;
+						float3 primaryOffset = primaryWave * normalize(float4(1,0,0,0).xyz) * 0.1;
+						float3 detailOffset = detailWave * normalize(float4(0,1,0,0).xyz) * 0.075;
 						float3 windOffset = (primaryOffset +detailOffset);
 						v.vertex.xyz += mul(unity_WorldToObject, float4(windOffset, 0)).xyz * windMask;
 					}
@@ -2640,7 +2640,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/35496199ea2f5ac45bd05e94879a7e
 					#if defined(POINT_COOKIE) || defined(DIRECTIONAL_COOKIE)
 					float passthrough = 0;
 					#else
-					float passthrough = 0.5;
+					float passthrough = 0.0;
 					#endif
 					float2 ToonAddGradient = float2(0.0, 1.0);
 					if (ToonAddGradient.x == ToonAddGradient.y) ToonAddGradient.y += 0.0001;
@@ -2691,7 +2691,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/35496199ea2f5ac45bd05e94879a7e
 						{
 							float2 ToonAddGradient = float2(0.0, 1.0);
 							if (ToonAddGradient.x == ToonAddGradient.y) ToonAddGradient.y += 0.0001;
-							vertexLighting = max(vertexLighting, lerp(poiLight.vColor[index], poiLight.vColor[index] * 0.5, smoothstep(ToonAddGradient.x, ToonAddGradient.y, 1 - (.5 * poiLight.vDotNL[index] + .5))) * poiLight.detailShadow);
+							vertexLighting = max(vertexLighting, lerp(poiLight.vColor[index], poiLight.vColor[index] * 0.0, smoothstep(ToonAddGradient.x, ToonAddGradient.y, 1 - (.5 * poiLight.vDotNL[index] + .5))) * poiLight.detailShadow);
 						}
 					}
 					float3 mixedLight = poiLight.finalLighting;
@@ -2849,8 +2849,8 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/35496199ea2f5ac45bd05e94879a7e
 				float3 L1b = float3(0,0,0);
 				#endif
 				#if defined(PROP_LIGHTINGAOMAPS) || !defined(OPTIMIZER_ENABLED)
-				float4 AOMaps = POI2D_SAMPLER_PAN(_LightingAOMaps, _MainTex, poiUV(poiMesh.uv[0.0], float4(1,1,0,0)), float4(0,0,0,0));
-				poiLight.occlusion = min(min(min(lerp(1, AOMaps.r, 1.0), lerp(1, AOMaps.g, 0.0)), lerp(1, AOMaps.b, 0.0)), lerp(1, AOMaps.a, 0.0));
+				float4 AOMaps = POI2D_SAMPLER_PAN(_LightingAOMaps, _MainTex, poiUV(poiMesh.uv[1.0], float4(1,1,0,0)), float4(0,0,0,0));
+				poiLight.occlusion = min(min(min(lerp(1, AOMaps.r, 1.0), lerp(1, AOMaps.g, 1.0)), lerp(1, AOMaps.b, 1.0)), lerp(1, AOMaps.a, 0.0));
 				#else
 				poiLight.occlusion = 1;
 				#endif
@@ -2859,11 +2859,11 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/35496199ea2f5ac45bd05e94879a7e
 					poiLight.occlusion = maskBlend(poiLight.occlusion, poiMods.globalMask[0.0 - 1], 2.0);
 				}
 				#if defined(PROP_LIGHTINGDETAILSHADOWMAPS) || !defined(OPTIMIZER_ENABLED)
-				float4 DetailShadows = POI2D_SAMPLER_PAN(_LightingDetailShadowMaps, _MainTex, poiUV(poiMesh.uv[0.0], float4(1,1,0,0)), float4(0,0,0,0));
+				float4 DetailShadows = POI2D_SAMPLER_PAN(_LightingDetailShadowMaps, _MainTex, poiUV(poiMesh.uv[1.0], float4(1,1,0,0)), float4(0,0,0,0));
 				#ifndef POI_PASS_ADD
 				poiLight.detailShadow = lerp(1, DetailShadows.r, 1.0) * lerp(1, DetailShadows.g, 0.0) * lerp(1, DetailShadows.b, 0.0) * lerp(1, DetailShadows.a, 0.0);
 				#else
-				poiLight.detailShadow = lerp(1, DetailShadows.r, 1.0) * lerp(1, DetailShadows.g, 0.0) * lerp(1, DetailShadows.b, 0.0) * lerp(1, DetailShadows.a, 0.0);
+				poiLight.detailShadow = lerp(1, DetailShadows.r, 0.0) * lerp(1, DetailShadows.g, 0.0) * lerp(1, DetailShadows.b, 0.0) * lerp(1, DetailShadows.a, 0.0);
 				#endif
 				#else
 				poiLight.detailShadow = 1;
@@ -2888,15 +2888,15 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/35496199ea2f5ac45bd05e94879a7e
 				{
 					lightExists = true;
 				}
-				if (1.0)
+				if (0.0)
 				{
 					poiFragData.toggleVertexLights = 1;
 				}
-				if (IsInMirror() && 1.0 == 0)
+				if (IsInMirror() && 0.0 == 0)
 				{
 					poiFragData.toggleVertexLights = 0;
 				}
-				if (1.0)
+				if (0.0)
 				{
 					#if defined(VERTEXLIGHT_ON)
 					float4 toLightX = unity_4LightPosX0 - i.worldPos.x;
@@ -2928,7 +2928,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/35496199ea2f5ac45bd05e94879a7e
 						poiLight.vPosition[index] = float3(unity_4LightPosX0[index], unity_4LightPosY0[index], unity_4LightPosZ0[index]);
 						float3 vertexToLightSource = poiLight.vPosition[index] - poiMesh.worldPos;
 						poiLight.vDirection[index] = normalize(vertexToLightSource);
-						poiLight.vColor[index] = 1.0 ? MaxLuminance(unity_LightColor[index].rgb * poiLight.vAttenuation[index], 1.0) : unity_LightColor[index].rgb * poiLight.vAttenuation[index];
+						poiLight.vColor[index] = 0.0 ? MaxLuminance(unity_LightColor[index].rgb * poiLight.vAttenuation[index], 1.0) : unity_LightColor[index].rgb * poiLight.vAttenuation[index];
 						poiLight.vColor[index] = lerp(poiLight.vColor[index], dot(poiLight.vColor[index], float3(0.299, 0.587, 0.114)), 0.0);
 						poiLight.vHalfDir[index] = Unity_SafeNormalize(poiLight.vDirection[index] + poiCam.viewDir);
 						poiLight.vDotNL[index] = dot(poiMesh.normals[1], poiLight.vDirection[index]);
@@ -2988,11 +2988,11 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/35496199ea2f5ac45bd05e94879a7e
 				{
 					if (0.0 == 1)
 					{
-						poiLight.direction = mul(unity_ObjectToWorld, float4(0,0,0,1)).xyz;;
+						poiLight.direction = mul(unity_ObjectToWorld, float4(-90,-90,-90,1)).xyz;;
 					}
 					if (0.0 == 2)
 					{
-						poiLight.direction = float4(0,0,0,1);
+						poiLight.direction = float4(-90,-90,-90,1);
 					}
 					if (lightMapMode == 0)
 					{
@@ -3025,7 +3025,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/35496199ea2f5ac45bd05e94879a7e
 					poiLight.direction = float3(.4, 1, .4);
 				}
 				poiLight.direction = normalize(poiLight.direction);
-				poiLight.attenuationStrength = 0.0;
+				poiLight.attenuationStrength = 0.75;
 				poiLight.attenuation = 1;
 				if (!all(_LightColor0.rgb == 0.0))
 				{
@@ -3132,7 +3132,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/35496199ea2f5ac45bd05e94879a7e
 				}
 				poiLight.directColor = lerp(poiLight.directColor, dot(poiLight.directColor, float3(0.299, 0.587, 0.114)), 0.0);
 				poiLight.indirectColor = lerp(poiLight.indirectColor, dot(poiLight.indirectColor, float3(0.299, 0.587, 0.114)), 0.0);
-				if (1.0)
+				if (0.0)
 				{
 					poiLight.directColor = min(poiLight.directColor, 1.0);
 					poiLight.indirectColor = min(poiLight.indirectColor, 1.0);
@@ -3154,7 +3154,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/35496199ea2f5ac45bd05e94879a7e
 					return float4(mainTexture.rgb * .0001, 1);
 				}
 				#if defined(DIRECTIONAL)
-				if (1.0)
+				if (0.0)
 				{
 					return float4(mainTexture.rgb * .0001, 1);
 				}
@@ -3175,12 +3175,12 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/35496199ea2f5ac45bd05e94879a7e
 				#endif
 				poiLight.additiveShadow = UNITY_SHADOW_ATTENUATION(i, poiMesh.worldPos);
 				poiLight.attenuationStrength = 1.0;
-				poiLight.directColor = 1.0 ? MaxLuminance(_LightColor0.rgb * poiLight.attenuation, 1.0) : _LightColor0.rgb * poiLight.attenuation;
+				poiLight.directColor = 0.0 ? MaxLuminance(_LightColor0.rgb * poiLight.attenuation, 1.0) : _LightColor0.rgb * poiLight.attenuation;
 				#if defined(POINT_COOKIE) || defined(DIRECTIONAL_COOKIE)
 				poiLight.indirectColor = 0;
 				#else
-				poiLight.indirectColor = lerp(0, poiLight.directColor, 0.5);
-				poiLight.indirectColor = 1.0 ? MaxLuminance(poiLight.indirectColor, 1.0) : poiLight.indirectColor;
+				poiLight.indirectColor = lerp(0, poiLight.directColor, 0.0);
+				poiLight.indirectColor = 0.0 ? MaxLuminance(poiLight.indirectColor, 1.0) : poiLight.indirectColor;
 				#endif
 				poiLight.directColor = lerp(poiLight.directColor, dot(poiLight.directColor, float3(0.299, 0.587, 0.114)), 0.0);
 				poiLight.indirectColor = lerp(poiLight.indirectColor, dot(poiLight.indirectColor, float3(0.299, 0.587, 0.114)), 0.0);
@@ -5331,12 +5331,12 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/35496199ea2f5ac45bd05e94879a7e
 					{
 						float3 worldPos = mul(unity_ObjectToWorld, v.vertex).xyz;
 						float2 noiseUV = worldPos.xz * 10.0 * .1 + _Time.y * 0.5;
-						float noise = tex2Dlod(_VertexBasicsMask, float4(poiUV(noiseUV, float4(1,1,0,0)), 0, 0))[0.0] * 2 - 1;
+						float noise = tex2Dlod(_VertexBasicsMask, float4(poiUV(noiseUV, float4(1,1,0,0)), 0, 0))[3.0] * 2 - 1;
 						float turbulence = lerp(1, noise, 0.5);
-						float primaryWave = sin(_Time.y * 1.0 + dot(worldPos, normalize(float4(1,-1,1,-1).xyz)) * 1.0) * turbulence;
+						float primaryWave = sin(_Time.y * 2.0 + dot(worldPos, normalize(float4(1,0,0,0).xyz)) * 1.0) * turbulence;
 						float detailWave = sin(_Time.y * 2.5 + dot(worldPos, normalize(float4(0,1,0,0).xyz)) * 5.0) * turbulence;
-						float3 primaryOffset = primaryWave * normalize(float4(1,-1,1,-1).xyz) * 0.1;
-						float3 detailOffset = detailWave * normalize(float4(0,1,0,0).xyz) * 0.1;
+						float3 primaryOffset = primaryWave * normalize(float4(1,0,0,0).xyz) * 0.1;
+						float3 detailOffset = detailWave * normalize(float4(0,1,0,0).xyz) * 0.075;
 						float3 windOffset = (primaryOffset +detailOffset);
 						v.vertex.xyz += mul(unity_WorldToObject, float4(windOffset, 0)).xyz * windMask;
 					}
@@ -5591,7 +5591,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/35496199ea2f5ac45bd05e94879a7e
 					#if defined(POINT_COOKIE) || defined(DIRECTIONAL_COOKIE)
 					float passthrough = 0;
 					#else
-					float passthrough = 0.5;
+					float passthrough = 0.0;
 					#endif
 					float2 ToonAddGradient = float2(0.0, 1.0);
 					if (ToonAddGradient.x == ToonAddGradient.y) ToonAddGradient.y += 0.0001;
@@ -5642,7 +5642,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/35496199ea2f5ac45bd05e94879a7e
 						{
 							float2 ToonAddGradient = float2(0.0, 1.0);
 							if (ToonAddGradient.x == ToonAddGradient.y) ToonAddGradient.y += 0.0001;
-							vertexLighting = max(vertexLighting, lerp(poiLight.vColor[index], poiLight.vColor[index] * 0.5, smoothstep(ToonAddGradient.x, ToonAddGradient.y, 1 - (.5 * poiLight.vDotNL[index] + .5))) * poiLight.detailShadow);
+							vertexLighting = max(vertexLighting, lerp(poiLight.vColor[index], poiLight.vColor[index] * 0.0, smoothstep(ToonAddGradient.x, ToonAddGradient.y, 1 - (.5 * poiLight.vDotNL[index] + .5))) * poiLight.detailShadow);
 						}
 					}
 					float3 mixedLight = poiLight.finalLighting;
@@ -5800,8 +5800,8 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/35496199ea2f5ac45bd05e94879a7e
 				float3 L1b = float3(0,0,0);
 				#endif
 				#if defined(PROP_LIGHTINGAOMAPS) || !defined(OPTIMIZER_ENABLED)
-				float4 AOMaps = POI2D_SAMPLER_PAN(_LightingAOMaps, _MainTex, poiUV(poiMesh.uv[0.0], float4(1,1,0,0)), float4(0,0,0,0));
-				poiLight.occlusion = min(min(min(lerp(1, AOMaps.r, 1.0), lerp(1, AOMaps.g, 0.0)), lerp(1, AOMaps.b, 0.0)), lerp(1, AOMaps.a, 0.0));
+				float4 AOMaps = POI2D_SAMPLER_PAN(_LightingAOMaps, _MainTex, poiUV(poiMesh.uv[1.0], float4(1,1,0,0)), float4(0,0,0,0));
+				poiLight.occlusion = min(min(min(lerp(1, AOMaps.r, 1.0), lerp(1, AOMaps.g, 1.0)), lerp(1, AOMaps.b, 1.0)), lerp(1, AOMaps.a, 0.0));
 				#else
 				poiLight.occlusion = 1;
 				#endif
@@ -5810,11 +5810,11 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/35496199ea2f5ac45bd05e94879a7e
 					poiLight.occlusion = maskBlend(poiLight.occlusion, poiMods.globalMask[0.0 - 1], 2.0);
 				}
 				#if defined(PROP_LIGHTINGDETAILSHADOWMAPS) || !defined(OPTIMIZER_ENABLED)
-				float4 DetailShadows = POI2D_SAMPLER_PAN(_LightingDetailShadowMaps, _MainTex, poiUV(poiMesh.uv[0.0], float4(1,1,0,0)), float4(0,0,0,0));
+				float4 DetailShadows = POI2D_SAMPLER_PAN(_LightingDetailShadowMaps, _MainTex, poiUV(poiMesh.uv[1.0], float4(1,1,0,0)), float4(0,0,0,0));
 				#ifndef POI_PASS_ADD
 				poiLight.detailShadow = lerp(1, DetailShadows.r, 1.0) * lerp(1, DetailShadows.g, 0.0) * lerp(1, DetailShadows.b, 0.0) * lerp(1, DetailShadows.a, 0.0);
 				#else
-				poiLight.detailShadow = lerp(1, DetailShadows.r, 1.0) * lerp(1, DetailShadows.g, 0.0) * lerp(1, DetailShadows.b, 0.0) * lerp(1, DetailShadows.a, 0.0);
+				poiLight.detailShadow = lerp(1, DetailShadows.r, 0.0) * lerp(1, DetailShadows.g, 0.0) * lerp(1, DetailShadows.b, 0.0) * lerp(1, DetailShadows.a, 0.0);
 				#endif
 				#else
 				poiLight.detailShadow = 1;
@@ -5839,15 +5839,15 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/35496199ea2f5ac45bd05e94879a7e
 				{
 					lightExists = true;
 				}
-				if (1.0)
+				if (0.0)
 				{
 					poiFragData.toggleVertexLights = 1;
 				}
-				if (IsInMirror() && 1.0 == 0)
+				if (IsInMirror() && 0.0 == 0)
 				{
 					poiFragData.toggleVertexLights = 0;
 				}
-				if (1.0)
+				if (0.0)
 				{
 					#if defined(VERTEXLIGHT_ON)
 					float4 toLightX = unity_4LightPosX0 - i.worldPos.x;
@@ -5879,7 +5879,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/35496199ea2f5ac45bd05e94879a7e
 						poiLight.vPosition[index] = float3(unity_4LightPosX0[index], unity_4LightPosY0[index], unity_4LightPosZ0[index]);
 						float3 vertexToLightSource = poiLight.vPosition[index] - poiMesh.worldPos;
 						poiLight.vDirection[index] = normalize(vertexToLightSource);
-						poiLight.vColor[index] = 1.0 ? MaxLuminance(unity_LightColor[index].rgb * poiLight.vAttenuation[index], 1.0) : unity_LightColor[index].rgb * poiLight.vAttenuation[index];
+						poiLight.vColor[index] = 0.0 ? MaxLuminance(unity_LightColor[index].rgb * poiLight.vAttenuation[index], 1.0) : unity_LightColor[index].rgb * poiLight.vAttenuation[index];
 						poiLight.vColor[index] = lerp(poiLight.vColor[index], dot(poiLight.vColor[index], float3(0.299, 0.587, 0.114)), 0.0);
 						poiLight.vHalfDir[index] = Unity_SafeNormalize(poiLight.vDirection[index] + poiCam.viewDir);
 						poiLight.vDotNL[index] = dot(poiMesh.normals[1], poiLight.vDirection[index]);
@@ -5939,11 +5939,11 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/35496199ea2f5ac45bd05e94879a7e
 				{
 					if (0.0 == 1)
 					{
-						poiLight.direction = mul(unity_ObjectToWorld, float4(0,0,0,1)).xyz;;
+						poiLight.direction = mul(unity_ObjectToWorld, float4(-90,-90,-90,1)).xyz;;
 					}
 					if (0.0 == 2)
 					{
-						poiLight.direction = float4(0,0,0,1);
+						poiLight.direction = float4(-90,-90,-90,1);
 					}
 					if (lightMapMode == 0)
 					{
@@ -5976,7 +5976,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/35496199ea2f5ac45bd05e94879a7e
 					poiLight.direction = float3(.4, 1, .4);
 				}
 				poiLight.direction = normalize(poiLight.direction);
-				poiLight.attenuationStrength = 0.0;
+				poiLight.attenuationStrength = 0.75;
 				poiLight.attenuation = 1;
 				if (!all(_LightColor0.rgb == 0.0))
 				{
@@ -6083,7 +6083,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/35496199ea2f5ac45bd05e94879a7e
 				}
 				poiLight.directColor = lerp(poiLight.directColor, dot(poiLight.directColor, float3(0.299, 0.587, 0.114)), 0.0);
 				poiLight.indirectColor = lerp(poiLight.indirectColor, dot(poiLight.indirectColor, float3(0.299, 0.587, 0.114)), 0.0);
-				if (1.0)
+				if (0.0)
 				{
 					poiLight.directColor = min(poiLight.directColor, 1.0);
 					poiLight.indirectColor = min(poiLight.indirectColor, 1.0);
@@ -6105,7 +6105,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/35496199ea2f5ac45bd05e94879a7e
 					return float4(mainTexture.rgb * .0001, 1);
 				}
 				#if defined(DIRECTIONAL)
-				if (1.0)
+				if (0.0)
 				{
 					return float4(mainTexture.rgb * .0001, 1);
 				}
@@ -6126,12 +6126,12 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/35496199ea2f5ac45bd05e94879a7e
 				#endif
 				poiLight.additiveShadow = UNITY_SHADOW_ATTENUATION(i, poiMesh.worldPos);
 				poiLight.attenuationStrength = 1.0;
-				poiLight.directColor = 1.0 ? MaxLuminance(_LightColor0.rgb * poiLight.attenuation, 1.0) : _LightColor0.rgb * poiLight.attenuation;
+				poiLight.directColor = 0.0 ? MaxLuminance(_LightColor0.rgb * poiLight.attenuation, 1.0) : _LightColor0.rgb * poiLight.attenuation;
 				#if defined(POINT_COOKIE) || defined(DIRECTIONAL_COOKIE)
 				poiLight.indirectColor = 0;
 				#else
-				poiLight.indirectColor = lerp(0, poiLight.directColor, 0.5);
-				poiLight.indirectColor = 1.0 ? MaxLuminance(poiLight.indirectColor, 1.0) : poiLight.indirectColor;
+				poiLight.indirectColor = lerp(0, poiLight.directColor, 0.0);
+				poiLight.indirectColor = 0.0 ? MaxLuminance(poiLight.indirectColor, 1.0) : poiLight.indirectColor;
 				#endif
 				poiLight.directColor = lerp(poiLight.directColor, dot(poiLight.directColor, float3(0.299, 0.587, 0.114)), 0.0);
 				poiLight.indirectColor = lerp(poiLight.indirectColor, dot(poiLight.indirectColor, float3(0.299, 0.587, 0.114)), 0.0);
@@ -8163,12 +8163,12 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/35496199ea2f5ac45bd05e94879a7e
 					{
 						float3 worldPos = mul(unity_ObjectToWorld, v.vertex).xyz;
 						float2 noiseUV = worldPos.xz * 10.0 * .1 + _Time.y * 0.5;
-						float noise = tex2Dlod(_VertexBasicsMask, float4(poiUV(noiseUV, float4(1,1,0,0)), 0, 0))[0.0] * 2 - 1;
+						float noise = tex2Dlod(_VertexBasicsMask, float4(poiUV(noiseUV, float4(1,1,0,0)), 0, 0))[3.0] * 2 - 1;
 						float turbulence = lerp(1, noise, 0.5);
-						float primaryWave = sin(_Time.y * 1.0 + dot(worldPos, normalize(float4(1,-1,1,-1).xyz)) * 1.0) * turbulence;
+						float primaryWave = sin(_Time.y * 2.0 + dot(worldPos, normalize(float4(1,0,0,0).xyz)) * 1.0) * turbulence;
 						float detailWave = sin(_Time.y * 2.5 + dot(worldPos, normalize(float4(0,1,0,0).xyz)) * 5.0) * turbulence;
-						float3 primaryOffset = primaryWave * normalize(float4(1,-1,1,-1).xyz) * 0.1;
-						float3 detailOffset = detailWave * normalize(float4(0,1,0,0).xyz) * 0.1;
+						float3 primaryOffset = primaryWave * normalize(float4(1,0,0,0).xyz) * 0.1;
+						float3 detailOffset = detailWave * normalize(float4(0,1,0,0).xyz) * 0.075;
 						float3 windOffset = (primaryOffset +detailOffset);
 						v.vertex.xyz += mul(unity_WorldToObject, float4(windOffset, 0)).xyz * windMask;
 					}
@@ -10444,12 +10444,12 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/35496199ea2f5ac45bd05e94879a7e
 					{
 						float3 worldPos = mul(unity_ObjectToWorld, v.vertex).xyz;
 						float2 noiseUV = worldPos.xz * 10.0 * .1 + _Time.y * 0.5;
-						float noise = tex2Dlod(_VertexBasicsMask, float4(poiUV(noiseUV, float4(1,1,0,0)), 0, 0))[0.0] * 2 - 1;
+						float noise = tex2Dlod(_VertexBasicsMask, float4(poiUV(noiseUV, float4(1,1,0,0)), 0, 0))[3.0] * 2 - 1;
 						float turbulence = lerp(1, noise, 0.5);
-						float primaryWave = sin(_Time.y * 1.0 + dot(worldPos, normalize(float4(1,-1,1,-1).xyz)) * 1.0) * turbulence;
+						float primaryWave = sin(_Time.y * 2.0 + dot(worldPos, normalize(float4(1,0,0,0).xyz)) * 1.0) * turbulence;
 						float detailWave = sin(_Time.y * 2.5 + dot(worldPos, normalize(float4(0,1,0,0).xyz)) * 5.0) * turbulence;
-						float3 primaryOffset = primaryWave * normalize(float4(1,-1,1,-1).xyz) * 0.1;
-						float3 detailOffset = detailWave * normalize(float4(0,1,0,0).xyz) * 0.1;
+						float3 primaryOffset = primaryWave * normalize(float4(1,0,0,0).xyz) * 0.1;
+						float3 detailOffset = detailWave * normalize(float4(0,1,0,0).xyz) * 0.075;
 						float3 windOffset = (primaryOffset +detailOffset);
 						v.vertex.xyz += mul(unity_WorldToObject, float4(windOffset, 0)).xyz * windMask;
 					}

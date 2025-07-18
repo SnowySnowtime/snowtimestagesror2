@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 779f9b7d9a2d91b4cbdc7f48f499dc2e
+guid: 68dcdf56835638243bc50c7fe3f6f6ec
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -7,7 +7,7 @@ TextureImporter:
   mipmaps:
     mipMapMode: 0
     enableMipMap: 1
-    sRGBTexture: 1
+    sRGBTexture: 0
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
@@ -53,7 +53,7 @@ TextureImporter:
   alphaUsage: 1
   alphaIsTransparency: 0
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 1
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -71,8 +71,8 @@ TextureImporter:
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
-    compressionQuality: 53
-    crunchedCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0

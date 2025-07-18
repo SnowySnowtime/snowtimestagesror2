@@ -88,7 +88,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _VertexBasicsMask:
-        m_Texture: {fileID: 2800000, guid: 2a51120216960914d8e525bf52cf495a, type: 3}
+        m_Texture: {fileID: 2800000, guid: a1420d23109d7e94b877803e307541f9, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
@@ -2542,9 +2542,9 @@ Material:
     - _VertexTornadoSpeed: 5
     - _VertexTornadoTopHeight: 1
     - _VertexTornadoVerticalPull: 0
-    - _VertexWindDetailAmplitude: 0.05
+    - _VertexWindDetailAmplitude: 0.25
     - _VertexWindDetailFrequency: 5
-    - _VertexWindDetailSpeed: 2.5
+    - _VertexWindDetailSpeed: 2
     - _VertexWindEnabled: 1
     - _VertexWindMaskChannel: 0
     - _VertexWindNoiseChannel: 3
@@ -2552,8 +2552,8 @@ Material:
     - _VertexWindNoiseSpeed: 0.5
     - _VertexWindNoiseStrength: 0.5
     - _VertexWindPrimaryAmplitude: 0.1
-    - _VertexWindPrimaryFrequency: 1
-    - _VertexWindPrimarySpeed: 1
+    - _VertexWindPrimaryFrequency: 2
+    - _VertexWindPrimarySpeed: 2
     - _VertexWorldTranslationALBand: 0
     - _VideoBacklight: 1
     - _VideoCRTPixelEnergizedTime: 1.9
@@ -2752,7 +2752,7 @@ Material:
     - m_end_videoEffects: 0
     - m_end_voronoi: 0
     - m_end_voronoiRandom: 0
-    - m_lightingCategory: 1
+    - m_lightingCategory: 0
     - m_mainCategory: 1
     - m_modifierCategory: 0
     - m_renderingCategory: 1
@@ -3859,7 +3859,7 @@ Material:
     - _VertexSpectrumOffsetMax: {r: 0, g: 0.1, b: 0, a: 1}
     - _VertexSpectrumOffsetMin: {r: 0, g: 0, b: 0, a: 1}
     - _VertexSphereCenter: {r: 0, g: 0, b: 0, a: 1}
-    - _VertexWindDetailDirection: {r: 0, g: 1, b: 0, a: 0}
+    - _VertexWindDetailDirection: {r: -1, g: 1, b: 1, a: -1}
     - _VertexWindPrimaryDirection: {r: 1, g: -1, b: 1, a: -1}
     - _VertexWorldTranslationALMax: {r: 0, g: 0, b: 0, a: 1}
     - _VertexWorldTranslationALMin: {r: 0, g: 0, b: 0, a: 1}

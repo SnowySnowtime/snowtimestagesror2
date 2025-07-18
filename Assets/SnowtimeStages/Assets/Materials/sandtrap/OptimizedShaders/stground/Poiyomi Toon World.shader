@@ -3066,30 +3066,30 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/d2b49fdf755460c44820d6f44eeda8
 				if (0.0 > 0) maskFinal.a = customBlend(maskFinal.a, poiMods.globalMask[0.0 - 1], 2.0);
 				float3 originalNormal = poiMesh.tangentSpaceNormal;
 				#if defined(PROP_RGBNORMALR) || !defined(OPTIMIZER_ENABLED)
-				if (0.25 > 0 && 1.0)
+				if (1.0 > 0 && 1.0)
 				{
-					float3 normalToBlendWith = UnpackScaleNormal(POI2D_SAMPLER_PAN_STOCHASTIC(_RgbNormalR, _trilinear_repeat, poiUV(poiMesh.uv[0.0], PoiUVMerge(float4(95,95,0,0), float4(1,1,0,0) )), float4(0,0,0,0), 1.0), 1.0 == 0 ? 0.25 : 0.25 * maskFinal.r);
+					float3 normalToBlendWith = UnpackScaleNormal(POI2D_SAMPLER_PAN_STOCHASTIC(_RgbNormalR, _trilinear_repeat, poiUV(poiMesh.uv[0.0], PoiUVMerge(float4(95,95,0,0), float4(1,1,0,0) )), float4(0,0,0,0), 1.0), 1.0 == 0 ? 1.0 : 1.0 * maskFinal.r);
 					RGBABlendNormals(poiMesh.tangentSpaceNormal, originalNormal, normalToBlendWith, maskFinal.r, 1.0);
 				}
 				#endif
 				#if defined(PROP_RGBNORMALG) || !defined(OPTIMIZER_ENABLED)
-				if (0.25 > 0 && 1.0)
+				if (1.0 > 0 && 1.0)
 				{
-					float3 normalToBlendWith = UnpackScaleNormal(POI2D_SAMPLER_PAN_STOCHASTIC(_RgbNormalG, _trilinear_repeat, poiUV(poiMesh.uv[0.0], PoiUVMerge(float4(4,4,0,0), float4(1,1,0,0) )), float4(0,0,0,0), 0.0), 1.0 == 0 ? 0.25 : 0.25 * maskFinal.g);
+					float3 normalToBlendWith = UnpackScaleNormal(POI2D_SAMPLER_PAN_STOCHASTIC(_RgbNormalG, _trilinear_repeat, poiUV(poiMesh.uv[0.0], PoiUVMerge(float4(4,4,0,0), float4(1,1,0,0) )), float4(0,0,0,0), 0.0), 1.0 == 0 ? 1.0 : 1.0 * maskFinal.g);
 					RGBABlendNormals(poiMesh.tangentSpaceNormal, originalNormal, normalToBlendWith, maskFinal.g, 1.0);
 				}
 				#endif
 				#if defined(PROP_RGBNORMALB) || !defined(OPTIMIZER_ENABLED)
-				if (0.25 > 0 && 1.0)
+				if (1.0 > 0 && 1.0)
 				{
-					float3 normalToBlendWith = UnpackScaleNormal(POI2D_SAMPLER_PAN_STOCHASTIC(_RgbNormalB, _trilinear_repeat, poiUV(poiMesh.uv[0.0], PoiUVMerge(float4(25,25,0,0), float4(1,1,0,0))), float4(0,0,0,0), 1.0), 1.0 == 0 ? 0.25 : 0.25 * maskFinal.b);
+					float3 normalToBlendWith = UnpackScaleNormal(POI2D_SAMPLER_PAN_STOCHASTIC(_RgbNormalB, _trilinear_repeat, poiUV(poiMesh.uv[0.0], PoiUVMerge(float4(25,25,0,0), float4(1,1,0,0))), float4(0,0,0,0), 1.0), 1.0 == 0 ? 1.0 : 1.0 * maskFinal.b);
 					RGBABlendNormals(poiMesh.tangentSpaceNormal, originalNormal, normalToBlendWith, maskFinal.b, 1.0);
 				}
 				#endif
 				#if defined(PROP_RGBNORMALA) || !defined(OPTIMIZER_ENABLED)
-				if (0.5 > 0 && 1.0)
+				if (1.0 > 0 && 1.0)
 				{
-					float3 normalToBlendWith = UnpackScaleNormal(POI2D_SAMPLER_PAN_STOCHASTIC(_RgbNormalA, _trilinear_repeat, poiUV(poiMesh.uv[0.0], PoiUVMerge(float4(300,300,0,0), float4(1,1,0,0))), float4(0,100,0,0), 1.0), 1.0 == 0 ? 0.5 : 0.5 * maskFinal.a);
+					float3 normalToBlendWith = UnpackScaleNormal(POI2D_SAMPLER_PAN_STOCHASTIC(_RgbNormalA, _trilinear_repeat, poiUV(poiMesh.uv[0.0], PoiUVMerge(float4(300,300,0,0), float4(1,1,0,0))), float4(0,100,0,0), 1.0), 1.0 == 0 ? 1.0 : 1.0 * maskFinal.a);
 					RGBABlendNormals(poiMesh.tangentSpaceNormal, originalNormal, normalToBlendWith, maskFinal.a, 1.0);
 				}
 				#endif
@@ -3315,7 +3315,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/d2b49fdf755460c44820d6f44eeda8
 				shadowAttenuation = lerp(1, poiLight.additiveShadow, poiLight.attenuationStrength);
 				#endif
 				#ifdef POI_PASS_ADD
-				if (0.0 == 3)
+				if (1.0 == 3)
 				{
 					#if defined(POINT) || defined(SPOT)
 					#if defined(_LIGHTINGMODE_REALISTIC) || defined(_LIGHTINGMODE_CLOTH) || defined(_LIGHTINGMODE_WRAPPED)
@@ -3325,20 +3325,20 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/d2b49fdf755460c44820d6f44eeda8
 					#endif
 					#endif
 				}
-				if (0.0 == 0)
+				if (1.0 == 0)
 				{
 					poiLight.rampedLightMap = max(0, poiLight.nDotL);
 					poiLight.finalLighting = poiLight.directColor * attenuation * max(0, poiLight.nDotL) * poiLight.detailShadow * shadowAttenuation;
 					return;
 				}
-				if (0.0 == 1)
+				if (1.0 == 1)
 				{
 					#if defined(POINT_COOKIE) || defined(DIRECTIONAL_COOKIE)
 					float passthrough = 0;
 					#else
 					float passthrough = 0.0;
 					#endif
-					float2 ToonAddGradient = float2(0.0, 0.5);
+					float2 ToonAddGradient = float2(0.0, 1.0);
 					if (ToonAddGradient.x == ToonAddGradient.y) ToonAddGradient.y += 0.0001;
 					poiLight.rampedLightMap = smoothstep(ToonAddGradient.y, ToonAddGradient.x, 1 - (.5 * poiLight.nDotL + .5));
 					#if defined(POINT) || defined(SPOT)
@@ -3377,7 +3377,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/d2b49fdf755460c44820d6f44eeda8
 					float3 vertexLighting = float3(0, 0, 0);
 					for (int index = 0; index < 4; index++)
 					{
-						float lightingMode = 0.0;
+						float lightingMode = 1.0;
 						if (lightingMode == 3)
 						{
 							#if defined(_LIGHTINGMODE_REALISTIC)
@@ -3392,7 +3392,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/d2b49fdf755460c44820d6f44eeda8
 						}
 						if (lightingMode == 1)
 						{
-							float2 ToonAddGradient = float2(0.0, 0.5);
+							float2 ToonAddGradient = float2(0.0, 1.0);
 							if (ToonAddGradient.x == ToonAddGradient.y) ToonAddGradient.y += 0.0001;
 							vertexLighting = max(vertexLighting, lerp(poiLight.vColor[index], poiLight.vColor[index] * 0.0, smoothstep(ToonAddGradient.x, ToonAddGradient.y, 1 - (.5 * poiLight.vDotNL[index] + .5))) * poiLight.detailShadow);
 						}
@@ -3923,7 +3923,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/d2b49fdf755460c44820d6f44eeda8
 						poiLight.vPosition[index] = float3(unity_4LightPosX0[index], unity_4LightPosY0[index], unity_4LightPosZ0[index]);
 						float3 vertexToLightSource = poiLight.vPosition[index] - poiMesh.worldPos;
 						poiLight.vDirection[index] = normalize(vertexToLightSource);
-						poiLight.vColor[index] = 1.0 ? MaxLuminance(unity_LightColor[index].rgb * poiLight.vAttenuation[index], 1.0) : unity_LightColor[index].rgb * poiLight.vAttenuation[index];
+						poiLight.vColor[index] = 0.0 ? MaxLuminance(unity_LightColor[index].rgb * poiLight.vAttenuation[index], 1.0) : unity_LightColor[index].rgb * poiLight.vAttenuation[index];
 						poiLight.vColor[index] = lerp(poiLight.vColor[index], dot(poiLight.vColor[index], float3(0.299, 0.587, 0.114)), 0.0);
 						poiLight.vHalfDir[index] = Unity_SafeNormalize(poiLight.vDirection[index] + poiCam.viewDir);
 						poiLight.vDotNL[index] = dot(poiMesh.normals[1], poiLight.vDirection[index]);
@@ -4170,12 +4170,12 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/d2b49fdf755460c44820d6f44eeda8
 				#endif
 				poiLight.additiveShadow = UNITY_SHADOW_ATTENUATION(i, poiMesh.worldPos);
 				poiLight.attenuationStrength = 1.0;
-				poiLight.directColor = 1.0 ? MaxLuminance(_LightColor0.rgb * poiLight.attenuation, 1.0) : _LightColor0.rgb * poiLight.attenuation;
+				poiLight.directColor = 0.0 ? MaxLuminance(_LightColor0.rgb * poiLight.attenuation, 1.0) : _LightColor0.rgb * poiLight.attenuation;
 				#if defined(POINT_COOKIE) || defined(DIRECTIONAL_COOKIE)
 				poiLight.indirectColor = 0;
 				#else
 				poiLight.indirectColor = lerp(0, poiLight.directColor, 0.0);
-				poiLight.indirectColor = 1.0 ? MaxLuminance(poiLight.indirectColor, 1.0) : poiLight.indirectColor;
+				poiLight.indirectColor = 0.0 ? MaxLuminance(poiLight.indirectColor, 1.0) : poiLight.indirectColor;
 				#endif
 				poiLight.directColor = lerp(poiLight.directColor, dot(poiLight.directColor, float3(0.299, 0.587, 0.114)), 0.0);
 				poiLight.indirectColor = lerp(poiLight.indirectColor, dot(poiLight.indirectColor, float3(0.299, 0.587, 0.114)), 0.0);
@@ -6810,30 +6810,30 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/d2b49fdf755460c44820d6f44eeda8
 				if (0.0 > 0) maskFinal.a = customBlend(maskFinal.a, poiMods.globalMask[0.0 - 1], 2.0);
 				float3 originalNormal = poiMesh.tangentSpaceNormal;
 				#if defined(PROP_RGBNORMALR) || !defined(OPTIMIZER_ENABLED)
-				if (0.25 > 0 && 1.0)
+				if (1.0 > 0 && 1.0)
 				{
-					float3 normalToBlendWith = UnpackScaleNormal(POI2D_SAMPLER_PAN_STOCHASTIC(_RgbNormalR, _trilinear_repeat, poiUV(poiMesh.uv[0.0], PoiUVMerge(float4(95,95,0,0), float4(1,1,0,0) )), float4(0,0,0,0), 1.0), 1.0 == 0 ? 0.25 : 0.25 * maskFinal.r);
+					float3 normalToBlendWith = UnpackScaleNormal(POI2D_SAMPLER_PAN_STOCHASTIC(_RgbNormalR, _trilinear_repeat, poiUV(poiMesh.uv[0.0], PoiUVMerge(float4(95,95,0,0), float4(1,1,0,0) )), float4(0,0,0,0), 1.0), 1.0 == 0 ? 1.0 : 1.0 * maskFinal.r);
 					RGBABlendNormals(poiMesh.tangentSpaceNormal, originalNormal, normalToBlendWith, maskFinal.r, 1.0);
 				}
 				#endif
 				#if defined(PROP_RGBNORMALG) || !defined(OPTIMIZER_ENABLED)
-				if (0.25 > 0 && 1.0)
+				if (1.0 > 0 && 1.0)
 				{
-					float3 normalToBlendWith = UnpackScaleNormal(POI2D_SAMPLER_PAN_STOCHASTIC(_RgbNormalG, _trilinear_repeat, poiUV(poiMesh.uv[0.0], PoiUVMerge(float4(4,4,0,0), float4(1,1,0,0) )), float4(0,0,0,0), 0.0), 1.0 == 0 ? 0.25 : 0.25 * maskFinal.g);
+					float3 normalToBlendWith = UnpackScaleNormal(POI2D_SAMPLER_PAN_STOCHASTIC(_RgbNormalG, _trilinear_repeat, poiUV(poiMesh.uv[0.0], PoiUVMerge(float4(4,4,0,0), float4(1,1,0,0) )), float4(0,0,0,0), 0.0), 1.0 == 0 ? 1.0 : 1.0 * maskFinal.g);
 					RGBABlendNormals(poiMesh.tangentSpaceNormal, originalNormal, normalToBlendWith, maskFinal.g, 1.0);
 				}
 				#endif
 				#if defined(PROP_RGBNORMALB) || !defined(OPTIMIZER_ENABLED)
-				if (0.25 > 0 && 1.0)
+				if (1.0 > 0 && 1.0)
 				{
-					float3 normalToBlendWith = UnpackScaleNormal(POI2D_SAMPLER_PAN_STOCHASTIC(_RgbNormalB, _trilinear_repeat, poiUV(poiMesh.uv[0.0], PoiUVMerge(float4(25,25,0,0), float4(1,1,0,0))), float4(0,0,0,0), 1.0), 1.0 == 0 ? 0.25 : 0.25 * maskFinal.b);
+					float3 normalToBlendWith = UnpackScaleNormal(POI2D_SAMPLER_PAN_STOCHASTIC(_RgbNormalB, _trilinear_repeat, poiUV(poiMesh.uv[0.0], PoiUVMerge(float4(25,25,0,0), float4(1,1,0,0))), float4(0,0,0,0), 1.0), 1.0 == 0 ? 1.0 : 1.0 * maskFinal.b);
 					RGBABlendNormals(poiMesh.tangentSpaceNormal, originalNormal, normalToBlendWith, maskFinal.b, 1.0);
 				}
 				#endif
 				#if defined(PROP_RGBNORMALA) || !defined(OPTIMIZER_ENABLED)
-				if (0.5 > 0 && 1.0)
+				if (1.0 > 0 && 1.0)
 				{
-					float3 normalToBlendWith = UnpackScaleNormal(POI2D_SAMPLER_PAN_STOCHASTIC(_RgbNormalA, _trilinear_repeat, poiUV(poiMesh.uv[0.0], PoiUVMerge(float4(300,300,0,0), float4(1,1,0,0))), float4(0,100,0,0), 1.0), 1.0 == 0 ? 0.5 : 0.5 * maskFinal.a);
+					float3 normalToBlendWith = UnpackScaleNormal(POI2D_SAMPLER_PAN_STOCHASTIC(_RgbNormalA, _trilinear_repeat, poiUV(poiMesh.uv[0.0], PoiUVMerge(float4(300,300,0,0), float4(1,1,0,0))), float4(0,100,0,0), 1.0), 1.0 == 0 ? 1.0 : 1.0 * maskFinal.a);
 					RGBABlendNormals(poiMesh.tangentSpaceNormal, originalNormal, normalToBlendWith, maskFinal.a, 1.0);
 				}
 				#endif
@@ -7059,7 +7059,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/d2b49fdf755460c44820d6f44eeda8
 				shadowAttenuation = lerp(1, poiLight.additiveShadow, poiLight.attenuationStrength);
 				#endif
 				#ifdef POI_PASS_ADD
-				if (0.0 == 3)
+				if (1.0 == 3)
 				{
 					#if defined(POINT) || defined(SPOT)
 					#if defined(_LIGHTINGMODE_REALISTIC) || defined(_LIGHTINGMODE_CLOTH) || defined(_LIGHTINGMODE_WRAPPED)
@@ -7069,20 +7069,20 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/d2b49fdf755460c44820d6f44eeda8
 					#endif
 					#endif
 				}
-				if (0.0 == 0)
+				if (1.0 == 0)
 				{
 					poiLight.rampedLightMap = max(0, poiLight.nDotL);
 					poiLight.finalLighting = poiLight.directColor * attenuation * max(0, poiLight.nDotL) * poiLight.detailShadow * shadowAttenuation;
 					return;
 				}
-				if (0.0 == 1)
+				if (1.0 == 1)
 				{
 					#if defined(POINT_COOKIE) || defined(DIRECTIONAL_COOKIE)
 					float passthrough = 0;
 					#else
 					float passthrough = 0.0;
 					#endif
-					float2 ToonAddGradient = float2(0.0, 0.5);
+					float2 ToonAddGradient = float2(0.0, 1.0);
 					if (ToonAddGradient.x == ToonAddGradient.y) ToonAddGradient.y += 0.0001;
 					poiLight.rampedLightMap = smoothstep(ToonAddGradient.y, ToonAddGradient.x, 1 - (.5 * poiLight.nDotL + .5));
 					#if defined(POINT) || defined(SPOT)
@@ -7121,7 +7121,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/d2b49fdf755460c44820d6f44eeda8
 					float3 vertexLighting = float3(0, 0, 0);
 					for (int index = 0; index < 4; index++)
 					{
-						float lightingMode = 0.0;
+						float lightingMode = 1.0;
 						if (lightingMode == 3)
 						{
 							#if defined(_LIGHTINGMODE_REALISTIC)
@@ -7136,7 +7136,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/d2b49fdf755460c44820d6f44eeda8
 						}
 						if (lightingMode == 1)
 						{
-							float2 ToonAddGradient = float2(0.0, 0.5);
+							float2 ToonAddGradient = float2(0.0, 1.0);
 							if (ToonAddGradient.x == ToonAddGradient.y) ToonAddGradient.y += 0.0001;
 							vertexLighting = max(vertexLighting, lerp(poiLight.vColor[index], poiLight.vColor[index] * 0.0, smoothstep(ToonAddGradient.x, ToonAddGradient.y, 1 - (.5 * poiLight.vDotNL[index] + .5))) * poiLight.detailShadow);
 						}
@@ -7667,7 +7667,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/d2b49fdf755460c44820d6f44eeda8
 						poiLight.vPosition[index] = float3(unity_4LightPosX0[index], unity_4LightPosY0[index], unity_4LightPosZ0[index]);
 						float3 vertexToLightSource = poiLight.vPosition[index] - poiMesh.worldPos;
 						poiLight.vDirection[index] = normalize(vertexToLightSource);
-						poiLight.vColor[index] = 1.0 ? MaxLuminance(unity_LightColor[index].rgb * poiLight.vAttenuation[index], 1.0) : unity_LightColor[index].rgb * poiLight.vAttenuation[index];
+						poiLight.vColor[index] = 0.0 ? MaxLuminance(unity_LightColor[index].rgb * poiLight.vAttenuation[index], 1.0) : unity_LightColor[index].rgb * poiLight.vAttenuation[index];
 						poiLight.vColor[index] = lerp(poiLight.vColor[index], dot(poiLight.vColor[index], float3(0.299, 0.587, 0.114)), 0.0);
 						poiLight.vHalfDir[index] = Unity_SafeNormalize(poiLight.vDirection[index] + poiCam.viewDir);
 						poiLight.vDotNL[index] = dot(poiMesh.normals[1], poiLight.vDirection[index]);
@@ -7914,12 +7914,12 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/d2b49fdf755460c44820d6f44eeda8
 				#endif
 				poiLight.additiveShadow = UNITY_SHADOW_ATTENUATION(i, poiMesh.worldPos);
 				poiLight.attenuationStrength = 1.0;
-				poiLight.directColor = 1.0 ? MaxLuminance(_LightColor0.rgb * poiLight.attenuation, 1.0) : _LightColor0.rgb * poiLight.attenuation;
+				poiLight.directColor = 0.0 ? MaxLuminance(_LightColor0.rgb * poiLight.attenuation, 1.0) : _LightColor0.rgb * poiLight.attenuation;
 				#if defined(POINT_COOKIE) || defined(DIRECTIONAL_COOKIE)
 				poiLight.indirectColor = 0;
 				#else
 				poiLight.indirectColor = lerp(0, poiLight.directColor, 0.0);
-				poiLight.indirectColor = 1.0 ? MaxLuminance(poiLight.indirectColor, 1.0) : poiLight.indirectColor;
+				poiLight.indirectColor = 0.0 ? MaxLuminance(poiLight.indirectColor, 1.0) : poiLight.indirectColor;
 				#endif
 				poiLight.directColor = lerp(poiLight.directColor, dot(poiLight.directColor, float3(0.299, 0.587, 0.114)), 0.0);
 				poiLight.indirectColor = lerp(poiLight.indirectColor, dot(poiLight.indirectColor, float3(0.299, 0.587, 0.114)), 0.0);
@@ -12599,30 +12599,30 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/d2b49fdf755460c44820d6f44eeda8
 				if (0.0 > 0) maskFinal.a = customBlend(maskFinal.a, poiMods.globalMask[0.0 - 1], 2.0);
 				float3 originalNormal = poiMesh.tangentSpaceNormal;
 				#if defined(PROP_RGBNORMALR) || !defined(OPTIMIZER_ENABLED)
-				if (0.25 > 0 && 1.0)
+				if (1.0 > 0 && 1.0)
 				{
-					float3 normalToBlendWith = UnpackScaleNormal(POI2D_SAMPLER_PAN_STOCHASTIC(_RgbNormalR, _trilinear_repeat, poiUV(poiMesh.uv[0.0], PoiUVMerge(float4(95,95,0,0), float4(1,1,0,0) )), float4(0,0,0,0), 1.0), 1.0 == 0 ? 0.25 : 0.25 * maskFinal.r);
+					float3 normalToBlendWith = UnpackScaleNormal(POI2D_SAMPLER_PAN_STOCHASTIC(_RgbNormalR, _trilinear_repeat, poiUV(poiMesh.uv[0.0], PoiUVMerge(float4(95,95,0,0), float4(1,1,0,0) )), float4(0,0,0,0), 1.0), 1.0 == 0 ? 1.0 : 1.0 * maskFinal.r);
 					RGBABlendNormals(poiMesh.tangentSpaceNormal, originalNormal, normalToBlendWith, maskFinal.r, 1.0);
 				}
 				#endif
 				#if defined(PROP_RGBNORMALG) || !defined(OPTIMIZER_ENABLED)
-				if (0.25 > 0 && 1.0)
+				if (1.0 > 0 && 1.0)
 				{
-					float3 normalToBlendWith = UnpackScaleNormal(POI2D_SAMPLER_PAN_STOCHASTIC(_RgbNormalG, _trilinear_repeat, poiUV(poiMesh.uv[0.0], PoiUVMerge(float4(4,4,0,0), float4(1,1,0,0) )), float4(0,0,0,0), 0.0), 1.0 == 0 ? 0.25 : 0.25 * maskFinal.g);
+					float3 normalToBlendWith = UnpackScaleNormal(POI2D_SAMPLER_PAN_STOCHASTIC(_RgbNormalG, _trilinear_repeat, poiUV(poiMesh.uv[0.0], PoiUVMerge(float4(4,4,0,0), float4(1,1,0,0) )), float4(0,0,0,0), 0.0), 1.0 == 0 ? 1.0 : 1.0 * maskFinal.g);
 					RGBABlendNormals(poiMesh.tangentSpaceNormal, originalNormal, normalToBlendWith, maskFinal.g, 1.0);
 				}
 				#endif
 				#if defined(PROP_RGBNORMALB) || !defined(OPTIMIZER_ENABLED)
-				if (0.25 > 0 && 1.0)
+				if (1.0 > 0 && 1.0)
 				{
-					float3 normalToBlendWith = UnpackScaleNormal(POI2D_SAMPLER_PAN_STOCHASTIC(_RgbNormalB, _trilinear_repeat, poiUV(poiMesh.uv[0.0], PoiUVMerge(float4(25,25,0,0), float4(1,1,0,0))), float4(0,0,0,0), 1.0), 1.0 == 0 ? 0.25 : 0.25 * maskFinal.b);
+					float3 normalToBlendWith = UnpackScaleNormal(POI2D_SAMPLER_PAN_STOCHASTIC(_RgbNormalB, _trilinear_repeat, poiUV(poiMesh.uv[0.0], PoiUVMerge(float4(25,25,0,0), float4(1,1,0,0))), float4(0,0,0,0), 1.0), 1.0 == 0 ? 1.0 : 1.0 * maskFinal.b);
 					RGBABlendNormals(poiMesh.tangentSpaceNormal, originalNormal, normalToBlendWith, maskFinal.b, 1.0);
 				}
 				#endif
 				#if defined(PROP_RGBNORMALA) || !defined(OPTIMIZER_ENABLED)
-				if (0.5 > 0 && 1.0)
+				if (1.0 > 0 && 1.0)
 				{
-					float3 normalToBlendWith = UnpackScaleNormal(POI2D_SAMPLER_PAN_STOCHASTIC(_RgbNormalA, _trilinear_repeat, poiUV(poiMesh.uv[0.0], PoiUVMerge(float4(300,300,0,0), float4(1,1,0,0))), float4(0,100,0,0), 1.0), 1.0 == 0 ? 0.5 : 0.5 * maskFinal.a);
+					float3 normalToBlendWith = UnpackScaleNormal(POI2D_SAMPLER_PAN_STOCHASTIC(_RgbNormalA, _trilinear_repeat, poiUV(poiMesh.uv[0.0], PoiUVMerge(float4(300,300,0,0), float4(1,1,0,0))), float4(0,100,0,0), 1.0), 1.0 == 0 ? 1.0 : 1.0 * maskFinal.a);
 					RGBABlendNormals(poiMesh.tangentSpaceNormal, originalNormal, normalToBlendWith, maskFinal.a, 1.0);
 				}
 				#endif

@@ -14,7 +14,9 @@ Material:
   - BSSBLOOMFOGTYPE_HEIGHT
   - FINALPASS
   - MOCHIE_PBR
+  - VIGNETTE
   - VIGNETTE_MASKED
+  - _CUBEMAP
   - _LIGHTINGMODE_REALISTIC
   - _RIM2STYLE_POIYOMI
   - _RIMSTYLE_POIYOMI
@@ -25,8 +27,8 @@ Material:
   m_CustomRenderQueue: 2000
   stringTagMap:
     AllLockedGUIDS: a97866f9bcac388458e5cbd0b2597f49
-    OriginalKeywords: BSSBLOOMFOGTYPE_HEIGHT FINALPASS MOCHIE_PBR VIGNETTE_MASKED
-      _LIGHTINGMODE_REALISTIC _RIM2STYLE_POIYOMI _RIMSTYLE_POIYOMI _STOCHASTICMODE_DELIOT_HEITZ
+    OriginalKeywords: BSSBLOOMFOGTYPE_HEIGHT FINALPASS MOCHIE_PBR VIGNETTE VIGNETTE_MASKED
+      _CUBEMAP _LIGHTINGMODE_REALISTIC _RIM2STYLE_POIYOMI _RIMSTYLE_POIYOMI _STOCHASTICMODE_DELIOT_HEITZ
     OriginalShader: .poiyomi/Poiyomi Toon World
     OriginalShaderGUID: 1b58d372fe360874a8fb767d53f955b0
     RenderType: Opaque
@@ -41,12 +43,28 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _AlphaTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _AnisotropyMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _BumpMap:
+    - _BlueTexture:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: e358ce525708f6c43bc6ff38854791e4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _CubeMap:
+        m_Texture: {fileID: 8900000, guid: bbc31cd084fdaf74da8e30f5ce19d675, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _CubeMapMask:
+        m_Texture: {fileID: 2800000, guid: 07cf8e7cf8c5d824392d9b83eaf937e5, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailMask:
@@ -59,6 +77,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _DetailTex:
         m_Texture: {fileID: 2800000, guid: 07cf8e7cf8c5d824392d9b83eaf937e5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _GreenTexture:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _LightDataSDFMap:
@@ -88,6 +110,38 @@ Material:
     - _MochieReflCube:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RGBAMetallicMaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RGBASmoothnessMaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RGBMask:
+        m_Texture: {fileID: 2800000, guid: a8e33a6c1c4f64c4e923d1f2d8101b53, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RedTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RgbNormalA:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RgbNormalB:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RgbNormalG:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RgbNormalR:
+        m_Texture: {fileID: 2800000, guid: 0429ad7b66b61214e801a8320912b42d, type: 3}
+        m_Scale: {x: 4, y: 12}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
@@ -456,7 +510,7 @@ Material:
     - _CubeMapColorThemeIndex: 0
     - _CubeMapContrast: 1
     - _CubeMapEmissionStrength: 0
-    - _CubeMapEnabled: 0
+    - _CubeMapEnabled: 1
     - _CubeMapHueSelectOrShift: 1
     - _CubeMapHueShift: 0
     - _CubeMapHueShiftColorSpace: 0
@@ -464,7 +518,7 @@ Material:
     - _CubeMapHueShiftSpeed: 0
     - _CubeMapIntensity: 1
     - _CubeMapLightMask: 0
-    - _CubeMapMaskChannel: 0
+    - _CubeMapMaskChannel: 3
     - _CubeMapMaskGlobalMask: 0
     - _CubeMapMaskGlobalMaskBlendType: 2
     - _CubeMapMaskInvert: 0
@@ -475,7 +529,7 @@ Material:
     - _CubeMapUVMode: 1
     - _CubeMapWorldNormalsStrength: 1
     - _CubeThreshold: 0.45
-    - _CubemapBlendType: 0
+    - _CubemapBlendType: 2
     - _Cull: 2
     - _CurvFix: 1
     - _CurvatureU: 0
@@ -1401,13 +1455,13 @@ Material:
     - _LightingAddDetailShadowStrengthR: 0
     - _LightingAdditiveCastedShadows: 1
     - _LightingAdditiveEnable: 1
-    - _LightingAdditiveGradientEnd: 0.5
+    - _LightingAdditiveGradientEnd: 1
     - _LightingAdditiveGradientStart: 0
     - _LightingAdditiveLimit: 1
-    - _LightingAdditiveLimited: 1
+    - _LightingAdditiveLimited: 0
     - _LightingAdditiveMonochromatic: 0
     - _LightingAdditivePassthrough: 0
-    - _LightingAdditiveType: 0
+    - _LightingAdditiveType: 1
     - _LightingCap: 1
     - _LightingCapEnabled: 0
     - _LightingCastedShadows: 1
@@ -1968,9 +2022,9 @@ Material:
     - _RGBAPBRBlueEnabled: 0
     - _RGBAPBRGreenEnabled: 0
     - _RGBAPBRRedEnabled: 0
-    - _RGBARedBlendType: 0
+    - _RGBARedBlendType: 1
     - _RGBARedEmissionStrength: 0
-    - _RGBARedEnable: 0
+    - _RGBARedEnable: 1
     - _RGBARedMetallicInvert: 0
     - _RGBARedPBRSplitMaskSample: 0
     - _RGBARedPBRSplitMaskStochastic: 0
@@ -1978,7 +2032,7 @@ Material:
     - _RGBARedSmoothnessInvert: 0
     - _RGBASmoothnessMapsStochastic: 0
     - _RGBASmoothnessMapsUV: 0
-    - _RGBMaskEnabled: 0
+    - _RGBMaskEnabled: 1
     - _RGBMaskType: 0
     - _RGBMaskUV: 0
     - _RainToggle: 0
@@ -2042,14 +2096,14 @@ Material:
     - _RgbNormalGreenBlendMode: 0
     - _RgbNormalRGlobalMaskBlendType: 2
     - _RgbNormalRGlobalMaskChannel: 0
-    - _RgbNormalRMaskChannel: 0
-    - _RgbNormalRScale: 0
+    - _RgbNormalRMaskChannel: 1
+    - _RgbNormalRScale: 1
     - _RgbNormalRStochastic: 0
     - _RgbNormalRUV: 0
-    - _RgbNormalRedBlendMode: 0
+    - _RgbNormalRedBlendMode: 1
     - _RgbRedGlobalMaskBlendType: 2
     - _RgbRedGlobalMaskChannel: 0
-    - _RgbRedMaskChannel: 0
+    - _RgbRedMaskChannel: 1
     - _Rim2ApColorThemeIndex: 0
     - _Rim2ApplyAlpha: 0
     - _Rim2ApplyAlphaBlend: 1
@@ -2720,9 +2774,9 @@ Material:
     - m_end_videoEffects: 0
     - m_end_voronoi: 0
     - m_end_voronoiRandom: 0
-    - m_lightingCategory: 0
+    - m_lightingCategory: 1
     - m_mainCategory: 1
-    - m_modifierCategory: 1
+    - m_modifierCategory: 0
     - m_renderingCategory: 0
     - m_specialFXCategory: 0
     - m_start_ALDecalSpectrum: 0
@@ -2736,7 +2790,7 @@ Material:
     - m_start_CRT: 0
     - m_start_CenterOutDissolve: 0
     - m_start_ColorAdjust: 1
-    - m_start_CubeMap: 0
+    - m_start_CubeMap: 1
     - m_start_Decal0: 0
     - m_start_Decal0AudioLink: 0
     - m_start_Decal1: 1
@@ -2796,7 +2850,7 @@ Material:
     - m_start_PoiGlobalCategory: 0
     - m_start_PoiLightData: 1
     - m_start_PoiPostProcessingCategory: 0
-    - m_start_PoiShading: 0
+    - m_start_PoiShading: 1
     - m_start_PoiUVCategory: 0
     - m_start_RGBMask: 1
     - m_start_Rim2AudioLink: 0
@@ -3434,7 +3488,7 @@ Material:
     - _ClearCoatSpecularTint: {r: 1, g: 1, b: 1, a: 1}
     - _ClothMetallicSmoothnessMapPan: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 0.8862745, g: 0.7254902, b: 0.52156866, a: 1}
-    - _CubeMapColor: {r: 1, g: 1, b: 1, a: 1}
+    - _CubeMapColor: {r: 1, g: 0.7109454, b: 0.34433958, a: 1}
     - _CubeMapMaskPan: {r: 0, g: 0, b: 0, a: 0}
     - _CubeMapRotation: {r: 0, g: 0, b: 0, a: 0}
     - _CubeMapRotationPan: {r: 0, g: 0, b: 0, a: 0}

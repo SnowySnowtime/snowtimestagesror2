@@ -201,6 +201,42 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/1fd7dfc0dbfd3d1458ea7f54f420a3
 		[HideInInspector][ThryWideEnum(Add, 7, Subtract, 1, Multiply, 2, Divide, 3, Min, 4, Max, 5, Average, 6, Replace, 0)] _ShadingRampedLightMapInverseApplyGlobalMaskBlendType ("Blending", Int) = 2
 		[HideInInspector] s_end_ShadingGlobalMask ("Global Masks", Float) = 0
 		[HideInInspector] m_end_PoiShading ("Shading", Float) = 0
+		[HideInInspector] m_start_CubeMap (" CubeMap--{reference_property:_CubeMapEnabled,button_help:{text:Tutorial,action:{type:URL,data:https://www.poiyomi.com/shading/cubemap},hover:Documentation}}", Float) = 0
+		[HideInInspector][ThryToggle(_CUBEMAP)]_CubeMapEnabled ("Enable CubeMap", Float) = 0
+		[ThryWideEnum(Skybox, 0, Reflection, 1, World Normal Direction, 2, Local Normal Direction, 3)] _CubeMapUVMode ("UV Mode", Int) = 1
+		_CubeMapWorldNormalsStrength ("Normals Strength--{condition_showS:(_CubeMapUVMode==2)}", Range(0, 1)) = 1
+		_CubeMapColor ("Color--{reference_property:_CubeMapColorThemeIndex}", Color) = (1, 1, 1, 1)
+		[HideInInspector][ThryWideEnum(Off, 0, Theme Color 0, 1, Theme Color 1, 2, Theme Color 2, 3, Theme Color 3, 4, ColorChord 0, 5, ColorChord 1, 6, ColorChord 2, 7, ColorChord 3, 8, AL Theme 0, 9, AL Theme 1, 10, AL Theme 2, 11, AL Theme 3, 12)] _CubeMapColorThemeIndex ("", Int) = 0
+		[NoScaleOffset]_CubeMap ("CubeMap--{reference_properties:[_CubeMapRotation, _CubeMapRotationPan]}", Cube) = "" { }
+		[HideInInspector][Vector3]_CubeMapRotation ("Rotation in Degrees", Vector) = (0, 0, 0, 0)
+		[HideInInspector][Vector3]_CubeMapRotationPan ("Panning in Degrees", Vector) = (0, 0, 0, 0)
+		[ThryWideEnum(Replace, 0, Multiply, 1, Add, 2)]_CubemapBlendType ("Blending", Float) = 0
+		_CubeMapBlendAmount ("Blend Alpha", Range(0, 1)) = 1
+		_CubeMapIntensity ("Brightness", Range(0, 5)) = 1
+		_CubeMapEmissionStrength ("Emission Strength", Range(0, 20)) = 0
+		_CubeMapSmoothness ("Smoothness", Range(0, 1)) = 1
+		[Enum(Vertex, 0, Pixel, 1)] _CubeMapNormal ("Normal to use", Int) = 1
+		[HideInInspector] s_start_CubeMapMasking ("Masking--{persistent_expand:true,default_expand:true}", Float) = 1
+		[sRGBWarning]_CubeMapMask ("Mask--{reference_properties:[_CubeMapMaskPan, _CubeMapMaskUV, _CubeMapMaskChannel, _CubeMapMaskInvert]}", 2D) = "white" { }
+		[HideInInspector][Vector2]_CubeMapMaskPan ("Panning", Vector) = (0, 0, 0, 0)
+		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7)] _CubeMapMaskUV ("UV", Int) = 0
+		[HideInInspector][Enum(R, 0, G, 1, B, 2, A, 3)]_CubeMapMaskChannel ("Channel", Float) = 0
+		[HideInInspector][ToggleUI]_CubeMapMaskInvert ("Invert", Float) = 0
+		_CubeMapLightMask ("Hide in Shadow", Range(0, 1)) = 0
+		[ThryWideEnum(Off, 0, 1R, 1, 1G, 2, 1B, 3, 1A, 4, 2R, 5, 2G, 6, 2B, 7, 2A, 8, 3R, 9, 3G, 10, 3B, 11, 3A, 12, 4R, 13, 4G, 14, 4B, 15, 4A, 16)] _CubeMapMaskGlobalMask ("Global Mask--{reference_property:_CubeMapMaskGlobalMaskBlendType}", Int) = 0
+		[HideInInspector][ThryWideEnum(Add, 7, Subtract, 1, Multiply, 2, Divide, 3, Min, 4, Max, 5, Average, 6, Replace, 0)]_CubeMapMaskGlobalMaskBlendType ("Blending", Range(0, 1)) = 2
+		[HideInInspector] s_end_CubeMapMasking ("Masking", Float) = 0
+		[HideInInspector] s_start_CubeMapColorAdjust ("Color Adjust--{reference_property:_CubeMapHueShiftEnabled,persistent_expand:true,default_expand:false}", Float) = 0
+		[HideInInspector][ToggleUI]_CubeMapHueShiftEnabled ("Enabled", Float) = 0
+		[ThryWideEnum(OKLab, 0, HSV, 1)] _CubeMapHueShiftColorSpace ("Color Space", Int) = 0
+		[ThryWideEnum(Hue Select, 0, Hue Shift, 1)] _CubeMapHueSelectOrShift ("Select or Shift", Int) = 1
+		_CubeMapHueShiftSpeed ("Hue Shift Speed", Float) = 0
+		_CubeMapHueShift ("Hue Shift", Range(0, 1)) = 0
+		_CubeMapBrightness ("Brightness", Range(-1, 1)) = 0
+		_CubeMapContrast ("Contrast", Range(-1, 10)) = 1
+		_CubeMapSaturation ("Saturation", Range(-1, 10)) = 1
+		[HideInInspector] s_end_CubeMapColorAdjust ("", Float) = 0
+		[HideInInspector] m_end_CubeMap ("CubeMap", Float) = 0
 		[HideInInspector] m_start_brdf (" Reflections & Specular--{reference_property:_MochieBRDF,button_help:{text:Tutorial,action:{type:URL,data:https://www.poiyomi.com/shading/reflections-and-specular},hover:Documentation}}", Float) = 0
 		[HideInInspector][ThryToggle(MOCHIE_PBR)]_MochieBRDF ("Enable", Float) = 0
 		_MochieMetallicMultiplier ("Metallic", Range(0, 1)) = 0
@@ -432,9 +468,12 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/1fd7dfc0dbfd3d1458ea7f54f420a3
  #define FINALPASS 
  #define MOCHIE_PBR 
  #define VIGNETTE_MASKED 
+ #define _CUBEMAP 
  #define _LIGHTINGMODE_REALISTIC 
  #define _STOCHASTICMODE_DELIOT_HEITZ 
  #define PROP_DETAILTEX 
+ #define PROP_CUBEMAP 
+ #define PROP_CUBEMAPMASK 
  #define OPTIMIZER_ENABLED 
 			#pragma target 5.0
 			#pragma multi_compile_fwdbase
@@ -777,6 +816,43 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/1fd7dfc0dbfd3d1458ea7f54f420a3
 				float matcapALChronoPanBand;
 				float matcapALChronoPanSpeed;
 			};
+			#ifdef _CUBEMAP
+			#if defined(PROP_CUBEMAP) || !defined(OPTIMIZER_ENABLED)
+			samplerCUBE _CubeMap;
+			float3 _CubeMapRotation;
+			float3 _CubeMapRotationPan;
+			#endif
+			#if defined(PROP_CUBEMAPMASK) || !defined(OPTIMIZER_ENABLED)
+			Texture2D _CubeMapMask;
+			float4 _CubeMapMask_ST;
+			float2 _CubeMapMaskPan;
+			float _CubeMapMaskUV;
+			float _CubeMapMaskChannel;
+			#endif
+			float _CubeMapUVMode;
+			float _CubeMapWorldNormalsStrength;
+			float _CubeMapMaskInvert;
+			float _CubeMapMaskGlobalMask;
+			float _CubeMapMaskGlobalMaskBlendType;
+			float4 _CubeMapColor;
+			float _CubeMapColorThemeIndex;
+			float _CubeMapIntensity;
+			float _CubemapBlendType;
+			float _CubeMapBlendAmount;
+			float _CubeMapEnable;
+			float _CubeMapLightMask;
+			float _CubeMapEmissionStrength;
+			float _CubeMapNormal;
+			float _CubeMapHueShiftEnabled;
+			float _CubeMapHueShiftSpeed;
+			float _CubeMapHueShift;
+			float _CubeMapHueShiftColorSpace;
+			float _CubeMapHueSelectOrShift;
+			float _CubeMapSaturation;
+			float _CubeMapBrightness;
+			float _CubeMapContrast;
+			float _CubeMapSmoothness;
+			#endif
 			#ifdef MOCHIE_PBR
 			#if defined(PROP_MOCHIEMETALLICMAPS) || !defined(OPTIMIZER_ENABLED)
 			Texture2D _MochieMetallicMaps;
@@ -2805,7 +2881,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/1fd7dfc0dbfd3d1458ea7f54f420a3
 				shadowAttenuation = lerp(1, poiLight.additiveShadow, poiLight.attenuationStrength);
 				#endif
 				#ifdef POI_PASS_ADD
-				if (0.0 == 3)
+				if (1.0 == 3)
 				{
 					#if defined(POINT) || defined(SPOT)
 					#if defined(_LIGHTINGMODE_REALISTIC) || defined(_LIGHTINGMODE_CLOTH) || defined(_LIGHTINGMODE_WRAPPED)
@@ -2815,20 +2891,20 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/1fd7dfc0dbfd3d1458ea7f54f420a3
 					#endif
 					#endif
 				}
-				if (0.0 == 0)
+				if (1.0 == 0)
 				{
 					poiLight.rampedLightMap = max(0, poiLight.nDotL);
 					poiLight.finalLighting = poiLight.directColor * attenuation * max(0, poiLight.nDotL) * poiLight.detailShadow * shadowAttenuation;
 					return;
 				}
-				if (0.0 == 1)
+				if (1.0 == 1)
 				{
 					#if defined(POINT_COOKIE) || defined(DIRECTIONAL_COOKIE)
 					float passthrough = 0;
 					#else
 					float passthrough = 0.0;
 					#endif
-					float2 ToonAddGradient = float2(0.0, 0.5);
+					float2 ToonAddGradient = float2(0.0, 1.0);
 					if (ToonAddGradient.x == ToonAddGradient.y) ToonAddGradient.y += 0.0001;
 					poiLight.rampedLightMap = smoothstep(ToonAddGradient.y, ToonAddGradient.x, 1 - (.5 * poiLight.nDotL + .5));
 					#if defined(POINT) || defined(SPOT)
@@ -2867,7 +2943,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/1fd7dfc0dbfd3d1458ea7f54f420a3
 					float3 vertexLighting = float3(0, 0, 0);
 					for (int index = 0; index < 4; index++)
 					{
-						float lightingMode = 0.0;
+						float lightingMode = 1.0;
 						if (lightingMode == 3)
 						{
 							#if defined(_LIGHTINGMODE_REALISTIC)
@@ -2882,7 +2958,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/1fd7dfc0dbfd3d1458ea7f54f420a3
 						}
 						if (lightingMode == 1)
 						{
-							float2 ToonAddGradient = float2(0.0, 0.5);
+							float2 ToonAddGradient = float2(0.0, 1.0);
 							if (ToonAddGradient.x == ToonAddGradient.y) ToonAddGradient.y += 0.0001;
 							vertexLighting = max(vertexLighting, lerp(poiLight.vColor[index], poiLight.vColor[index] * 0.0, smoothstep(ToonAddGradient.x, ToonAddGradient.y, 1 - (.5 * poiLight.vDotNL[index] + .5))) * poiLight.detailShadow);
 						}
@@ -2891,6 +2967,74 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/1fd7dfc0dbfd3d1458ea7f54f420a3
 					poiLight.finalLighting = max(vertexLighting, poiLight.finalLighting);
 					#endif
 				}
+			}
+			#endif
+			#ifdef _CUBEMAP
+			#if defined(PROP_CUBEMAP) || !defined(OPTIMIZER_ENABLED)
+			float3 RotateAroundYInDegrees(float3 dir, float degrees)
+			{
+				float alpha = degrees * UNITY_PI / 180.0;
+				float sina, cosa;
+				sincos(alpha, sina, cosa);
+				float2x2 m = float2x2(cosa, -sina, sina, cosa);
+				return float3(mul(m, dir.xz), dir.y).xzy;
+			}
+			#endif
+			void applyCubemap(inout PoiFragData poiFragData, in PoiCam poiCam, in PoiMesh poiMesh, in PoiLight poiLight, in PoiMods poiMods)
+			{
+				float3 CubeMapUV = 0;
+				switch(1.0)
+				{
+					case 0: // Skybox
+					CubeMapUV = -poiCam.viewDir;
+					break;
+					case 1: // Reflection
+					CubeMapUV = poiCam.reflectionDir;
+					break;
+					case 2: // World Normal Direction
+					CubeMapUV = lerp(poiMesh.normals[0], poiMesh.normals[1], 1.0);
+					break;
+					case 3: // Local Normal Direction
+					CubeMapUV = poiMesh.objNormal;
+					break;
+				}
+				#if defined(PROP_CUBEMAP) || !defined(OPTIMIZER_ENABLED)
+				if (any(float4(0,0,0,0).xyz) || any(float4(0,0,0,0).xyz))
+				{
+					CubeMapUV = RotateAroundYInDegrees(CubeMapUV.yxz, float4(0,0,0,0).x + (float4(0,0,0,0).x * _Time.y)).yxz;
+					CubeMapUV = RotateAroundYInDegrees(CubeMapUV.xyz, float4(0,0,0,0).y + (float4(0,0,0,0).y * _Time.y)).xyz;
+					CubeMapUV = RotateAroundYInDegrees(CubeMapUV.xzy, float4(0,0,0,0).z + (float4(0,0,0,0).z * _Time.y)).xzy;
+				}
+				float4 cubeMap = texCUBElod(_CubeMap, float4(CubeMapUV, (1 - 1.0) * (1 - 1.0) * 8));
+				cubeMap.rgb *= poiThemeColor(poiMods, float4(1,0.463734,0.09714393,1), 0.0);
+				#else
+				float4 cubeMap = float4(0.21763764082, 0.21763764082, 0.21763764082, .5) * float4(poiThemeColor(poiMods, float4(1,0.463734,0.09714393,1), 0.0), 1);
+				#endif
+				cubeMap.rgb *= 1.0;
+				#if defined(PROP_CUBEMAPMASK) || !defined(OPTIMIZER_ENABLED)
+				float CubeMapMask = POI2D_SAMPLER_PAN(_CubeMapMask, _MainTex, poiUV(poiMesh.uv[0.0], float4(1,1,0,0)), float4(0,0,0,0))[3.0];
+				#else
+				float CubeMapMask = 1;
+				#endif
+				if (0.0 > 0)
+				{
+					CubeMapMask = maskBlend(CubeMapMask, poiMods.globalMask[0.0 - 1], 2.0);
+				}
+				if (0.0)
+				{
+					CubeMapMask = 1 - CubeMapMask;
+				}
+				if (0.0)
+				{
+					cubeMap.rgb = hueShift(cubeMap.rgb, 0.0 + _Time.x * 0.0, 0.0, 1.0);
+					cubeMap = PoiColorBCS(cubeMap, 0.0, 1.0, 1.0);
+				}
+				CubeMapMask = min(CubeMapMask, lerp(1, poiLight.rampedLightMap, 0.0));
+				float cubeMapAlpha = CubeMapMask * cubeMap.a * 1.0;
+				poiFragData.baseColor.rgb = lerp(poiFragData.baseColor.rgb, cubeMap.rgb, cubeMapAlpha * (2.0 == 0));
+				poiFragData.baseColor.rgb *= lerp(1, cubeMap.rgb, cubeMapAlpha * (2.0 == 1));
+				poiFragData.baseColor.rgb += cubeMap.rgb * cubeMapAlpha * (2.0 == 2);
+				poiFragData.emission += cubeMap.rgb * 0.0 * CubeMapMask * cubeMap.a;
 			}
 			#endif
 			#if defined(MOCHIE_PBR) || defined(POI_CLEARCOAT)
@@ -3410,7 +3554,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/1fd7dfc0dbfd3d1458ea7f54f420a3
 						poiLight.vPosition[index] = float3(unity_4LightPosX0[index], unity_4LightPosY0[index], unity_4LightPosZ0[index]);
 						float3 vertexToLightSource = poiLight.vPosition[index] - poiMesh.worldPos;
 						poiLight.vDirection[index] = normalize(vertexToLightSource);
-						poiLight.vColor[index] = 1.0 ? MaxLuminance(unity_LightColor[index].rgb * poiLight.vAttenuation[index], 1.0) : unity_LightColor[index].rgb * poiLight.vAttenuation[index];
+						poiLight.vColor[index] = 0.0 ? MaxLuminance(unity_LightColor[index].rgb * poiLight.vAttenuation[index], 1.0) : unity_LightColor[index].rgb * poiLight.vAttenuation[index];
 						poiLight.vColor[index] = lerp(poiLight.vColor[index], dot(poiLight.vColor[index], float3(0.299, 0.587, 0.114)), 0.0);
 						poiLight.vHalfDir[index] = Unity_SafeNormalize(poiLight.vDirection[index] + poiCam.viewDir);
 						poiLight.vDotNL[index] = dot(poiMesh.normals[1], poiLight.vDirection[index]);
@@ -3657,12 +3801,12 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/1fd7dfc0dbfd3d1458ea7f54f420a3
 				#endif
 				poiLight.additiveShadow = UNITY_SHADOW_ATTENUATION(i, poiMesh.worldPos);
 				poiLight.attenuationStrength = 1.0;
-				poiLight.directColor = 1.0 ? MaxLuminance(_LightColor0.rgb * poiLight.attenuation, 1.0) : _LightColor0.rgb * poiLight.attenuation;
+				poiLight.directColor = 0.0 ? MaxLuminance(_LightColor0.rgb * poiLight.attenuation, 1.0) : _LightColor0.rgb * poiLight.attenuation;
 				#if defined(POINT_COOKIE) || defined(DIRECTIONAL_COOKIE)
 				poiLight.indirectColor = 0;
 				#else
 				poiLight.indirectColor = lerp(0, poiLight.directColor, 0.0);
-				poiLight.indirectColor = 1.0 ? MaxLuminance(poiLight.indirectColor, 1.0) : poiLight.indirectColor;
+				poiLight.indirectColor = 0.0 ? MaxLuminance(poiLight.indirectColor, 1.0) : poiLight.indirectColor;
 				#endif
 				poiLight.directColor = lerp(poiLight.directColor, dot(poiLight.directColor, float3(0.299, 0.587, 0.114)), 0.0);
 				poiLight.indirectColor = lerp(poiLight.indirectColor, dot(poiLight.indirectColor, float3(0.299, 0.587, 0.114)), 0.0);
@@ -3753,6 +3897,9 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/1fd7dfc0dbfd3d1458ea7f54f420a3
 				#ifdef POI_GRABPASS
 				poiLight.finalLighting = max(poiLight.finalLighting, 0.0001);
 				#endif
+				#ifdef _CUBEMAP
+				applyCubemap(poiFragData, poiCam, poiMesh, poiLight, poiMods);
+				#endif
 				
 				if (0.0)
 				{
@@ -3812,9 +3959,12 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/1fd7dfc0dbfd3d1458ea7f54f420a3
  #define FINALPASS 
  #define MOCHIE_PBR 
  #define VIGNETTE_MASKED 
+ #define _CUBEMAP 
  #define _LIGHTINGMODE_REALISTIC 
  #define _STOCHASTICMODE_DELIOT_HEITZ 
  #define PROP_DETAILTEX 
+ #define PROP_CUBEMAP 
+ #define PROP_CUBEMAPMASK 
  #define OPTIMIZER_ENABLED 
 			#pragma target 5.0
 			#pragma multi_compile_fwdadd_fullshadows
@@ -4156,6 +4306,43 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/1fd7dfc0dbfd3d1458ea7f54f420a3
 				float matcapALChronoPanBand;
 				float matcapALChronoPanSpeed;
 			};
+			#ifdef _CUBEMAP
+			#if defined(PROP_CUBEMAP) || !defined(OPTIMIZER_ENABLED)
+			samplerCUBE _CubeMap;
+			float3 _CubeMapRotation;
+			float3 _CubeMapRotationPan;
+			#endif
+			#if defined(PROP_CUBEMAPMASK) || !defined(OPTIMIZER_ENABLED)
+			Texture2D _CubeMapMask;
+			float4 _CubeMapMask_ST;
+			float2 _CubeMapMaskPan;
+			float _CubeMapMaskUV;
+			float _CubeMapMaskChannel;
+			#endif
+			float _CubeMapUVMode;
+			float _CubeMapWorldNormalsStrength;
+			float _CubeMapMaskInvert;
+			float _CubeMapMaskGlobalMask;
+			float _CubeMapMaskGlobalMaskBlendType;
+			float4 _CubeMapColor;
+			float _CubeMapColorThemeIndex;
+			float _CubeMapIntensity;
+			float _CubemapBlendType;
+			float _CubeMapBlendAmount;
+			float _CubeMapEnable;
+			float _CubeMapLightMask;
+			float _CubeMapEmissionStrength;
+			float _CubeMapNormal;
+			float _CubeMapHueShiftEnabled;
+			float _CubeMapHueShiftSpeed;
+			float _CubeMapHueShift;
+			float _CubeMapHueShiftColorSpace;
+			float _CubeMapHueSelectOrShift;
+			float _CubeMapSaturation;
+			float _CubeMapBrightness;
+			float _CubeMapContrast;
+			float _CubeMapSmoothness;
+			#endif
 			#ifdef MOCHIE_PBR
 			#if defined(PROP_MOCHIEMETALLICMAPS) || !defined(OPTIMIZER_ENABLED)
 			Texture2D _MochieMetallicMaps;
@@ -6180,7 +6367,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/1fd7dfc0dbfd3d1458ea7f54f420a3
 				shadowAttenuation = lerp(1, poiLight.additiveShadow, poiLight.attenuationStrength);
 				#endif
 				#ifdef POI_PASS_ADD
-				if (0.0 == 3)
+				if (1.0 == 3)
 				{
 					#if defined(POINT) || defined(SPOT)
 					#if defined(_LIGHTINGMODE_REALISTIC) || defined(_LIGHTINGMODE_CLOTH) || defined(_LIGHTINGMODE_WRAPPED)
@@ -6190,20 +6377,20 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/1fd7dfc0dbfd3d1458ea7f54f420a3
 					#endif
 					#endif
 				}
-				if (0.0 == 0)
+				if (1.0 == 0)
 				{
 					poiLight.rampedLightMap = max(0, poiLight.nDotL);
 					poiLight.finalLighting = poiLight.directColor * attenuation * max(0, poiLight.nDotL) * poiLight.detailShadow * shadowAttenuation;
 					return;
 				}
-				if (0.0 == 1)
+				if (1.0 == 1)
 				{
 					#if defined(POINT_COOKIE) || defined(DIRECTIONAL_COOKIE)
 					float passthrough = 0;
 					#else
 					float passthrough = 0.0;
 					#endif
-					float2 ToonAddGradient = float2(0.0, 0.5);
+					float2 ToonAddGradient = float2(0.0, 1.0);
 					if (ToonAddGradient.x == ToonAddGradient.y) ToonAddGradient.y += 0.0001;
 					poiLight.rampedLightMap = smoothstep(ToonAddGradient.y, ToonAddGradient.x, 1 - (.5 * poiLight.nDotL + .5));
 					#if defined(POINT) || defined(SPOT)
@@ -6242,7 +6429,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/1fd7dfc0dbfd3d1458ea7f54f420a3
 					float3 vertexLighting = float3(0, 0, 0);
 					for (int index = 0; index < 4; index++)
 					{
-						float lightingMode = 0.0;
+						float lightingMode = 1.0;
 						if (lightingMode == 3)
 						{
 							#if defined(_LIGHTINGMODE_REALISTIC)
@@ -6257,7 +6444,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/1fd7dfc0dbfd3d1458ea7f54f420a3
 						}
 						if (lightingMode == 1)
 						{
-							float2 ToonAddGradient = float2(0.0, 0.5);
+							float2 ToonAddGradient = float2(0.0, 1.0);
 							if (ToonAddGradient.x == ToonAddGradient.y) ToonAddGradient.y += 0.0001;
 							vertexLighting = max(vertexLighting, lerp(poiLight.vColor[index], poiLight.vColor[index] * 0.0, smoothstep(ToonAddGradient.x, ToonAddGradient.y, 1 - (.5 * poiLight.vDotNL[index] + .5))) * poiLight.detailShadow);
 						}
@@ -6266,6 +6453,74 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/1fd7dfc0dbfd3d1458ea7f54f420a3
 					poiLight.finalLighting = max(vertexLighting, poiLight.finalLighting);
 					#endif
 				}
+			}
+			#endif
+			#ifdef _CUBEMAP
+			#if defined(PROP_CUBEMAP) || !defined(OPTIMIZER_ENABLED)
+			float3 RotateAroundYInDegrees(float3 dir, float degrees)
+			{
+				float alpha = degrees * UNITY_PI / 180.0;
+				float sina, cosa;
+				sincos(alpha, sina, cosa);
+				float2x2 m = float2x2(cosa, -sina, sina, cosa);
+				return float3(mul(m, dir.xz), dir.y).xzy;
+			}
+			#endif
+			void applyCubemap(inout PoiFragData poiFragData, in PoiCam poiCam, in PoiMesh poiMesh, in PoiLight poiLight, in PoiMods poiMods)
+			{
+				float3 CubeMapUV = 0;
+				switch(1.0)
+				{
+					case 0: // Skybox
+					CubeMapUV = -poiCam.viewDir;
+					break;
+					case 1: // Reflection
+					CubeMapUV = poiCam.reflectionDir;
+					break;
+					case 2: // World Normal Direction
+					CubeMapUV = lerp(poiMesh.normals[0], poiMesh.normals[1], 1.0);
+					break;
+					case 3: // Local Normal Direction
+					CubeMapUV = poiMesh.objNormal;
+					break;
+				}
+				#if defined(PROP_CUBEMAP) || !defined(OPTIMIZER_ENABLED)
+				if (any(float4(0,0,0,0).xyz) || any(float4(0,0,0,0).xyz))
+				{
+					CubeMapUV = RotateAroundYInDegrees(CubeMapUV.yxz, float4(0,0,0,0).x + (float4(0,0,0,0).x * _Time.y)).yxz;
+					CubeMapUV = RotateAroundYInDegrees(CubeMapUV.xyz, float4(0,0,0,0).y + (float4(0,0,0,0).y * _Time.y)).xyz;
+					CubeMapUV = RotateAroundYInDegrees(CubeMapUV.xzy, float4(0,0,0,0).z + (float4(0,0,0,0).z * _Time.y)).xzy;
+				}
+				float4 cubeMap = texCUBElod(_CubeMap, float4(CubeMapUV, (1 - 1.0) * (1 - 1.0) * 8));
+				cubeMap.rgb *= poiThemeColor(poiMods, float4(1,0.463734,0.09714393,1), 0.0);
+				#else
+				float4 cubeMap = float4(0.21763764082, 0.21763764082, 0.21763764082, .5) * float4(poiThemeColor(poiMods, float4(1,0.463734,0.09714393,1), 0.0), 1);
+				#endif
+				cubeMap.rgb *= 1.0;
+				#if defined(PROP_CUBEMAPMASK) || !defined(OPTIMIZER_ENABLED)
+				float CubeMapMask = POI2D_SAMPLER_PAN(_CubeMapMask, _MainTex, poiUV(poiMesh.uv[0.0], float4(1,1,0,0)), float4(0,0,0,0))[3.0];
+				#else
+				float CubeMapMask = 1;
+				#endif
+				if (0.0 > 0)
+				{
+					CubeMapMask = maskBlend(CubeMapMask, poiMods.globalMask[0.0 - 1], 2.0);
+				}
+				if (0.0)
+				{
+					CubeMapMask = 1 - CubeMapMask;
+				}
+				if (0.0)
+				{
+					cubeMap.rgb = hueShift(cubeMap.rgb, 0.0 + _Time.x * 0.0, 0.0, 1.0);
+					cubeMap = PoiColorBCS(cubeMap, 0.0, 1.0, 1.0);
+				}
+				CubeMapMask = min(CubeMapMask, lerp(1, poiLight.rampedLightMap, 0.0));
+				float cubeMapAlpha = CubeMapMask * cubeMap.a * 1.0;
+				poiFragData.baseColor.rgb = lerp(poiFragData.baseColor.rgb, cubeMap.rgb, cubeMapAlpha * (2.0 == 0));
+				poiFragData.baseColor.rgb *= lerp(1, cubeMap.rgb, cubeMapAlpha * (2.0 == 1));
+				poiFragData.baseColor.rgb += cubeMap.rgb * cubeMapAlpha * (2.0 == 2);
+				poiFragData.emission += cubeMap.rgb * 0.0 * CubeMapMask * cubeMap.a;
 			}
 			#endif
 			#if defined(MOCHIE_PBR) || defined(POI_CLEARCOAT)
@@ -6785,7 +7040,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/1fd7dfc0dbfd3d1458ea7f54f420a3
 						poiLight.vPosition[index] = float3(unity_4LightPosX0[index], unity_4LightPosY0[index], unity_4LightPosZ0[index]);
 						float3 vertexToLightSource = poiLight.vPosition[index] - poiMesh.worldPos;
 						poiLight.vDirection[index] = normalize(vertexToLightSource);
-						poiLight.vColor[index] = 1.0 ? MaxLuminance(unity_LightColor[index].rgb * poiLight.vAttenuation[index], 1.0) : unity_LightColor[index].rgb * poiLight.vAttenuation[index];
+						poiLight.vColor[index] = 0.0 ? MaxLuminance(unity_LightColor[index].rgb * poiLight.vAttenuation[index], 1.0) : unity_LightColor[index].rgb * poiLight.vAttenuation[index];
 						poiLight.vColor[index] = lerp(poiLight.vColor[index], dot(poiLight.vColor[index], float3(0.299, 0.587, 0.114)), 0.0);
 						poiLight.vHalfDir[index] = Unity_SafeNormalize(poiLight.vDirection[index] + poiCam.viewDir);
 						poiLight.vDotNL[index] = dot(poiMesh.normals[1], poiLight.vDirection[index]);
@@ -7032,12 +7287,12 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/1fd7dfc0dbfd3d1458ea7f54f420a3
 				#endif
 				poiLight.additiveShadow = UNITY_SHADOW_ATTENUATION(i, poiMesh.worldPos);
 				poiLight.attenuationStrength = 1.0;
-				poiLight.directColor = 1.0 ? MaxLuminance(_LightColor0.rgb * poiLight.attenuation, 1.0) : _LightColor0.rgb * poiLight.attenuation;
+				poiLight.directColor = 0.0 ? MaxLuminance(_LightColor0.rgb * poiLight.attenuation, 1.0) : _LightColor0.rgb * poiLight.attenuation;
 				#if defined(POINT_COOKIE) || defined(DIRECTIONAL_COOKIE)
 				poiLight.indirectColor = 0;
 				#else
 				poiLight.indirectColor = lerp(0, poiLight.directColor, 0.0);
-				poiLight.indirectColor = 1.0 ? MaxLuminance(poiLight.indirectColor, 1.0) : poiLight.indirectColor;
+				poiLight.indirectColor = 0.0 ? MaxLuminance(poiLight.indirectColor, 1.0) : poiLight.indirectColor;
 				#endif
 				poiLight.directColor = lerp(poiLight.directColor, dot(poiLight.directColor, float3(0.299, 0.587, 0.114)), 0.0);
 				poiLight.indirectColor = lerp(poiLight.indirectColor, dot(poiLight.indirectColor, float3(0.299, 0.587, 0.114)), 0.0);
@@ -7128,6 +7383,9 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/1fd7dfc0dbfd3d1458ea7f54f420a3
 				#ifdef POI_GRABPASS
 				poiLight.finalLighting = max(poiLight.finalLighting, 0.0001);
 				#endif
+				#ifdef _CUBEMAP
+				applyCubemap(poiFragData, poiCam, poiMesh, poiLight, poiMods);
+				#endif
 				if (0.0)
 				{
 					poiFragData.baseColor *= saturate(poiFragData.alpha);
@@ -7191,9 +7449,12 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/1fd7dfc0dbfd3d1458ea7f54f420a3
  #define FINALPASS 
  #define MOCHIE_PBR 
  #define VIGNETTE_MASKED 
+ #define _CUBEMAP 
  #define _LIGHTINGMODE_REALISTIC 
  #define _STOCHASTICMODE_DELIOT_HEITZ 
  #define PROP_DETAILTEX 
+ #define PROP_CUBEMAP 
+ #define PROP_CUBEMAPMASK 
  #define OPTIMIZER_ENABLED 
 			#pragma target 5.0
 			#pragma multi_compile_instancing
@@ -9372,9 +9633,12 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/1fd7dfc0dbfd3d1458ea7f54f420a3
  #define FINALPASS 
  #define MOCHIE_PBR 
  #define VIGNETTE_MASKED 
+ #define _CUBEMAP 
  #define _LIGHTINGMODE_REALISTIC 
  #define _STOCHASTICMODE_DELIOT_HEITZ 
  #define PROP_DETAILTEX 
+ #define PROP_CUBEMAP 
+ #define PROP_CUBEMAPMASK 
  #define OPTIMIZER_ENABLED 
 			#pragma target 5.0
 			#pragma multi_compile_instancing
