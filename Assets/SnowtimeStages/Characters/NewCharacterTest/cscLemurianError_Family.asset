@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -380008858, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
-  m_Name: cscLemurianError
+  m_Name: cscLemurianError_Family
   m_EditorClassIdentifier: 
   prefab: {fileID: 1743227277682504, guid: b02bab2cc81efa941b073d661729a0cb, type: 3}
   sendOverNetwork: 1
@@ -18,7 +18,7 @@ MonoBehaviour:
   nodeGraphType: 0
   requiredFlags: 0
   forbiddenFlags: 4
-  directorCreditCost: 22
+  directorCreditCost: 44
   occupyPosition: 0
   eliteRules: 0
   noElites: 0

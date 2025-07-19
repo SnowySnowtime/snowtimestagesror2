@@ -18,7 +18,7 @@ MonoBehaviour:
   - name: Champions
     cards:
     - spawnCard:
-        _asset: {fileID: 11400000, guid: 256f03fedcec58d4eb94563a8a6519d5, type: 2}
+        _asset: {fileID: 11400000, guid: 4ea5030bff727ba499ffb3a2733425dc, type: 2}
         _address: 
         _useDirectReference: 1
       selectionWeight: 1
@@ -37,7 +37,7 @@ MonoBehaviour:
   - name: Minibosses
     cards:
     - spawnCard:
-        _asset: {fileID: 11400000, guid: 256f03fedcec58d4eb94563a8a6519d5, type: 2}
+        _asset: {fileID: 11400000, guid: 4ea5030bff727ba499ffb3a2733425dc, type: 2}
         _address: 
         _useDirectReference: 1
       selectionWeight: 0
@@ -56,7 +56,7 @@ MonoBehaviour:
   - name: Basic Monsters
     cards:
     - spawnCard:
-        _asset: {fileID: 11400000, guid: 256f03fedcec58d4eb94563a8a6519d5, type: 2}
+        _asset: {fileID: 11400000, guid: 4ea5030bff727ba499ffb3a2733425dc, type: 2}
         _address: 
         _useDirectReference: 1
       selectionWeight: 1

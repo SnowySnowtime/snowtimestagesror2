@@ -523,7 +523,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3261243995" Type="User" Language="SFX" Hash="{3B1316F3-5F86-7934-8191-3704E52D0D02}">
+		<SoundBank Id="3261243995" Type="User" Language="SFX" Hash="{C2E5DF28-CECE-5A95-E0D3-EF7A36A17D5E}">
 			<ShortName>SnowtimeStagesMusic</ShortName>
 			<Path>SnowtimeStagesMusic.bnk</Path>
 			<Media>
@@ -2386,5 +2386,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{27EB844C-7B7F-03DC-B4CE-7AEF40481BCF}</FileHash>
+	<FileHash>{D0404F14-C58F-8D62-F3CF-7F894E889CCA}</FileHash>
 </SoundBanksInfo>

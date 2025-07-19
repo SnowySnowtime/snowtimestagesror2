@@ -54,6 +54,7 @@ namespace Snowtime.Content
         internal static GameObject MissingFlash;
         internal static GameObject MissingExplFX;
         internal static GameObject MissingGhost;
+        internal static InteractableSpawnCard PlatinumChestCard;
 
         // Halo Content
         internal static ExpansionDef ExpansionDefSTHalo;
@@ -125,6 +126,7 @@ namespace Snowtime.Content
         public static List<GameObject> stprojectileList = new List<GameObject>();
         public static List<GameObject> stnwobjList = new List<GameObject>();
         public static List<GameObject> stghostList = new List<GameObject>();
+        public static List<SceneDef> stSceneDefList = new List<SceneDef>();
         public static List<EntityStateConfiguration> stentStateConfig = new List<EntityStateConfiguration>();
 
         internal static IEnumerator LoadAssetBundlesAsync(AssetBundle scenesAssetBundle, AssetBundle assetsAssetBundle, IProgress<float> progress, ContentPack contentPack)
@@ -223,95 +225,171 @@ namespace Snowtime.Content
 
             yield return LoadAllAssetsAsync(_stassetsAssetBundle, progress, (Action<SceneDef[]>)((assets) =>
             {
-                SceneDefs = assets;
-                STSceneDef = SceneDefs.First(sd => sd.cachedName == "snowtime_deathisland");
-                STIFSceneDef = SceneDefs.First(sd => sd.cachedName == "snowtime_icefields");
-                STBGSceneDef = SceneDefs.First(sd => sd.cachedName == "snowtime_bloodgulch");
-                STGPHSceneDef = SceneDefs.First(sd => sd.cachedName == "snowtime_gephyrophobia");
-                STHSceneDef = SceneDefs.First(sd => sd.cachedName == "snowtime_halo");
-                STH2SceneDef = SceneDefs.First(sd => sd.cachedName == "snowtime_halo2");
-                STShrineSceneDef = SceneDefs.First(sd => sd.cachedName == "snowtime_sandtrap");
-                STSWSceneDef = SceneDefs.First(sd => sd.cachedName == "snowtime_sidewinder");
-                STNMBSceneDef = SceneDefs.First(sd => sd.cachedName == "snowtime_newmombasabridge");
-                STGMCSceneDef = SceneDefs.First(sd => sd.cachedName == "snowtime_gmconstruct");
-                STDHSceneDef = SceneDefs.First(sd => sd.cachedName == "snowtime_deltahalo");
-                STFlatSceneDef = SceneDefs.First(sd => sd.cachedName == "snowtime_gmflatgrass");
-                STHCSceneDef = SceneDefs.First(sd => sd.cachedName == "snowtime_highcharity");
-                STCitySceneDef = SceneDefs.First(sd => sd.cachedName == "snowtime_gmbigcity");
-                Log.Debug(STSceneDef.nameToken);
-                Log.Debug(STIFSceneDef.nameToken);
-                Log.Debug(STBGSceneDef.nameToken);
-                Log.Debug(STGPHSceneDef.nameToken);
-                Log.Debug(STShrineSceneDef.nameToken);
-                Log.Debug(STHSceneDef.nameToken);
-                Log.Debug(STH2SceneDef.nameToken);
-                Log.Debug(STSWSceneDef.nameToken);
-                Log.Debug(STNMBSceneDef.nameToken);
-                Log.Debug(STGMCSceneDef.nameToken);
-                Log.Debug(STDHSceneDef.nameToken);
-                Log.Debug(STFlatSceneDef.nameToken);
-                Log.Debug(STHCSceneDef.nameToken);
-                Log.Debug(STCitySceneDef.nameToken);
-                contentPack.sceneDefs.Add(assets);
+                Log.Debug("Adding enabled SceneDefs for SnowtimeStages");
+                if (SnowtimeStage.ToggleBloodGulch.Value == true)
+                {
+                    STBGSceneDef = assets.First(sd => sd.cachedName == "snowtime_bloodgulch");
+                    stSceneDefList.Add(STBGSceneDef);
+                    Log.Debug("Added Blood Gulch SceneDef (Config On)");
+                }
+                if (SnowtimeStage.ToggleBloodGulch.Value == false)
+                {
+                    Log.Debug("Skipped Blood Gulch SceneDef (Config Off)");
+                }
+                if (SnowtimeStage.ToggleSidewinder.Value == true)
+                {
+                    STSWSceneDef = assets.First(sd => sd.cachedName == "snowtime_sidewinder");
+                    stSceneDefList.Add(STSWSceneDef);
+                    Log.Debug("Added Sidewinder SceneDef (Config On)");
+                }
+                if (SnowtimeStage.ToggleSidewinder.Value == false)
+                {
+                    Log.Debug("Skipped Sidewinder SceneDef (Config Off)");
+                }
+                if (SnowtimeStage.ToggleDeathIsland.Value == true)
+                {
+                    STSceneDef = assets.First(sd => sd.cachedName == "snowtime_deathisland");
+                    stSceneDefList.Add(STSceneDef);
+                    Log.Debug("Added Death Island SceneDef (Config On)");
+                }
+                if (SnowtimeStage.ToggleDeathIsland.Value == false)
+                {
+                    Log.Debug("Skipped Death Island SceneDef (Config Off)");
+                }
+                if (SnowtimeStage.ToggleIceFields.Value == true)
+                {
+                    STIFSceneDef = assets.First(sd => sd.cachedName == "snowtime_icefields");
+                    stSceneDefList.Add(STIFSceneDef);
+                    Log.Debug("Added Ice Fields SceneDef (Config On)");
+                }
+                if (SnowtimeStage.ToggleIceFields.Value == false)
+                {
+                    Log.Debug("Skipped Ice Fields SceneDef (Config Off)");
+                }
+                if (SnowtimeStage.ToggleGephyrophobia.Value == true)
+                {
+                    STGPHSceneDef = assets.First(sd => sd.cachedName == "snowtime_gephyrophobia");
+                    stSceneDefList.Add(STGPHSceneDef);
+                    Log.Debug("Added Gephyrophobia SceneDef (Config On)");
+                }
+                if (SnowtimeStage.ToggleGephyrophobia.Value == false)
+                {
+                    Log.Debug("Skipped Gephyrophobia SceneDef (Config Off)");
+                }
+                if (SnowtimeStage.ToggleSandtrap.Value == true)
+                {
+                    STShrineSceneDef = assets.First(sd => sd.cachedName == "snowtime_sandtrap");
+                    stSceneDefList.Add(STShrineSceneDef);
+                    Log.Debug("Added Sandtrap SceneDef (Config On)");
+                }
+                if (SnowtimeStage.ToggleSandtrap.Value == false)
+                {
+                    Log.Debug("Skipped Sandtrap SceneDef (Config Off)");
+                }
+                if (SnowtimeStage.ToggleHalo.Value == true)
+                {
+                    STHSceneDef = assets.First(sd => sd.cachedName == "snowtime_halo");
+                    stSceneDefList.Add(STHSceneDef);
+                    Log.Debug("Added Halo SceneDef (Config On)");
+                }
+                if (SnowtimeStage.ToggleHalo.Value == false)
+                {
+                    Log.Debug("Skipped Halo SceneDef (Config Off)");
+                }
+                if (SnowtimeStage.ToggleHalo2.Value == true)
+                {
+                    STH2SceneDef = assets.First(sd => sd.cachedName == "snowtime_halo2");
+                    stSceneDefList.Add(STH2SceneDef);
+                    Log.Debug("Added Halo(Alt) SceneDef (Config On)");
+                }
+                if (SnowtimeStage.ToggleHalo2.Value == false)
+                {
+                    Log.Debug("Skipped Halo(Alt) SceneDef (Config Off)");
+                }
+                if (SnowtimeStage.ToggleNMB.Value == true)
+                {
+                    STNMBSceneDef = assets.First(sd => sd.cachedName == "snowtime_newmombasabridge");
+                    stSceneDefList.Add(STNMBSceneDef);
+                    Log.Debug("Added New Mombasa Bridge SceneDef (Config On)");
+                }
+                if (SnowtimeStage.ToggleNMB.Value == false)
+                {
+                    Log.Debug("Skipped New Mombasa Bridge SceneDef (Config Off)");
+                }
+                if (SnowtimeStage.ToggleGMC.Value == true)
+                {
+                    STGMCSceneDef = assets.First(sd => sd.cachedName == "snowtime_gmconstruct");
+                    stSceneDefList.Add(STGMCSceneDef);
+                    Log.Debug("Added gm_construct SceneDef (Config On)");
+                }
+                if (SnowtimeStage.ToggleGMC.Value == false)
+                {
+                    Log.Debug("Skipped gm_construct SceneDef (Config Off)");
+                }
+                if (SnowtimeStage.ToggleDHalo.Value == true)
+                {
+                    STDHSceneDef = assets.First(sd => sd.cachedName == "snowtime_deltahalo");
+                    stSceneDefList.Add(STDHSceneDef);
+                    Log.Debug("Added Delta Halo SceneDef (Config On)");
+                }
+                if (SnowtimeStage.ToggleDHalo.Value == false)
+                {
+                    Log.Debug("Skipped Delta Halo SceneDef (Config Off)");
+                }
+                if (SnowtimeStage.ToggleFLAT.Value == true)
+                {
+                    STFlatSceneDef = assets.First(sd => sd.cachedName == "snowtime_gmflatgrass");
+                    stSceneDefList.Add(STFlatSceneDef);
+                    Log.Debug("Added gm_flatgrass SceneDef (Config On)");
+                }
+                if (SnowtimeStage.ToggleFLAT.Value == false)
+                {
+                    Log.Debug("Skipped gm_flatgrass SceneDef (Config Off)");
+                }
+                if (SnowtimeStage.ToggleHC.Value == true)
+                {
+                    STHCSceneDef = assets.First(sd => sd.cachedName == "snowtime_highcharity");
+                    stSceneDefList.Add(STHCSceneDef);
+                    Log.Debug("Added High Charity SceneDef (Config On)");
+                }
+                if (SnowtimeStage.ToggleHC.Value == false)
+                {
+                    Log.Debug("Skipped High Charity SceneDef (Config Off)");
+                }
+                if (SnowtimeStage.ToggleBig.Value == true)
+                {
+                    STCitySceneDef = assets.First(sd => sd.cachedName == "snowtime_gmbigcity");
+                    stSceneDefList.Add(STCitySceneDef);
+                    Log.Debug("Added gm_bigcity SceneDef (Config On)");
+                }
+                if (SnowtimeStage.ToggleBig.Value == false)
+                {
+                    Log.Debug("Skipped gm_bigcity SceneDef (Config Off)");
+                }
+
+                contentPack.sceneDefs.Add(stSceneDefList.ToArray());
+                Log.Debug("Finished adding enabled SceneDefs for SnowtimeStages");
             }));
 
             yield return LoadAllAssetsAsync(_stassetsAssetBundle, progress, (Action<MusicTrackDef[]>)((assets) =>
             {
                 contentPack.musicTrackDefs.Add(assets);
-                Log.Debug("loaded musicDefs for SnowtimeStages");
+                Log.Debug("Loaded musicDefs for SnowtimeStages");
             }));
 
-            // SetupMusic();
-
-            STBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STSceneDefPreviewSprite.texture);
-            STIFBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STIFSceneDefPreviewSprite.texture);
-            STBGBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STBGSceneDefPreviewSprite.texture);
-            STGPHBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STGPHSceneDefPreviewSprite.texture);
-            STHBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STHSceneDefPreviewSprite.texture);
-            STH2BazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STH2SceneDefPreviewSprite.texture);
-            STShrineBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STShrineSceneDefPreviewSprite.texture);
-            STSWBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STSWSceneDefPreviewSprite.texture);
-            STNMBBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STNMBSceneDefPreviewSprite.texture);
-            STGMCBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STGMCSceneDefPreviewSprite.texture);
-            STDHBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STDHSceneDefPreviewSprite.texture);
-            STFlatBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STFlatSceneDefPreviewSprite.texture);
-            STHCBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STHCSceneDefPreviewSprite.texture);
-            STCityBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STCitySceneDefPreviewSprite.texture);
-            STSceneDef.previewTexture = STSceneDefPreviewSprite.texture;
-            STIFSceneDef.previewTexture = STIFSceneDefPreviewSprite.texture;
-            STBGSceneDef.previewTexture = STBGSceneDefPreviewSprite.texture;
-            STGPHSceneDef.previewTexture = STGPHSceneDefPreviewSprite.texture;
-            STHSceneDef.previewTexture = STHSceneDefPreviewSprite.texture;
-            STH2SceneDef.previewTexture = STH2SceneDefPreviewSprite.texture;
-            STShrineSceneDef.previewTexture = STShrineSceneDefPreviewSprite.texture;
-            STSWSceneDef.previewTexture = STSWSceneDefPreviewSprite.texture;
-            STNMBSceneDef.previewTexture = STNMBSceneDefPreviewSprite.texture;
-            STGMCSceneDef.previewTexture = STGMCSceneDefPreviewSprite.texture;
-            STDHSceneDef.previewTexture = STDHSceneDefPreviewSprite.texture;
-            STFlatSceneDef.previewTexture = STFlatSceneDefPreviewSprite.texture;
-            STHCSceneDef.previewTexture = STHCSceneDefPreviewSprite.texture;
-            STCitySceneDef.previewTexture = STCitySceneDefPreviewSprite.texture;
-            STSceneDef.portalMaterial = STBazaarSeer;
-            STIFSceneDef.portalMaterial = STIFBazaarSeer;
-            STBGSceneDef.portalMaterial = STBGBazaarSeer;
-            STGPHSceneDef.portalMaterial = STGPHBazaarSeer;
-            STHSceneDef.portalMaterial = STHBazaarSeer;
-            STH2SceneDef.portalMaterial = STH2BazaarSeer;
-            STShrineSceneDef.portalMaterial = STShrineBazaarSeer;
-            STSWSceneDef.portalMaterial = STSWBazaarSeer;
-            STNMBSceneDef.portalMaterial = STNMBBazaarSeer;
-            STGMCSceneDef.portalMaterial = STGMCBazaarSeer;
-            STDHSceneDef.portalMaterial = STDHBazaarSeer;
-            STFlatSceneDef.portalMaterial = STFlatBazaarSeer;
-            STHCSceneDef.portalMaterial = STHCBazaarSeer;
-            STCitySceneDef.portalMaterial = STHCBazaarSeer;
-			// Make a check here later for the config of what is enabled or disabled
-			Log.Debug("Blood Gulch Config Status?");
+            // Handle adding stages to loop or making Bazaar Seer materials
+            Log.Debug("Adding Stages to the Loop + Bazaar Seer Materials");
+            Log.Debug("Blood Gulch Config Status?");
 			Log.Debug(SnowtimeStage.ToggleBloodGulch.Value);
 			if (SnowtimeStage.ToggleBloodGulch.Value == true)
 			{
-				StageRegistration.RegisterSceneDefToNormalProgression(STBGSceneDef);
-				Log.Debug("Adding Blood Gulch to loop");
+                STBGBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STBGSceneDefPreviewSprite.texture);
+                STBGSceneDef.previewTexture = STBGSceneDefPreviewSprite.texture;
+                STBGSceneDef.portalMaterial = STBGBazaarSeer;
+                Log.Debug("Blood Gulch Bazaar Seer Material Complete");
+
+                StageRegistration.RegisterSceneDefToNormalProgression(STBGSceneDef);
+				Log.Debug("Added Blood Gulch to loop");
 				Log.Debug(STBGSceneDef.destinationsGroup);
 			}
 			if (SnowtimeStage.ToggleBloodGulch.Value == false)
@@ -322,8 +400,13 @@ namespace Snowtime.Content
 			Log.Debug(SnowtimeStage.ToggleSidewinder.Value);
 			if (SnowtimeStage.ToggleSidewinder.Value == true)
 			{
-				StageRegistration.RegisterSceneDefToNormalProgression(STSWSceneDef);
-				Log.Debug("Adding Sidewinder to the loop");
+                STSWBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STSWSceneDefPreviewSprite.texture);
+                STSWSceneDef.previewTexture = STSWSceneDefPreviewSprite.texture;
+                STSWSceneDef.portalMaterial = STSWBazaarSeer;
+                Log.Debug("Sidewinder Bazaar Seer Material Complete");
+
+                StageRegistration.RegisterSceneDefToNormalProgression(STSWSceneDef);
+				Log.Debug("Added Sidewinder to the loop");
 				Log.Debug(STSWSceneDef.destinationsGroup);
 			}
 			if (SnowtimeStage.ToggleSidewinder.Value == false)
@@ -334,8 +417,13 @@ namespace Snowtime.Content
 			Log.Debug(SnowtimeStage.ToggleDeathIsland.Value);
 			if (SnowtimeStage.ToggleDeathIsland.Value == true)
 			{
-				StageRegistration.RegisterSceneDefToNormalProgression(STSceneDef);
-				Log.Debug("Adding Death Island to the loop");
+                STBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STSceneDefPreviewSprite.texture);
+                STSceneDef.previewTexture = STSceneDefPreviewSprite.texture;
+                STSceneDef.portalMaterial = STBazaarSeer;
+                Log.Debug("Death Island Bazaar Seer Material Complete");
+
+                StageRegistration.RegisterSceneDefToNormalProgression(STSceneDef);
+				Log.Debug("Added Death Island to the loop");
 				Log.Debug(STSceneDef.destinationsGroup);
 			}
 			if (SnowtimeStage.ToggleDeathIsland.Value == false)
@@ -346,8 +434,13 @@ namespace Snowtime.Content
 			Log.Debug(SnowtimeStage.ToggleIceFields.Value);
 			if (SnowtimeStage.ToggleIceFields.Value == true)
 			{
-				StageRegistration.RegisterSceneDefToNormalProgression(STIFSceneDef);
-				Log.Debug("Adding Ice Fields to the loop");
+                STIFBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STIFSceneDefPreviewSprite.texture);
+                STIFSceneDef.previewTexture = STIFSceneDefPreviewSprite.texture;
+                STIFSceneDef.portalMaterial = STIFBazaarSeer;
+                Log.Debug("Ice Fields Bazaar Seer Material Complete");
+
+                StageRegistration.RegisterSceneDefToNormalProgression(STIFSceneDef);
+				Log.Debug("Added Ice Fields to the loop");
 				Log.Debug(STIFSceneDef.destinationsGroup);
 			}
 			if (SnowtimeStage.ToggleIceFields.Value == false)
@@ -358,8 +451,13 @@ namespace Snowtime.Content
 			Log.Debug(SnowtimeStage.ToggleGephyrophobia.Value);
 			if (SnowtimeStage.ToggleGephyrophobia.Value == true)
 			{
-				StageRegistration.RegisterSceneDefToNormalProgression(STGPHSceneDef);
-				Log.Debug("Adding Gephyrophobia to the loop");
+                STGPHBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STGPHSceneDefPreviewSprite.texture);
+                STGPHSceneDef.previewTexture = STGPHSceneDefPreviewSprite.texture;
+                STGPHSceneDef.portalMaterial = STGPHBazaarSeer;
+                Log.Debug("Gephyrophobia Bazaar Seer Material Complete");
+
+                StageRegistration.RegisterSceneDefToNormalProgression(STGPHSceneDef);
+				Log.Debug("Added Gephyrophobia to the loop");
 				Log.Debug(STGPHSceneDef.destinationsGroup);
 			}
 			if (SnowtimeStage.ToggleGephyrophobia.Value == false)
@@ -370,8 +468,13 @@ namespace Snowtime.Content
 			Log.Debug(SnowtimeStage.ToggleSandtrap.Value);
 			if (SnowtimeStage.ToggleSandtrap.Value == true)
 			{
-				StageRegistration.RegisterSceneDefToNormalProgression(STShrineSceneDef);
-				Log.Debug("Adding Sandtrap to the loop");
+                STShrineBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STShrineSceneDefPreviewSprite.texture);
+                STShrineSceneDef.previewTexture = STShrineSceneDefPreviewSprite.texture;
+                STShrineSceneDef.portalMaterial = STShrineBazaarSeer;
+                Log.Debug("Sandtrap Bazaar Seer Material Complete");
+
+                StageRegistration.RegisterSceneDefToNormalProgression(STShrineSceneDef);
+				Log.Debug("Added Sandtrap to the loop");
 				Log.Debug(STShrineSceneDef.destinationsGroup);
 			}
 			if (SnowtimeStage.ToggleSandtrap.Value == false)
@@ -382,8 +485,13 @@ namespace Snowtime.Content
 			Log.Debug(SnowtimeStage.ToggleHalo.Value);
 			if (SnowtimeStage.ToggleHalo.Value == true)
 			{
-				StageRegistration.RegisterSceneDefToNormalProgression(STHSceneDef);
-				Log.Debug("Adding Halo to the loop");
+                STHBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STHSceneDefPreviewSprite.texture);
+                STHSceneDef.previewTexture = STHSceneDefPreviewSprite.texture;
+                STHSceneDef.portalMaterial = STHBazaarSeer;
+                Log.Debug("Halo Bazaar Seer Material Complete");
+
+                StageRegistration.RegisterSceneDefToNormalProgression(STHSceneDef);
+				Log.Debug("Added Halo to the loop");
 				Log.Debug(STHSceneDef.destinationsGroup);
 			}
 			if (SnowtimeStage.ToggleHalo.Value == false)
@@ -394,8 +502,13 @@ namespace Snowtime.Content
 			Log.Debug(SnowtimeStage.ToggleHalo2.Value);
 			if (SnowtimeStage.ToggleHalo2.Value == true)
 			{
-				StageRegistration.RegisterSceneDefToNormalProgression(STH2SceneDef);
-				Log.Debug("Adding Halo(Alt) to the loop");
+                STH2BazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STH2SceneDefPreviewSprite.texture);
+                STH2SceneDef.previewTexture = STH2SceneDefPreviewSprite.texture;
+                STH2SceneDef.portalMaterial = STH2BazaarSeer;
+                Log.Debug("Halo(Alt) Bazaar Seer Material Complete");
+
+                StageRegistration.RegisterSceneDefToNormalProgression(STH2SceneDef);
+				Log.Debug("Added Halo(Alt) to the loop");
 				Log.Debug(STH2SceneDef.destinationsGroup);
 			}
 			if (SnowtimeStage.ToggleHalo2.Value == false)
@@ -406,8 +519,13 @@ namespace Snowtime.Content
 			Log.Debug(SnowtimeStage.ToggleNMB.Value);
 			if (SnowtimeStage.ToggleNMB.Value == true)
 			{
-				StageRegistration.RegisterSceneDefToNormalProgression(STNMBSceneDef);
-				Log.Debug("Adding New Mombasa Bridge to the loop");
+                STNMBBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STNMBSceneDefPreviewSprite.texture);
+                STNMBSceneDef.previewTexture = STNMBSceneDefPreviewSprite.texture;
+                STNMBSceneDef.portalMaterial = STNMBBazaarSeer;
+                Log.Debug("New Mombasa Bridge Bazaar Seer Material Complete");
+
+                StageRegistration.RegisterSceneDefToNormalProgression(STNMBSceneDef);
+				Log.Debug("Added New Mombasa Bridge to the loop");
 				Log.Debug(STNMBSceneDef.destinationsGroup);
 			}
 			if (SnowtimeStage.ToggleNMB.Value == false)
@@ -418,8 +536,13 @@ namespace Snowtime.Content
 			Log.Debug(SnowtimeStage.ToggleGMC.Value);
 			if (SnowtimeStage.ToggleGMC.Value == true)
 			{
-				StageRegistration.RegisterSceneDefToNormalProgression(STGMCSceneDef);
-				Log.Debug("Adding gm_construct to the loop");
+                STGMCBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STGMCSceneDefPreviewSprite.texture);
+                STGMCSceneDef.previewTexture = STGMCSceneDefPreviewSprite.texture;
+                STGMCSceneDef.portalMaterial = STGMCBazaarSeer;
+                Log.Debug("gm_construct Bazaar Seer Material Complete");
+
+                StageRegistration.RegisterSceneDefToNormalProgression(STGMCSceneDef);
+				Log.Debug("Added gm_construct to the loop");
 				Log.Debug(STGMCSceneDef.destinationsGroup);
 			}
 			if (SnowtimeStage.ToggleGMC.Value == false)
@@ -430,8 +553,13 @@ namespace Snowtime.Content
 			Log.Debug(SnowtimeStage.ToggleDHalo.Value);
 			if (SnowtimeStage.ToggleDHalo.Value == true)
 			{
-				StageRegistration.RegisterSceneDefToNormalProgression(STDHSceneDef);
-				Log.Debug("Adding Delta Halo to the loop");
+                STDHBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STDHSceneDefPreviewSprite.texture);
+                STDHSceneDef.previewTexture = STDHSceneDefPreviewSprite.texture;
+                STDHSceneDef.portalMaterial = STDHBazaarSeer;
+                Log.Debug("Delta Halo Bazaar Seer Material Complete");
+
+                StageRegistration.RegisterSceneDefToNormalProgression(STDHSceneDef);
+				Log.Debug("Added Delta Halo to the loop");
 				Log.Debug(STDHSceneDef.destinationsGroup);
 			}
 			if (SnowtimeStage.ToggleDHalo.Value == false)
@@ -442,8 +570,13 @@ namespace Snowtime.Content
 			Log.Debug(SnowtimeStage.ToggleFLAT.Value);
 			if (SnowtimeStage.ToggleFLAT.Value == true)
 			{
-				StageRegistration.RegisterSceneDefToNormalProgression(STFlatSceneDef);
-				Log.Debug("Adding gm_flatgrass to the loop");
+                STFlatBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STFlatSceneDefPreviewSprite.texture);
+                STFlatSceneDef.previewTexture = STFlatSceneDefPreviewSprite.texture;
+                STFlatSceneDef.portalMaterial = STFlatBazaarSeer;
+                Log.Debug("gm_flatgrass Bazaar Seer Material Complete");
+
+                StageRegistration.RegisterSceneDefToNormalProgression(STFlatSceneDef);
+				Log.Debug("Added gm_flatgrass to the loop");
 				Log.Debug(STFlatSceneDef.destinationsGroup);
 			}
 			if (SnowtimeStage.ToggleFLAT.Value == false)
@@ -454,15 +587,32 @@ namespace Snowtime.Content
             Log.Debug(SnowtimeStage.ToggleHC.Value);
             if (SnowtimeStage.ToggleHC.Value == true)
             {
+                STHCBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STHCSceneDefPreviewSprite.texture);
+                STHCSceneDef.previewTexture = STHCSceneDefPreviewSprite.texture;
+                STHCSceneDef.portalMaterial = STHCBazaarSeer;
+                Log.Debug("High Charity Bazaar Seer Material Complete");
+
                 StageRegistration.RegisterSceneDefToNormalProgression(STHCSceneDef);
-                Log.Debug("Adding High Charity to the loop");
+                Log.Debug("Added High Charity to the loop");
                 Log.Debug(STHCSceneDef.destinationsGroup);
             }
             if (SnowtimeStage.ToggleHC.Value == false)
             {
                 Log.Debug("Skipped adding High Charity to the loop");
             }
-            Log.Debug("A large city has been hidden in the Bazaar.");
+            if (SnowtimeStage.ToggleBig.Value == true)
+            {
+                STCityBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STCitySceneDefPreviewSprite.texture);
+                STCitySceneDef.previewTexture = STCitySceneDefPreviewSprite.texture;
+                STCitySceneDef.portalMaterial = STCityBazaarSeer;
+                Log.Debug("gm_bigcity Bazaar Seer Material Complete");
+
+                Log.Debug("Hid gm_bigcity on stage 4's Bazaar");
+            }
+            if (SnowtimeStage.ToggleBig.Value == false)
+            {
+                Log.Debug("Skipped hiding gm_bigcity in the bazaar");
+            }
 
             SnowtimeStage.SnowtimeLegendaryDiffDef.iconSprite = SnowtimeLegendaryIcon;
             SnowtimeStage.SnowtimeLegendaryDiffDef.foundIconSprite = true;
