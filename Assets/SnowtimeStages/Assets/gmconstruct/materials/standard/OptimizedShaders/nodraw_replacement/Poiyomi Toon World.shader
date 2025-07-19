@@ -323,7 +323,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/e3053ba39b65e6547ba6894f027abc
 				ZFail [_StencilZFailOp]
 			}
 			ZWrite [_ZWrite]
-			Cull Back
+			Cull Off
 			ZTest [_ZTest]
 			ColorMask RGBA
 			Offset [_OffsetFactor], [_OffsetUnits]
@@ -3278,7 +3278,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/e3053ba39b65e6547ba6894f027abc
 				ZFail [_StencilZFailOp]
 			}
 			ZWrite Off
-			Cull Back
+			Cull Off
 			ZTest [_ZTest]
 			ColorMask RGBA
 			Offset [_OffsetFactor], [_OffsetUnits]
@@ -6231,7 +6231,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/e3053ba39b65e6547ba6894f027abc
 				ZFail [_StencilZFailOp]
 			}
 			ZWrite [_ZWrite]
-			Cull Back
+			Cull Off
 			AlphaToMask Off
 			ZTest [_ZTest]
 			ColorMask RGBA
