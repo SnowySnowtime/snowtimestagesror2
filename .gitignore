@@ -75,6 +75,15 @@ Packages/RoR2
 ThunderKit/
 Assets/ThunderKitSettings/Logs/
 
+#Other
+Packages/*
+Packages/**
+ProjectSettings/*
+ProjectSettings/**
+Thry/*
+Thry/**
+Packages/packages-lock.json
+Packages/manifest.json
 
 ##-------##
 ## wwise ##
