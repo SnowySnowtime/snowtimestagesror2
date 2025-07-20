@@ -34,11 +34,97 @@ namespace Snowtime.Content
         public static AssetBundle _stscenesAssetBundle;
         public static AssetBundle _stassetsAssetBundle;
 
+        // // Assets Stuff
+
         internal static UnlockableDef[] UnlockableDefs;
         internal static SceneDef[] SceneDefs;
         internal static ExpansionDef[] expansionDefs;
         internal static GameObject[] gameObjects;
         internal static EntityStateConfiguration[] EntityStateConfigurations;
+
+        // // List of things that can be
+
+        public static List<EntityStateConfiguration> stentStateConfig = new List<EntityStateConfiguration>();
+        public static List<SceneDef> stSceneDefList = new List<SceneDef>();
+        public static List<Material> SwappedMaterials = new List<Material>();
+        public static List<GameObject> stbodyList = new List<GameObject>();
+        public static List<GameObject> stmasterList = new List<GameObject>();
+        public static List<GameObject> stprojectileList = new List<GameObject>();
+        public static List<GameObject> stnwobjList = new List<GameObject>();
+        public static List<GameObject> stghostList = new List<GameObject>();
+        public static List<EffectDef> steffectList = new List<EffectDef>();
+        public static List<EliteDef> steliteList = new List<EliteDef>();
+        public static List<EquipmentDef> stequipList = new List<EquipmentDef>();
+        public static List<BuffDef> stbuffList = new List<BuffDef>();
+
+        // // Expansions
+
+        internal static ExpansionDef ExpansionDefSTHalo;
+        internal static ExpansionDef ExpansionDefSTSource;
+
+        // Difficulties
+        public static Sprite SnowtimeLegendaryIcon;
+
+        // // Scene Related
+
+        // STSceneDef = Death Island
+        internal static SceneDef STSceneDef;
+        internal static Sprite STSceneDefPreviewSprite;
+        internal static Material STBazaarSeer;
+        // STIFSceneDef = Ice Fields
+        internal static SceneDef STIFSceneDef;
+        internal static Sprite STIFSceneDefPreviewSprite;
+        internal static Material STIFBazaarSeer;
+        // STBGSceneDef = Blood Gulch
+        internal static SceneDef STBGSceneDef;
+        internal static Sprite STBGSceneDefPreviewSprite;
+        internal static Material STBGBazaarSeer;
+        // STGPHSceneDef = Gephyrophobia
+        internal static SceneDef STGPHSceneDef;
+        internal static Sprite STGPHSceneDefPreviewSprite;
+        internal static Material STGPHBazaarSeer;
+        // STHSceneDef = Halo
+        internal static SceneDef STHSceneDef;
+        internal static Sprite STHSceneDefPreviewSprite;
+        internal static Material STHBazaarSeer;
+        // STH2SceneDef = Halo(Alt)
+        internal static SceneDef STH2SceneDef;
+        internal static Sprite STH2SceneDefPreviewSprite;
+        internal static Material STH2BazaarSeer;
+        // STShrineSceneDef = Sandtrap
+        internal static SceneDef STShrineSceneDef;
+        internal static Sprite STShrineSceneDefPreviewSprite;
+        internal static Material STShrineBazaarSeer;
+        // STSWSceneDef = Sidewinder
+        internal static SceneDef STSWSceneDef;
+        internal static Sprite STSWSceneDefPreviewSprite;
+        internal static Material STSWBazaarSeer;
+        // STNMBSceneDef = NewMombasaBridge
+        internal static SceneDef STNMBSceneDef;
+        internal static Sprite STNMBSceneDefPreviewSprite;
+        internal static Material STNMBBazaarSeer;
+        // STGMCSceneDef = gm_construct
+        internal static SceneDef STGMCSceneDef;
+        internal static Sprite STGMCSceneDefPreviewSprite;
+        internal static Material STGMCBazaarSeer;
+        // STDHSceneDef = Delta Halo
+        internal static SceneDef STDHSceneDef;
+        internal static Sprite STDHSceneDefPreviewSprite;
+        internal static Material STDHBazaarSeer;
+        // STFlatSceneDef = gm_flatgrass
+        internal static SceneDef STFlatSceneDef;
+        internal static Sprite STFlatSceneDefPreviewSprite;
+        internal static Material STFlatBazaarSeer;
+        // STHCSceneDef = High Charity
+        internal static SceneDef STHCSceneDef;
+        internal static Sprite STHCSceneDefPreviewSprite;
+        internal static Material STHCBazaarSeer;
+        // STCitySceneDef = gm_bigcity
+        internal static SceneDef STCitySceneDef;
+        internal static Sprite STCitySceneDefPreviewSprite;
+        internal static Material STCityBazaarSeer;
+
+        // // Gameobjects
 
         internal static GameObject CovenantCruiser;
         internal static GameObject CovenantCruiserLunar;
@@ -48,7 +134,6 @@ namespace Snowtime.Content
 
         internal static GameObject LemurianErrorBody;
         internal static GameObject LemurianErrorMaster;
-        internal static EntityStateConfiguration LemurianErrorEsc;
         internal static GameObject MissingBall;
         internal static GameObject MissingHit;
         internal static GameObject MissingFlash;
@@ -56,78 +141,11 @@ namespace Snowtime.Content
         internal static GameObject MissingGhost;
         internal static InteractableSpawnCard PlatinumChestCard;
 
-        // Halo Content
-        internal static ExpansionDef ExpansionDefSTHalo;
-        internal static ExpansionDef ExpansionDefSTSource;
+        // // Entity Skills/Skill Configs
 
-        // STSceneDef = Death Island
-        // STBGSceneDef = Blood Gulch
-        // STGPHSceneDef = Gephyrophobia
-        // STHSceneDef = Halo
-        // STH2SceneDef = Halo
-        // STIFSceneDef = Ice Fields
-        // STShrineSceneDef = Sandtrap
-        // STSWSceneDef = Sidewinder
-        // STNMBSceneDef = NewMombasaBridge
-        // STGMCSceneDef = gm_construct
-        // STDHSceneDef = Delta Halo
-        // STFlatSceneDef = gm_flatgrass
-        // STHCSceneDef = High Charity
-        // STCitySceneDef = gm_bigcity
-        internal static SceneDef STSceneDef;
-        internal static SceneDef STIFSceneDef;
-        internal static SceneDef STBGSceneDef;
-        internal static SceneDef STGPHSceneDef;
-        internal static SceneDef STHSceneDef;
-        internal static SceneDef STH2SceneDef;
-        internal static SceneDef STShrineSceneDef;
-        internal static SceneDef STSWSceneDef;
-        internal static SceneDef STNMBSceneDef;
-        internal static SceneDef STGMCSceneDef;
-        internal static SceneDef STDHSceneDef;
-        internal static SceneDef STFlatSceneDef;
-        internal static SceneDef STHCSceneDef;
-        internal static SceneDef STCitySceneDef;
-        internal static Sprite STSceneDefPreviewSprite;
-        internal static Sprite STIFSceneDefPreviewSprite;
-        internal static Sprite STBGSceneDefPreviewSprite;
-        internal static Sprite STGPHSceneDefPreviewSprite;
-        internal static Sprite STHSceneDefPreviewSprite;
-        internal static Sprite STH2SceneDefPreviewSprite;
-        internal static Sprite STShrineSceneDefPreviewSprite;
-        internal static Sprite STSWSceneDefPreviewSprite;
-        internal static Sprite STNMBSceneDefPreviewSprite;
-        internal static Sprite STGMCSceneDefPreviewSprite;
-        internal static Sprite STDHSceneDefPreviewSprite;
-        internal static Sprite STFlatSceneDefPreviewSprite;
-        internal static Sprite STHCSceneDefPreviewSprite;
-        internal static Sprite STCitySceneDefPreviewSprite;
-        public static Sprite SnowtimeLegendaryIcon;
-        internal static Material STBazaarSeer;
-        internal static Material STIFBazaarSeer;
-        internal static Material STBGBazaarSeer;
-        internal static Material STGPHBazaarSeer;
-        internal static Material STHBazaarSeer;
-        internal static Material STH2BazaarSeer;
-        internal static Material STShrineBazaarSeer;
-        internal static Material STSWBazaarSeer;
-        internal static Material STNMBBazaarSeer;
-        internal static Material STGMCBazaarSeer;
-        internal static Material STDHBazaarSeer;
-        internal static Material STFlatBazaarSeer;
-        internal static Material STHCBazaarSeer;
-        internal static Material STCityBazaarSeer;
-		
-		public static List<Material> SwappedMaterials = new List<Material>();
+        internal static EntityStateConfiguration LemurianErrorEsc;
 
-        public static List<GameObject> stbodyList = new List<GameObject>();
-        public static List<GameObject> stmasterList = new List<GameObject>();
-        public static List<EffectDef> steffectList = new List<EffectDef>();
-        public static List<GameObject> stprojectileList = new List<GameObject>();
-        public static List<GameObject> stnwobjList = new List<GameObject>();
-        public static List<GameObject> stghostList = new List<GameObject>();
-        public static List<SceneDef> stSceneDefList = new List<SceneDef>();
-        public static List<EntityStateConfiguration> stentStateConfig = new List<EntityStateConfiguration>();
+        // // Items, Equipment, and Elites/Aspects
 
         internal static IEnumerator LoadAssetBundlesAsync(AssetBundle scenesAssetBundle, AssetBundle assetsAssetBundle, IProgress<float> progress, ContentPack contentPack)
         {
@@ -380,209 +398,209 @@ namespace Snowtime.Content
             // Handle adding stages to loop or making Bazaar Seer materials
             Log.Debug("Adding Stages to the Loop + Bazaar Seer Materials");
             Log.Debug("Blood Gulch Config Status?");
-			Log.Debug(SnowtimeStage.ToggleBloodGulch.Value);
-			if (SnowtimeStage.ToggleBloodGulch.Value == true)
-			{
+            Log.Debug(SnowtimeStage.ToggleBloodGulch.Value);
+            if (SnowtimeStage.ToggleBloodGulch.Value == true)
+            {
                 STBGBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STBGSceneDefPreviewSprite.texture);
                 STBGSceneDef.previewTexture = STBGSceneDefPreviewSprite.texture;
                 STBGSceneDef.portalMaterial = STBGBazaarSeer;
                 Log.Debug("Blood Gulch Bazaar Seer Material Complete");
 
                 StageRegistration.RegisterSceneDefToNormalProgression(STBGSceneDef);
-				Log.Debug("Added Blood Gulch to loop");
-				Log.Debug(STBGSceneDef.destinationsGroup);
-			}
-			if (SnowtimeStage.ToggleBloodGulch.Value == false)
-			{
-				Log.Debug("Skipped adding Blood Gulch to the loop");
-			}
-			Log.Debug("Sidewinder Config Status?");
-			Log.Debug(SnowtimeStage.ToggleSidewinder.Value);
-			if (SnowtimeStage.ToggleSidewinder.Value == true)
-			{
+                Log.Debug("Added Blood Gulch to loop");
+                Log.Debug(STBGSceneDef.destinationsGroup);
+            }
+            if (SnowtimeStage.ToggleBloodGulch.Value == false)
+            {
+                Log.Debug("Skipped adding Blood Gulch to the loop");
+            }
+            Log.Debug("Sidewinder Config Status?");
+            Log.Debug(SnowtimeStage.ToggleSidewinder.Value);
+            if (SnowtimeStage.ToggleSidewinder.Value == true)
+            {
                 STSWBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STSWSceneDefPreviewSprite.texture);
                 STSWSceneDef.previewTexture = STSWSceneDefPreviewSprite.texture;
                 STSWSceneDef.portalMaterial = STSWBazaarSeer;
                 Log.Debug("Sidewinder Bazaar Seer Material Complete");
 
                 StageRegistration.RegisterSceneDefToNormalProgression(STSWSceneDef);
-				Log.Debug("Added Sidewinder to the loop");
-				Log.Debug(STSWSceneDef.destinationsGroup);
-			}
-			if (SnowtimeStage.ToggleSidewinder.Value == false)
-			{
-				Log.Debug("Skipped adding Sidewinder to the loop");
-			}
-			Log.Debug("Death Island Config Status?");
-			Log.Debug(SnowtimeStage.ToggleDeathIsland.Value);
-			if (SnowtimeStage.ToggleDeathIsland.Value == true)
-			{
+                Log.Debug("Added Sidewinder to the loop");
+                Log.Debug(STSWSceneDef.destinationsGroup);
+            }
+            if (SnowtimeStage.ToggleSidewinder.Value == false)
+            {
+                Log.Debug("Skipped adding Sidewinder to the loop");
+            }
+            Log.Debug("Death Island Config Status?");
+            Log.Debug(SnowtimeStage.ToggleDeathIsland.Value);
+            if (SnowtimeStage.ToggleDeathIsland.Value == true)
+            {
                 STBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STSceneDefPreviewSprite.texture);
                 STSceneDef.previewTexture = STSceneDefPreviewSprite.texture;
                 STSceneDef.portalMaterial = STBazaarSeer;
                 Log.Debug("Death Island Bazaar Seer Material Complete");
 
                 StageRegistration.RegisterSceneDefToNormalProgression(STSceneDef);
-				Log.Debug("Added Death Island to the loop");
-				Log.Debug(STSceneDef.destinationsGroup);
-			}
-			if (SnowtimeStage.ToggleDeathIsland.Value == false)
-			{
-				Log.Debug("Skipped adding Death Island to the loop");
-			}
-			Log.Debug("Ice Fields Config Status?");
-			Log.Debug(SnowtimeStage.ToggleIceFields.Value);
-			if (SnowtimeStage.ToggleIceFields.Value == true)
-			{
+                Log.Debug("Added Death Island to the loop");
+                Log.Debug(STSceneDef.destinationsGroup);
+            }
+            if (SnowtimeStage.ToggleDeathIsland.Value == false)
+            {
+                Log.Debug("Skipped adding Death Island to the loop");
+            }
+            Log.Debug("Ice Fields Config Status?");
+            Log.Debug(SnowtimeStage.ToggleIceFields.Value);
+            if (SnowtimeStage.ToggleIceFields.Value == true)
+            {
                 STIFBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STIFSceneDefPreviewSprite.texture);
                 STIFSceneDef.previewTexture = STIFSceneDefPreviewSprite.texture;
                 STIFSceneDef.portalMaterial = STIFBazaarSeer;
                 Log.Debug("Ice Fields Bazaar Seer Material Complete");
 
                 StageRegistration.RegisterSceneDefToNormalProgression(STIFSceneDef);
-				Log.Debug("Added Ice Fields to the loop");
-				Log.Debug(STIFSceneDef.destinationsGroup);
-			}
-			if (SnowtimeStage.ToggleIceFields.Value == false)
-			{
-				Log.Debug("Skipped adding Ice Fields to the loop");
-			}
-			Log.Debug("Gephyrophobia Config Status?");
-			Log.Debug(SnowtimeStage.ToggleGephyrophobia.Value);
-			if (SnowtimeStage.ToggleGephyrophobia.Value == true)
-			{
+                Log.Debug("Added Ice Fields to the loop");
+                Log.Debug(STIFSceneDef.destinationsGroup);
+            }
+            if (SnowtimeStage.ToggleIceFields.Value == false)
+            {
+                Log.Debug("Skipped adding Ice Fields to the loop");
+            }
+            Log.Debug("Gephyrophobia Config Status?");
+            Log.Debug(SnowtimeStage.ToggleGephyrophobia.Value);
+            if (SnowtimeStage.ToggleGephyrophobia.Value == true)
+            {
                 STGPHBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STGPHSceneDefPreviewSprite.texture);
                 STGPHSceneDef.previewTexture = STGPHSceneDefPreviewSprite.texture;
                 STGPHSceneDef.portalMaterial = STGPHBazaarSeer;
                 Log.Debug("Gephyrophobia Bazaar Seer Material Complete");
 
                 StageRegistration.RegisterSceneDefToNormalProgression(STGPHSceneDef);
-				Log.Debug("Added Gephyrophobia to the loop");
-				Log.Debug(STGPHSceneDef.destinationsGroup);
-			}
-			if (SnowtimeStage.ToggleGephyrophobia.Value == false)
-			{
-				Log.Debug("Skipped adding Gephyrophobia to the loop");
-			}
-			Log.Debug("Sandtrap Config Status?");
-			Log.Debug(SnowtimeStage.ToggleSandtrap.Value);
-			if (SnowtimeStage.ToggleSandtrap.Value == true)
-			{
+                Log.Debug("Added Gephyrophobia to the loop");
+                Log.Debug(STGPHSceneDef.destinationsGroup);
+            }
+            if (SnowtimeStage.ToggleGephyrophobia.Value == false)
+            {
+                Log.Debug("Skipped adding Gephyrophobia to the loop");
+            }
+            Log.Debug("Sandtrap Config Status?");
+            Log.Debug(SnowtimeStage.ToggleSandtrap.Value);
+            if (SnowtimeStage.ToggleSandtrap.Value == true)
+            {
                 STShrineBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STShrineSceneDefPreviewSprite.texture);
                 STShrineSceneDef.previewTexture = STShrineSceneDefPreviewSprite.texture;
                 STShrineSceneDef.portalMaterial = STShrineBazaarSeer;
                 Log.Debug("Sandtrap Bazaar Seer Material Complete");
 
                 StageRegistration.RegisterSceneDefToNormalProgression(STShrineSceneDef);
-				Log.Debug("Added Sandtrap to the loop");
-				Log.Debug(STShrineSceneDef.destinationsGroup);
-			}
-			if (SnowtimeStage.ToggleSandtrap.Value == false)
-			{
-				Log.Debug("Skipped adding Sandtrap to the loop");
-			}
-			Log.Debug("Halo Config Status?");
-			Log.Debug(SnowtimeStage.ToggleHalo.Value);
-			if (SnowtimeStage.ToggleHalo.Value == true)
-			{
+                Log.Debug("Added Sandtrap to the loop");
+                Log.Debug(STShrineSceneDef.destinationsGroup);
+            }
+            if (SnowtimeStage.ToggleSandtrap.Value == false)
+            {
+                Log.Debug("Skipped adding Sandtrap to the loop");
+            }
+            Log.Debug("Halo Config Status?");
+            Log.Debug(SnowtimeStage.ToggleHalo.Value);
+            if (SnowtimeStage.ToggleHalo.Value == true)
+            {
                 STHBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STHSceneDefPreviewSprite.texture);
                 STHSceneDef.previewTexture = STHSceneDefPreviewSprite.texture;
                 STHSceneDef.portalMaterial = STHBazaarSeer;
                 Log.Debug("Halo Bazaar Seer Material Complete");
 
                 StageRegistration.RegisterSceneDefToNormalProgression(STHSceneDef);
-				Log.Debug("Added Halo to the loop");
-				Log.Debug(STHSceneDef.destinationsGroup);
-			}
-			if (SnowtimeStage.ToggleHalo.Value == false)
-			{
-				Log.Debug("Skipped adding Halo to the loop");
-			}
-			Log.Debug("Halo Config Status?");
-			Log.Debug(SnowtimeStage.ToggleHalo2.Value);
-			if (SnowtimeStage.ToggleHalo2.Value == true)
-			{
+                Log.Debug("Added Halo to the loop");
+                Log.Debug(STHSceneDef.destinationsGroup);
+            }
+            if (SnowtimeStage.ToggleHalo.Value == false)
+            {
+                Log.Debug("Skipped adding Halo to the loop");
+            }
+            Log.Debug("Halo Config Status?");
+            Log.Debug(SnowtimeStage.ToggleHalo2.Value);
+            if (SnowtimeStage.ToggleHalo2.Value == true)
+            {
                 STH2BazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STH2SceneDefPreviewSprite.texture);
                 STH2SceneDef.previewTexture = STH2SceneDefPreviewSprite.texture;
                 STH2SceneDef.portalMaterial = STH2BazaarSeer;
                 Log.Debug("Halo(Alt) Bazaar Seer Material Complete");
 
                 StageRegistration.RegisterSceneDefToNormalProgression(STH2SceneDef);
-				Log.Debug("Added Halo(Alt) to the loop");
-				Log.Debug(STH2SceneDef.destinationsGroup);
-			}
-			if (SnowtimeStage.ToggleHalo2.Value == false)
-			{
-				Log.Debug("Skipped adding Halo(Alt) to the loop");
-			}
-			Log.Debug("New Mombasa Bridge Config Status?");
-			Log.Debug(SnowtimeStage.ToggleNMB.Value);
-			if (SnowtimeStage.ToggleNMB.Value == true)
-			{
+                Log.Debug("Added Halo(Alt) to the loop");
+                Log.Debug(STH2SceneDef.destinationsGroup);
+            }
+            if (SnowtimeStage.ToggleHalo2.Value == false)
+            {
+                Log.Debug("Skipped adding Halo(Alt) to the loop");
+            }
+            Log.Debug("New Mombasa Bridge Config Status?");
+            Log.Debug(SnowtimeStage.ToggleNMB.Value);
+            if (SnowtimeStage.ToggleNMB.Value == true)
+            {
                 STNMBBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STNMBSceneDefPreviewSprite.texture);
                 STNMBSceneDef.previewTexture = STNMBSceneDefPreviewSprite.texture;
                 STNMBSceneDef.portalMaterial = STNMBBazaarSeer;
                 Log.Debug("New Mombasa Bridge Bazaar Seer Material Complete");
 
                 StageRegistration.RegisterSceneDefToNormalProgression(STNMBSceneDef);
-				Log.Debug("Added New Mombasa Bridge to the loop");
-				Log.Debug(STNMBSceneDef.destinationsGroup);
-			}
-			if (SnowtimeStage.ToggleNMB.Value == false)
-			{
-				Log.Debug("Skipped adding New Mombasa Bridge to the loop");
-			}
-			Log.Debug("gm_construct Config Status?");
-			Log.Debug(SnowtimeStage.ToggleGMC.Value);
-			if (SnowtimeStage.ToggleGMC.Value == true)
-			{
+                Log.Debug("Added New Mombasa Bridge to the loop");
+                Log.Debug(STNMBSceneDef.destinationsGroup);
+            }
+            if (SnowtimeStage.ToggleNMB.Value == false)
+            {
+                Log.Debug("Skipped adding New Mombasa Bridge to the loop");
+            }
+            Log.Debug("gm_construct Config Status?");
+            Log.Debug(SnowtimeStage.ToggleGMC.Value);
+            if (SnowtimeStage.ToggleGMC.Value == true)
+            {
                 STGMCBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STGMCSceneDefPreviewSprite.texture);
                 STGMCSceneDef.previewTexture = STGMCSceneDefPreviewSprite.texture;
                 STGMCSceneDef.portalMaterial = STGMCBazaarSeer;
                 Log.Debug("gm_construct Bazaar Seer Material Complete");
 
                 StageRegistration.RegisterSceneDefToNormalProgression(STGMCSceneDef);
-				Log.Debug("Added gm_construct to the loop");
-				Log.Debug(STGMCSceneDef.destinationsGroup);
-			}
-			if (SnowtimeStage.ToggleGMC.Value == false)
-			{
-				Log.Debug("Skipped adding gm_construct to the loop");
-			}
-			Log.Debug("Delta Halo Config Status?");
-			Log.Debug(SnowtimeStage.ToggleDHalo.Value);
-			if (SnowtimeStage.ToggleDHalo.Value == true)
-			{
+                Log.Debug("Added gm_construct to the loop");
+                Log.Debug(STGMCSceneDef.destinationsGroup);
+            }
+            if (SnowtimeStage.ToggleGMC.Value == false)
+            {
+                Log.Debug("Skipped adding gm_construct to the loop");
+            }
+            Log.Debug("Delta Halo Config Status?");
+            Log.Debug(SnowtimeStage.ToggleDHalo.Value);
+            if (SnowtimeStage.ToggleDHalo.Value == true)
+            {
                 STDHBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STDHSceneDefPreviewSprite.texture);
                 STDHSceneDef.previewTexture = STDHSceneDefPreviewSprite.texture;
                 STDHSceneDef.portalMaterial = STDHBazaarSeer;
                 Log.Debug("Delta Halo Bazaar Seer Material Complete");
 
                 StageRegistration.RegisterSceneDefToNormalProgression(STDHSceneDef);
-				Log.Debug("Added Delta Halo to the loop");
-				Log.Debug(STDHSceneDef.destinationsGroup);
-			}
-			if (SnowtimeStage.ToggleDHalo.Value == false)
-			{
-				Log.Debug("Skipped adding Delta Halo to the loop");
-			}
-			Log.Debug("gm_flatgrass Config Status?");
-			Log.Debug(SnowtimeStage.ToggleFLAT.Value);
-			if (SnowtimeStage.ToggleFLAT.Value == true)
-			{
+                Log.Debug("Added Delta Halo to the loop");
+                Log.Debug(STDHSceneDef.destinationsGroup);
+            }
+            if (SnowtimeStage.ToggleDHalo.Value == false)
+            {
+                Log.Debug("Skipped adding Delta Halo to the loop");
+            }
+            Log.Debug("gm_flatgrass Config Status?");
+            Log.Debug(SnowtimeStage.ToggleFLAT.Value);
+            if (SnowtimeStage.ToggleFLAT.Value == true)
+            {
                 STFlatBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STFlatSceneDefPreviewSprite.texture);
                 STFlatSceneDef.previewTexture = STFlatSceneDefPreviewSprite.texture;
                 STFlatSceneDef.portalMaterial = STFlatBazaarSeer;
                 Log.Debug("gm_flatgrass Bazaar Seer Material Complete");
 
                 StageRegistration.RegisterSceneDefToNormalProgression(STFlatSceneDef);
-				Log.Debug("Added gm_flatgrass to the loop");
-				Log.Debug(STFlatSceneDef.destinationsGroup);
-			}
-			if (SnowtimeStage.ToggleFLAT.Value == false)
-			{
-				Log.Debug("Skipped adding gm_flatgrass to the loop");
-			}
+                Log.Debug("Added gm_flatgrass to the loop");
+                Log.Debug(STFlatSceneDef.destinationsGroup);
+            }
+            if (SnowtimeStage.ToggleFLAT.Value == false)
+            {
+                Log.Debug("Skipped adding gm_flatgrass to the loop");
+            }
             Log.Debug("High Charity Config Status?");
             Log.Debug(SnowtimeStage.ToggleHC.Value);
             if (SnowtimeStage.ToggleHC.Value == true)
@@ -634,41 +652,41 @@ namespace Snowtime.Content
 
         internal static void LoadSoundBanks(string soundbanksFolderPath)
         {
-           var akResult = AkSoundEngine.AddBasePath(soundbanksFolderPath);
-           if (akResult == AKRESULT.AK_Success)
-           {
-               Log.Info($"Added bank base path : {soundbanksFolderPath}");
-           }
-           else
-           {
-               Log.Error(
-                   $"Error adding base path : {soundbanksFolderPath} " +
-                   $"Error code : {akResult}");
-           }
-           
-           akResult = AkSoundEngine.LoadBank(InitSoundBankFileName, out var _);
-           if (akResult == AKRESULT.AK_Success)
-           {
-               Log.Info($"Added bank : {InitSoundBankFileName}");
-           }
-           else
-           {
-               Log.Error(
-                   $"Error loading bank : {InitSoundBankFileName} " +
-                   $"Error code : {akResult}");
-           }
-           
-           akResult = AkSoundEngine.LoadBank(MusicSoundBankFileName, out var _);
-           if (akResult == AKRESULT.AK_Success)
-           {
-               Log.Info($"Added bank : {MusicSoundBankFileName}");
-           }
-           else
-           {
-               Log.Error(
-                   $"Error loading bank : {MusicSoundBankFileName} " +
-                   $"Error code : {akResult}");
-           }
+            var akResult = AkSoundEngine.AddBasePath(soundbanksFolderPath);
+            if (akResult == AKRESULT.AK_Success)
+            {
+                Log.Info($"Added bank base path : {soundbanksFolderPath}");
+            }
+            else
+            {
+                Log.Error(
+                    $"Error adding base path : {soundbanksFolderPath} " +
+                    $"Error code : {akResult}");
+            }
+
+            akResult = AkSoundEngine.LoadBank(InitSoundBankFileName, out var _);
+            if (akResult == AKRESULT.AK_Success)
+            {
+                Log.Info($"Added bank : {InitSoundBankFileName}");
+            }
+            else
+            {
+                Log.Error(
+                    $"Error loading bank : {InitSoundBankFileName} " +
+                    $"Error code : {akResult}");
+            }
+
+            akResult = AkSoundEngine.LoadBank(MusicSoundBankFileName, out var _);
+            if (akResult == AKRESULT.AK_Success)
+            {
+                Log.Info($"Added bank : {MusicSoundBankFileName}");
+            }
+            else
+            {
+                Log.Error(
+                    $"Error loading bank : {MusicSoundBankFileName} " +
+                    $"Error code : {akResult}");
+            }
 
             akResult = AkSoundEngine.LoadBank(SndSoundBankFileName, out var _);
             if (akResult == AKRESULT.AK_Success)
@@ -682,6 +700,6 @@ namespace Snowtime.Content
                     $"Error code : {akResult}");
             }
         }
-		
+
     }
 }
