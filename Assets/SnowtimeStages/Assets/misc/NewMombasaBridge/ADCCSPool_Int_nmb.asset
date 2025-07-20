@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 495100722, guid: 45feadaaa90b2d2217207fb8b533753e, type: 3}
   m_Name: ADCCSPool_Int_nmb
   m_EditorClassIdentifier: 
-  targetPool: {fileID: 11400000, guid: 1f653e5f3a7948f43b5388173268050d, type: 2}
+  targetPool: {fileID: 11400000, guid: afa5175f1fe58014e956098346582846, type: 2}
   poolCategories:
   - name: Standard
     categoryWeight: 1
     alwaysIncluded: []
     includedIfConditionsMet:
-    - dccs: {fileID: 11400000, guid: 2b53f84105e26a443bc426ce5d704d28, type: 2}
+    - dccs: {fileID: 11400000, guid: 1ee79ddecee329f499879584be5d87d3, type: 2}
       familyDccs:
         _asset: {fileID: 0}
         _address: 
@@ -28,7 +28,7 @@ MonoBehaviour:
       - _asset: {fileID: 0}
         _address: RoR2/DLC1/Common/DLC1.asset
         _useDirectReference: 0
-    - dccs: {fileID: 11400000, guid: a7699e2c555cb324b8174ce7788dded4, type: 2}
+    - dccs: {fileID: 11400000, guid: cfed8fa7bad91274796df568bc1bd09d, type: 2}
       familyDccs:
         _asset: {fileID: 0}
         _address: 
@@ -42,7 +42,7 @@ MonoBehaviour:
         _address: RoR2/DLC2/Common/DLC2.asset
         _useDirectReference: 0
     includedIfNoConditionsMet:
-    - dccs: {fileID: 11400000, guid: 6c7300655a323094bbdf7144985c4502, type: 2}
+    - dccs: {fileID: 11400000, guid: 915130eb938c840408c556101c3f9dc6, type: 2}
       familyDccs:
         _asset: {fileID: 0}
         _address: 

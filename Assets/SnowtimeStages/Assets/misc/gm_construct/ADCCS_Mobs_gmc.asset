@@ -12,27 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 2099981080, guid: 45feadaaa90b2d2217207fb8b533753e, type: 3}
   m_Name: ADCCS_Mobs_gmc
   m_EditorClassIdentifier: 
-  targetCardCategorySelection: {fileID: 11400000, guid: accec9f6faea2f144992c1384a58918a,
-    type: 2}
+  targetCardCategorySelection: {fileID: 11400000, guid: accec9f6faea2f144992c1384a58918a, type: 2}
   categories:
   - name: Champions
     cards:
-    - spawnCard:
-        _asset: {fileID: 0}
-        _address: RoR2/Base/Beetle/cscBeetleQueen.asset
-        _useDirectReference: 0
-      selectionWeight: 16
-      spawnDistance: 0
-      preventOverhead: 0
-      minimumStageCompletions: 0
-      requiredUnlockableDef:
-        _asset: {fileID: 0}
-        _address: 
-        _useDirectReference: 0
-      forbiddenUnlockableDef:
-        _asset: {fileID: 0}
-        _address: 
-        _useDirectReference: 0
     - spawnCard:
         _asset: {fileID: 0}
         _address: RoR2/Base/BeetleQueen/cscBeetleQueen.asset

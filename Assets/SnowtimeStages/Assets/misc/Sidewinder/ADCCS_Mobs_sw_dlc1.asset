@@ -12,14 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 2099981080, guid: 45feadaaa90b2d2217207fb8b533753e, type: 3}
   m_Name: ADCCS_Mobs_sw_dlc1
   m_EditorClassIdentifier: 
-  targetCardCategorySelection: {fileID: 11400000, guid: 6d2b205df3acefd459420ca30bf181d8,
-    type: 2}
+  targetCardCategorySelection: {fileID: 11400000, guid: 6d2b205df3acefd459420ca30bf181d8, type: 2}
   categories:
   - name: Champions
     cards:
     - spawnCard:
         _asset: {fileID: 0}
-        _address: RoR2/Base/Beetle/cscBeetleQueen.asset
+        _address: RoR2/Base/BeetleQueen/cscBeetleQueen.asset
         _useDirectReference: 0
       selectionWeight: 1
       spawnDistance: 0
@@ -37,7 +36,7 @@ MonoBehaviour:
         _asset: {fileID: 0}
         _address: RoR2/Base/Titan/cscTitanBlackBeach.asset
         _useDirectReference: 0
-      selectionWeight: 1
+      selectionWeight: 2
       spawnDistance: 0
       preventOverhead: 0
       minimumStageCompletions: 5

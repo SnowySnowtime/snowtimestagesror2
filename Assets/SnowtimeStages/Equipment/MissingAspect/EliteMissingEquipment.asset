@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 1512808244, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
   m_Name: EliteMissingEquipment
   m_EditorClassIdentifier: 
-  pickupModelPrefab: {fileID: 1797714273357234, guid: 4c9c720b9940f8e408dee0ebae3b2417,
-    type: 3}
+  pickupModelPrefab: {fileID: 1797714273357234, guid: 4c9c720b9940f8e408dee0ebae3b2417, type: 3}
   pickupModelReference:
     m_AssetGUID: 
     m_SubObjectName: 
@@ -36,5 +35,5 @@ MonoBehaviour:
   passiveBuffDef: {fileID: 11400000, guid: e1436f19f4315f449b041ac1629ff251, type: 2}
   appearsInSinglePlayer: 1
   appearsInMultiPlayer: 1
-  requiredExpansion: {fileID: 0}
+  requiredExpansion: {fileID: 11400000, guid: f910e32423da93246b30c6964b250ab4, type: 2}
   mageElement: 0

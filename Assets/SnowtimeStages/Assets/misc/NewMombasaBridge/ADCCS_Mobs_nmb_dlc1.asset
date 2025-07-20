@@ -12,19 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 2099981080, guid: 45feadaaa90b2d2217207fb8b533753e, type: 3}
   m_Name: ADCCS_Mobs_nmb_dlc1
   m_EditorClassIdentifier: 
-  targetCardCategorySelection: {fileID: 11400000, guid: 6d2b205df3acefd459420ca30bf181d8,
-    type: 2}
+  targetCardCategorySelection: {fileID: 11400000, guid: b1f5460c74563aa4ab220846d63485e3, type: 2}
   categories:
   - name: Champions
     cards:
     - spawnCard:
         _asset: {fileID: 0}
-        _address: RoR2/Base/Beetle/cscBeetleQueen.asset
+        _address: RoR2/Base/Titan/cscTitanGolemPlains.asset
         _useDirectReference: 0
-      selectionWeight: 1
+      selectionWeight: 24
       spawnDistance: 0
       preventOverhead: 0
-      minimumStageCompletions: 5
+      minimumStageCompletions: 0
       requiredUnlockableDef:
         _asset: {fileID: 0}
         _address: 
@@ -35,12 +34,44 @@ MonoBehaviour:
         _useDirectReference: 0
     - spawnCard:
         _asset: {fileID: 0}
-        _address: RoR2/Base/Titan/cscTitanBlackBeach.asset
+        _address: RoR2/Base/BeetleQueen/cscBeetleQueen.asset
         _useDirectReference: 0
-      selectionWeight: 1
+      selectionWeight: 16
       spawnDistance: 0
       preventOverhead: 0
-      minimumStageCompletions: 5
+      minimumStageCompletions: 0
+      requiredUnlockableDef:
+        _asset: {fileID: 0}
+        _address: 
+        _useDirectReference: 0
+      forbiddenUnlockableDef:
+        _asset: {fileID: 0}
+        _address: 
+        _useDirectReference: 0
+    - spawnCard:
+        _asset: {fileID: 0}
+        _address: RoR2/Base/ClayBoss/cscClayBoss.asset
+        _useDirectReference: 0
+      selectionWeight: 16
+      spawnDistance: 0
+      preventOverhead: 0
+      minimumStageCompletions: 0
+      requiredUnlockableDef:
+        _asset: {fileID: 0}
+        _address: 
+        _useDirectReference: 0
+      forbiddenUnlockableDef:
+        _asset: {fileID: 0}
+        _address: 
+        _useDirectReference: 0
+    - spawnCard:
+        _asset: {fileID: 0}
+        _address: RoR2/Base/Gravekeeper/cscGravekeeper.asset
+        _useDirectReference: 0
+      selectionWeight: 8
+      spawnDistance: 0
+      preventOverhead: 0
+      minimumStageCompletions: 0
       requiredUnlockableDef:
         _asset: {fileID: 0}
         _address: 
@@ -52,6 +83,54 @@ MonoBehaviour:
     selectionWeight: 2
   - name: Minibosses
     cards:
+    - spawnCard:
+        _asset: {fileID: 0}
+        _address: RoR2/Base/GreaterWisp/cscGreaterWisp.asset
+        _useDirectReference: 0
+      selectionWeight: 16
+      spawnDistance: 0
+      preventOverhead: 0
+      minimumStageCompletions: 0
+      requiredUnlockableDef:
+        _asset: {fileID: 0}
+        _address: 
+        _useDirectReference: 0
+      forbiddenUnlockableDef:
+        _asset: {fileID: 0}
+        _address: 
+        _useDirectReference: 0
+    - spawnCard:
+        _asset: {fileID: 0}
+        _address: RoR2/Base/LemurianBruiser/cscLemurianBruiser.asset
+        _useDirectReference: 0
+      selectionWeight: 16
+      spawnDistance: 0
+      preventOverhead: 0
+      minimumStageCompletions: 0
+      requiredUnlockableDef:
+        _asset: {fileID: 0}
+        _address: 
+        _useDirectReference: 0
+      forbiddenUnlockableDef:
+        _asset: {fileID: 0}
+        _address: 
+        _useDirectReference: 0
+    - spawnCard:
+        _asset: {fileID: 0}
+        _address: RoR2/Base/Bell/cscBell.asset
+        _useDirectReference: 0
+      selectionWeight: 24
+      spawnDistance: 0
+      preventOverhead: 0
+      minimumStageCompletions: 0
+      requiredUnlockableDef:
+        _asset: {fileID: 0}
+        _address: 
+        _useDirectReference: 0
+      forbiddenUnlockableDef:
+        _asset: {fileID: 0}
+        _address: 
+        _useDirectReference: 0
     - spawnCard:
         _asset: {fileID: 0}
         _address: RoR2/Base/Golem/cscGolem.asset
@@ -70,41 +149,9 @@ MonoBehaviour:
         _useDirectReference: 0
     - spawnCard:
         _asset: {fileID: 0}
-        _address: RoR2/Base/GreaterWisp/cscGreaterWisp.asset
-        _useDirectReference: 0
-      selectionWeight: 1
-      spawnDistance: 0
-      preventOverhead: 0
-      minimumStageCompletions: 0
-      requiredUnlockableDef:
-        _asset: {fileID: 0}
-        _address: 
-        _useDirectReference: 0
-      forbiddenUnlockableDef:
-        _asset: {fileID: 0}
-        _address: 
-        _useDirectReference: 0
-    - spawnCard:
-        _asset: {fileID: 0}
-        _address: RoR2/Base/Bell/cscBell.asset
-        _useDirectReference: 0
-      selectionWeight: 1
-      spawnDistance: 0
-      preventOverhead: 0
-      minimumStageCompletions: 0
-      requiredUnlockableDef:
-        _asset: {fileID: 0}
-        _address: 
-        _useDirectReference: 0
-      forbiddenUnlockableDef:
-        _asset: {fileID: 0}
-        _address: 
-        _useDirectReference: 0
-    - spawnCard:
-        _asset: {fileID: 0}
         _address: RoR2/Base/Bison/cscBison.asset
         _useDirectReference: 0
-      selectionWeight: 2
+      selectionWeight: 24
       spawnDistance: 0
       preventOverhead: 0
       minimumStageCompletions: 0
@@ -116,12 +163,9 @@ MonoBehaviour:
         _asset: {fileID: 0}
         _address: 
         _useDirectReference: 0
-    selectionWeight: 2
-  - name: Basic Monsters
-    cards:
     - spawnCard:
         _asset: {fileID: 0}
-        _address: RoR2/Base/Lemurian/cscLemurian.asset
+        _address: RoR2/Base/ClayBruiser/cscClayBruiser.asset
         _useDirectReference: 0
       selectionWeight: 10
       spawnDistance: 0
@@ -137,9 +181,76 @@ MonoBehaviour:
         _useDirectReference: 0
     - spawnCard:
         _asset: {fileID: 0}
+        _address: RoR2/Base/Vulture/cscVulture.asset
+        _useDirectReference: 0
+      selectionWeight: 16
+      spawnDistance: 0
+      preventOverhead: 0
+      minimumStageCompletions: 0
+      requiredUnlockableDef:
+        _asset: {fileID: 0}
+        _address: 
+        _useDirectReference: 0
+      forbiddenUnlockableDef:
+        _asset: {fileID: 0}
+        _address: 
+        _useDirectReference: 0
+    - spawnCard:
+        _asset: {fileID: 0}
+        _address: RoR2/DLC1/ClayGrenadier/cscClayGrenadier.asset
+        _useDirectReference: 0
+      selectionWeight: 8
+      spawnDistance: 0
+      preventOverhead: 0
+      minimumStageCompletions: 0
+      requiredUnlockableDef:
+        _asset: {fileID: 0}
+        _address: 
+        _useDirectReference: 0
+      forbiddenUnlockableDef:
+        _asset: {fileID: 0}
+        _address: 
+        _useDirectReference: 0
+    - spawnCard:
+        _asset: {fileID: 0}
+        _address: RoR2/DLC1/Gup/cscGupBody.asset
+        _useDirectReference: 0
+      selectionWeight: 16
+      spawnDistance: 0
+      preventOverhead: 0
+      minimumStageCompletions: 5
+      requiredUnlockableDef:
+        _asset: {fileID: 0}
+        _address: 
+        _useDirectReference: 0
+      forbiddenUnlockableDef:
+        _asset: {fileID: 0}
+        _address: 
+        _useDirectReference: 0
+    selectionWeight: 4
+  - name: Basic Monsters
+    cards:
+    - spawnCard:
+        _asset: {fileID: 0}
+        _address: RoR2/Base/Lemurian/cscLemurian.asset
+        _useDirectReference: 0
+      selectionWeight: 16
+      spawnDistance: 0
+      preventOverhead: 0
+      minimumStageCompletions: 0
+      requiredUnlockableDef:
+        _asset: {fileID: 0}
+        _address: 
+        _useDirectReference: 0
+      forbiddenUnlockableDef:
+        _asset: {fileID: 0}
+        _address: 
+        _useDirectReference: 0
+    - spawnCard:
+        _asset: {fileID: 0}
         _address: RoR2/Base/Wisp/cscLesserWisp.asset
         _useDirectReference: 0
-      selectionWeight: 3
+      selectionWeight: 10
       spawnDistance: 0
       preventOverhead: 0
       minimumStageCompletions: 0
@@ -155,7 +266,7 @@ MonoBehaviour:
         _asset: {fileID: 0}
         _address: RoR2/Base/Jellyfish/cscJellyfish.asset
         _useDirectReference: 0
-      selectionWeight: 3
+      selectionWeight: 8
       spawnDistance: 0
       preventOverhead: 0
       minimumStageCompletions: 0
@@ -171,7 +282,55 @@ MonoBehaviour:
         _asset: {fileID: 0}
         _address: RoR2/Base/Beetle/cscBeetle.asset
         _useDirectReference: 0
-      selectionWeight: 1
+      selectionWeight: 12
+      spawnDistance: 0
+      preventOverhead: 0
+      minimumStageCompletions: 0
+      requiredUnlockableDef:
+        _asset: {fileID: 0}
+        _address: 
+        _useDirectReference: 0
+      forbiddenUnlockableDef:
+        _asset: {fileID: 0}
+        _address: 
+        _useDirectReference: 0
+    - spawnCard:
+        _asset: {fileID: 0}
+        _address: RoR2/Base/Imp/cscImp.asset
+        _useDirectReference: 0
+      selectionWeight: 8
+      spawnDistance: 0
+      preventOverhead: 0
+      minimumStageCompletions: 0
+      requiredUnlockableDef:
+        _asset: {fileID: 0}
+        _address: 
+        _useDirectReference: 0
+      forbiddenUnlockableDef:
+        _asset: {fileID: 0}
+        _address: 
+        _useDirectReference: 0
+    - spawnCard:
+        _asset: {fileID: 0}
+        _address: RoR2/DLC1/Gup/cscGeepBody.asset
+        _useDirectReference: 0
+      selectionWeight: 6
+      spawnDistance: 0
+      preventOverhead: 0
+      minimumStageCompletions: 0
+      requiredUnlockableDef:
+        _asset: {fileID: 0}
+        _address: 
+        _useDirectReference: 0
+      forbiddenUnlockableDef:
+        _asset: {fileID: 0}
+        _address: 
+        _useDirectReference: 0
+    - spawnCard:
+        _asset: {fileID: 0}
+        _address: RoR2/DLC1/MajorAndMinorConstruct/cscMinorConstruct.asset
+        _useDirectReference: 0
+      selectionWeight: 12
       spawnDistance: 0
       preventOverhead: 0
       minimumStageCompletions: 0
@@ -187,7 +346,7 @@ MonoBehaviour:
         _asset: {fileID: 0}
         _address: RoR2/DLC1/Vermin/cscVermin.asset
         _useDirectReference: 0
-      selectionWeight: 5
+      selectionWeight: 3
       spawnDistance: 0
       preventOverhead: 0
       minimumStageCompletions: 0
@@ -199,14 +358,46 @@ MonoBehaviour:
         _asset: {fileID: 0}
         _address: 
         _useDirectReference: 0
-    selectionWeight: 3
+    - spawnCard:
+        _asset: {fileID: 0}
+        _address: RoR2/DLC1/FlyingVermin/cscFlyingVermin.asset
+        _useDirectReference: 0
+      selectionWeight: 3
+      spawnDistance: 0
+      preventOverhead: 0
+      minimumStageCompletions: 0
+      requiredUnlockableDef:
+        _asset: {fileID: 0}
+        _address: 
+        _useDirectReference: 0
+      forbiddenUnlockableDef:
+        _asset: {fileID: 0}
+        _address: 
+        _useDirectReference: 0
+    - spawnCard:
+        _asset: {fileID: 0}
+        _address: RoR2/DLC1/AcidLarva/cscAcidLarva.asset
+        _useDirectReference: 0
+      selectionWeight: 6
+      spawnDistance: 0
+      preventOverhead: 0
+      minimumStageCompletions: 0
+      requiredUnlockableDef:
+        _asset: {fileID: 0}
+        _address: 
+        _useDirectReference: 0
+      forbiddenUnlockableDef:
+        _asset: {fileID: 0}
+        _address: 
+        _useDirectReference: 0
+    selectionWeight: 6
   - name: Special
     cards:
     - spawnCard:
         _asset: {fileID: 0}
         _address: RoR2/Base/Scav/cscScav.asset
         _useDirectReference: 0
-      selectionWeight: 4
+      selectionWeight: 1
       spawnDistance: 0
       preventOverhead: 0
       minimumStageCompletions: 5

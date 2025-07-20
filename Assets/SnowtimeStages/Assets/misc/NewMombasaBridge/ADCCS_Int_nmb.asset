@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 2099981080, guid: 45feadaaa90b2d2217207fb8b533753e, type: 3}
   m_Name: ADCCS_Int_nmb
   m_EditorClassIdentifier: 
-  targetCardCategorySelection: {fileID: 11400000, guid: f4bc15f8aa5e5de409f56b96ae1e54ff,
-    type: 2}
+  targetCardCategorySelection: {fileID: 11400000, guid: 872f777b167ff9543b74eea6a718b28e, type: 2}
   categories:
   - name: Chests
     cards:

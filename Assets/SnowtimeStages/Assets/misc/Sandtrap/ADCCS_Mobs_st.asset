@@ -12,16 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 2099981080, guid: 45feadaaa90b2d2217207fb8b533753e, type: 3}
   m_Name: ADCCS_Mobs_st
   m_EditorClassIdentifier: 
-  targetCardCategorySelection: {fileID: 11400000, guid: 99cd15763ea19344fb9650a93926892c,
-    type: 2}
+  targetCardCategorySelection: {fileID: 11400000, guid: 99cd15763ea19344fb9650a93926892c, type: 2}
   categories:
   - name: Champions
     cards:
     - spawnCard:
         _asset: {fileID: 0}
-        _address: RoR2/Base/Beetle/cscBeetleQueen.asset
+        _address: RoR2/Base/BeetleQueen/cscBeetleQueen.asset
         _useDirectReference: 0
-      selectionWeight: 88
+      selectionWeight: 6
       spawnDistance: 0
       preventOverhead: 0
       minimumStageCompletions: 0
@@ -37,7 +36,23 @@ MonoBehaviour:
         _asset: {fileID: 0}
         _address: RoR2/Base/ClayBoss/cscClayBoss.asset
         _useDirectReference: 0
-      selectionWeight: 8
+      selectionWeight: 6
+      spawnDistance: 0
+      preventOverhead: 0
+      minimumStageCompletions: 0
+      requiredUnlockableDef:
+        _asset: {fileID: 0}
+        _address: 
+        _useDirectReference: 0
+      forbiddenUnlockableDef:
+        _asset: {fileID: 0}
+        _address: 
+        _useDirectReference: 0
+    - spawnCard:
+        _asset: {fileID: 0}
+        _address: RoR2/Base/Titan/cscTitanGooLake.asset
+        _useDirectReference: 0
+      selectionWeight: 6
       spawnDistance: 0
       preventOverhead: 0
       minimumStageCompletions: 0
@@ -72,7 +87,7 @@ MonoBehaviour:
         _asset: {fileID: 0}
         _address: RoR2/Base/Golem/cscGolemSandy.asset
         _useDirectReference: 0
-      selectionWeight: 3
+      selectionWeight: 6
       spawnDistance: 0
       preventOverhead: 0
       minimumStageCompletions: 0
@@ -86,7 +101,7 @@ MonoBehaviour:
         _useDirectReference: 0
     - spawnCard:
         _asset: {fileID: 0}
-        _address: RoR2/Base/Beetle/cscBeetleGuard.asset
+        _address: RoR2/Base/BeetleGuard/cscBeetleGuard.asset
         _useDirectReference: 0
       selectionWeight: 6
       spawnDistance: 0
@@ -104,7 +119,7 @@ MonoBehaviour:
         _asset: {fileID: 0}
         _address: RoR2/Base/ClayBruiser/cscClayBruiser.asset
         _useDirectReference: 0
-      selectionWeight: 6
+      selectionWeight: 3
       spawnDistance: 2
       preventOverhead: 0
       minimumStageCompletions: 0

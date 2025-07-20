@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 495100722, guid: 45feadaaa90b2d2217207fb8b533753e, type: 3}
   m_Name: ADCCSPool_Mobs_nmb
   m_EditorClassIdentifier: 
-  targetPool: {fileID: 11400000, guid: f54e29a19b8b6ae4d9d924941df3e81e, type: 2}
+  targetPool: {fileID: 11400000, guid: a8b606fb4dc0fcd49b9e5e83938906b1, type: 2}
   poolCategories:
   - name: Standard
     categoryWeight: 0.98
     alwaysIncluded: []
     includedIfConditionsMet:
-    - dccs: {fileID: 11400000, guid: 44e14049801834a4999a611190251a48, type: 2}
+    - dccs: {fileID: 11400000, guid: e0cf68efd82cd3340b3de3048273a050, type: 2}
       familyDccs:
         _asset: {fileID: 0}
         _address: 
@@ -29,7 +29,7 @@ MonoBehaviour:
         _address: RoR2/DLC1/Common/DLC1.asset
         _useDirectReference: 0
     includedIfNoConditionsMet:
-    - dccs: {fileID: 11400000, guid: f40184c6815ecad439c92e6b7d516937, type: 2}
+    - dccs: {fileID: 11400000, guid: ba705a24795612842a4a79003c3dd464, type: 2}
       familyDccs:
         _asset: {fileID: 0}
         _address: 

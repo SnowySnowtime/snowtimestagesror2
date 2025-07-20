@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 2099981080, guid: 45feadaaa90b2d2217207fb8b533753e, type: 3}
   m_Name: ADCCS_Mobs_di_dlc1
   m_EditorClassIdentifier: 
-  targetCardCategorySelection: {fileID: 11400000, guid: 7a3d5f8ef95c3dc46aa57f2d2ca693ca,
-    type: 2}
+  targetCardCategorySelection: {fileID: 11400000, guid: 7a3d5f8ef95c3dc46aa57f2d2ca693ca, type: 2}
   categories:
   - name: Champions
     cards:
@@ -102,7 +101,7 @@ MonoBehaviour:
         _useDirectReference: 0
     - spawnCard:
         _asset: {fileID: 0}
-        _address: RoR2/Base/Beetle/cscBeetleGuard.asset
+        _address: RoR2/Base/BeetleGuard/cscBeetleGuard.asset
         _useDirectReference: 0
       selectionWeight: 3
       spawnDistance: 0
