@@ -16,7 +16,7 @@ MonoBehaviour:
     m_AssetGUID: 
     m_SubObjectName: 
     m_SubObjectType: 
-  baseSceneNameOverride: snowtimegmflatgrass
+  baseSceneNameOverride: snowtimegmbigcity
   sceneType: 1
   isOfflineScene: 0
   stageOrder: 4
@@ -36,8 +36,7 @@ MonoBehaviour:
   portalSelectionMessageString: SNOWTIME_MAP_CITY_2
   shouldIncludeInLogbook: 1
   loreToken: SNOWTIME_MAP_CITY_3
-  dioramaPrefab: {fileID: 1376320524918684, guid: 2a00172ef23a10d499e5cbf7a01bd3b7,
-    type: 3}
+  dioramaPrefab: {fileID: 1376320524918684, guid: 2a00172ef23a10d499e5cbf7a01bd3b7, type: 3}
   dioramaPrefabAddress:
     m_AssetGUID: 
     m_SubObjectName: 

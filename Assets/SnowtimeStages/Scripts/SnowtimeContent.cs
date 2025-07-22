@@ -123,6 +123,10 @@ namespace Snowtime.Content
         internal static SceneDef STCitySceneDef;
         internal static Sprite STCitySceneDefPreviewSprite;
         internal static Material STCityBazaarSeer;
+        // STSceneDef = Death Island
+        internal static SceneDef STHightowerSceneDef;
+        internal static Sprite STHightowerSceneDefPreviewSprite;
+        internal static Material STHightowerBazaarSeer;
 
         // // Gameobjects
 
@@ -238,6 +242,8 @@ namespace Snowtime.Content
                 STFlatSceneDefPreviewSprite = assets.First(a => a.name == "texSTFlatScenePreview");
                 STHCSceneDefPreviewSprite = assets.First(a => a.name == "texSTHCScenePreview");
                 STCitySceneDefPreviewSprite = assets.First(a => a.name == "texSTCityScenePreview");
+                STHightowerSceneDefPreviewSprite = assets.First(a => a.name == "texSTScenePreview");
+
                 SnowtimeLegendaryIcon = assets.First(a => a.name == "texSnowtimeLegendaryPLNK");
             }));
 
@@ -383,6 +389,16 @@ namespace Snowtime.Content
                 if (SnowtimeStage.ToggleBig.Value == false)
                 {
                     Log.Debug("Skipped gm_bigcity SceneDef (Config Off)");
+                }
+                if (SnowtimeStage.ToggleHightower.Value == true)
+                {
+                    STHightowerSceneDef = assets.First(sd => sd.cachedName == "snowtime_plrhightower");
+                    stSceneDefList.Add(STHightowerSceneDef);
+                    Log.Debug("Added plr_hightower SceneDef (Config On)");
+                }
+                if (SnowtimeStage.ToggleHightower.Value == false)
+                {
+                    Log.Debug("Skipped plr_hightower SceneDef (Config Off)");
                 }
 
                 contentPack.sceneDefs.Add(stSceneDefList.ToArray());
@@ -630,6 +646,23 @@ namespace Snowtime.Content
             if (SnowtimeStage.ToggleBig.Value == false)
             {
                 Log.Debug("Skipped hiding gm_bigcity in the bazaar");
+            }
+            Log.Debug("plr_hightower Config Status?");
+            Log.Debug(SnowtimeStage.ToggleHightower.Value);
+            if (SnowtimeStage.ToggleHightower.Value == true)
+            {
+                STHightowerBazaarSeer = StageRegistration.MakeBazaarSeerMaterial(STHightowerSceneDefPreviewSprite.texture);
+                STHightowerSceneDef.previewTexture = STHightowerSceneDefPreviewSprite.texture;
+                STHightowerSceneDef.portalMaterial = STHightowerBazaarSeer;
+                Log.Debug("Death Island Bazaar Seer Material Complete");
+
+                StageRegistration.RegisterSceneDefToNormalProgression(STHightowerSceneDef);
+                Log.Debug("Added Death Island to the loop");
+                Log.Debug(STHightowerSceneDef.destinationsGroup);
+            }
+            if (SnowtimeStage.ToggleHightower.Value == false)
+            {
+                Log.Debug("Skipped adding Death Island to the loop");
             }
 
             SnowtimeStage.SnowtimeLegendaryDiffDef.iconSprite = SnowtimeLegendaryIcon;
