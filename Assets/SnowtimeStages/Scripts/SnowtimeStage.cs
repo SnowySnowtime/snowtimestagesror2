@@ -32,7 +32,7 @@ namespace Snowtime
     {
         public const string Author = "SnowySnowtime";
         public const string Name = nameof(SnowtimeStage);
-        public const string Version = "0.9.4";
+        public const string Version = "0.9.5";
         public const string GUID = Author + "." + Name;
 		public static ConfigEntry<bool> ToggleBloodGulch { get; set; }
 		public static ConfigEntry<bool> ToggleSidewinder { get; set; }

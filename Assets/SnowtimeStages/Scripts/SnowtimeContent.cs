@@ -242,7 +242,7 @@ namespace Snowtime.Content
                 STFlatSceneDefPreviewSprite = assets.First(a => a.name == "texSTFlatScenePreview");
                 STHCSceneDefPreviewSprite = assets.First(a => a.name == "texSTHCScenePreview");
                 STCitySceneDefPreviewSprite = assets.First(a => a.name == "texSTCityScenePreview");
-                STHightowerSceneDefPreviewSprite = assets.First(a => a.name == "texSTScenePreview");
+                STHightowerSceneDefPreviewSprite = assets.First(a => a.name == "texSTHightowerScenePreview");
 
                 SnowtimeLegendaryIcon = assets.First(a => a.name == "texSnowtimeLegendaryPLNK");
             }));
